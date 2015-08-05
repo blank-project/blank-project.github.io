@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Glossaire _blank</title>
 		<link rel="stylesheet" href="style/style.css" type="text/css">
+		<link rel="stylesheet" href="prism/prism.css" type="text/css">
 	</head>
 	<body>
 		<h1>Glossaire _blank</h1>
@@ -25,20 +26,14 @@
 				<div class="code-sample-wrapper">
 					<div class="code-sample">
 						<div class="code-sample-label">Exemple : </div>
-						<div class="code-sample-content">
-							<code>
-							&lt;balise&gt;Contenu&lt;/balise&gt;
-							</code>		
-						</div>
+						<pre class="language-markup"><code class="language-markup">&lt;balise&gt;Contenu&lt;/balise&gt;</code></pre>
 					</div>
 				</div>
 				<br /> Une balise peut également ne pas avoir de contenu. Dans ce cas la, on peut la fermer directement.
 				<div class="code-sample-wrapper">
 					<div class="code-sample">
 						<div class="code-sample-label">Exemple : </div>
-						<div class="code-sample-content">
-							<code>&lt;br /&gt;</code>
-						</div>
+						<pre class="language-markup"><code class="language-markup">&lt;br /&gt;</code></pre>
 						<div class="code-sample-info">La balise <code>&lt;br /&gt;</code> sert à sauter une ligne.</div>
 					</div>
 				</div>
@@ -47,13 +42,10 @@
 				<div class="code-sample-wrapper">
 					<div class="code-sample">
 						<div class="code-sample-label">Exemple : </div>
-						<div class="code-sample-content">
-							<code>
-							&lt;balise class="class" id="id"&gt;<br />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contenu<br />
-							&lt;/balise&gt;
-							</code>		
-						</div>
+						<pre class="language-markup"><code class="language-markup">
+&lt;balise class="class" id="id"&gt;<br />
+	Contenu<br />
+&lt;/balise&gt;</code></pre>
 					</div>
 				</div>
 				<br />
@@ -90,42 +82,27 @@
 				<div class="code-sample-wrapper">
 					<div class="code-sample">
 						<div class="code-sample-label">Commentaire HTML : </div>
-						<div class="code-sample-content">
-							<code>
-							&lt;!-- Mon commentaire ici --&gt;
-							</code>		
-						</div>
+						<pre class="language-markup"><code class="language-markup">&lt;!-- Mon commentaire ici --&gt;</code></pre>
 					</div>
 				</div>
 				<div class="code-sample-wrapper">
 					<div class="code-sample">
 						<div class="code-sample-label">Commentaire CSS : </div>
-						<div class="code-sample-content">
-							<code>
-							/* Mon commentaire ici */
-							</code>		
-						</div>
+						<pre class="language-css"><code class="language-css">/* Mon commentaire ici */</code></pre>
 					</div>
 				</div>
 				<div class="code-sample-wrapper">
 					<div class="code-sample">
 						<div class="code-sample-label">Commentaire JavaScript : </div>
-						<div class="code-sample-content">
-							<code>
-							// Mon commentaire sur une ligne
-							</code>		
-						</div>
+						<pre class="language-javascript"><code class="language-javascript">// Mon commentaire sur une ligne</code></pre>
 						<div class="code-sample-info"> ou : </div>
-						<div class="code-sample-content">
-							<code>
-							/* Mon <br />
-							commentaire<br />
-							sur<br />
-							plusieurs<br />
-							ligne<br />
-							*/
-							</code>	
-						</div>
+						<pre class="language-javascript"><code class="language-javascript">
+/* Mon
+commentaire
+sur
+plusieurs
+ligne
+*/</code></pre>
 					</div>
 				</div>
 			</dd>
@@ -134,5 +111,7 @@
 				TODO
 			</dd>
 		</dl>
+		
+	<script type="text/javascript" src="prism/prism.js"></script>
 	</body>
 </html>
