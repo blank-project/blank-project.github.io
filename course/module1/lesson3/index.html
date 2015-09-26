@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Leçon 3 - Introduction au CSS</title>
+		<link rel="stylesheet" href="../../style/style.css" type="text/css">
+		<link rel="stylesheet" href="../../style/font-awesome/css/font-awesome.css" type="text/css">
+		<link rel="stylesheet" href="../../lib/prism/prism.css" type="text/css">
+	</head>
+	<body>
+		<h1>Leçon 3</h1>
+		<h2>Introduction au CSS</h2></br>
+
+
+
+<p>
+	<h3>Le CSS qu'est ce que c'est ?</h3>
+	CSS (ou Cascading Style Sheets) est un langage qui permet de mettre en forme le contenu HTML (via des couleurs, des polices...).
+</p>
+
+
+<p>
+<h3>A quoi ça ressemble ?</h3>
+Schématiquement, une feuille de style CSS ressemble à cela :</p>
+<pre><code class="language-css">sélecteur {
+    propriete1: valeur1;
+    propriete2: valeur2;
+    propriete3: valeur3;
+}
+</code></pre>
+<p>Une feuille de CSS contient donc:</p>
+<dl>  
+  <dt>des sélecteurs</dt><dd>qui permettront de sélectionner les balises ou des groupes de balises dont on veut modifier l'apparence</dd>
+  <dt>des propriétés</dt><dd>qui seront les différents « effets de style ». Par exemple, la propriété color qui permet d'indiquer la couleur du texte, font-size permet d'indiquer la taille du texte, etc.  </dd>
+  <dt>une valeur</dt><dd>,qui est la valeur associé à chaque propriété. Par exemple, pour la propriété color, il faut indiquer le nom de la couleur. Pour font-size, il faut indiquer quelle taille on veut, etc. </dd>
+</dl>
+<p>Voici un petit exemple pour illustrer ceci:</p>
+<pre><code class="language-css">p {
+    color: blue;         
+    font-family: Arial     
+    font-size:10px       
+}
+</code></pre>
+<p>Ceci indique que les paragraphes (correspondant à la balise &ltp&gt) seront tous bleu (color:blue), en police Arial (font-family: Arial), et d'une taille de 10 pixels (font-size:10px). </p>
+</br>
+
+
+<h3>Comment lier CSS et HTML ?</h3>
+<p>Le fichier contenant les instructions CSS doit être lié à <strong>toutes les pages HTML pour lesquelles on veut changer l'affichage</strong>. </br> 
+Dans chaque page HTML, il faudra utiliser la syntaxe suivante, et la placer dans le &lthead&gt</p>
+<pre><code class="language-markup">&ltlink rel="stylesheet" type="text/css" href="style.css"&gt </code></pre>
+<p>Voici un aperçu dans un squelette de page HTML: 
+<pre><code class="language-markup">&lt!DOCTYPE HTML&gt
+&lthtml&gt
+  &lthead&gt
+    &lttitle&gtMa page&lt/title&gt
+    &ltlink rel="stylesheet" type="text/css" href="style.css"&gt
+  &lt/head&gt
+  &ltbody&gt
+    &lth1&gtTitre de page&lt/h1&gt
+    &lth2&gtTitre&lt/h2&gt
+  &lt/body&gt
+&lt/html&gt</code></pre>
+    
+	<script type="text/javascript" src="../../lib/prism/prism.js"></script>
+	</body>
+</html>
