@@ -2,78 +2,27 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Hello _blankers !</title>
+		<title>Leçon 2 - Les bases d'HTML</title>
 		<link rel="stylesheet" href="../../style/style.css" type="text/css">
+		<link rel="stylesheet" href="../../style/font-awesome/css/font-awesome.css" type="text/css">
 		<link rel="stylesheet" href="../../lib/prism/prism.css" type="text/css">
 	</head>
 	<body>
-		<h1>HTML</h1>
-		<h2>Structure d'une page HTML</h2>
+		<h1>Leçon 2</h1>
+		<h2>Les bases d'HTML</h2>
 		<p>
-			Une page HTML a la structure suivante :
-			<div class="code-sample-wrapper">
-				<div class="code-sample">
-					<pre class="language-markup"><code class="language-markup">
-&lt;!DOCTYPE html&gt;<br />
-&lt;html&gt;	
-	&lt;head&gt;	
-		&lt;title&gt;Le titre de la page ici&lt;/title&gt;	
-	&lt;/head&gt;	
-	&lt;body&gt;
-		Le contenu ici
-	&lt;/body&gt;	
-&lt;/html&gt;</code></pre>		
-				</div>
-				<div class="code-sample-info">
-					Description des balises utilisées : 
-					<dl class="compact">
-						<dt><code>&lt;!DOCTYPE html&gt;</code></dt>
-						<dd>ce n'est pas une balise standard, cette balise sert à indiquer que l'on utilise HTML 5</dd>
-						<dt><code>&lt;html&gt;</code></dt>
-						<dd>C'est la balise racine présente dans chaque page web.</dd>
-						<dt><code>&lt;head&gt;</code></dt>
-						<dd>C'est la balise qui contient les <a href="../Documents/Glossaire.html#metadata">méta-données</a> de la page</dd>
-						<dt><code>&lt;title&gt;</code></dt>
-						<dd>C'est la balise qui contient titre de la page, affiché en haut du navigateur.</dd>
-						<dt><code>&lt;body&gt;</code></dt>
-						<dd>C'est la balise qui contient le contenu de la page web, c'est-à-dire ce qui est affiché à l'écran</dd>
-					</dl>
-				</div>
-			</div>
-		</p>
-		<h2>Présentation des principaux élements HTML</h2>
-		<p>
-			<h3><code>p</code></h3>
-			La <a href="../Documents/Glossaire.html#tag">balise</a> <code>p</code> sert à définir un paragraphe.
-			Elle est bordée par des espaces, et peut contenir du texte et d'autres élements
-		</p>
-		<p>
-			<h3><code>a</code></h3>
-			La balise <code>a</code> sert à définir un lien.
-			<div class="code-sample-wrapper">
-				<div class="code-sample">
-					<div class="code-sample-label">Exemple : </div>
-					<pre class="language-markup"><code class="language-markup">&lt;a href="http://www.google.com"&gt;Un lien vers Google&lt;/a&gt;</code></pre>		
-					<div class="code-sample-info">Le code ci-dessus donne le résultat suivant : <a href="http://www.google.com">Un lien vers Google</a></div>
-				</div>
-			</div>
-		</p>
-		<p>
-			<h3><code>img</code></h3>
-			La balise <code>img</code> sert à définir une image.
-			<div class="code-sample-wrapper">
-				<div class="code-sample">
-					<div class="code-sample-label">Exemple : </div>
-					<pre class="language-markup"><code class="language-markup">&lt;img src="img/sample_image.png" alt="Une image d'exemple" /&gt;</code></pre>		
-					<div class="code-sample-info">
-						Le code ci-dessus donne le résultat suivant : 
-						<br /><img src="img/sample_image.png" alt="Une image d'exemple" />
-						<br /><br />
-						L'attribut <code>alt</code> permet de définir un texte alternatif, qui s'affiche notamment si l'image n'est pas trouvée : 
-						<br /><img src="img/no_image.png" alt="Une image d'exemple, qui n'existe pas" />
-					</div>
-				</div>
-			</div>
+			Dans cette leçon vous apprendrez les bases d'<acronym title="HyperText Markup Language">HTML</acronym>, le langage qui permet de définir la stucture d'une page web.
+			Tous les sites web du monde sont écrit en HTML.
+			<br /> Vous ne le savez (peut-être) pas encore, mais cette page est écrite en HTML !
+			<br /> Pour vous en rendre compte, vous pouvez faire <q>Clic-droit</q> &gt; <q>Afficher le code-source de la page</q> dans votre navigateur.
+			<br /> Vous voyez alors apparaitre tout le code soutce de la page, c'est à dire le HTML ainsi que d'autre élements que nous découvrirons plus tard.
+			<ul>
+				<li><i class="fa fa-chrome "></i></li>
+				<li><i class="fa fa-firefox"></i></li>
+				<li><i class="fa fa-internet-explorer"></i></li>
+				<li><i class="fa fa-safari"></i></li>
+				<li><i class="fa fa-opera"></i></li>
+			</ul>
 		</p>
 	
 	<script type="text/javascript" src="../../lib/prism/prism.js"></script>
