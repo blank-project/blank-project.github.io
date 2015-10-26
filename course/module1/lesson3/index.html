@@ -153,9 +153,27 @@
 			<p>Les sélecteurs "class et id" sont très similaires, à une différence près :</p>
 				<dl>  
 					  <dt>Class </dt><dd>est réutilisable (applicable à différentes balises ou groupes de balises)</dd>
+							 	<p>Voici un exemple sur les balises &ltp&gt et &ltem&gt: </p>
+									<p><em>Code HTML</em></p>
+										<pre><code class="language-markup">&lt p class= "introduction" &gt La &ltem&gt plateforme d'expression libre &lt/em&gt Belleville Blog &lt/p&gt</pre></code>
+									<p><em>Code CSS </em></p>
+										<pre><code class="language-css">.introduction {
+											    color: blue;         
+											    font-family: Arial
+											}
+										</code></pre>
 					  <dt>Id </dt><dd>n'est utilisable que sur <strong>une seule balise</strong>, donc <strong>une seule fois dans le code !</strong> Son utilité très particulière sera vue plus tard, notamment dans le cours sur le javascript. </dd>
-				</dt>	 
-
+								<p>Voici un exemple sur les balises &ltp&gt et &ltem&gt: </p>
+									<p><em>Code HTML</em></p>
+										<pre><code class="language-markup">&lt p id= "identifiant" &gt La &ltem&gt plateforme d'expression libre &lt/em&gt Belleville Blog &lt/	 &gt</pre></code>
+									<p><em>Code CSS </em></p>
+										<pre><code class="language-css">#identifiant {
+											color: blue;         
+											font-family: Arial
+										}
+										</code></pre>
+				</dt>
+			a
 
 		<h4>Type <em>A B</em></h4>
 			<p>On utilise "A B" pour sélectionner <strong>toutes les balises A situées à l'intérieur d'une balise B</strong>.</p>
@@ -163,7 +181,7 @@
 			<p><em>Code HTML</em></p>
 				<pre><code class="language-markup">&ltp&gt La &ltem&gt plateforme d'expression libre &lt/em&gt Belleville Blog &lt/p&gt</pre></code>
 			<p><em>Code CSS </em></p>
-				<pre><code class="language-css">p em {
+				<pre><code class="language-css"> p em {
 				    color: blue;         
 				    font-family: Arial
 				}
