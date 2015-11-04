@@ -12,142 +12,211 @@
 		<h2>Introduction au CSS</h2></br>
 
 
-
 <p>
 	<h3>Le CSS qu'est ce que c'est ?</h3>
-	CSS (ou Cascading Style Sheets) est un langage qui permet de mettre en forme le contenu HTML (via des couleurs, des polices...).
+		<p>CSS (ou Cascading Style Sheets) est un langage qui permet de mettre en forme le contenu HTML (via des couleurs, des polices...).</p>
+	
+	<h3>A quoi ça ressemble ?</h3>
+		<p>Télecharger ce <a href="http://www.csszengarden.com/examples/index">fichier</a> et ouvrez le dans votre navigateur</p>
+		<p>Télecharger ce <a href="http://www.csszengarden.com/examples/style.css">fichier</a> et ouvrez le dans votre navigateur</p>
+		<p>Rajoutez la ligne de commande suivante dans la balise &lthead&gt:</p>
+			<pre><code class="language-markup">&ltlink rel="stylesheet" type="text/css" href="style.css"&gt </code></pre>
+		<p>Sans vous en rendre compte, vous venez d'appliquer une feuille de style à votre feuille HTML !</p>
 </p>
 
 
 <p>
-<h3>A quoi ça ressemble ?</h3>
-Schématiquement, une feuille de style CSS ressemble à cela :</p>
-<pre><code class="language-css">sélecteur {
-    propriete1: valeur1;
-    propriete2: valeur2;
-    propriete3: valeur3;
-}
-</code></pre>
-<p>Une feuille de CSS contient donc:</p>
-<dl>  
-  <dt>des sélecteurs</dt><dd>qui permettront de sélectionner les balises ou des groupes de balises dont on veut modifier l'apparence</dd>
-  <dt>des propriétés</dt><dd>qui seront les différents « effets de style ». Par exemple, la propriété color qui permet d'indiquer la couleur du texte, font-size permet d'indiquer la taille du texte, etc.  </dd>
-  <dt>une valeur</dt><dd>,qui est la valeur associé à chaque propriété. Par exemple, pour la propriété color, il faut indiquer le nom de la couleur. Pour font-size, il faut indiquer quelle taille on veut, etc. </dd>
-</dl>
-<p>Voici un petit exemple pour illustrer ceci:</p>
-<pre><code class="language-css">p {
-    color: blue;         
-    font-family: Arial     
-    font-size:10px       
-}
-</code></pre>
-<p>Ceci indique que les paragraphes (correspondant à la balise &ltp&gt) seront tous bleu (color:blue), en police Arial (font-family: Arial), et d'une taille de 10 pixels (font-size:10px). </p>
-</br>
+	<h3>Comment ça marche ?</h3>
+		<p>Schématiquement, une feuille de style CSS ressemble à cela :</p>
+			<pre><code class="language-css">sélecteur {
+			    propriete1: valeur1;
+			    propriete2: valeur2;
+			    propriete3: valeur3;
+			}
+			</code></pre>
+		<p>Une feuille de CSS contient donc:</p>
+			<dl>  
+				  <dt>des sélecteurs</dt><dd>qui permettront de sélectionner les balises ou des groupes de balises dont on veut modifier l'apparence</dd>
+				  <dt>des propriétés</dt><dd>qui seront les différents « effets de style ». Par exemple, la propriété color qui permet d'indiquer la couleur du texte, font-size permet d'indiquer la taille du texte, etc.  </dd>
+				  <dt>une valeur</dt><dd>,qui est la valeur associé à chaque propriété. Par exemple, pour la propriété color, il faut indiquer le nom de la couleur. Pour font-size, il faut indiquer quelle taille on veut, etc. </dd>
+			</dl>
+		<p>Voici un petit exemple pour illustrer ceci:</p>
+			<pre><code class="language-css">p {
+			    color: blue;         
+			    font-family: Arial     
+			    font-size:10px       
+			}
+			</code></pre>
+		<p>Ceci indique que les paragraphes (correspondant à la balise &ltp&gt) seront tous bleu (color:blue), en police Arial (font-family: Arial), et d'une taille de 10 pixels (font-size:10px). </p>
+	</br>
+</p>
 
 
-<h3>Comment lier CSS et HTML ?</h3>
-<p>Le fichier contenant les instructions CSS doit être lié à <strong>toutes les pages HTML pour lesquelles on veut changer l'affichage</strong>. </br> 
-Dans chaque page HTML, il faudra utiliser la syntaxe suivante, et la placer dans le &lthead&gt</p>
-<pre><code class="language-markup">&ltlink rel="stylesheet" type="text/css" href="style.css"&gt </code></pre>
-<p>Voici un aperçu dans un squelette de page HTML: 
-<pre><code class="language-markup">&lt!DOCTYPE HTML&gt
-&lthtml&gt
-  &lthead&gt
-    &lttitle&gtMa page&lt/title&gt
-    &ltlink rel="stylesheet" type="text/css" href="style.css"&gt
-  &lt/head&gt
-  &ltbody&gt
-    &lth1&gtTitre de page&lt/h1&gt
-    &lth2&gtTitre&lt/h2&gt
-  &lt/body&gt
-&lt/html&gt</code></pre>
+<p>
+	<h3>Comment lier CSS et HTML ?</h3>
+			<p>Il existe plusieurs méthodes pour intégrer du CSS dans un fichier HTML</p>
+		
+		<h4>Ecrire dans la balise HTML</h4>
+			<p>Il est possible d'écrire le code directement dans la balise HTML en utilisant l'attibut <em>style</em></p>
+				<pre><code class="language-markup"> &ltp style="color: blue;">Belleville Coding Club&gt </code></pre>
+			<p>Cela est toutefois peu recommandé car complique beaucoup la relecture du code</p>
 
-</br></br></br>
+
+		<h4>Ecrire dans une balise &ltstyle&gt</h4>
+			<p>Il est aussi possible d'écrire le code dans une balise &lgstyle&gt, elle même posée dans le &lthead&gt du fichier HTML</p>
+				<pre><code class="language-markup">&lt!DOCTYPE HTML&gt
+				&lthtml&gt
+					&lthead&gt
+						&lttitle&gtMa page&lt/title&gt
+						&ltstyle&gt
+						p
+						{
+							color: blues;
+						}
+						&lt/style&gt
+					&lt/head&gt
+					&ltbody&gt
+						&lth1&gtTitre de page&lt/h1&gt
+						&lth2&gtTitre&lt/h2&gt
+					&lt/body&gt
+				&lt/html&gt</code></pre>
+			<p>Ceci n'est à utiliser que si le code CSS de la page est unique.</p>
+
+
+		<h4>Ecrire dans un fichier .css</h4>
+			<p>Si l'on veut appliquer le même style à différentes pages d'un site web, on préferera écrire le code dans un <em>fichier.css</em>.</p>
+			<p>Dans chaque page HTML, il faudra utiliser la syntaxe suivante, et la placer dans le &lthead&gt</p>
+				<pre><code class="language-markup">&ltlink rel="stylesheet" type="text/css" href="style.css"&gt </code></pre>
+			<p>Voici un aperçu dans un squelette de page HTML: 
+				<pre><code class="language-markup">&lt!DOCTYPE HTML&gt
+				&lthtml&gt
+					&lthead&gt
+						&lttitle&gtMa page&lt/title&gt
+						&ltlink rel="stylesheet" type="text/css" href="style.css"&gt
+					&lt/head&gt
+					&ltbody&gt
+						&lth1&gtTitre de page&lt/h1&gt
+						&lth2&gtTitre&lt/h2&gt
+					&lt/body&gt
+				&lt/html&gt</code></pre>
+	
+	</br></br></br>
+</p>
+
 
 <h2>Les différents sélecteurs </h2>
-<p>Un sélecteur permet de définir à quelles balises un style donné doit être appliqué. Il en existe plusieurs et permettent de sélectionner de différentes façons.</p>
+			<p>Un sélecteur permet de définir à quelles balises un style donné doit être appliqué. Il en existe plusieurs et permettent de sélectionner de différentes façons.</p>
 
-<h3>Les sélecteurs les plus courants:</h3>
-<h4>Type <em>Balise</em> </h4>
-<p>On l'a vu plus tôt, ce sélecteur permet d'appliquer un style à <strong>toutes les balises</strong>. </br>
-Voici un exemple sur les balises &ltp&gt: </p>
-<pre><code>p {
-    color: blue;         
-    font-family: Arial  
-}
-</code></pre>
+<p>
+	<h3>Les sélecteurs les plus courants:</h3>
+
+		<p>ATTENTION : Ces sélecteurs s'appliquent à TOUTES les balises, pour appliquer un style à une balise, 
+		ou un groupe de balises particulière, regardez l'exemple "class et Id"</p>
+
+		<h4>Type <em>Balise</em> </h4>
+			<p>On l'a vu plus tôt, ce sélecteur permet d'appliquer un style à <strong>toutes les balises</strong>. </p>
+			<p>Voici un exemple sur les balises &ltp&gt: </p>
+				<pre><code class="language-css">p {
+				    color: blue;         
+				    font-family: Arial  
+				}
+				</code></pre>
+	
+	
+		<h4>Type <em>A et B</em></h4>
+			<p>On utilise "A , B" pour sélectionner <strong> plusieurs balises </strong></p>
+			<p>Voici un exemple sur les balises &lth1&gt et  &ltp&gt: </p>
+			<p>Au lieu d'écrire</p>
+				<pre><code class="language-css">h1 {
+				    color: blue;         
+				    font-family: Arial         
+				}
+				p {
+				    color: blue;         
+				    font-family: Arial         
+				}
+				</code></pre>
+			<p>Nous pouvons simplifier en:</p>
+				<pre><code class="language-css">h1 , p {
+				    color: blue;         
+				    font-family: Arial         
+				}
+				</code></pre>
+			<p>L'ensemble des titres &lth1&gt et des paragraphes &ltp&gt apparaitront en bleu et en Arial.</p>
+	</br>
+</p>
+
+<p>
+	<h3>Les sélecteurs avancés:</h3>
+		<h4>Type <em>class et id</em></h4>
+			<p>Seuls les sélecteurs "class et id" permettent d'appliquer un style à <strong>une balise (ou un groupe de balises) particulière</strong></p>
+			<p>Les sélecteurs "class et id" sont très similaires, à une différence près :</p>
+				<dl>  
+					  <dt>Class </dt><dd>est réutilisable (applicable à différentes balises ou groupes de balises)</dd>
+							 	<p>Voici un exemple sur les balises &ltp&gt et &ltem&gt: </p>
+									<p><em>Code HTML</em></p>
+										<pre><code class="language-markup">&lt p class= "introduction" &gt La &ltem&gt plateforme d'expression libre &lt/em&gt Belleville Blog &lt/p&gt</pre></code>
+									<p><em>Code CSS </em></p>
+										<pre><code class="language-css">.introduction {
+											    color: blue;         
+											    font-family: Arial
+											}
+										</code></pre>
+					  <dt>Id </dt><dd>n'est utilisable que sur <strong>une seule balise</strong>, donc <strong>une seule fois dans le code !</strong> Son utilité très particulière sera vue plus tard, notamment dans le cours sur le javascript. </dd>
+								<p>Voici un exemple sur les balises &ltp&gt et &ltem&gt: </p>
+									<p><em>Code HTML</em></p>
+										<pre><code class="language-markup">&lt p id= "identifiant" &gt La &ltem&gt plateforme d'expression libre &lt/em&gt Belleville Blog &lt/	 &gt</pre></code>
+									<p><em>Code CSS </em></p>
+										<pre><code class="language-css">#identifiant {
+											color: blue;         
+											font-family: Arial
+										}
+										</code></pre>
+				</dt>
+			a
+
+		<h4>Type <em>A B</em></h4>
+			<p>On utilise "A B" pour sélectionner <strong>toutes les balises A situées à l'intérieur d'une balise B</strong>.</p>
+			<p>Voici un exemple sur les balises &ltp&gt et &ltem&gt: </p>
+			<p><em>Code HTML</em></p>
+				<pre><code class="language-markup">&ltp&gt La &ltem&gt plateforme d'expression libre &lt/em&gt Belleville Blog &lt/p&gt</pre></code>
+			<p><em>Code CSS </em></p>
+				<pre><code class="language-css"> p em {
+				    color: blue;         
+				    font-family: Arial
+				}
+				</code></pre>
+			<p>L'ensemble des balises &ltem&gt contenu dans une balise &ltp&gt apparaitront en bleu et en Arial.</p>
+	
+				<h4>Type <em>A + B</em></h4>
+			<p>On utilise le sélecteur "A + B" pour sélectionner <strong> une balise B lorsqu'elle est située juste après une balise A </strong></p>
+			<p>Voici un exemple sur les balises &lth1&gt et &ltp&gt: </p>
+			<p><em>Code HTML</em></p>
+				<pre><code class="language-markup">&lth1&gtBelleville Blog&lt/h1&gt
+				&ltp&gtBelleville Blog&lt/p&gt</pre></code>
+			<p><em>Code CSS </em></p>
+				<pre><code class="language-css">h1 + p {
+				    color: blue;         
+				    font-family: Arial      
+				}
+				</code></pre>
+			<p>La première balise &ltp&gt située après toutes les balises &lth1&gt apparaitront en bleu et en Arial.</p>
+
+	
+		<h4>Type <em>A[attribut]</em></h4>
+			<p>On utilise le sélecteur "A[xxx]" pour sélectionner <strong> une balise A possédant un l'attribut xxx</strong></p>
+			<p>Voici un exemple: </p>
+			<p><em>Code HTML</em></p>
+				<pre><code class="language-markup">&lta href="http://bellevilleBlog.com" title="blank"&gt</pre></code>
+			<p><em>Code CSS </em></p>
+				<pre><code class="language-css">a[blank] {
+				    color: blue;         
+				    font-family: Arial  
+				}
+				</code></pre>
+</p>
 
 
-<h4>Type <em>A et B</em></h4>
-<p>On utilise "A , B" pour sélectionner <strong> plusieurs balises </strong></p>
-<p>Voici un exemple sur les balises &lth1&gt et  &ltp&gt: </p>
-<p>Au lieu d'écrire</p>
-<pre><code>h1 {
-    color: blue;         
-    font-family: Arial         
-}
-p {
-    color: blue;         
-    font-family: Arial         
-}
-</code></pre>
-<p>Nous pouvons simplifier en:</p>
-<pre><code>h1 , p {
-    color: blue;         
-    font-family: Arial         
-}
-</code></pre>
-<p>L'ensemble des titres &lth1&gt et des paragraphes &ltp&gt apparaitront en bleu et en Arial.</p>
-
-</br>
-
-
-<h3>Les sélecteurs avancés:</h3>
-<h4>Type <em>A B</em></h4>
-<p>On utilise "A B" pour sélectionner <strong>toutes les balises A situées à l'intérieur d'une balise B</strong>.</p>
-<p>Voici un exemple sur les balises &ltp&gt et &ltem&gt: </p>
-<p><em>Code HTML</em></p>
-<pre><code>&ltp&gt La &ltem&gt plateforme d'expression libre &lt/em&gt Belleville Blog &lt/p&gt</pre></code>
-<p><em>Code CSS </em></p>
-<pre><code>p em {
-    color: blue;         
-    font-family: Arial
-}
-</code></pre>
-<p>L'ensemble des balises &ltem&gt contenu dans une balise &ltp&gt apparaitront en bleu et en Arial.</p>
-
-<h4>Type <em>class et id</em></h4>
-< A FAIRE>
-
-<h4>Type <em>A + B</em></h4>
-<p>On utilise le sélecteur "A + B" pour sélectionner <strong> une balise B lorsqu'elle est située juste après une balise A </strong></p>
-<p>Voici un exemple sur les balises &lth1&gt et &ltp&gt: </p>
-</code></pre>
-<p><em>Code HTML</em></p>
-<pre><code>&lth1&gtBelleville Blog&lt/h1&gt
-&ltp&gtBelleville Blog&lt/p&gt</pre></code>
-<p><em>Code CSS </em></p>
-<pre><code>h1 + p {
-    color: blue;         
-    font-family: Arial      
-}
-</code></pre>
-<p>La première balise &ltp&gt située après toutes les balises &lth1&gt apparaitront en bleu et en Arial.</p>
-
-
-
-<h4>Type <em>A[attribut]</em></h4>
-<p>On utilise le sélecteur "A[xxx]" pour sélectionner <strong> une balise A possédant un l'attribut xxx</strong></p>
-<p>Voici un exemple: </p>
-<p><em>Code HTML</em></p>
-<pre><code>&lta href="http://bellevilleBlog.com" title="blank"&gt</pre></code>
-<p><em>Code CSS </em></p>
-<pre><code>a[blank] {
-    color: blue;         
-    font-family: Arial  
-}
-</code></pre>
-    
-	<script type="text/javascript" src="../../lib/prism/prism.js"></script>
+		<script type="text/javascript" src="../../lib/prism/prism.js"></script>
 	</body>
 </html>
