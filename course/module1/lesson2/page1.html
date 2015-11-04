@@ -15,17 +15,17 @@
 				<div class="code-sample">
 					<pre class="language-markup"><code class="language-markup">
 &lt;!DOCTYPE html&gt;<br />
-&lt;html&gt;	
-	&lt;head&gt;	
-		&lt;title&gt;Le titre de la page ici&lt;/title&gt;	
-	&lt;/head&gt;	
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Le titre de la page ici&lt;/title&gt;
+	&lt;/head&gt;
 	&lt;body&gt;
 		Le contenu ici
-	&lt;/body&gt;	
-&lt;/html&gt;</code></pre>		
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 				</div>
 				<div class="code-sample-info">
-					Description des balises utilisées : 
+					Description des balises utilisées :
 					<dl class="compact">
 						<dt><code>&lt;!DOCTYPE html&gt;</code></dt>
 						<dd>ce n'est pas une balise standard, cette balise sert à indiquer que l'on utilise HTML 5</dd>
@@ -53,7 +53,7 @@
 			<div class="code-sample-wrapper">
 				<div class="code-sample">
 					<div class="code-sample-label">Exemple : </div>
-					<pre class="language-markup"><code class="language-markup">&lt;a href="http://www.google.com"&gt;Un lien vers Google&lt;/a&gt;</code></pre>		
+					<pre class="language-markup"><code class="language-markup">&lt;a href="http://www.google.com"&gt;Un lien vers Google&lt;/a&gt;</code></pre>
 					<div class="code-sample-info">Le code ci-dessus donne le résultat suivant : <a href="http://www.google.com">Un lien vers Google</a></div>
 				</div>
 			</div>
@@ -64,18 +64,67 @@
 			<div class="code-sample-wrapper">
 				<div class="code-sample">
 					<div class="code-sample-label">Exemple : </div>
-					<pre class="language-markup"><code class="language-markup">&lt;img src="img/sample_image.png" alt="Une image d'exemple" /&gt;</code></pre>		
+					<pre class="language-markup"><code class="language-markup">&lt;img src="img/sample_image.png" alt="Une image d'exemple" /&gt;</code></pre>
 					<div class="code-sample-info">
-						Le code ci-dessus donne le résultat suivant : 
+						Le code ci-dessus donne le résultat suivant :
 						<br /><img src="img/sample_image.png" alt="Une image d'exemple" />
 						<br /><br />
-						L'attribut <code>alt</code> permet de définir un texte alternatif, qui s'affiche notamment si l'image n'est pas trouvée : 
+						L'attribut <code>alt</code> permet de définir un texte alternatif, qui s'affiche notamment si l'image n'est pas trouvée :
 						<br /><img src="img/no_image.png" alt="Une image d'exemple, qui n'existe pas" />
 					</div>
 				</div>
 			</div>
 		</p>
-	
+		<p>
+			<h3><code>ul</code> et <code>li</code></h3>
+			La balise <code>ul</code> sert à définir une liste, et chaque élement de la liste est représenté par une balise <code>li</code>.
+			<div class="code-sample-wrapper">
+				<div class="code-sample">
+					<div class="code-sample-label">Exemple : </div>
+					<pre class="language-markup"><code class="language-markup">
+&lt;ul&gt;
+	&lt;li&gt;Element 1&lt;/li&gt;
+	&lt;li&gt;Element 2&lt;/li&gt;
+	&lt;li&gt;Element  3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+					<div class="code-sample-info">
+						Le code ci-dessus donne le résultat suivant :
+						<ul>
+							<li>Element 1</li>
+							<li>Element 2</li>
+							<li>Element 3</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p>Il existe également d'autres type de listes :
+			<dl>
+				<dt>Les listes ordonnées (<code>ol</code>)</dt>
+				<dd>
+					<ol>
+						<li>Element 1</li>
+						<li>Element 2</li>
+						<li>Element  3</li>
+					</ol>
+				</dd>
+				</li>
+				<dt>Les listes de définitions (<code>dl</code>)</dt>
+				<dd>
+					<dl>
+						<dt>Element 1</dt>
+						<dd>
+							Définition de l'élement 1
+						</dd>
+						<dt>Element 2</dt>
+						<dd>
+							Définition de l'élement 2
+						</dd>
+					</dl>
+				</dd>
+			</dl>
+			</p>
+		</p>
+
 	<script type="text/javascript" src="../../lib/prism/prism.js"></script>
 	</body>
 </html>

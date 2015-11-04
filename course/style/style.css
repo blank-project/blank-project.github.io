@@ -16,7 +16,7 @@ dl.glossary {
 
 /* Managing definitions */
 dl dt.glossary-entry {
-	font-size : 1.5em; 
+	font-size : 1.5em;
 }
 
 dl dd.glossary-definition {
@@ -39,7 +39,7 @@ dl.italic dt {
 dl.compact dt:after {
     content: " : ";
  }
- 
+
 dl.compact dd {
    margin : 0px;
    text-align : left;
@@ -53,9 +53,6 @@ dl.compact dd {
 
 .code-sample {
 	display : inline-block;
-	background-color : #EEE;
-	border : 1px solid #DDD;
-	border-radius : 3px;
 	padding : 5px;
 }
 
