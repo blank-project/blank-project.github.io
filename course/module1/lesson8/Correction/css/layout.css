@@ -1,0 +1,46 @@
+html, body {
+  width : 100%;
+  height : 100%;
+  margin: 0 auto;
+  padding : 0px;
+}
+
+header {
+  height : 100px;
+  width : 100%;
+  padding-top : 1px; /* Empêche la fusion des marges */
+}
+
+nav {
+
+}
+
+.container {
+  display : flex;
+  align-items : flex-start;
+}
+
+main {
+  order : 2;
+  width : 60%;
+}
+
+aside.sidebar {
+  order : 1;
+  width : 20%;
+}
+
+aside.pub {
+  order : 3;
+  width : 20%;
+}
+
+.padded {
+  padding : 20px;
+}
+
+footer {
+  margin : 10px 30px;
+  border-top : 1px solid #DDD; /* Empêche la fusion des marges */
+  height : 100px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Module 1 - HTML/CSS</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Browser</th><th>MP4</th><th>WebM</th><th>Ogg</th>
+		</tr>
+		<tr>
+			<td>Internet Explorer</td><td>YES</td><td>NO</td><td>NO</td>
+		</tr>
+		<tr>
+			<td>Chrome</td><td>YES</td><td>YES</td><td>YES</td>
+		</tr>
+		<tr>
+			<td>Firefox</td><td>YES</td><td>YES</td><td>YES</td>
+		</tr>
+		<tr>
+			<td>Safari</td><td>YES</td><td>NO</td><td>NO</td>
+		</tr>
+		<tr>
+			<td>Opera</td><td>YES (from Opera 25)</td><td>YES</td><td>YES</td>
+		</tr>
+	</table>
+	<div class="example">
+		<video width="320" height="240" controls>
+			<source src="vids/mov_bbb.mp4" type="video/mp4" />
+			<source src="vids/mov_bbb.ogg" type="video/ogg" />
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<div class="sample">
+		<pre><code>
+&lt;video width="320" height="240" controls&gt;
+			&lt;source src="vids/mov_bbb.mp4" type="video/mp4" /&gt;
+			&lt;source src="vids/mov_bbb.ogg" type="video/ogg" /&gt;
+			Your browser does not support the video tag.
+&lt;/video&gt;
+		</code></pre>
+	</div>
+</body>
+</html>
