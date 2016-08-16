@@ -29,11 +29,13 @@ Initialise un nouveau repository à l’emplacement courant.
 Note : les fichiers du dossier peuvent être ajouter ensuite via **add** et **commit**.
 
 `git clone {url} [{folder_name}]`  
-Importe le repository à l’adresse _url_ dans le dossier _folder\_name_.
+Importe le repository à l’adresse _url_ dans le dossier *folder_name*.
 
 `git fetch`  
+Récupère les données du repository distant.
 
 `git pull`  
+Récupère les données du repository distant et les incorpore à l'espace de travail (`git fetch` + `git merge`).
 
 `git push`  
 

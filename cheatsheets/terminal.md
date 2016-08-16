@@ -13,6 +13,8 @@ Exemples :
 - `git --help`   
 - `rm -R test/ `
 
+La touche `Tab` (`↹`) permet d'obtenir des suggestions de commandes, options ou paramètres.
+
 ## Fichiers/Dossiers
 Se déplacer dans des dossiers, y créer des fichiers et d'autres dossiers est essentiel.  
 Voici les commandes principales permettant de faire cela.
