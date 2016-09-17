@@ -25,17 +25,19 @@ Globalement, maintenir `Maj` enfoncé permet de faire une sélection.
 - `Ctrl + C` : Copier.
 - `Ctrl + X` : Couper.
 - `Ctrl + V` : Coller.
+- `Ctrl + A` : Sélectionner tout.
 - `Ctrl + Z` : Annuler.
-- `Ctrl + Z` : Sélectionner tout.
 - `Ctrl + Y` : Rétablir (l'inverse d'annuler).
 - `Alt + F4` : Fermer.
 
 ## Navigateur
 - `Ctrl + T` : Nouvel Onglet.
+- `Maj + Tab (↹)` : Onglet Suivant
+- `Ctrl + Maj + Tab (↹)` : Onglet Précédent
 
 ## Environnement de Bureau
 - `Ctrl + Alt + D` : Afficher le bureau.
-- `Alt + Tab` : permet de parcourir les applications ouvertes sur l'espace de travail courant.
+- `Alt + Tab (↹)` : permet de parcourir les applications ouvertes sur l'espace de travail courant.
  - Mainenir `Maj` pour les parcourir dans le sens inverse.
 - `Ctrl + Alt + ↑/↓/←/→` : changer d'espace de travail.
  - Mainenir `Maj` pour changer la fenêtre courante d'espace de travail.

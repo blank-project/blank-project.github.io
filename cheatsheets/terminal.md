@@ -71,7 +71,7 @@ Envoie un signal de terminaison à un processus (par pid)
 ### **pkill**
 Envoie un signal de terminaison à un processus (par nom)
 ### **top & htop**
-Liste les processus actifs (sorte de “gestionnaires des tâches”).
+Liste les processus actifs (sorte de “gestionnaires des tâches”).  
 _htop_ n’est pas forcément présent par défaut.
 
 ## Droits
@@ -81,8 +81,8 @@ Change les droits d’accès à un fichier
 ## Réseau
 ### **ifconfig**
 Affiche la configuration réseau.
-### **host**
-Affiche le nom de l’hôte
+### **hostname**
+Affiche le nom de l’ordinateur
 ### **wget**
 Télécharge un fichier
 ### **traceroute**

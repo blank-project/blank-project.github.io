@@ -17,12 +17,18 @@ Lister les propriétés de la configuration
 `git config {key}`  
 Obtenir la valeur d’une propriété
 
+### Propriétés utiles
+- *user.name* : le nom d'utilisateur
+- *user.email* : l'email de l'utilisateur
+
+Les deux propriétés précédentes sont nécessaires pour effectuer un commit.
+
+- *core.editor* : définit l'éditeur à utiliser pour les messages de commit notamment.
+
 ## Créer / gérer un repository
 `git status`  
 Affiche le statut du repository local.  
 Voir git status --help pour plus d’infos, en particulier sur l’option -s/--short.
-
-`git history`
 
 `git init`  
 Initialise un nouveau repository à l’emplacement courant.  
@@ -38,6 +44,7 @@ Récupère les données du repository distant.
 Récupère les données du repository distant et les incorpore à l'espace de travail (`git fetch` + `git merge`).
 
 `git push`  
+Envoie les données local sur le repository distant
 
 
 ### Liste d'exclusion
@@ -47,14 +54,16 @@ Les lignes commençant par **#** sont ignorées.
 
 ## Gérer les fichiers
 ### Ajouter des fichiers
-`git add` : Ajoute un fichier à la prochaine transaction à commiter (stage file).
+`git add [files]`  
+Ajoute un ou fichier à la prochaine transaction à commiter (stage file).  
 Note : si un fichier est modifié depuis le dernier appel à git add, ces modifications ne seront pas prise en compte, il faudra appeler git add de nouveau.
+On peut également utiliser l'option `-A` pour ajouter tous les fichiers modifiés.
 
-### Commiter
+### Effectuer un commit
 `git commit [-a] [-m <message>]`  
-Commite les fichiers dans le cache.
-L’option _-m_ permet de spécifier un message. Il est obligatoire.
-Si l’on ne spécifie pas l’option _-m_, un éditeur de texte est lancé. Un message vide annule le commit.
+Commite les fichiers dans le cache.  
+L’option _-m_ permet de spécifier un message. Il est obligatoire.  
+Si l’on ne spécifie pas l’option _-m_, un éditeur de texte est lancé. Un message vide annule le commit.  
 L’option -a permet de commiter directement les fichiers sans passer par le cache.
 
 ### Supprimer des fichiers
