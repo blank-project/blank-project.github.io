@@ -1995,10 +1995,10 @@
 	 */
 	function enterFullscreen() {
 
-		var element = document.documentElement;
+		var element = document.body;
 
 		// Check which implementation is available
-		var requestMethod = element.requestFullscreen ||
+		var requestMethod = element.requestFullScreen ||
 							element.webkitRequestFullscreen ||
 							element.webkitRequestFullScreen ||
 							element.mozRequestFullScreen ||
