@@ -1,34 +1,69 @@
+<!doctype html>
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="lib/reveal/css/reveal.css" type="text/css">
+        <!-- Reveal Theme -->
+        <link rel="stylesheet" href="lib/reveal/css/theme/white.css" type="text/css">
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="style/style.css" type="text/css">
         <link rel="stylesheet" href="reveal/css/reveal.css">
-        <link rel="stylesheet" href="reveal/css/theme/white.css">
         <title>HTML, Qu'est ce que c'est ?</title>
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
-                  HTML, Qu'est ce que c'est ?
+                <section id="slide1">
+                  <h1>Le langage HTML</h1>
                 </section>
-                <section>Slide 2</section>
-                <section>
-                  <section>A Vertical slide !</section>
-                  <section>Vertical Slide 1</section>
-                  <section>Vertical Slide 2</section>
+                <section id="slide2">
+                  <section id="slide2-1">
+                    <h1>HTML, Qu'est ce que c'est ?</h1>
+                    <p>
+                      <acronym title="HyperText Markup Language">HTML</acronym> est le langage qui permet de définir la stucture d'une page web.
+                    </p>
+                    <p>
+                      Il s'éxecute dans un navigateur.
+                      <div id="browsers">
+                        <i title="Chrome" class="fa fa-chrome"></i>
+                        <i title="Firefox" class="fa fa-firefox"></i>
+                        <i title="Internet Explorer" class="fa fa-internet-explorer"></i>
+                        <i title="Safari" class="fa fa-safari"></i>
+                        <i title="Opera" class="fa fa-opera"></i>
+                      </div>
+                    </p>
+                  </section>
+                  <section id="slide2-2">
+                    <h2>HTML, Qu'est ce que c'est ?</h2>
+                    <p>
+                        Le HTML ne définit aucun style,
+                        mais uniquement les informations à afficher, leur sens et leur hiérarchie.
+                    </p>
+                  </section>
+                </section>
+                <section id="slide3">
+                  <section id="slide3-1">
+                    Un peu d'histoire
+                  </section>
+                  <section id="slide3-2">
+                    HTML a été créé en ____ <!-- TODO -->
+                  </section>
+                  <section id="slide3-3">
+                    La version actuelle du langage est HTML5 (la 5e version).
+                  </section>
                 </section>
                 <section data-markdown>
+                  <!-- TODO Find how to handle Markdown -->
                   <script type="text/template">
                     ## A Slide Using Markdown !
 
                     A paragraph with some text and a [link](http://hakim.se).
                   </script>
                 </section>
+
             </div>
         </div>
-        <script src="reveal/js/reveal.js"></script>
-        <script>
-            Reveal.initialize();
-        </script>
+        <script src="lib/reveal/js/reveal.js"></script>
+        <script src="js/reveal-init.js"></script>
     </body>
 </html>
