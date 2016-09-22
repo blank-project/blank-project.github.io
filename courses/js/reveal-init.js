@@ -7,14 +7,14 @@
         { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
         // Interpret Markdown in <section> elements
-        //{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        //{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'lib/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'lib/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           /*
         // Syntax highlight for <code> elements
-        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 
         // Zoom in and out with Alt+click
-        { src: 'plugin/zoom-js/zoom.js', async: true }
+        { src: 'lib/reveal/plugin/zoom-js/zoom.js', async: true }
     */]
   });
 })();
