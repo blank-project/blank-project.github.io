@@ -3,8 +3,9 @@
  TODO
 
 ## Reveal.js
-Slideshows are written in HTML or Markdown and displayed using [reveal.js](http://lab.hakim.se/reveal-js/#/)
-To write a slideshow, copy the [template](courses/template.html)
+Slideshows are written in HTML or Markdown and displayed using [reveal.js](http://lab.hakim.se/reveal-js/#/)  
+To write a slideshow, copy the [template](courses/template.html).  
+To serve slideshows through a local file server, run gulp serve --port <PORT> where PORT is the port used for the server. If omitted, defaults to 8080.
 
 ### Useful features
 - Vertical Slides : Simply put a _section_ in a _section_.
