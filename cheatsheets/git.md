@@ -28,11 +28,11 @@ Les deux propriétés précédentes sont nécessaires pour effectuer un commit.
 
 ## Créer / gérer un répertoire
 * `git status`
-Affiche le statut du répertoire local.
-Voir git status --help pour plus d’infos, en particulier sur l’option -s/--short.
+Affiche le statut du répertoire local.  
+Voir `git status --help` pour plus d’infos, en particulier sur l’option -s/--short.
 
 * `git init`
-Initialise un nouveau répertoire à l’emplacement courant.
+Initialise un nouveau répertoire à l’emplacement courant.  
 Note : les fichiers du dossier peuvent être ajouter ensuite via **add** et **commit**.
 
 * `git clone {url} [{folder_name}]`
@@ -44,8 +44,8 @@ Récupère les données du répertoire distant.
 * `git pull`
 Récupère les données du répertoire distant et les incorpore à l'espace de travail (`git fetch` + `git merge`).
 
-* `git push`
-Envoie les données local sur le répertoire distant
+* `git push {repository} {branch}`
+Envoie les données locales sur le répertoire distant
 
 
 ### Liste d'exclusion
@@ -80,7 +80,7 @@ L’option -a permet de commiter directement tous les fichiers sans passer par l
 ## Comparer
 
 * `git diff [path]` : compare le répertoire de travail avec le cache.
-L’option --cached ou --staged (équivalents) compare le cache avec ce qui est commité.
+L’option _--cached_ ou _--staged_ (équivalents) compare le cache avec ce qui est commité.
 
 ## Gérer des branches
 
@@ -98,6 +98,7 @@ Par défaut nous sommes sur une branche nommée **master**.
 
 ### Fusion de branches
 
-Une fois un travail terminé sur une branch, il peut nous arriver de vouloir fusionner notre travail avec la branche **master** (ou avec un autre...). Pour cela on se position dans la branche de destination, et l'on exécute la commande suivante :
+Une fois un travail terminé sur une branch, il peut nous arriver de vouloir fusionner notre travail avec la branche **master** (ou avec un autre...).  
+Pour cela on se position dans la branche de destination, et l'on exécute la commande suivante :
 
 * `git merge toto` : Fusionne la branche **toto** dans la branche courante.
