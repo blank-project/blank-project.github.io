@@ -1,26 +1,31 @@
 # Guidelines for Contributing to blank courses writing
 
- TODO
-
 ## Reveal.js
 Slideshows are written in HTML or Markdown and displayed using [reveal.js](http://lab.hakim.se/reveal-js/#/)  
-To write a slideshow, copy the [template](courses/template.html).  
-To serve slideshows through a local file server, run gulp serve --port <PORT> where PORT is the port used for the server. If omitted, defaults to 8080.
+To serve slideshows through a local file server, run `gulp serve --port <PORT>`.  
+**PORT** is the port used for the server. If omitted, defaults to `8080`.
 
 ### Useful features
 - Vertical Slides : Simply put a _section_ in a _section_.
 - Fragments : add a _fragment_ class (this implies to write the slide in HTML).
 - Speaker notes : put an _aside_ in the slide to add speaker notes.
+- Code blocks : use triple backquotes to add a code block, highlighted by _highlight.js_.
 
 ## Course naming and directory structure
 
-There is a folder for each class section in the arborescence.
-Each presentation is a index.html file in the subdirectory named after the class number in the section.
+Courses are located in the **courses** folder.  
+There is a folder for each module and lesson section in the arborescence.  
+
+Example :
+> courses / html / lesson1  
+> courses / javascript / lesson2
+
+Each presentation is an index.html file in the subdirectory named after the class number in the module.
 
 The index.html file should be like this :
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -35,7 +40,7 @@ The index.html file should be like this :
             <div class="slides">
                 <section data-markdown="README.md"
                          data-separator="^\n\n\n---\n\n\n"
-                         data-separator-vertical="\n\n-\|-\n\n"
+                         data-separator-vertical="\n\n\*\*\*\n\n"
                          data-separator-notes="^Note:">
                 </section>
             </div>
@@ -47,12 +52,14 @@ The index.html file should be like this :
     </body>
 </html>
 ```
+(Note that separators are Regexp, specials chars must be escaped).  
 
-The README.md file should be divided like this :
+The actual course is written in Markdown, and named README.md (so that it is displayed on GitHub).
+It should be divided like this :
 
 * A slide ends by `\n\n\n---\n\n\n`.
-* A vertical starts by `\n\n-|-\n\n`.
-* Speaker notes starts by : `Notes:`
+* A vertical starts by `\n\n***\n\n`.
+* Speaker notes starts by : `Note:`
 
 Example :
 
@@ -69,7 +76,7 @@ Example :
 
 
 
--|-
+***
 
 
 Vertical slide for second slide
