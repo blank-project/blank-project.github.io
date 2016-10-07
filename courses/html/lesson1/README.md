@@ -23,7 +23,7 @@ Le HTML ne définit aucun style,
 mais uniquement les informations à afficher, leur sens et leur hiérarchie.
 
 
--|-
+***
 
 
 La version actuelle du langage est HTML5 (la 5e version).

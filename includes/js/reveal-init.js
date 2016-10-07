@@ -9,10 +9,10 @@
         // Interpret Markdown in <section> elements
         { src: '/includes/lib/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         { src: '/includes/lib/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          /*
-        // Syntax highlight for <code> elements
-        { src: 'lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 
+        // Syntax highlight for <code> elements
+        { src: '/includes/lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        /*
         // Zoom in and out with Alt+click
         { src: 'lib/reveal/plugin/zoom-js/zoom.js', async: true }
     */]
