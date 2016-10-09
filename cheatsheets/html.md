@@ -26,6 +26,25 @@
 - `<ul>` : Represents an unordered list of items, typically displayed with a bullet
 - `<address>` : Defines the contact information for the author/owner of a document or an article
 
+# Inline Text Semantics
+- `<a>` : Defines a hyperlink to a location on the same page or any other page on the Web
+- `<b>` : Represents a span of text whose typical presentation would be boldfaced
+- `<br>` : Produces a line break in text (carriage-return)
+- `<code>` : Represents a fragment of computer code and displayed in the browser's default monospace font
+- `<em>` : Marks text that has stress emphasis. The `<em>` element can be nested, with each level of nesting indicating a greater degree of emphasis
+- `<i>` : Represents a range of text that is typically displayed in italic type
+- `<s>` : Renders text with a strikethrough, or a line through it
+- `<span>` : A generic inline container for phrasing content It can be used to group elements for styling purposes (using the class or id attributes)
+- `<strong>` : Gives text strong importance, and is typically displayed in bold
+- `<u>` : Renders text with an underline, a line under the baseline of its content
+
+# Table Content
+- `<table>` : Represents tabular data
+- `<caption>` : Represents the title of a table
+- `<td>` : Defines a cell of a table that contains data
+- `<th>` : Defines a cell that is a header for a group of cells of a table
+- `<tr>` : Defines a row of cells in a table. Those can be a mix of `<td>` and `<th>` elements
+
 # Forms
 - `<button>` : Represents a clickable button
 - `<datalist>` : Contains a set of `<option>` elements that represent the values available for other controls
@@ -48,31 +67,12 @@
 - `<track>` : Used as a child of `<audio>` and `<video>` elements. It lets you specify timed text tracks such as subtitles
 - `<video>` : The HTML`<video>`element is used to embed video content
 
-# Inline Text Semantics
-- `<a>` : Defines a hyperlink to a location on the same page or any other page on the Web
-- `<b>` : Represents a span of text whose typical presentation would be boldfaced
-- `<br>` : Produces a line break in text (carriage-return)
-- `<code>` : Represents a fragment of computer code and displayed in the browser's default monospace font
-- `<em>` : Marks text that has stress emphasis. The `<em>` element can be nested, with each level of nesting indicating a greater degree of emphasis
-- `<i>` : Represents a range of text that is typically displayed in italic type
-- `<s>` : Renders text with a strikethrough, or a line through it
-- `<span>` : A generic inline container for phrasing content It can be used to group elements for styling purposes (using the class or id attributes)
-- `<strong>` : Gives text strong importance, and is typically displayed in bold
-- `<u>` : Renders text with an underline, a line under the baseline of its content
-
 # Embedded Content
 - `<embed>` : Represents an integration point for an external application or interactive content
 - `<iframe>` : Represents a nested browsing context, effectively embedding another HTML page into the current page
 - `<object>` : Represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin
 - `<param>` : Defines parameters for `<object>`
 - `<source>` : An empty element used to specify multiple media resources for `<picture>`, `<audio>` and `<video>` elements
-
-# Table Content
-- `<table>` : Represents tabular data
-- `<caption>` : Represents the title of a table
-- `<td>` : Defines a cell of a table that contains data
-- `<th>` : Defines a cell that is a header for a group of cells of a table
-- `<tr>` : Defines a row of cells in a table. Those can be a mix of `<td>` and `<th>` elements
 
 # Scripting
 - `<canvas>` : Used to draw graphics, photo compositions or animations via scripting, typically written in JavaScript
