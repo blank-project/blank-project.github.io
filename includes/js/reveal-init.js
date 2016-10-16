@@ -12,9 +12,15 @@
 
         // Syntax highlight for <code> elements
         { src: '/includes/lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        /*
+
         // Zoom in and out with Alt+click
-        { src: 'lib/reveal/plugin/zoom-js/zoom.js', async: true }
-    */]
+        { src: '/includes/lib/reveal/plugin/zoom-js/zoom.js', async: true },
+
+        //notes
+        { src: '/includes/lib/reveal/plugin/notes/notes.js', async: true },
+
+        //pdf
+        { src: '/includes/lib/reveal/plugin/print-pdf/print-pdf.js', async: true}
+    ]
   });
 })();
