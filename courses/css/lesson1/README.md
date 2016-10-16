@@ -1,4 +1,4 @@
-# CSS, Qu'est ce que c'est ?
+# CSS
 
 
 
@@ -6,7 +6,8 @@
 
 
 
-<acronym title="Cascading StyleSheet">CSS</acronym> est le langage qui permet de définir le style d'une page web.
+<acronym title="Cascading Style Sheet">CSS</acronym> est le langage qui permet de définir le style d'une page web.
+
 Le CSS sert uniquement à définir le style d'une page rédigée en HTML.
 
 
