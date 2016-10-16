@@ -1,15 +1,4 @@
-# HTML, Qu'est ce que c'est ?
-
-<acronym title="HyperText Markup Language">HTML</acronym> est le langage qui permet de définir la stucture d'une page web.
-
-Il s'éxecute dans un navigateur.
-<div id="browsers">
-    <i title="Chrome" class="fragment fa fa-chrome"></i>
-    <i title="Firefox" class="fragment fa fa-firefox"></i>
-    <i title="Internet Explorer" class="fragment fa fa-internet-explorer"></i>
-    <i title="Safari" class="fragment fa fa-safari"></i>
-    <i title="Opera" class="fragment fa fa-opera"></i>
-</div>
+# HTML
 
 
 
@@ -17,14 +6,23 @@ Il s'éxecute dans un navigateur.
 
 
 
-## HTML, Qu'est ce que c'est ?
+<acronym title="HyperText Markup Language">HTML</acronym> est le langage qui permet de définir la stucture d'une page web.
 
-Le HTML ne définit aucun style,
-mais uniquement les informations à afficher, leur sens et leur hiérarchie.
+Il s'éxecute dans un navigateur.
+
+<div id="browsers" class="fragment">
+    <i title="Chrome" class="fa fa-chrome"></i>
+    <i title="Firefox" class="fa fa-firefox"></i>
+    <i title="Internet Explorer" class="fa fa-internet-explorer"></i>
+    <i title="Safari" class="fa fa-safari"></i>
+    <i title="Opera" class="fa fa-opera"></i>
+</div>
 
 
 ***
 
+
+Le HTML ne définit aucun style, mais uniquement les informations à afficher, leur sens et leur hiérarchie.
 
 La version actuelle du langage est HTML5 (la 5e version).
 
@@ -34,16 +32,38 @@ La version actuelle du langage est HTML5 (la 5e version).
 
 
 
-# A quoi ça ressemble ?
-C'est un langage utilisant des balises que l'on ouvre et ferme.
+## A quoi ça ressemble ?
 
-     <p>
-       Un <strong>paragraphe</strong> d'<em>exemple</em><br />
-       avec un <a href="#">lien</a>
-     </p>
+C'est un langage utilisant des **balises** que l'on ouvre et ferme.
 
+```
+<p>
+ Un <strong>paragraphe</strong> d'<em>exemple</em><br />
+ avec un <a href="#">lien</a>
+</p>
+```
 Devient :
 <p>
   Un <strong>paragraphe</strong> d'<em>exemple</em><br />
   avec un <a href="#">lien</a>
 </p>
+
+
+***
+
+
+Les **balises** HTML s'écrivent de la facon suivante :
+```
+<balise> CONTENU </balise>
+```
+Le contenu peut être du texte ou d'autres balises.
+
+Certaines balises sans contenu peuvent s'écrire sous une forme raccourcie :
+```
+<balise />
+```
+
+Les balises HTML peuvent avoir des **attributs** :
+```
+<balise attribut1="valeur1"></balise>
+```
