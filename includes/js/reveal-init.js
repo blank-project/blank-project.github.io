@@ -11,7 +11,16 @@
         { src: '/includes/lib/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
         // Syntax highlight for <code> elements
-        { src: '/includes/lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        {
+          src: '/includes/lib/reveal/plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.configure({
+              languages : ['html', 'xml', 'css', 'json', 'javascript', 'php', 'sql']
+            });
+            hljs.initHighlightingOnLoad();
+          }
+        },
 
         // Zoom in and out with Alt+click
         { src: '/includes/lib/reveal/plugin/zoom-js/zoom.js', async: true },
