@@ -1,0 +1,6 @@
+/* Example Style Sheet */
+
+p#example1 {
+  color : red;
+  font-weight : bold;
+}
