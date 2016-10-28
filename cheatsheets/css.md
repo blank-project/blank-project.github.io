@@ -1,65 +1,62 @@
 # Cheat Sheet CSS
 
-## General Syntax
-- `selector {property: value;}` : Basic syntax of css declaration block
-- `selector:pseudo-class {property: value;}` : Class selector selects and styles all elements having state defined by 'pseudo-class'
-- `.class{}` : Class selector selects and styles all elements with class="class"
-- `#id{}` : ID selector styles the element with id="id"
+## Syntaxe générale
+- `selector { property: value; [ property: value; ...] }` : Syntaxe de base d'un bloc CSS.
 
-## Inserting Stylesheet
-- `<link rel="stylesheet" type="text/css" href="style.css" />` :	External stylesheet
-- `<style type="text/css">selector {property: value;}</style>` :	Internal style
-- `<tag style="property: value">` : Inline style
-- `@import url("style.css");` : Import CSS
-- `@import url("style.css") list-of-media-queries;` : Import CSS and apply only to the corresponding media type
+## Insérer des feuilles de style
+- `<link rel="stylesheet" type="text/css" href="style.css" />` :	Feuille de style externe
+- `<style type="text/css">selector {property: value;}</style>` :	Style interne
+- `<tag style="property: value">` : Style en-ligne
+- `@import url("style.css");` : Import CSS (dans une feuille de style).
+- `@import url("style.css") list-of-media-queries;` : Import CSS pour une ou plusieurs Media Query.
 
-## General Properties
-- `color` : Changes foreground color
-- `cursor` : Specifies appearance of the cursor
-- `display` : Specifies the type of box used for an HTML element
-- `overflow` : Specifies how content overflowing its box is handled
-- `visibility` : Specifies whether or not an element is visible
+## Propriétés générales
+- `color` : Change la couleur de police
+- `cursor` : Change l'apparence du curseur
+- `display` : Change le mode d'affichage d'un élément
+- `overflow` : Spécifie comment le contenu qui dépasse s'affiche
 
-## Font Properties
-- `font-style` : Specifies the font style for a text
-- `font-variant` : Specifies whether or not a text should be displayed in a small-caps font
-- `font-weight` : Sets how thick or thin characters in text should be displayed
-- `font-size` : Sets the size of a font
-- `font-family` : Specific font(s) to be used
+## Propriétés de police
+- `font-style` : Spécifie le style de police (italique, ...)
+- `font-weight` : Spécifie l'épaisseur des caractères (gras, ...)
+- `font-size` : Spécifie la taille de police
+- `font-family` : Spécifies les polices à utiliser
 
 ## Text Properties
-- `letter-spacing` : Increases or decreases the space between characters in a text
 - `line-height` : Specifies the line height
 - `text-align` : Specifies the horizontal alignment of text in an element
 - `text-decoration` : Specifies the decoration added to text
 - `text-indent` : Specifies the indentation of the first line in a text-block
 - `text-transform` : Controls the capitalization of text
 - `vertical-align` : Sets the vertical alignment of an element
-- `word-spacing` : Increases or decreases the white space between words
-- `direction` : Changes the text direction of an element
 
-## Box-Model Properties
-- `height` : Sets the height of an element
-- `width` : Sets the width of an element
-- `margin` : Defines the space around elements
-- `padding` : Defines the space between the element border and the element content
+## Propriétés du Modèle de Boîte
+- `height` : Définit la hauteur d'un élement
+- `width` : Définit la largeur d'un élement
+- `margin` : Définit l'espacement entre les élements
+- `padding` : Définit l'espacement entre la bordure et le contenu
 
-## Position Properties
-- `clear` : Specifies on which sides of an element where floating elements are not allowed to float
-- `float` : Specifies whether or not an element should float
-- `left` : The left position of an element
-- `top` : The top position of an element
-- `position` : Specifies the type of positioning method used for an element
-- `z-index` : Specifies the stack order of an element
+## Propriétés de Position
+- `position` : Spécifie le type de positionnement d'un élément
+- `left` : La position à gauche d'un élément
+- `top` : La position en haut d'un élément
+- `bottom` : La position en bas d'un élément
+- `right` : La position à droite d'un élément
+- `z-index` : Pour les élements qui se chevauchent, spécifie dans quel ordre
+- `float` : Indique si un élement doit "flotter", et de quel coté
+- `clear` : Annule le _float_
 
-## Background Properties
+## Propriétés d'Arrière-Plan
 - `background-color` : Specifies the background color of an element
 - `background-image` : Specifies an image to use as the background of an element
 - `background-repeat` : Specify how image should be repeated (x or y axis)
 - `background-attachment` : Sets whether a background image is fixed or scrolls with the rest of the page
 - `background-position` : Sets the starting position of a background image.
 
-## List Properties
+## Propriétés de Liste
 - `list-style-type` : Specifies the type of list-item marker in a list
 - `list-style-position` : Specifies if the list-item markers should appear inside or outside the content flow
 - `list-style-image` : Replaces the list-item marker with an image
+
+## Media Queries
+TODO
