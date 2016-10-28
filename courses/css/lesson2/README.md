@@ -1,4 +1,4 @@
-# Les Sélecteurs et les Propriétés CSS
+# Les Sélecteurs CSS
 
 
 
@@ -96,7 +96,7 @@ Il sert à sélectionner l'élement avec un certain _id_
 - `[attribute]` : Sélectionne les éléments qui ont un attribut _attribute_
 - `[attribute=value]` : Sélectionne les éléments qui ont un _attribut_ avec une valeur spécifique (_value_)
 
-Il y a d'autres manières très puissantes d'utiliser les sélecteurs d'attributs.
+Il y a d'autres manières très puissantes d'utiliser les sélecteurs d'attributs (`~=`, `|=`, `^=`, `$=`, `*=`).
 
 
 
@@ -147,7 +147,7 @@ Ce sélecteur va sélectionner :
 
 On peut sélectionner les descendants d'un élement.
 
-Pour cela on sépare les selecteurs par un espace (` `).
+Pour cela on sépare les sélecteurs par un espace (` `).
 
 ```
   a.img-link img
@@ -162,9 +162,9 @@ Ce sélecteur va sélectionner
 
 ## Et d'autres plus compliqués
 
-- _selector1_ > _selector2_
-- _selector1_ + _selector2_
-- _selector1_ & _selector2_
+- _selector1_ > _selector2_ : sélectionne les enfants.
+- _selector1_ + _selector2_ : sélectionne les élements suivants (immédiatement).
+- _selector1_ ~ _selector2_ : sélectionne les éleménts précédents
 
 
 ***
