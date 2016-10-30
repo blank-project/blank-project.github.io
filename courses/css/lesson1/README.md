@@ -78,7 +78,7 @@ Exemple :
 ***
 
 
-Pour ajouter du css à une page HTML il y a plusieurs possibilités :
+Pour ajouter du CSS à une page HTML il y a plusieurs possibilités :
 
 - En liant une feuille de style à la page HTML
 - Via un attribut **style** sur l’élément concerné
@@ -103,6 +103,8 @@ C'est la méthode la plus répandue pour ajouter du CSS.
 
 On peut lier autant de feuilles de style que l'on veut !
 
+Le navigateur ajoute automatiquement sa feuille de style, mais on peut écraser les valeurs qui y sont définies.
+
 
 ***
 
@@ -123,7 +125,8 @@ On s'en sert en général pour modifier le CSS d'un élément au cas par cas.
 ***
 
 
-# La balise `style`
+## La balise `style`
+
 En utilisant la balise style :
 ```
 <style>
@@ -132,3 +135,17 @@ En utilisant la balise style :
 ```
 
 C'est la méthode la moins répandue.
+
+
+
+---
+
+
+
+# Les propriétés CSS
+
+
+***
+
+
+TODO
