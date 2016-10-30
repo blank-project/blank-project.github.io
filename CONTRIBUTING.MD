@@ -24,7 +24,8 @@ Each presentation is an index.html file in the subdirectory named after the clas
 
 The index.html file should be like this :
 
-```html
+```
+html
 <!DOCTYPE html>
 <html>
     <head>
@@ -92,3 +93,17 @@ Ends second slide
 
 Note: Speaker notes
 ```
+
+# Course writing instructions
+
+- Attribute names should be disaplyed in **bold** : `**attribute**`
+- Attribute values should be displayed in _italic_ : `_value_`
+- Inline code should be displayed using single backticks : \``inline code`\`
+- Code blocks should be displayed using triple backticks :
+
+\`\`\`
+```
+code block
+```  
+\`\`\`  
+(Note that code blocks are highlighted)
