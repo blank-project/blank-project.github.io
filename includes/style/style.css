@@ -1,0 +1,11 @@
+.reveal .backgrounds {
+    background-color:#E8EEF2;
+    background-image: url(/includes/logo.png);
+    background-position: 1em 1em;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+.reveal h1, .reveal h2 {
+    text-transform:initial;
+}

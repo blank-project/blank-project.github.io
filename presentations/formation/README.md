@@ -68,9 +68,9 @@
 
 
 <div class="mr-robot">
-    <div class="evilcorp">
-        <div class="fsociety-mask"></div>
-    </div>
+    <!-- <div class="evilcorp"> -->
+    <!--     <div class="fsociety-mask"></div> -->
+    <!-- </div> -->
      <div class="elliot">
          <div class="fsociety"></div>
      </div>
@@ -91,9 +91,14 @@
 
 
 #PHP & Base de données
-Même si on aurait bien voulu vous trouver des examples, ils ne vous auraient pas autant parlé que ces tois précédents.
-Il faut juste prendre en considération que c'est ce qui rend les sites dynamiques au niveau du contenu (exemple : Blog, Facebook, Twitter, etc.)
 
+<div id="phpsites" class="fragment">
+    <i title="Facebook" class="fa fa-facebook"></i>
+    <i title="Tumblr" class="fa fa-tumblr"></i>
+    <i title="Wikipedia" class="fa fa-wikipedia-w"></i>
+</div>
+
+Vous avez compris le principe ! <!-- .element class="fragment" -->
 
 
 
@@ -108,7 +113,7 @@ Il faut juste prendre en considération que c'est ce qui rend les sites dynamiqu
 
 
 ##Adresse :
-??
+38 Rue des Amandiers, 75020 Paris
 
 
 ***
@@ -116,14 +121,12 @@ Il faut juste prendre en considération que c'est ce qui rend les sites dynamiqu
 ##Horaires des cours
 
 * Lundi & Mardi :
-  * 13h00 - 15h30
-  * 16h00 - 18h30
+  * 13h30 - 18h30
   * 19h30 - 21h30
 
 * Vendredi :
-  * 10h00 - 12h30
-  * 13h30 16h00
-  * 16h30, 19h00
+  * 10h00 - 17h30
+  * 18h00 - 20h00
 
 
 ***
