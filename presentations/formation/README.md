@@ -23,14 +23,6 @@
 * Albin <!-- .element: class="fragment" -->
 
 
-***
-
-
-
-##Présentez vous !
-(si vous le voulez, pas d'obligation)
-
-
 
 ---
 
@@ -48,7 +40,7 @@
 * Contenu : HTML <!-- .element: class="fragment" -->
 * Style : CSS <!-- .element: class="fragment" -->
 * Animation & dynamisme : Javascript <!-- .element: class="fragment" -->
-* Créationd e sites dynamiques : PHP, Base de données <!-- .element: class="fragment" -->
+* Création de sites dynamiques : PHP, Base de données <!-- .element: class="fragment" -->
 
 
 ***
@@ -106,6 +98,20 @@ Vous avez compris le principe ! <!-- .element class="fragment" -->
 
 
 
+#Est-ce qu'on aura des projets ?
+
+2 phases de projet<!-- .element class="fragment" -->
+
+
+Un projet encadré<!-- .element class="fragment" -->
+
+Un projet d'immersion en entreprise ou association<!-- .element class="fragment" -->
+
+
+***
+
+
+
 #Informations pratiques
 
 
@@ -118,6 +124,7 @@ Vous avez compris le principe ! <!-- .element class="fragment" -->
 
 ***
 
+
 ##Horaires des cours
 
 * Lundi & Mardi :
@@ -126,10 +133,19 @@ Vous avez compris le principe ! <!-- .element class="fragment" -->
 
 * Vendredi :
   * 10h00 - 17h30
-  * 18h00 - 20h00
+  * 18h00 - 20h00 (conférence)
 
 
 ***
+
+
+#Et les conférences ça sera sur quoi ?
+Des sujets d'ouverture comme :
+Le web design (UX/UI), Développement de jeux vidéos, Montage vidéo, Droit numérique, Éducation aux médias numériques, Développement logiciel, etc.
+
+
+***
+
 
 #Qui vous formera ?
 Un roulement de formateurs prendra en charge les cours :
