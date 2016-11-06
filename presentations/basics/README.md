@@ -109,6 +109,33 @@ Par exemple, vous avez un dossier pour l'utilisateur que vous venez de créer. I
 
 
 #C'était quoi ça ?
+C'est ce que l'on appelle un chemin d'accès. Les dossiers sont séparés par des `/` (ou `\` selon les spécifications de l'OS).
+
+Il y a deux types de chemins d'accès (ou `path` en anglais). Les chemins relatifs ou absolus.
+
+
+***
+
+
+#Chemin d'accès absolu
+C'est un chemin d'accès qui est complet. Il part de la racine et spécifie tout les dossiers. Il commence par un `/`. Exemple : Actuellement vous êtes dans : `/home/prenom_nomdefamille`.
+
+
+***
+
+
+#Chemin d'accès relatif
+C'est un chemin d'accès qui est relatif au dossier courant. Il ne commence pas pas un `/`.
+Nous en verrons des exemples plus tard.
+
+
+***
+
+
+#Parcourir un chemin d'accès
+Quelques techniques peuvent être utiles pour un chemin d'accès :
+* `.` correspond au dossier courant
+* `..` correspond au dossier parent
 
 
 ***
@@ -118,7 +145,6 @@ Par exemple, vous avez un dossier pour l'utilisateur que vous venez de créer. I
 Voyez le tout comme un arbre. Les fichiers étant les feuilles et les noeds des branches comme des dossiers, puis les branches comme des liens :
 
 ![file_tree](file_tree.gif) <!-- .element: class="fragment" -->
-
 
 
 
