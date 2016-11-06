@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>git.html</title>
+
+</head>
+
+<body>
+
+<h1>Cheat Sheet Git</h1>
+
+<h2> Obtenir de l'aide</h2>
+
+<p>Obtenir de l’aide sur la commande <em>verb</em></p>
+
+<ul>
+<li><code>git help verb</code></li>
+<li><code>git verb --help</code></li>
+<li><code>man git-verb</code></li>
+</ul>
+
+
+<h2>Configuration</h2>
+
+<p><code>git config [--global] {key} “{value}”</code>
+Écrire une propriété <em>key</em> avec pour valeur <em>value</em> dans la configuration du repository courant.
+Si l'option <em>&ndash;global</em> est présente, la propriété est valide est écrite la configuration globale.</p>
+
+<p><code>git config --list</code>
+Lister les propriétés de la configuration</p>
+
+<p><code>git config {key}</code>
+Obtenir la valeur d’une propriété</p>
+
+<h3>Propriétés utiles</h3>
+
+<ul>
+<li><em>user.name</em> : le nom d'utilisateur</li>
+<li><em>user.email</em> : l'email de l'utilisateur</li>
+</ul>
+
+
+<p>Les deux propriétés précédentes sont nécessaires pour effectuer un commit.</p>
+
+<ul>
+<li><em>core.editor</em> : définit l'éditeur à utiliser pour les messages de commit notamment.</li>
+</ul>
+
+
+<h2> Créer / gérer un répertoire</h2>
+
+<ul>
+<li><p><code>git status</code>
+Affiche le statut du répertoire local.
+Voir git status &ndash;help pour plus d’infos, en particulier sur l’option -s/&ndash;short.</p></li>
+<li><p><code>git init</code>
+Initialise un nouveau répertoire à l’emplacement courant.
+Note : les fichiers du dossier peuvent être ajouter ensuite via <strong>add</strong> et <strong>commit</strong>.</p></li>
+<li><p><code>git clone {url} [{folder_name}]</code>
+Importe le répertoire à l’adresse <em>url</em> dans le dossier <em>folder_name</em>.</p></li>
+<li><p><code>git fetch</code>
+Récupère les données du répertoire distant.</p></li>
+<li><p><code>git pull</code>
+Récupère les données du répertoire distant et les incorpore à l'espace de travail (<code>git fetch</code> + <code>git merge</code>).</p></li>
+<li><p><code>git push</code>
+Envoie les données local sur le répertoire distant</p></li>
+</ul>
+
+
+<h3> Liste d'exclusion</h3>
+
+<p>Les fichiers <em>.gitignore</em> contiennent les listes d’exclusion.
+Ce sont de fichiers qui seront systématiquement ignorés par Git.
+Les lignes commençant par <strong>#</strong> sont ignorées.</p>
+
+<h2> Gérer les fichiers</h2>
+
+<h3> Ajouter des fichiers</h3>
+
+<ul>
+<li><code>git add [files]</code>
+Ajoute un ou fichier à la prochaine transaction à commiter (stage file).
+Note : si un fichier est modifié depuis le dernier appel à git add, ces modifications ne seront pas prise en compte, il faudra appeler git add de nouveau.
+On peut également utiliser l'option <code>-A</code> pour ajouter tous les fichiers modifiés.</li>
+</ul>
+
+
+<h3> Effectuer un commit</h3>
+
+<ul>
+<li><code>git commit [-a] [-m &lt;message&gt;]</code>
+Commite les fichiers dans le cache.
+L’option <em>-m</em> permet de spécifier un message. Il est obligatoire.
+Si l’on ne spécifie pas l’option <em>-m</em>, un éditeur de texte est lancé. Un message vide annule le commit.
+L’option -a permet de commiter directement tous les fichiers sans passer par le cache.</li>
+</ul>
+
+
+<h3> Supprimer des fichiers</h3>
+
+<ul>
+<li><code>git rm [-f] [--cached]</code> : supprime un fichier.</li>
+</ul>
+
+
+<h3>Sauvegarder temporairement les fichiers</h3>
+
+<ul>
+<li><p><code>git stash</code> : Sauvegarde les changements dans une pile à côté. Laisse la copie en local propre.</p></li>
+<li><p><code>git stash apply</code> : Applique le dernier changement sauvegardé temporairement dans la pile, mais ne le supprime pas.</p></li>
+<li><p><code>git stash pop</code>: Applique le dernier changement sauvegardé temporairement dans la pile et le supprime.</p></li>
+</ul>
+
+
+<h2> Comparer</h2>
+
+<ul>
+<li><code>git diff [path]</code> : compare le répertoire de travail avec le cache.
+L’option &ndash;cached ou &ndash;staged (équivalents) compare le cache avec ce qui est commité.</li>
+</ul>
+
+
+<h2> Gérer des branches</h2>
+
+<p>Par défaut nous sommes sur une branche nommée <strong>master</strong>.</p>
+
+<h3>Créer une branche</h3>
+
+<ul>
+<li><p><code>git branch toto</code> : Créé une branche nommée <strong>toto</strong>.</p></li>
+<li><p><code>git checkout toto</code> : Bascule sur la branche nommée <strong>toto</strong>. Peut-être utilisée avec l'option <code>-b</code> qui créé la branche, puis bascule dessus.</p></li>
+</ul>
+
+
+<h3>Supprimer une branche</h3>
+
+<ul>
+<li><code>git branch -d toto</code> : Supprime la branche toto</li>
+</ul>
+
+
+<h3>Fusion de branches</h3>
+
+<p>Une fois un travail terminé sur une branch, il peut nous arriver de vouloir fusionner notre travail avec la branche <strong>master</strong> (ou avec un autre&hellip;). Pour cela on se position dans la branche de destination, et l'on exécute la commande suivante :</p>
+
+<ul>
+<li><code>git merge toto</code> : Fusionne la branche <strong>toto</strong> dans la branche courante.</li>
+</ul>
+
+
+</body>
+</html>

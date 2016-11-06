@@ -45,7 +45,7 @@
 ##Et le reste ?
 ![suspicious](suspicious.jpg) <!-- .element: class="fragment" -->
 
-Nous avons pré-installé des programmes qui vons nous permettre de mener à bien nos cours. Nous en verrons un cette après-midi : Git.
+Nous avons installé des programmes qui vons nous permettre de mener à bien nos cours.<!-- .element: class="fragment" -->
 
 
 
@@ -55,6 +55,19 @@ Nous avons pré-installé des programmes qui vons nous permettre de mener à bie
 
 #Bon et sinon on commence quand ?
 ![soon](soon.jpg) <!-- .element: class="fragment" -->
+
+
+
+---
+
+
+
+#Créez votre utilisateur !
+prenom_nomdefamille et mettez un mot de passe qui va bien.
+
+Ouvrez la session de votre nouvel utilisateur !
+
+Note: Recherche compte utilisateurs, Dévérouiller (en haut à droite), Ajouter un compte, Type de compte : administrateur, Activer le compte (compte désactivé), entrer le mot de passe (au moins des chiffres et des lettres). Et VOILÀ
 
 
 
@@ -88,6 +101,14 @@ Exemples :
 ##Les dossiers ?
 
 Ce sont des conteneurs, ils nous permettent de ranger nos fichiers pour organiser le tout !
+
+Par exemple, vous avez un dossier pour l'utilisateur que vous venez de créer. Il se trouve ici : `/home/prenom_nomdefamille/`
+
+
+***
+
+
+#C'était quoi ça ?
 
 
 ***

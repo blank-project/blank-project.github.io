@@ -34,12 +34,12 @@
 ***
 
 
-#Contenu de la formation :
+#Contenu de la formation
 ###Apprentissage de la programmation web <!-- .element: class="fragment" -->
 
-* Contenu : HTML <!-- .element: class="fragment" -->
+* Contenu & structure : HTML <!-- .element: class="fragment" -->
 * Style : CSS <!-- .element: class="fragment" -->
-* Animation & dynamisme : Javascript <!-- .element: class="fragment" -->
+* Animations & manipulation de la structure : Javascript <!-- .element: class="fragment" -->
 * Création de sites dynamiques : PHP, Base de données <!-- .element: class="fragment" -->
 
 
