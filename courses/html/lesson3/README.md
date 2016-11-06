@@ -9,7 +9,7 @@
 Les attributs HTML s'écrivent en général de la manière suivante :
 
 ```
-<balise attribut1="valeur1" attribut2="valeur">Contenu</balise>
+<balise attribut1="valeur1" attribut2="valeur2">Contenu</balise>
 ```
 Il existe une forme courte pour certains attributs :
 ```

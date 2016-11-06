@@ -32,7 +32,7 @@ La version actuelle du langage est CSS3.
 
 
 C'est un langage utilisant des blocs servant à appliquer un style à un élement ou plusieurs éléments HTML.
-```
+```css
 elements {
   propriete1 : valeur1;
   propriete2 : valeur2;

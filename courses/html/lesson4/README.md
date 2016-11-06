@@ -23,6 +23,8 @@ La balise audio permet de jouer des sons dans une page HTML.
     Votre navigateur ne supporte pas l'audio.
 </audio>
 
+Note: Préciser le fonctionnement de la balise source.
+
 
 ***
 
