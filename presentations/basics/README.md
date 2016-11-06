@@ -175,3 +175,13 @@ Et puis entre nous, c'est beaucoup plus simple travailler quand tout est bien ra
 
 
 #Et voilà !
+
+
+
+---
+
+
+
+#PS : Si vous voulez aller plus vite
+
+Voici une [cheat sheet des raccourcis clavier](https://github.com/blank-project/_blank/blob/master/cheatsheets/keyboard-shortcuts.md)

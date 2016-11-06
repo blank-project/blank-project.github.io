@@ -3,10 +3,11 @@
 Une page HTML a la structure suivante
 
 ```
-<!DOCTYPE html> (sert à indiquer que l'on utilise HTML 5)
-<html> (balise racine présente dans chaque page web)
-	<head> (les méta-données de la page)
-		<title>Le titre de la page ici</title> (le titre de la page)
+<!-- Ceci est un commentaire ! -->
+<!DOCTYPE html> <!-- sert à indiquer que l'on utilise HTML 5 -->
+<html> <!-- balise racine présente dans chaque page web -->
+	<head> <!-- les méta-données de la page -->
+		<title>Le titre de la page ici</title> <!-- le titre de la page -->
   </head>
   <body>
   	Tout ce qui s'affiche dans le navigateur va ici !
@@ -31,7 +32,7 @@ Une page HTML a la structure suivante
 
 ## Les paragraphes
 
-La balise **p** sert à définir un paragraphe.  
+La balise **p** sert à définir un paragraphe.
 Elle est bordée par des espaces en haut en en bas, et peut contenir du texte et d'autres élements.
 
 ```
@@ -49,7 +50,7 @@ Elle est bordée par des espaces en haut en en bas, et peut contenir du texte et
 
 ## Les titres
 
-Les balise **h1** à **h6** servent à définir des titres.  
+Les balise **h1** à **h6** servent à définir des titres.
 **h1** est le plus grand et **h6** le plus petit.
 
 <h1>Titre 1</h1>
@@ -185,3 +186,22 @@ Il existe également d'autres types de listes.
 # Et pleins d'autres !
 
 **q**, **i**, **b**, **em**, **strong**, **abbr** ...
+
+
+
+---
+
+
+
+# Et sinon pour commenter votre code
+
+`<!--` votre commentaire `-->`
+
+
+
+---
+
+
+
+#Voilà !
+La cheatsheet HTML est ici : [cheat sheet HTML](https://github.com/blank-project/_blank/blob/master/cheatsheets/html.md)

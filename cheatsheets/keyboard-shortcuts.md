@@ -1,7 +1,7 @@
 # Cheat Sheet Raccourcis clavier
 
-Les raccourcis clavier permettent d'executer des actions sans utiliser la souris.  
-Grâce à eux, il est possible d'être plus efficace.  
+Les raccourcis clavier permettent d'executer des actions sans utiliser la souris.
+Grâce à eux, il est possible d'être plus efficace.
 Ils utilisent en général les touches suivantes :
 - `Ctrl`
 - `Maj` (ou `Shift` ou `⇧`)
@@ -42,6 +42,7 @@ Globalement, maintenir `Maj` enfoncé permet de faire une sélection.
 - `Ctrl + Alt + ↑/↓/←/→` : changer d'espace de travail.
  - Mainenir `Maj` pour changer la fenêtre courante d'espace de travail.
 - `Alt + F2` : recherche et lance une application
+- Maintenir la touche `Windows` pour avoir de l'aide
 
 ## Autres
 A vous de suggérer vos raccourcis clavier préférés !
