@@ -105,10 +105,7 @@ L'attribut _alt_ permet de définir un texte alternatif, qui s'affiche notamment
 # Les listes
 
 
-
-
----
-
+***
 
 
 
@@ -146,7 +143,7 @@ Il existe également d'autres types de listes.
 ><ol>
   <li>Element 1</li>
   <li>Element 2</li>
-  <li>Element  3</li>
+  <li>Element 3</li>
 </ol>
 
 
@@ -195,7 +192,9 @@ Il existe également d'autres types de listes.
 
 # Et sinon pour commenter votre code
 
-`<!--` votre commentaire `-->`
+```html
+<!-- votre commentaire -->
+```
 
 
 
@@ -205,3 +204,5 @@ Il existe également d'autres types de listes.
 
 #Voilà !
 La cheatsheet HTML est ici : [cheat sheet HTML](https://github.com/blank-project/_blank/blob/master/cheatsheets/html.md)
+
+L'heure des [exercices](https://github.com/blank-project/_blank-exercises/blob/master/exercises/html/lesson2/)

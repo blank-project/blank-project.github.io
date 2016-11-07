@@ -20,9 +20,13 @@ Il existe une forme courte pour certains attributs :
 ***
 
 
-- Tous les élements HTML peuvent avoir des attibuts.  
-- Ils servent à fournir des informations additionelles sur la balise.  
-- On écrit toujours les attributs dans la balise ouvrante.
+##Quelques informations et bonnes pratiques
+
+
+- Tous les élements HTML peuvent avoir des attibuts.
+- Ils servent à fournir des informations additionelles sur la balise.
+- On écrit toujours les attributs dans la balise ouvrante et en minuscule
+- La valeur des attributs entourée de guillemets `"` (simple ou doubles) que l'on nomme `quote`
 
 
 
@@ -30,20 +34,44 @@ Il existe une forme courte pour certains attributs :
 
 
 
-## href
+## Liens
 
-L'attribut **href** sert à définir la cible d'un lien HTML (**a**).
+
+***
+
+
+##href
+
+L'attribut **href** sert principalement à définir la cible d'un lien HTML (**a**).
 
 ```
 <a href="http://www.google.com">Un lien vers Google</a>
 ```
 
 
+***
+
+
+##target
+
+L'attribut **target** sert à spécifier où ouvrir le lien.
+```
+<a href="http://www.google.com" target="_blank" >Un lien vers Google</a>
+```
+Valeurs possibles :
+* `_self` Ouvre le lien dans la fenêtre courante
+* `_blank` Ouvre le lien dans une nouvelle fenêtre
+
+
+_d'autres que nous verrons en temps voulu !_
+
+
 
 ---
 
 
 
+## Images / media
 ## src
 
 L'attribut **src** sert à définir l'emplacement d'une image ou d'un média (audio/vidéo).
@@ -52,6 +80,14 @@ L'attribut **src** sert à définir l'emplacement d'une image ou d'un média (au
 <img src="/img/mon_image.jpeg" />
 ```
 Si l'image n'est pas trouvée, on peut utiliser l'attribut **alt** pour afficher un texte à la place.
+
+
+***
+
+
+#Attributs uniques aux images
+Pour spécifier la taille de votre image, vous pouvez utiliser les attributs HTML `width` (largeur) et `height` hauteur. La valeur que vous leur donnez sera en pixel uniquement (avant HTML5 vous pouviez aussi la spécifier en `%`)
+Note: Mais les spécifications HTML5 étant de maximiser la compatibilité cross-browsers, il a falu faire un choix !)
 
 
 
@@ -103,7 +139,7 @@ Cet attribut sera utilisé pour identifier des groupes d'élements en CSS ou en 
 
 ## id
 
-L'attribut **id** sert à identifier un élément spécifique.  
+L'attribut **id** sert à identifier un élément spécifique.
 
 ```
 <p id="paragraphe1234">
@@ -114,3 +150,12 @@ L'attribut **id** sert à identifier un élément spécifique.
 Cet attribut sera utilisé pour identifier des élements en CSS ou en JavaScript.
 
 L'id d'un élément doit être unique sur la page.
+
+
+
+---
+
+
+
+#Olé !
+![ole](ole.gif)
