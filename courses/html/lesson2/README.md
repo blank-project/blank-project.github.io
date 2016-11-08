@@ -7,10 +7,11 @@ Une page HTML a la structure suivante
 <!DOCTYPE html> <!-- sert à indiquer que l'on utilise HTML 5 -->
 <html> <!-- balise racine présente dans chaque page web -->
 	<head> <!-- les méta-données de la page -->
+        <meta charset="UTF-8">
 		<title>Le titre de la page ici</title> <!-- le titre de la page -->
-  </head>
-  <body>
-  	Tout ce qui s'affiche dans le navigateur va ici !
+    </head>
+    <body>
+  	    Tout ce qui s'affiche dans le navigateur va ici !
 	</body>
 </html>
 ```
