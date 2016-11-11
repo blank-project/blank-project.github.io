@@ -20,15 +20,15 @@
 - `font-style` : Spécifie le style de police (italique, ...)
 - `font-weight` : Spécifie l'épaisseur des caractères (gras, ...)
 - `font-size` : Spécifie la taille de police
-- `font-family` : Spécifies les polices à utiliser
+- `font-family` : Spécifie les polices à utiliser
 
 ## Text Properties
-- `line-height` : Specifies the line height
-- `text-align` : Specifies the horizontal alignment of text in an element
-- `text-decoration` : Specifies the decoration added to text
-- `text-indent` : Specifies the indentation of the first line in a text-block
-- `text-transform` : Controls the capitalization of text
-- `vertical-align` : Sets the vertical alignment of an element
+- `line-height` : Spécifie la hauteur de ligne
+- `text-align` : Spécifie l'alignement horizontal d'un élement
+- `text-decoration` : Spécifie la décoration ajoutée à un élement (ex : souligné, barré).
+- `text-indent` : Spécifie l'indentation de la première ligne
+- `text-transform` : Contrôle la casse du texte (majuscule, minuscules)
+- `vertical-align` : Spécifie l'alignement vertical d'un élement
 
 ## Propriétés du Modèle de Boîte
 - `height` : Définit la hauteur d'un élement
@@ -47,16 +47,16 @@
 - `clear` : Annule le _float_
 
 ## Propriétés d'Arrière-Plan
-- `background-color` : Specifies the background color of an element
-- `background-image` : Specifies an image to use as the background of an element
-- `background-repeat` : Specify how image should be repeated (x or y axis)
-- `background-attachment` : Sets whether a background image is fixed or scrolls with the rest of the page
-- `background-position` : Sets the starting position of a background image.
+- `background-color` : Spécifie la couleur d'arrière-plan d'un élement
+- `background-image` : Spécifie l'image à utiliser comme arrière-plan d'un élement
+- `background-repeat` : Spécifie comment l'image doit se répéter
+- `background-attachment` : Indique si l'image d'arrière plan doit être fixe ou défiler avec la page
+- `background-position` : Spécifie la position de départ de l'image
 
 ## Propriétés de Liste
-- `list-style-type` : Specifies the type of list-item marker in a list
-- `list-style-position` : Specifies if the list-item markers should appear inside or outside the content flow
-- `list-style-image` : Replaces the list-item marker with an image
+- `list-style-type` : Spécifie le type de puce
+- `list-style-position` : Spécifie la position des puces
+- `list-style-image` : Spécifie une image comme puce
 
 ## Media Queries
-TODO
+<!-- TODO Marin -->
