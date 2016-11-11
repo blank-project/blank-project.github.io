@@ -50,7 +50,10 @@ On l'utilise généralement pour pouvoir appliquer du style à un conteneur.
 Un span est un élément `inline` (non `block`) qui permet de contenir un ou plusieurs autre élément `inline` : `<a>, <img>, <b> ...` ou tout simplement du texte.
 
 ```html
-<p>On commence à rentrer dans le <span id="vif">vif</span> du sujet </p>
+<p>
+  On commence à rentrer dans le
+  <span id="vif">vif</span> du sujet
+</p>
 <p>
   <span class="qr">
     C'est quoi le vif du sujet ?
@@ -173,7 +176,7 @@ Elle permet de définir une partie de la page où seront des élements de naviga
 ***
 
 
-##Section
+## Section
 Elle permet de définir une section au sein d'un document. Cela peut aussi être au sein d'un article.
 
 ```html
@@ -186,3 +189,13 @@ Elle permet de définir une section au sein d'un document. Cela peut aussi être
   </section>
 </article>
 ```
+
+
+
+---
+
+
+
+## En résumé
+
+![HTML Structure](example.gif)
