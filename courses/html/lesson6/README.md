@@ -31,8 +31,9 @@ Avec HTML5 nous avons beaucoup de nouvelles balises pour faciliter tout cela !
 ***
 
 
+
 ## Div
-Une div (division) est un élément `block` (non `inline`) qui permet de regrouper du contenu.
+Une div (division) est un élément qui permet de regrouper du contenu.
 
 On l'utilise généralement pour pouvoir appliquer du style à un conteneur.
 
@@ -46,8 +47,9 @@ On l'utilise généralement pour pouvoir appliquer du style à un conteneur.
 ***
 
 
+
 ## Span
-Un span est un élément `inline` (non `block`) qui permet de contenir un ou plusieurs autre élément `inline` : `<a>, <img>, <b> ...` ou tout simplement du texte.
+Un span est un élément qui permet de contenir un ou plusieurs autre élément textuel : `<a>, <img>, <b> ...` ou tout simplement du texte.
 
 ```html
 <p>
