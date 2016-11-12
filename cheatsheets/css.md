@@ -22,7 +22,7 @@
 - `font-size` : Spécifie la taille de police
 - `font-family` : Spécifie les polices à utiliser
 
-## Text Properties
+## Propriétés Textuelles
 - `line-height` : Spécifie la hauteur de ligne
 - `text-align` : Spécifie l'alignement horizontal d'un élement
 - `text-decoration` : Spécifie la décoration ajoutée à un élement (ex : souligné, barré).

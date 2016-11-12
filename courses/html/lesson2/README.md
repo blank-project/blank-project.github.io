@@ -204,6 +204,5 @@ Il existe également d'autres types de listes.
 
 
 #Voilà !
-La cheatsheet HTML est ici : [cheat sheet HTML](https://github.com/blank-project/_blank/blob/master/cheatsheets/html.md)
 
-L'heure des [exercices](https://github.com/blank-project/_blank-exercises/blob/master/exercises/html/lesson2/)
+La cheatsheet HTML est ici : [Cheat Sheet HTML](https://github.com/blank-project/_blank/blob/master/cheatsheets/html.md)
