@@ -29,3 +29,22 @@ On utilisera pour exemple une `div` et un `p`.
 
 ## Grouper les sélecteurs
 - `selector1, selector2, ...` : sélectionne les éléments vérifiant _selector1_ et _selector2_ (et ainsi de suite).
+
+## Pseudo-sélecteurs
+Les pseudo sélecteurs permettent de sélectionner des élements dans un certains état.
+
+- `:hover` : Sélectionne l'élement au survol de la souris
+- `:visited` : Sélectionne les liens déja visités
+- `:active` : Sélectionne les liens actifs
+- `:focus` : Sélectionne l'élement ayant le focus
+- `:enabled` : Sélectionne les élements activés (dans un formulaire)
+- `:disabled` : Sélectionne les élements désactivés (dans un formulaire)
+- `:checked` : Sélectionne les cases à cocher cochées (dans un formulaire)
+- `:target` : Sélectionne l'élement qui est la cible de l'ancre courante. A utiliser avec un sélecteur d'ID.
+- `:not(selector)` : Sélectionne un élement ne vérifiant pas _selector_.
+
+## Pseudo-élements
+- `::first-letter` : Sélectionne la première lettre de l'élement
+- `::first-line` : Sélectionne la première ligne de l'élement
+- `::before` : Permet d'ajouter du contenu avant un élement.
+- `::first-line ` : Permet d'ajouter du contenu après un élement.
