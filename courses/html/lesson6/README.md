@@ -28,7 +28,7 @@ Avec la version 4 du langage, chacun y allait à sa manière et utilisait princi
 
 
 ##Div
-Une div (division) est un élément `block` (non `inline`) qui permet de regrouper du contenu. On l'utilise généralement pour pouvoir appliquer du style à un conteneur.
+Une div (division) est un élément qui permet de regrouper du contenu. On l'utilise généralement pour pouvoir appliquer du style à un conteneur.
 ```html
 <div>
   <img src="toto.jpg" />
@@ -40,7 +40,7 @@ Une div (division) est un élément `block` (non `inline`) qui permet de regroup
 
 
 ##Span
-Un span est un élément `inline` (non `block`) qui permet de contenir un ou plusieurs autre élément `inline` : `<p>, <a>, <h1>,...` ou tout simplement du texte.
+Un span est un élément qui permet de contenir un ou plusieurs autre élément textuels : `<p>, <a>, <h1>,...` ou tout simplement du texte brut.
 ```html
 <p>On commence à rentrer dans le <span id="vif">vif</span> du sujet </p>
 <span class="qr"><p>C'est quoi le vif du sujet ?</p><p>Alors c'est quand ça commence à devnir intéressant !</p></span>
