@@ -164,7 +164,7 @@ Ce sélecteur va sélectionner
 
 - _selector1_ > _selector2_ : sélectionne les enfants directs.
 - _selector1_ + _selector2_ : sélectionne les élements suivants (immédiatement).
-- _selector1_ ~ _selector2_ : sélectionne les éleménts précédents
+- _selector1_ ~ _selector2_ : sélectionne les éleménts suivants.
 
 
 ***
