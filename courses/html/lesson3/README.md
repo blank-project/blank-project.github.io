@@ -20,11 +20,11 @@ Il existe une forme courte pour certains attributs :
 ***
 
 
-##Quelques informations et bonnes pratiques
+## Quelques informations et bonnes pratiques
 
 
-- Tous les élements HTML peuvent avoir des attibuts.
-- Ils servent à fournir des informations additionelles sur la balise.
+- Tous les élements HTML peuvent avoir des attributs.
+- Ils servent à fournir des informations additionnelles sur la balise.
 - On écrit toujours les attributs dans la balise ouvrante et en minuscule
 - La valeur des attributs entourée de guillemets `"` (simple ou doubles) que l'on nomme `quote`
 
@@ -157,7 +157,30 @@ L'id d'un élément doit être unique sur la page.
 
 
 
-#Olé !
+## Bonus : les ancres
+
+Une ancre est un lien de navigation vers un autre élément de la page.
+
+Pour définir une ancre :
+- donner un _id_ à l'élement cible
+- Créer un lien avec pour _attribut_ **href** "`#` + l'_id_ de votre élement"
+
+```
+<h1 id="top">Le haut de la page</h1>
+ ...
+ ...
+ ...
+<a href="#top">Aller en haut de la page.</a>
+```
+
+
+
+---
+
+
+
+# Olé !
+
 ![ole](ole.gif)
 
 
@@ -166,7 +189,8 @@ L'id d'un élément doit être unique sur la page.
 
 
 
-#Application
+# Application
+
 Créer un menu avec une liste à puces
 
 Pro Tip : pour faire référence aux id, utiliser le caractère `#`.
