@@ -199,3 +199,119 @@ Elle permet de définir une section au sein d'un document. Cela peut aussi être
 ## En résumé
 
 ![HTML Structure](example.gif)
+
+
+
+---
+
+
+
+## Les tableaux
+
+On a vu qu'on pouvait structurer des élements avec des listes.  
+
+Il existe une autre manière de le faire : les **tableaux**.
+
+
+***
+
+
+Les tableaux sont composés de lignes, de colonnes et de cellules.
+
+En HTML, pour définir un tableau, on utilise la balise `<table>`.
+
+On utilise la balise `<tr>` (_Table Row_) pour une ligne.
+
+
+***
+
+
+### Les cellules
+
+On appelle _cellules_ les cases d'un tableau.
+Il existe deux types de cellules en HTML :
+- les cellules standard : `<td>` (_Table Data_)
+- les cellules d'en-tête : `<th>` (_Table Header_)
+
+
+***
+
+
+### Un example
+
+```html
+<table>
+  <tr class="table-title">
+    <th>Cellules</th><th>de</th><th>titre</th>
+  </tr>
+  <tr>
+    <td>_blank</td><td>is</td><td>cool ?</td>
+  </tr>
+  <tr>
+    <td>Yes</td><td>it</td><td>is !</td>
+  </tr>
+</table>
+```
+
+<table>
+  <tr class="table-title"><th>Cellules</th><th>de</th><th>titre</th></tr>
+  <tr><td>\_blank</td><td>is</td><td>cool ?</td></tr>
+  <tr><td>Yes</td><td>it</td><td>is !</td></tr>
+</table>
+
+
+***
+
+
+Pour ajouter un titre au tableau, on utilise la balise `<caption>`.
+
+```html
+<table>
+  <caption>Les profs de _blank</caption>
+  <tr><th>Nom</th><th>Prénom</th></tr>
+  <tr><td>Procureur</td><td>Marin</td></tr>
+  <tr><td>Osouf</td><td>Erwan</td></tr>
+  <tr><td colspan="2">Et les autres !</td></tr>
+</table>
+```
+
+<table>
+  <caption>Les profs de \_blank</caption>
+  <tr>
+    <th>Nom</th><th>Prénom</th>
+  </tr>
+  <tr>
+    <td>Procureur</td><td>Marin</td>
+  </tr>
+  <tr>
+    <td>Osouf</td><td>Erwan</td>
+  </tr>
+  <tr>
+    <td colspan="2">Et les autres !</td>
+  </tr>
+</table>
+
+
+***
+
+
+### rowspan et colspan
+
+Dans l'exemple précédent, on a utilisé l'attribut _colspan_ pour faire en sorte qu'une cellule s'étende sur 2 colonnes.
+
+```
+<tr><td colspan="2">Sur 2 colonnes !</td></tr>
+```
+
+On peut faire pareil avec l'attribut _rowspan_ pour les lignes.
+
+On doit toujours respecter le bon nombre de cellules par ligne.
+
+
+
+***
+
+
+## Note sur le design
+
+Il ne faut JAMAIS utiliser un tableau pour faire la mise en page d'un site.
