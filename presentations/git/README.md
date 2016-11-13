@@ -118,13 +118,12 @@ _PS : Pour retirer de l'index un fichier `git rm`_
 
 
 ##Commit
-Ok et je valide comment les fichiers ajoutés à l'index ?
-
-Avec la commande `git commit`.
+Ok et je valide comment les modifications des fichiers ajoutés à l'index ? Avec la commande `git commit`.
 
 Options intéressantes :
 * `-a` : Commit tous les fichiers actuellement suivis et modifiés.
 * `-m` : Spéficie le message de commit.
+* `--amend` : Modifie le message de commit que vous avez spécifié.
 
 Vous pouvez spécifier les fichiers que vous souhaitez commiter en écrivant leur chemin d'accès relatif séparé par des espaces.
 
@@ -145,6 +144,7 @@ Pour vérifier que tout s'est bien passé, votre copie de travail doit être pro
 
 ##Ok et les branches alors ?
 ![branch yourserlf](git.jpg)
+
 C'est la partie la plus intéressante !
 
 
@@ -190,6 +190,86 @@ Placez vous dans la branche où vous voulez continuer votre travail, et ensuite 
 
 ##Et plein d'autres ...
 
-* `git cherry-pick`
-* `git reset`
-*
+* `git cherry-pick` : Récupère un commit d'une autre branche et l'applique dans la branche courante.
+* `git reset` : Opère au niveau des commits
+* `git stash` : Stock les fichiers en cours de modification et nettoie la copie de travail courante. Vous pouvez réappliquer les modifications ulterieurement avec `git stash apply` & `git stash pop`
+* ...
+
+
+
+---
+
+
+
+##Mais t'avais pas dit qu'on allait utiliser github ?
+![holdon](holdon.jpg)
+
+
+***
+
+
+##De quoi a-t-on besoin ?
+####Exercice :
+
+Prenons du temps pour réflechir aux méchanismes dont on pourrait avoir besoin pour versionner notre code en local uniquement.
+
+
+***
+
+
+##Les concepts de bases :
+* Remote
+* Pull
+* Push
+
+
+***
+
+
+##Remote
+On utilise la commande `git remote` pour gérer nos remotes.
+
+Options :
+
+* `add [name] [url]` : Créé une remote avec un nom et une url de destination
+* `rm [name]` : Supprime une remote avec ce nom
+* `set-url [name]` : Modifie l'url d'une remote
+* `-v` : Liste les remotes actuellement enregistrées
+
+
+***
+
+
+##Fetch
+Eh on en a pas parlé !
+C'est pour récupérer l'état du serveur. Et vérifier qu'il n'y a pas de mise à jour que vous n'ayez pas de votre côté. Elle s'utilise comme ceci : `git fetch`
+
+
+***
+
+
+##Pull
+On utilise cette commande pour récupérer les données d'une branche du serveur. On pull une branche à la fois. Voici sa syntaxe :
+`git pull [remote_name] [branch_name]`. Vous avez souvent des raccourcis possibles mais ils mènent souvent à des erreurs.
+
+
+***
+
+
+##Push
+Poussez vos modifications locales sur le serveur ! `git push [remote_name] [branch_name]`.
+
+
+***
+
+
+##Exercice :
+Créez vous un répertoire github et poussez vos cours dessus !
+
+
+
+---
+
+
+
+![thanksgoditsover](thanksgoditsover.jpg)
