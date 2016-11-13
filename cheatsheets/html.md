@@ -3,7 +3,7 @@
 
 # Métadonnées du document
 - `<head>` : Contient les métadonnées du document. Un seul élement `<head>` par page.
-- `<link>` : Un lien vers une ressource externe, typiquement une feuille de style CSS.
+- `<link>` : Un lien vers une ressource externe, typiquement une feuille de style CSS ou une icône.
 - `<meta>` : Un élement générique pour définir des métadonnées.
 - `<style>` : Contient des informations de style interne, en CSS.
 - `<title>` : Le titre de la page, qui s'affiche dans la barre de titre ou l'onglet du navigateur.
