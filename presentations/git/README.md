@@ -112,6 +112,7 @@ Options intéressantes :
 * `-A` ou `--all` : Ajoute tous les fichiers qui ne sont actuellement pas suivis. `/!\` vous pouvez du coup intégrer des fichiers uniquement utiles à vous.
 * `-i` : Lance le mode interactif pour vous guider.
 
+_PS : Pour retirer de l'index un fichier `git rm`_
 
 ***
 
@@ -119,4 +120,76 @@ Options intéressantes :
 ##Commit
 Ok et je valide comment les fichiers ajoutés à l'index ?
 
-Note : Les fichiers sont ajouté uniquement une fois à l'index. Une fois ajouté, ils sont suivis, et il faut valider les modifications à chaque fois du coup.
+Avec la commande `git commit`.
+
+Options intéressantes :
+* `-a` : Commit tous les fichiers actuellement suivis et modifiés.
+* `-m` : Spéficie le message de commit.
+
+Vous pouvez spécifier les fichiers que vous souhaitez commiter en écrivant leur chemin d'accès relatif séparé par des espaces.
+
+Note: Les fichiers sont ajouté uniquement une fois à l'index. Une fois ajouté, ils sont suivis, et il faut valider les modifications à chaque fois du coup.
+
+
+***
+
+
+##Pause exercice !
+Maintenant reprenez les commandes et sauvegardez votre espace de travail "cours" !
+
+Pour vérifier que tout s'est bien passé, votre copie de travail doit être propre lorsque vous exécutez `git status`.
+
+
+***
+
+
+##Ok et les branches alors ?
+![branch yourserlf](git.jpg)
+C'est la partie la plus intéressante !
+
+
+***
+
+
+##Petit rappel sur le méchanisme
+Une branche n'est qu'un label apposé sur un commit. Un commit n'appartient pas à une branche mais ne peut pas floter dans le vide.
+
+Note:un commit est un engagement sur votre copie de travail.
+
+
+***
+
+
+##Encore une fois, sachez où vous êtes !
+Utilisez la commande `git branch` pour savoir sur quelle branche vous êtes actuellement.
+
+Options utiles :
+* `[name]` : Créé une branche ayant ce nom
+* `-d` supprime une branche et tous les commits qui y sont attaché. Et seulement à cette dernière.
+
+
+***
+
+
+##Changer de branche
+Pour changer de branche, on utilise la commande `git checkout [name]`.
+
+Options utiles :
+* `-b` : Créé la branche avant de basculer dessus
+
+
+***
+
+
+##Et la fusion ?
+Placez vous dans la branche où vous voulez continuer votre travail, et ensuite exécutez la commande `git merge [name]`. Celle-ci fusionne la branche cité dans la branche courante.
+
+
+***
+
+
+##Et plein d'autres ...
+
+* `git cherry-pick`
+* `git reset`
+*
