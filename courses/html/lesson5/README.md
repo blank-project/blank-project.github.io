@@ -134,4 +134,70 @@ Cela nous permettra d'éxecuter du code JavaScript.
 On verra qu'on peut également ajouter des balises `<script>` ailleurs.
 
 
-<!-- TODO  Le réferencement, balise meta robots, robots.txt, sitemap ... -->
+
+---
+
+
+
+###Parlons référencement !
+Le référencement correspond à votre visibilité sur internet. En effet, il existe plein de techniques pour pouvoir favoriser le référencement de votre site internet et ainsi augmenter votre visibilité. Mais qu'en est-il vraiment ?
+
+
+***
+
+
+###C'est un métier
+Les personnes faisant du SEO (Search Engine Optimisation) le font généralement comme métier. C'est complexe et il existe tout un tas d'algorithmes à connaître. Par contre il existe quelques choses simples que l'on peut faire pour aider les moteurs de recherches !
+
+
+***
+
+
+###Balises meta
+Il existe des balises meta spécifiques au référencement. Les balises Author et Description en font partie.
+
+
+***
+
+
+##sitemap.xml
+Il définit la structure des documents de votre site. C'est un fichier `xml` qui doit être encodé en `UTF-8`. Il ressemble à ceci :
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://example.com/</loc>
+        <lastmod>2006-11-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
+```
+
+Vous pouvez le générer via certains sites internets comme : [https://www.xml-sitemaps.com/](https://www.xml-sitemaps.com/)
+
+
+***
+
+
+##robots.txt
+Ce fichier n'a d'incidence que si vous souhaitez restreindre l'accès à certaines pages aux robots des moteurs de recherche.
+Il doit se situer à la racine de votre site internet et contient des lignes comme celles-ci :
+
+```
+User-agent: *
+Disallow: /
+```
+
+
+***
+
+
+##Conclusion
+Nous ferons un cours spécifique sur le référencement en temps voulu mais ceci étant dit vous avez les bases pour commencer à mettre en place quelque chose. Vous pouvez les soumettre directement aux moteurs de recherches, ou alors faire apparaitre votre site via des liens à partir d'autres sites.
+
+N'oubliez pas aussi qu'une mise à jour régulière vous aidera à être bien référencé.
+<!-- TODO cours réel sur le référencement -->

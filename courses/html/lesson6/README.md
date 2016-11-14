@@ -1,6 +1,6 @@
 # Les élements structurants
 
-Vous vous souvenez, on en a parlé rapidement !  
+Vous vous souvenez, on en a parlé rapidement !
 Le langage HTML vous permet d'écrire votre contenu de page, mais aussi de le structurer !
 
 
@@ -210,7 +210,7 @@ Elle permet de définir une section au sein d'un document. Cela peut aussi être
 
 ## Les tableaux
 
-On a vu qu'on pouvait structurer des élements avec des listes.  
+On a vu qu'on pouvait structurer des élements avec des listes.
 
 Il existe une autre manière de le faire : les **tableaux**.
 
@@ -297,6 +297,42 @@ Pour ajouter un titre au tableau, on utilise la balise `<caption>`.
 ***
 
 
+###Ok mais tout ça c'est un peu fouilli !
+Les entêtes et le corps du tableau sont séparé par `<thead>` et `<tbody>`.
+
+```html
+<table>
+  <caption>Les profs de _blank</caption>
+  <thead>
+    <tr><th>Nom</th><th>Prénom</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Procureur</td><td>Marin</td></tr>
+    <tr><td>Osouf</td><td>Erwan</td></tr>
+  </tbody>
+</table>
+```
+
+<table>
+  <caption>Les profs de _blank</caption>
+  <thead>
+    <tr><th>Nom</th><th>Prénom</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Procureur</td><td>Marin</td></tr>
+    <tr><td>Osouf</td><td>Erwan</td></tr>
+  </tbody>
+</table>
+
+
+***
+
+
+## Et comme dans les autres balises structurantes il existe aussi :
+
+`<tfoot>` ! Qui définit le footer d'un tableau.
+
+
 ### rowspan et colspan
 
 Dans l'exemple précédent, on a utilisé l'attribut _colspan_ pour faire en sorte qu'une cellule s'étende sur 2 colonnes.
@@ -317,3 +353,4 @@ On doit toujours respecter le bon nombre de cellules par ligne.
 ## Note sur le design
 
 Il ne faut JAMAIS utiliser un tableau pour faire la mise en page d'un site.
+Un tableau est bien uniquement pour représenter des données.
