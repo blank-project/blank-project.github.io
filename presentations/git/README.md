@@ -79,6 +79,14 @@ Prenons du temps pour réflechir aux méchanismes dont on pourrait avoir besoin 
 ***
 
 
+##Déjà configurez un peu
+`git --global-config user.name "Prénom Nom"`
+`git --global-config user.email "monemail@yooho.com`
+
+
+***
+
+
 ##Initialisation
 `git init` permet d'initialiser le dossier courant comme répertoire Git.
 
