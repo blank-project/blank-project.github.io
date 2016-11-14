@@ -54,7 +54,7 @@ Nous permet de visualiser tout ça et de le stocker sur internet ! Encore, il ya
 ##Les principes de bases
 ####Exercice :
 
-Prenons du temps pour réflechir aux méchanismes dont on pourrait avoir besoin pour versionner notre code en local uniquement.
+Prenons du temps pour réflechir aux mécanismes dont on pourrait avoir besoin pour versionner notre code en local uniquement.
 
 
 
@@ -62,7 +62,7 @@ Prenons du temps pour réflechir aux méchanismes dont on pourrait avoir besoin 
 
 
 
-##Les principaux méchanismes de Git
+##Les principaux mécanismes de Git
 * Index
 * Commit
 * Branches
@@ -80,8 +80,9 @@ Prenons du temps pour réflechir aux méchanismes dont on pourrait avoir besoin 
 
 
 ##Déjà configurez un peu
-`git --global-config user.name "Prénom Nom"`
-`git --global-config user.email "monemail@yooho.com`
+`git config --global user.name "Prénom Nom"`
+
+`git config --global user.email "monemail@yooho.com`
 
 
 ***
@@ -92,7 +93,7 @@ Prenons du temps pour réflechir aux méchanismes dont on pourrait avoir besoin 
 
 Un répertoire **git** est votre espace de travail. C'est le dossier dans lequel se trouvera vos fichiers et votre code à suivre.
 
-Vous pouvez vérifier que le répertoire a été créé en vérifiant qu'un dossier `.git` a été créé dans votre espace de travail.
+Vous pouvez vérifier que le répertoire a été bien initié en vérifiant qu'un dossier `.git` a été créé dans votre espace de travail.
 
 
 ***
@@ -159,8 +160,8 @@ C'est la partie la plus intéressante !
 ***
 
 
-##Petit rappel sur le méchanisme
-Une branche n'est qu'un label apposé sur un commit. Un commit n'appartient pas à une branche mais ne peut pas floter dans le vide.
+##Petit rappel sur le mécanisme
+Une branche n'est qu'un label apposé sur un commit. Un commit n'appartient pas à une branche mais ne peut pas flotter dans le vide.
 
 Note:un commit est un engagement sur votre copie de travail.
 
@@ -172,7 +173,7 @@ Note:un commit est un engagement sur votre copie de travail.
 Utilisez la commande `git branch` pour savoir sur quelle branche vous êtes actuellement.
 
 Options utiles :
-* `[name]` : Créé une branche ayant ce nom
+* `[name]` : Crée une branche ayant ce nom
 * `-d` supprime une branche et tous les commits qui y sont attaché. Et seulement à cette dernière.
 
 
@@ -183,7 +184,7 @@ Options utiles :
 Pour changer de branche, on utilise la commande `git checkout [name]`.
 
 Options utiles :
-* `-b` : Créé la branche avant de basculer dessus
+* `-b` : Crée la branche avant de basculer dessus
 
 
 ***
@@ -219,7 +220,7 @@ Placez vous dans la branche où vous voulez continuer votre travail, et ensuite 
 ##De quoi a-t-on besoin ?
 ####Exercice :
 
-Prenons du temps pour réflechir aux méchanismes dont on pourrait avoir besoin pour versionner notre code en local uniquement.
+Prenons du temps pour réflechir aux mécanismes dont on pourrait avoir besoin pour versionner notre code en local uniquement.
 
 
 ***
@@ -239,7 +240,7 @@ On utilise la commande `git remote` pour gérer nos remotes.
 
 Options :
 
-* `add [name] [url]` : Créé une remote avec un nom et une url de destination
+* `add [name] [url]` : Crée une remote avec un nom et une url de destination
 * `rm [name]` : Supprime une remote avec ce nom
 * `set-url [name]` : Modifie l'url d'une remote
 * `-v` : Liste les remotes actuellement enregistrées
