@@ -101,10 +101,11 @@ touch test ; touch test2; touch test3
 
 
 ## Les redirections
-- Une redirection permet de rediriger l'entrées ou la sortie d'une commande  
+- Une redirection permet de rediriger l'entrées ou la sortie d'une commande
 - La sortie d'une commande, c'est ce qu'elle renvoie dans le terminal
 - L'entrée d'une commande, ce sont les paramètres qu'on lui donne
 - Attention, les redirections ne fonctionnent pas avec toutes les commandes, mais nous allons voir de nombreux exemples où elles sont très utiless
+
 
 
 ---
@@ -158,6 +159,10 @@ man ls | grep -C4 -i "\-a"
 - Les scripts sont des fichiers exécutables qui sont écrits avec le language du shell
 - Ils doivent avoir commen première ligne `#!/bin/bash`
 - On doit leur donner les droits d'exécution (avec chmod +x)
+- Pour avoir des arguments dans un script on peut utiliser :
+  - `$0` : Correpond à la commande
+  - `$1` : Correpond au premier argument
+  - `$2` : Au 2e, etc...
 
 
 
@@ -166,6 +171,14 @@ man ls | grep -C4 -i "\-a"
 
 
 ## Atelier écrire un script
+Créer un script pour initialiser un répertoire projet contenant :
+- Crée un dossier ayant pour nom le premier argument passé au script
+- Un fichier `index.html`
+- Un dossier `assets`
+- Ayant initié le répertoire `git`
+- Ayant initié un `README.md` avec pour contenu : `# Nom_du_dossier`
+- Ajouter ces fichiers à l'index git
+- Faire le premier commit avec comme message : `"first commit"`
 
 
 
