@@ -115,7 +115,7 @@ Elles doivent obligatoirement être en parenthèse.
 ***
 
 
-## color (Recommendation)
+## color
 
 Demande le nombre de bits utilisé par couleur.
 
@@ -133,7 +133,7 @@ Demande le nombre de bits utilisé par couleur.
 ***
 
 
-## color-index (Recommendation)
+## color-index
 
 Indique le nombre d'entrée dans la CLUT*. C'est aussi basiquement le nombre de couleurs disponibles !
 
@@ -348,7 +348,9 @@ Ce mot clé nous permet de signifier que si l'expression n'est pas vérifié alo
 Cela évite que les anciens browsers qui ne sont pas à jour de charger le contenu de la media query.
 
 
+
 ---
+
 
 
 ## Mais où est-ce qu'on définit le style ?
@@ -399,8 +401,12 @@ On peut lier une feuille de style en ayant une condition media :
 ```
 
 
+
 ---
 
 
 
-## Media query c'est fini.
+## Media query c'est fini
+
+![finally](finally.jpg)
+
