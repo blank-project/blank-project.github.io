@@ -192,7 +192,7 @@ En général on utilise cette technique pour faire des prototypes.
 
 On peut également définir une couleur en utilisant le code RGB.
 
-On va définir combien chaque couleur primaire (Rouge, Vert, Bleu) contient notre couleur.
+On va définir combien de chaque couleur primaire (Rouge, Vert, Bleu) contient notre couleur.
 
 ```
 rgb(rr,gg,bb)
@@ -262,5 +262,5 @@ Note: 3 familles : serif, sans-serif, monospace
 
 
 # Voilà !
-La CheatSheet CSS est ici : 
+La CheatSheet CSS est ici :
 [Cheat Sheet CSS](https://github.com/blank-project/_blank/blob/master/cheatsheets/css.md)

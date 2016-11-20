@@ -131,7 +131,7 @@ La balise `iframe` permet d'intégrer des pages web externe dans votre site web 
 
 #### Attributs supportés
 
-- **sandbox** : autorise des parties spécifiques de l’iframe (formulaires, scripts, popups,...)
+- **sandbox** : autorise des parties spécifiques de l’iframe (formulaires, scripts, popups,...). Par défaut tout est restreint.
 - **src** : Spécifie la source de l’iframe
 - **width** : Spécifie la largeur d’une iframe
 - **height** : Spécifie la hauteur d’une iframe
