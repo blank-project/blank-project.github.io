@@ -207,7 +207,7 @@ Note: Expliquer les concepts sur cette slide.
 
 
 
-# La marge extérieure
+## La marge extérieure
 
 La marge extérieure permet de gérer l'espacement entre les éléments.
 
@@ -246,7 +246,7 @@ Il est possible d'empêcher cette fusion, notamment en ajoutant une bordure ou d
 
 
 
-# La marge intérieure
+## La marge intérieure
 
 La marge intérieure permet de gérer l'espacement entre le contenu d'un élément et sa bordure.
 
@@ -269,7 +269,7 @@ On peut écrire :
 
 
 
-# Les bordures
+## Les bordures
 
 On peut modifier les bordures des élements en CSS.
 
@@ -290,11 +290,34 @@ C'est un raccourci pour écrire séparement les éléments suivants :
 
 
 
+---
+
+
+
+## Box Sizing
+
+La propriété `box-sizing` sert à définir à quels élements s'appliquent les dimensions :
+- `box-sizing : content-box;` : applique les dimensions au contenu
+- `box-sizing : padding-box;` : applique les dimensions à l'ensemble contenu + _padding_ (peu supporté).
+- `box-sizing : border-box;` : applique les dimensions à l'ensemble contenu + _padding_ + _border_
+
+
 ***
 
 
-Box Sizing
-TODO
-`box-sizing`
-- `box-sizing : content-box` : applique la taille au contenu
-- `box-sizing : border-box` : :
+Quand on écrit `width : 50px`, on veut (en général) que cela s'applique à l'ensemble contenu + _padding_ + _border_.  
+
+On utilisera donc `box-sizing : border-box;`.
+
+Pour appliquer cela sur toute la page :
+
+```css
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+Note: à expliquer à l'oral : cela permet de définir ce style partout, tout en permettant de l'écraser.
