@@ -2,6 +2,7 @@
 
 ## Syntaxe générale
 - `selector { property: value; [ property: value; ...] }` : Syntaxe de base d'un bloc CSS.
+- `/* Comment */` : Commentaire CSS
 
 ## Insérer des feuilles de style
 - `<link rel="stylesheet" type="text/css" href="style.css" />` :	Feuille de style externe

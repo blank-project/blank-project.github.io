@@ -56,6 +56,7 @@ Tous les paragraphes de la page vont s'afficher :
 
 ***
 
+
 Exemple :
 
 <p>
@@ -65,6 +66,20 @@ Exemple :
 <p id="example1">
   Un paragraphe avec du style.
 </p>
+
+
+***
+
+
+Les commentaires en CSS s'écrivent de la manière suivante : `/* */`.
+
+```css
+/*
+  Mes commentaire CSS ici.
+  On peut les écrire sur plusieurs lignes.
+*/
+```
+
 
 
 
@@ -247,6 +262,5 @@ Note: 3 familles : serif, sans-serif, monospace
 
 
 # Voilà !
-La CheatSheet CSS est ici : [Cheat Sheet CSS](https://github.com/blank-project/_blank/blob/master/cheatsheets/css.md)
-
-L'heure des [exercices](https://github.com/blank-project/_blank-exercises/blob/master/exercises/html/lesson2/)
+La CheatSheet CSS est ici : 
+[Cheat Sheet CSS](https://github.com/blank-project/_blank/blob/master/cheatsheets/css.md)
