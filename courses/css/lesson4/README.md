@@ -40,15 +40,17 @@ Note: `position : static;`  positionne les éléments comme vu précédemment.
 
 ### Les propriétés de positionnement
 
-Quand la position n'est pas `static`, il va falloir dire ou l'on veut positionner notre élément.
-
-On dit qu'il est **positionné**.
+Quand la position n'est pas `static`, on dit que l'élement est **positionné**.
 
 On utilisera alors les propriétés `left`, `top`, `right`, `bottom` pour spécifier la position de l'élement par rapport à un élement de référence.
 
 Cet élement de référence dépend de la valeur de `position` utilisée.
 
-Note: TODO Faire un schéma.
+
+***
+
+
+![Schéma Position CSS](img/position.png)
 
 
 
@@ -147,10 +149,31 @@ Cet élement sera affiché 50px sous le haut de la page et défilera avec la pag
 
 
 
-## Eléments Flottants
+### Z-Index
+
+Quand des élements sont positionnés, il arrive qu'ils se chevauchent.
+
+On utilise alors la propriété `z-index` pour définir quel élément se place devant ou derrière.
+
+Plus le `z-index` est petit, plus l'élement s'affichera à l'arrière-plan.
 
 
 
+---
+
+
+
+### Overflow
+
+On utilise la propriété `overflow` pour définir ce qu'il se passe quand un élement dépasse de son parent.
+
+Les valeurs possibles sont :
+ - `visible` : le contenu est visible
+ - `hidden` : le contenu est caché
+ - `scroll` : des barres de défilement sont toujours affichées
+ - `auto` : des barres de défilement sont affichées si besoin
+
+On peut utiliser `overflow-x` pour le dépassement horizontal et `overflow-y` pour le défilement vertical.
 
 
 
@@ -159,3 +182,11 @@ Cet élement sera affiché 50px sous le haut de la page et défilera avec la pag
 
 
 ## FlexBox
+
+
+
+---
+
+
+
+## Eléments Flottants
