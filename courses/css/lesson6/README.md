@@ -7,6 +7,36 @@
 
 
 
+## Autres Propriétés CSS
+
+- `border-radius`
+- `min-width`, `max-width`
+- `min-height`, `max-height`
+- `opacity`
+- `resize`
+
+
+
+---
+
+
+
+## Pseudos-classes
+
+
+
+---
+
+
+
+
+## Pseudos-éléments
+
+
+
+---
+
+
 ## Cascade et Héritage
 
 
@@ -44,14 +74,28 @@
 ***
 
 
+
 ### Définir une animation
+
 
 
 ***
 
 
+
 ### Appliquer une animation
 
+
+
+---
+
+
+
+## Les transformations
+
+
+
+***
 
 
 
@@ -66,9 +110,3 @@
 
 
 ---
-
-
-
-## Les icônes en CSS
-
-<!-- Présentation de Font-Awesome ou Google Fonts / A Faire dans BootStrap ? -->
