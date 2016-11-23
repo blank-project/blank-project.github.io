@@ -183,10 +183,91 @@ On peut utiliser `overflow-x` pour le dépassement horizontal et `overflow-y` po
 
 ## FlexBox
 
+Flex, FlexBox ou Flexible Box Layout est une manière d'agencer les élements apparue en CSS3.
+
+Elle permet de manipuler plus simplement les éléments.
+
+FlexBox repose sur 2 concepts :
+- le conteneur Flex (Flex Container)
+- les éléments Flex (Flex Items)
+
+Flex n'est pas supporté par toutes les versions des navigateurs.
+
+
+***
+
+
+### Le support par les navigateurs
+
+Tous les navigateurs ne supportent pas forcément toutes les propriétés, ou certaines sont expérimentales.
+
+[Can I Use ?](http://caniuse.com/)
+
+Pour les propriétés expérimentales, elles sont préfixées par un préfixe vendeur :
+- Firefox : `-moz-`
+- Chrome : `-webkit-`
+- Opéra : `-o-`
+- Internet Explorer (lol) : `-ms-`
+
+***
+
+
+
+### Le conteneur Flex
+
+`display : flex;`
+
+C'est tout ce qu'il faut pour définir un conteneur Flex !
+
+(On peut aussi utiliser `inline-flex` pour un conteneur _inline_)
+
+
+***
+
+
+On va pouvoir définir :
+- la direction des élements (ligne ou colonne) (`flex-direction`)
+- l'alignement des éléments (`flex-align`)
+- l'espacement des éléments (`justify-content`)
+- l'alignement des lignes (`align-content`)
+
+
+***
+
+
+### Les éléments Flex
+
+Tout les fils d'un conteneur Flex sont les éléments Flex.
+
+On va pouvoir (re)définir :
+- l'ordre des éléments (`order`)
+- l'alignement des éléments (`self-align`)
+- la taille des éléments (`flex`)
+
+
+***
+
+
+
+Un article sur [FlexBox sur le site CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+Les propriétés FlexBox sont aussi sur la [CheatSheet CSS](https://github.com/blank-project/_blank/blob/master/cheatsheets/css.md).
+
 
 
 ---
 
 
-
 ## Eléments Flottants
+
+Un élément flottant va être retiré du _flow_ et placé à droite ou à gauche de son conteneur.
+
+On écrit `float : left | right;`.
+
+Les éléments suivants vont s'afficher autour de l'élément flottant.
+
+Pour annuler ce comportement on utilise
+
+`clear : left | right | both;`.
+
+Ne pas se servir de cela pour de la mise en page !

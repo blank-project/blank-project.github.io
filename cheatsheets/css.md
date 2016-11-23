@@ -59,5 +59,20 @@
 - `list-style-position` : Spécifie la position des puces
 - `list-style-image` : Spécifie une image comme puce
 
+## FlexBox
+- `display : flex | inline-flex;` : définit un conteneur Flex.
+
+### Propriétés du conteneur
+ - `flex-direction : row | column | row-reverse | column-reverse;` : la direction des élements
+ - `flex-wrap : nowrap | wrap | wrap-reverse;` : gestion des retours à la ligne
+ - `flex-flow : {flex-direction} {flex-wrap};` : écriture condensée pour `flex-direction` et `flex-wrap`
+ - `justify-content : flex-start | flex-end | center | space-between | space-around;` : alignement des éléments le long de l'axe principal (`flex-direction`).
+ - `align-items : flex-start | flex-end | center | baseline | stretch;` : l'alignement des éléments par rapport à l'axe secondaire
+ - `align-content : flex-start | flex-end | center | space-between | space-around | stretch` : l'alignement des lignes dans le conteneur.
+### Propriétés des éléments
+- `order` : l'ordre des éléments
+- `self-align` : l'alignement des éléments
+- `flex` : la taille des éléments 
+
 ## Media Queries
 <!-- TODO Marin -->
