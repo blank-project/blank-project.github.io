@@ -7,7 +7,7 @@
 
 
 ## Qu'est-ce que bootstrap ?
-C'est un framework CSS qui nous simplifie la vie ! Et permet de sortir un site internet plus facilement que de faire tout "from scratch".
+C'est un framework CSS qui nous simplifie la vie ! Et permet de sortir un site internet plus facilement que de faire tout "from scratch". Le toute en appliquant simplement des classes ou des id sur les éléments.
 
 
 ***
@@ -79,4 +79,68 @@ C'est ce qui a fait la renomée de bootstrap et c'est le framework qui a popular
 
 
 ## Qu'est-ce qu'une grille ?
-Chaque ligne de la grille correspond à 12 unités. La somme de la totalité des éléments ne doit pas dépasser 12 (sous peine d'une grille bizarre).
+
+![grid](grid.png)
+
+
+Note: Chaque ligne ici contient au total 12 unités. 12 unités de 1 en première ligne, 1 unité de 8 et une unité de 4 en 2e ligne, 3 unités de 4 en 3e ligne, et 2 unités de 6 en dernière ligne.
+Elles font toutes parties de la même grid.
+
+
+***
+
+
+## Hmmm c'est quoi marqué sur le schéma ?
+
+![gridrow](gridrow.png)
+
+Chaque élément est une `<div>` qui possède une classe. Cette classe est constituée comme suit : col-*{{size}}*-*{{unit}}*. Chaque ligne est définie par une div avec la class `.row`.
+
+Note: exo, sortir le HTML de la 2e ligne.
+
+
+***
+
+
+## Size
+
+![size](sizes.png)
+
+C'est un prefix qui définit comment se comporte la colone pour tel ou tel type de device.
+
+
+***
+
+
+## Unit
+
+Souvenez-vous la somme des unités d'une ligne ne doit pas faire plus de 12. Sinon ça déborde sur la ligne d'en dessous.
+
+Une ligne avec 24 correspondra donc à deux lignes avec des éléments à 12.
+
+Ça nous permet de gérer le responsive de manière plutôt simple. Quoi que maintenant on a `flex` !
+
+
+
+---
+
+
+
+## Et on a quoi à part la grille et le texte ?
+* nav-bar pré-faite
+* dropdowns
+* images
+* des parties uniquement visibles sur certains devices
+* boutons
+
+etc.
+
+
+
+---
+
+
+
+## Faisons un tour sur la doc !
+Passons en revue le css, les composants et regardons la doc
+Le site : [https://getbootstrap.com/](https://getbootstrap.com/)
