@@ -11,4 +11,4 @@ It is contributed to by the teachers of the \_blank project.
 by <a xmlns:cc="http://creativecommons.org/ns#" href="http://blank.bellevillecitoyenne.fr" property="cc:attributionName" rel="cc:attributionURL">_blank Team</a>
 is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.  
 Permissions beyond the scope of this license may be available at
-<a xmlns:cc="http://creativecommons.org/ns#" href="mailto:blank@bellevillecitoyenne.fr" rel="cc:morePermissions">mailto:blank@bellevillecitoyenne.fr</a>.
+<a xmlns:cc="http://creativecommons.org/ns#" href="mailto:blank@bellevillecitoyenne.fr" rel="cc:morePermissions">blank@bellevillecitoyenne.fr</a>.
