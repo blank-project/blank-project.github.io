@@ -7,7 +7,7 @@
 
 
 ## Qu'est-ce que bootstrap ?
-C'est un framework CSS qui nous simplifie la vie ! Et permet de sortir un site internet plus facilement que de faire tout "from scratch". Le toute en appliquant simplement des classes ou des id sur les éléments.
+C'est un framework CSS qui nous simplifie la vie ! Il nous permet de développer un site internet plus facilement que de faire tout "from scratch". Le toute en appliquant simplement des classes ou des id sur les éléments.
 
 
 ***
@@ -15,27 +15,28 @@ C'est un framework CSS qui nous simplifie la vie ! Et permet de sortir un site i
 
 ## Mais c'est quoi un framework ?
 C'est un code source qui nous donne une structure et nous force à utiliser certains éléments tout en nous donnant des éléments facilitant le développement.
+_ça fait deux fois élément je sais :(_
 
 
 ***
 
 
 ## Library vs Framework ?
-Une "library" ou bibliothèque en français à contrario nous fournit des éléments et nous laisse appeler les composants nécessaires. Par defaut par exemple `bootstrap` est un framework parce qu'il nous demande pas tout le temps d'appeler ses composants et apporte des actions par défaut.
+Une "library" ou bibliothèque en français à contrario nous fournit des éléments et nous laisse appeler les composants nécessaires. Par defaut par exemple `bootstrap` est un framework parce qu'il ne nous demande pas tout le temps d'appeler ses composants et apporte des actions par défaut.
 
 
 ***
 
 
 ## Bootstrap ça vient d'où ?
-De `twitter` ! Au début ça s'appelait `Twitter Blueprint`, etça a été développé par quelqu'un qui voulait simplifier la vie des développeur au sein de la société. Au début c'était juste un outil interne mais ensuite... ça a été ouvert au public !
+De `twitter` ! Au début ça s'appelait `Twitter Blueprint`. Il a été développé par quelqu'un qui voulait simplifier la vie des développeur au sein de la société. C'était juste un outil interne mais ensuite... ça a été ouvert au public ! Et là miracle.
 
 
 ***
 
 
 ## Est-ce qu'il existe d'autres framework de ce genre ?
-Oui ! Et les plus connus sont : [Foundation](http://foundation.zurb.com/) et [Materialise](http://materializecss.com/). Il en existe plein d'autres selon les besoins que vous avez. À vous de regarder, en voici quelque listes :
+Oui ! Et les plus connus sont : [Foundation](http://foundation.zurb.com/), [Materialise](http://materializecss.com/) et [PureCSS](http://purecss.io/). Il en existe plein d'autres selon les besoins que vous avez. À vous de regarder, en voici quelque listes :
 * [liste 1](http://blog.webkid.io/css-frameworks-bootstrap-alternatives/)
 * [liste 2](http://www.hongkiat.com/blog/bootstrap-alternatives/)
 
@@ -90,7 +91,7 @@ Elles font toutes parties de la même grid.
 ***
 
 
-## Hmmm c'est quoi marqué sur le schéma ?
+## Est-ce que tu peux nous en dire un peu plus ?
 
 ![gridrow](gridrow.png)
 
