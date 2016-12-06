@@ -50,6 +50,13 @@ console.log(1+1); // affiche le résultat de 1+2
 * < (<=) : vrai si la valeur de gauche est inférieure (ou égale) à celle de droite
 * == (===) : vrai si la valeur de gauche est (strictement, on y reviendra plus tard) égale à celle de droite
 * != (!==) : vrai si la valeur de gauche n'est pas (strictement, on y reviendra plus tard) égale à celle de droite
+
+
+
+---
+
+
+
 * Exemples :
 ```js
 console.log(1 > 2); // false
