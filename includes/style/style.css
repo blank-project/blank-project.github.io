@@ -78,3 +78,9 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+.reveal code {
+    padding:.2em .3em;
+    border:1px solid grey;
+    background-color:#f8f8f8;
+}

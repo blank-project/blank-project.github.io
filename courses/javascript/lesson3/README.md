@@ -7,7 +7,7 @@
 
 
 ## Une fonction c'est quoi ?
-C'est une suite d'instructions que l'on va pouvoir exécuter autant de fois que l'on veut.
+C'est une suite d'instructions que l'on va stocker exécuter à la demande.
 
 À cette fonction, on peut passer des éléments concernant son exécution, c'est ce que l'on appelle des paramètres.
 
