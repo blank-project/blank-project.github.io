@@ -68,7 +68,7 @@ function myFunction(param1, param2) {
     Ils peuvent être utilisés comme n'importe quelle autre variable */
 }
 ```
-_Ici la fonction a deux paramètres, param1 et param2_
+Ici la fonction a deux paramètres, _param1_ et _param2_
 
 
 ***
@@ -140,6 +140,58 @@ console.log(plusOne(2)); /* output : 3 */
 ## Les variables globales et locales
 * Une variable globale est accessible partout dans le code
 * Une variable locale n'est accessible que dans le contexte d'exécution d'une fonction
+
+
+
+---
+
+
+
+## Les fonctions anonymes
+
+Il est possible de définir des fonctions sans nom : les fonctions **anonymes**.
+
+Pour pouvoir les appeler, il faut les stocker dans des variables, ou les passer en paramètre d'autre fonctions.
+
+```js
+var anonymous = function(param1) {
+  console.log("In anonymous : ", param1);
+};
+// On execute la fonction contenue dans la variable anonymous
+anonymous('rocks');
+```
+
+
+
+---
+
+
+
+## Les callbacks
+
+On peut également passer des fonctions en paramètre d'autre fonctions.
+
+C'est ce qu'on appelle un **callback**.
+
+Cela permet de les appeler dans la fonction principale, en général à la fin d'un traitement long.
+
+
+***
+
+
+```js
+function avecCallback(callback) {
+  // Un appel à un serveur qui prend du temps à répondre.
+  var result = appelServeur();
+  // On appelle le callback avec la valeur result
+  callback(result);
+};
+
+avecCallback(function(result) {
+  // On affiche le resultat dans la console.
+  console.log(result);
+})
+```
 
 
 
