@@ -326,6 +326,22 @@ _Ici la boucle va nous afficher les éléments du tableau un par un_
 
 
 
+## Les boucles for in
+On peut parcourir les objets et les tableaux à l'aide la boucle for .. in
+
+```js
+var toto = ["wat","olé","_blank"];
+for(var i in toto) {
+    console.log(i + " = " + toto[i]);
+}
+```
+
+
+
+---
+
+
+
 ## Les autres variables complexes
 Toutes sont des objets. Et partent avec des propriétés et méthodes par défaut. En voici une liste non exhaustive :
 * `Date`
