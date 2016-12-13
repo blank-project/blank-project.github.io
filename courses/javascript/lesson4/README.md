@@ -1,3 +1,11 @@
+# Les variables complexes : objets et tableaux
+
+
+
+---
+
+
+
 ## Les variables complexes
 Certains types de variables (ou d'objets) plus complexes nous permettent de stocker des données plus spécifiques. Ces variables complexes sont généralement considérées comme des objets.
 
@@ -6,17 +14,22 @@ Certains types de variables (ou d'objets) plus complexes nous permettent de stoc
 ---
 
 
+
 ## Mais qu'est-ce qu'un objet JavaScript ?
 
 
+
 ***
+
 
 
 ## Un objet en JavaScript
 Un objet en JS est différent des autres langages. En effet, avec la norme EcmaScript 5.1 (celle que nous utilisons) un objet est une variable comportant des propriétés et méthodes.
 
 
+
 ***
+
 
 
 ## Déclarer un objet vide
@@ -27,14 +40,18 @@ var toto = {};
 ```
 
 
+
 ***
+
 
 
 ## Qu'est-ce qu'une propriété ?
 Une propriété est une variable attitrée à l'objet. Elle est un couple "clé-valeur" comme une variable classique sauf qu'elle est propre à ce dernier.
 
 
+
 ***
+
 
 
 ## Créer un objet avec propriétés (1/2)
@@ -47,13 +64,14 @@ console.log(toto); /* output : { name : '_blank', purpose : 'web dev' } */
 ```
 
 
+
 ***
 
 
 
 ## Créer un objet avec propriétés (2/2)
 
-On peut aussi accéder à une propriété d'un objet en utilisant le `.`. Si elle n'existe pas, elle sera créée, sinon modifiée.
+On peut aussi accéder à une propriété d'un objet en utilisant le `.` ou les crochets `["<propriete>"]`. Si elle n'existe pas, elle sera créée, sinon modifiée.
 
 ```js
 var toto = {};
@@ -62,20 +80,39 @@ console.log(toto); /* output : { name : '_blank' } */
 ```
 
 
+
 ***
 
 
+
+## Accèder à la valeur d'une propriété
+Pour accèder à la valeur d'une propriété, on utilise le `.` ou les crochets `["<propriete>"]`.
+
+```js
+var toto = {name : "_blank", purpose : "web dev"};
+console.log(toto.name);
+console.log(toto["purpose"])
+```
+
+
+
+***
+
+
+
 ## Modifier une propriété
-Pour modifier une propriété, comme dit dans le slide précédent, on utilise le `.` pour y accéder depuis l'objet. Si elle existe, elle sera modifiée.
+Pour modifier une propriété, on fait comme pour une variable on y accèdant comme vu au slide précédent.
 
 ```js
 var toto = { name : "tata" };
 toto.name = "_blank"; /* Appel de la propriété name et modification de la valeur textuelle  "_blank" */
-console.log(toto); /* output : { name : '_blank' } */
+toto["name"] = "en fait"
+console.log(toto); /* output : { name : 'en fait' } */
 ```
 
 
 ***
+
 
 
 ## Supprimer une propriété
@@ -88,7 +125,9 @@ console.log(toto); /* output : {} */
 ```
 
 
+
 ***
+
 
 
 ## Qu'est-ce qu'une méthode ?
@@ -103,7 +142,9 @@ toto.show(); /* output : olé */;
 ```
 
 
+
 ***
+
 
 
 ## This
@@ -112,7 +153,9 @@ toto.show(); /* output : olé */;
 * Appelé dans un objet, `this` fait référence à l'objet
 
 
+
 ***
+
 
 
 ## Exemple
@@ -135,7 +178,9 @@ toto.show(); /* output : { name : '_blank', purpose : 'web dev', show : [Functio
 ## Les tableaux
 
 
+
 ***
+
 
 
 ## Qu'est-ce qu'un tableau ?
@@ -146,7 +191,9 @@ Vu que le JavaScript est un langage dynamique, nous allons pouvoir manipuler ce 
 Chaque valeur dans le tableau correspond à un "index". Cet index commence à la valeur 0 et va en s'incrémentant.
 
 
+
 ***
+
 
 
 ## Créer un tableau
@@ -158,7 +205,9 @@ var toto = [];
 ```
 
 
+
 ***
+
 
 
 ## Initialiser un tableau avec des données
@@ -171,7 +220,9 @@ var profs_blank = ["Erwan","Yohann","Mohamed","Paulin","Marin"];
 _ici par exemple on a initialisé un tableau avec les prénoms des professeurs de _blank_
 
 
+
 ***
+
 
 
 ## Insérer une variable dans un tableau
@@ -190,7 +241,9 @@ console.log(toto); /* output: [ 'wat', 'olé', '_blank' ] */
 ```
 
 
+
 ***
+
 
 
 ## Supprimer les valeurs d'un tableau
@@ -209,7 +262,9 @@ console.log(toto); /* output: [ 'olé' ] */
 ```
 
 
+
 ***
+
 
 
 ## Accéder à un élément d'un tableau (ou le modifier)
@@ -223,7 +278,9 @@ console.log(toto); /* output : [ 'olé', '_blank' ] */
 ```
 
 
+
 ***
+
 
 
 ## La propriété utile des tableaux
@@ -234,7 +291,9 @@ console.log(toto.length); /* output : 2 */
 ```
 
 
+
 ***
+
 
 
 ## Intérer dans un tableau
@@ -250,7 +309,9 @@ for (var i = 0; i < toto.length; i++) {
 _Ici la boucle va nous afficher les éléments du tableau un par un_
 
 
+
 ***
+
 
 
 ## Certaines méthodes utiles pour les tableaux
@@ -275,7 +336,9 @@ Toutes sont des objets. Et partent avec des propriétés et méthodes par défau
 * `Objects`
 
 
+
 ***
+
 
 
 ## Créer un objet
@@ -287,13 +350,17 @@ console.log(dotd); /* output Thu Dec 08 2016 01:11:24 GMT+0100 (CET) */
 _ok vous savez quand j'écris les cours maintenant ..._
 
 
-***
-
-
-## Passons objet par objet pour connaitre leurs méthodes utiles
-
 
 ***
+
+
+
+## Exemple d'objet standard et ses méthodes : Date
+
+
+
+***
+
 
 
 ## Date (1/2)
@@ -308,7 +375,9 @@ _ok vous savez quand j'écris les cours maintenant ..._
 * getMonth() : Retourne le mois courrant en nombre (entre 0 et 11)
 
 
+
 ***
+
 
 
 ## Date (2/2)
@@ -322,3 +391,21 @@ _ok vous savez quand j'écris les cours maintenant ..._
 * setDate() : Change le jour en nombre (entre 1 et 31)
 * setMonth() : Change le mois
 * setFullYear() : Change l'année
+
+
+
+---
+
+
+
+## Comment utiliser les autres objets standards ?
+
+Il faut aller voir la documentation : http://www.w3schools.com/js
+
+
+
+---
+
+
+
+## The end !
