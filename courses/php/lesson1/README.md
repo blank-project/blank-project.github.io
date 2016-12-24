@@ -36,7 +36,6 @@ PHP s'éxecute dans un serveur Web et interprète les pages PHP à la demande.
 
 ## Syntaxe
 
-La syntaxe de PHP est relativement semblable à JavaScript, notamment au niveau des boucles et conditions.
 
 Le code PHP est écrit entre les balises PHP :
 
@@ -50,24 +49,12 @@ Le reste du code n'est pas interprété par PHP.
 
 
 
-***
+---
 
 
-### Types
 
-Comme JavaScript. <!-- TODO -->
+## L'instruction `echo`
 
-
-***
-
-
-### Variables
-
-Pour déclarer une variable en PHP on préfixe son nom par `$`.
-
-```
-$test = "Coucou";
-```
 
 
 ---
