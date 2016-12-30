@@ -43,7 +43,10 @@ Ils sont souvent définis grâce à la balise `<input>` et son attribut **type**
 
 On peut leur donner un libellé grâce à la balise `<label>` et son attribut **for**.
 
-<label for="checkbox">Libellé</label><input name="checkbox" id="checkbox" type="checkbox" />
+<div>
+<label for="checkbox">Libellé</label>
+<input name="checkbox" id="checkbox" type="checkbox" />
+</div>
 
 
 ```
@@ -62,11 +65,13 @@ On peut regrouper les `<input>` en groupes thématiques grâce à la balises `<f
 
 On peut donner un libellé à un groupe grâce à la balise `<legend>`.
 
+<div>
 <fieldset>
   <legend>Identifiants</legend>
   <input type="text" placeholder="Login" /><br />
   <input type="text" placeholder="Password" />
 </fieldset>
+</div>
 
 ```
 <fieldset>
@@ -99,7 +104,7 @@ On peut donner un libellé à un groupe grâce à la balise `<legend>`.
 ```
 
 Attributs :
-- **value** : la valeur à envoyer au serveur, uniquement si elle est cochée.
+- **value** : la valeur initiale du champ.
 - **placeholder** : le texte qui s'affiche quand le champ est vide.
 
 
@@ -108,10 +113,10 @@ Attributs :
 
 ### Les cases à cocher
 
-<input type="checkbox" checked />
+<input type="checkbox" value="coche!" checked />
 
 ```
-<input type="checkbox" checked />
+<input type="checkbox" value="coche!" checked />
 ```
 
 Attributs :
@@ -124,9 +129,14 @@ Attributs :
 
 ### Les boutons radio
 
-Les boutons radio permettent de sélectionner une valeur parmi d'autres.
+Les boutons radio permettent de sélectionner une valeur parmi un groupe.
 
-<input type="radio" name="blank" id="yolo" value="yolo" /><label for="yolo">YOLO</label><input type="radio" name="blank" id="swag" value="swag" checked /><label for="swag">Swag</label>
+<form>
+<input type="radio" name="blank" id="yolo" value="yolo" />
+<label for="yolo">YOLO</label>
+<input type="radio" name="blank" id="swag" value="swag" checked />
+<label for="swag">Swag</label>
+</form>
 
 ```
 <input type="radio" name="blank" id="yolo" value="yolo" /><label for="yolo">YOLO</label>
@@ -146,7 +156,7 @@ Attributs :
 
 Ils permettent d'envoyer des valeurs qui ne sont pas affichés à l'utilisateur.
 
-Attention, on peut toujours modifer le HTML pour changer cette valeur.
+Attention, on peut toujours modifier le HTML pour changer cette valeur.
 
 <input type="hidden" name="jesuis" value="cache" />
 
@@ -185,13 +195,15 @@ Attributs :
 
 On peut également utiliser la balise `<button>`.
 
-La seconde est plus flexible (on peut utiliser du HTML comme contenu).
+Cette solution est plus flexible (on peut utiliser du HTML comme contenu).
 
 ```
 <button type="submit">Soumettre</button>
 <button type="reset">Reset</button>
 <button>Test</button>
 ```
+
+Attributs : les mêmes
 
 
 ***
@@ -236,3 +248,18 @@ Quand on soumet un formulaire, les noms et valeurs de tous les champs vont être
 Pour définir cette adresse, on utilise l'attribut **action** de la balise `<form>`.
 
 On peut également définir la méthode d'envoi (POST ou GET), via l'attribut **method**.
+
+
+***
+
+
+<form action="http://example.org" method="GET">
+  <input type="hidden" name="jesuis" value="cache!" /><br />
+  <input type="text" name="nom" value="Yo !" placeholder="Ton nom" /><br />
+  <input type="checkbox" name="mic check" value="one two" /><br />
+  <select name="teacher">
+    <option value="marin">Marin</option>
+    <option value="erwan">Erwan</option>
+  </select><br />
+  <input type="submit" value="Go !"/><input type="reset" value="Reset" />
+</form>
