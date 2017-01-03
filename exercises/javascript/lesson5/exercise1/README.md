@@ -48,7 +48,8 @@
 </html>
 ```
 2. Écrivez un script javascript qui sélectionne les éléments suivants et les affiche dans la console (avec console.log) :
-  1. ```html
+  1. Récupérer ceci :
+  ```html
   <header id="main-header">
       <h1>Olé, ça faisait longtemps !</h1>
   </header>
