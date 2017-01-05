@@ -1,6 +1,6 @@
 # JavaScript > Lesson3 > Exercise5
 
-Créer un Sapin de noel que vous affichez dans la console.
+Créer un Sapin de Noël que vous affichez dans la console.
 * Le JavaScript doit contenir 2 fonctions :
   * Une pour construire l'arbre
   * Une pour construire le tronc de l'arbre
