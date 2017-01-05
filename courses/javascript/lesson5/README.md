@@ -192,6 +192,7 @@ document.getElementById("main-header").onhover = function(){
 
 
 * Soit on ajoute un "event listener" :
+
 ```js
 var myHTMLElement = document.getElementById("main-header");
 myHTMLElement.addEventListener("click", ole);
@@ -200,6 +201,7 @@ function ole() {
     alert("COUCOU !");
 }
 ```
+
 *PS : Cette dernière méthode est plus complexe mais offre plus de possibilités. Ex : Plusieurs fonctions pour le même événement, plus maintenable, etc.*
 
 
@@ -236,3 +238,12 @@ Il y a deux types de propagation d'événements :
 Dans le cas d'un "bubbling", le premier élément qui est affecté par l'événement et celui le plus bas dans l'arborescence, dans ce cas, le `header`, et ensuite la `section`.
 
 Dans le cas d'un "capturing", le premier élément qui est affecté par l'événement et celui le plus heut dans l'arborescence, dans ce cas, la `section`, et ensuite le `header`.
+
+
+***
+
+
+## Voilà
+Maintenant vous connaissez l'essentiel de JavaScript. Il reste quelques petites choses comme les timers, ajax etc. On voit ça bientôt.
+
+Maintenant aux exercices !

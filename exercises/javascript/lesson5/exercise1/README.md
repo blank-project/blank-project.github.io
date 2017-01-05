@@ -47,7 +47,7 @@
     </body>
 </html>
 ```
-2. Écrivez un script javascript qui sélectionne les éléments suivants et les affiche dans la console (avec console.log) :
+2. Écrivez un script javascript qui sélectionne les éléments suivants et les afficher dans la console (avec console.log) :
   1. Récupérer ceci :
   ```html
   <header id="main-header">
