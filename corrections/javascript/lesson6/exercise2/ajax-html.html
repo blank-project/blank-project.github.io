@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>AJAX et HTML</title>
+      <meta charset="UTF-8">
+    </head>
+    <body>
+        <button id="ajax">Ajax</button>
+        <main>
+
+        </main>
+        <script type="text/javascript">
+          var button = document.getElementById('ajax');
+          var mainHTML = document.getElementsByTagName('main')[0];
+
+          button.addEventListener('click', makeRequest);
+
+          function makeRequest() {
+            var url = "http://blank.bellevillecitoyenne.fr/courses/javascript/lesson6/samples/ajax.html";
+            var request = new XMLHttpRequest();
+              request.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    mainHTML.innerHTML = request.responseText;
+                  }
+              };
+              request.open("GET", url, true);
+              request.send();
+          }
+
+        </script>
+    </body>
+</html>

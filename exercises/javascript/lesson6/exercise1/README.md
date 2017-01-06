@@ -17,7 +17,7 @@
               Il reste <span class="timer"></span> secondes
             </div>
             <div class="timer-wrapper">
-              <button id="defuse">Désamorcer</span>
+              <button id="defuse">Désamorcer</button>
             </div>
         </main>
         <script type="text/javascript" src="bomb.js"></script>
@@ -35,6 +35,6 @@
     - retire tout les éléments du body
     - affiche **BOOM !** en gros et gras
     - change la couleur de fond du body en rouge
-    
+
     Si le compte à rebours arrive à 0, appelez cette fonction.
   5. Utiliser la fonction setTimeout pour arrêter le compte à rebours au bout de 5 secondes.

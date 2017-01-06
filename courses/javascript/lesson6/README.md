@@ -77,14 +77,18 @@ C'est un acronyme qui signifie : Asynchronous Javascript And XML. Au début cett
 
 
 ## Petite information
-Par défaut les requêtes sont synchrones, c'est à dire que l'on attend une réponse du serveur avant de faire quelque chose. Cependant AJAX nous autorise à faire ceci de manière asynchrone (ou non bloquante). On ne va pas attendre la fin de la requête pour exécuter le reste du JavaScript.
+Par défaut les requêtes sont synchrones, c'est à dire que l'on attend une réponse du serveur avant de faire quelque chose.
+Cependant AJAX nous autorise à faire ceci de manière asynchrone (ou non bloquante).
+On ne va pas attendre la fin de la requête pour exécuter le reste du JavaScript.
 
 
 ***
 
 
 ## Et ça sert à quoi ?
-A charger des ressources sans bloquer le chargement de la page. A faire des appels pour récupérer des notifications, messages, etc. (c'est utilisé dans les systèmes de messagerie en ligne). AJAX sert aussi à envoyer du contenu.
+A charger des ressources sans bloquer le chargement de la page.
+A faire des appels pour récupérer des notifications, messages, etc. (c'est utilisé dans les systèmes de messagerie en ligne).
+AJAX sert aussi à envoyer du contenu.
 
 
 ***
@@ -94,9 +98,9 @@ A charger des ressources sans bloquer le chargement de la page. A faire des appe
 On utilise un objet JavaScript du nom de `XMLHttpRequest`.
 ```js
 var request = new XMLHttpRequest(); //création de la requête
-xhttp.open("GET", "http://www.w3schools.com/xml/ajax_info.txt", true); //spécification de la
+request.open("GET", "http://www.w3schools.com/xml/ajax_info.txt", true); //spécification de la
 // requête, l'adresse et si la requête est asynchrone (non bloquante)
-xhttp.send(); //envoie de la requête
+request.send(); //envoie de la requête
 ```
 
 
@@ -141,9 +145,9 @@ request.onreadystatechange = function() {
         ...
     }
 };
-xhttp.open("GET", "http://www.w3schools.com/xml/ajax_info.txt", true); //spécification de la
+request.open("GET", "http://www.w3schools.com/xml/ajax_info.txt", true); //spécification de la
 // requête, l'adresse et si la requête est asynchrone (non bloquante)
-xhttp.send(); //envoie de la requête
+request.send(); //envoie de la requête
 ```
 
 ***
