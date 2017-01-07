@@ -50,21 +50,19 @@
 - `<th>` : Définit une cellule d'en-tête.
 - `<tr>` : Définit une ligne de cellules dans un tableau. Elles peuvent être un mélange de `<td>` et `<th>`.
 
-<!--
-# Forms
-- `<button>` : Représente a clickable button
-- `<datalist>` : Contains a set of `<option>` elements that represent the values available for other controls
-- `<fieldset>` : Used to group several controls as well as labels (`<label>`) within a web form
-- `<form>` : Représente the parent element of a web form in a document section
-- `<input>` : Used to create interactive controls to accept data from the user
-- `<label>` : Représente a caption for an item in a user interface. A control element can be placed inside a `<label>` element, or by using the for attribute
-- `<legend>` : Représente a caption for the content of its parent `<fieldset>`
-- `<optgroup>` : Creates a grouping of options within a `<select>` element
-- `<option>` : Used to create a control representing an item within a `<select>`, an `<optgroup>` or a `<datalist>` element
-- `<output>` : Représente the result of a calculation or user action
-- `<select>` : Représente a control that presents a menu of options. The options within the menu are represented by `<option>` elements, which can be grouped by `<optgroup>` elements
-- `<textarea>` : Représente a multi-line plain text editing control
--->
+
+# Formulaires
+- `<button>` : Représente un bouton cliquable
+- `<datalist>` : Contient un ensemble d'`<option>`s représentant les valeurs pour d'autres champs.
+- `<fieldset>` : Utilisé pour grouper des champs de formulaire.
+- `<form>` : Représente l'élement parent d'un formulaire
+- `<input>` : La balise la plus courante pour créer des champs de formulaire.
+- `<label>` : Représente le libellé d'un élement.
+- `<legend>` : Libellé pour le contenu du `<fieldset>` parent.
+- `<optgroup>` : Crée un groupe d'options dans un `<select>`.
+- `<option>` : Représente une valeur dans un `<select>`, un `<optgroup>` ou un `<datalist>`.
+- `<select>` : Représente une liste déroulante.
+- `<textarea>` : Représente un champ texte multi-ligne
 
 # Images et Multimédia
 - `<img>` : Utilisé pour intégrer une image
