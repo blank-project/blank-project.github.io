@@ -3,6 +3,13 @@ The Git repository for the \_blank project
 This repository contains courses and exercises material.  
 It is contributed to by the teachers of the \_blank project.
 
+
+## Development
+`npm install` to install development dependencies.  
+`gulp serve` starts a local server for courses on port _8080_.
+
+## Licensing
+
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
 </a>
