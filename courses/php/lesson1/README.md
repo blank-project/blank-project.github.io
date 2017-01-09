@@ -125,3 +125,14 @@ Il faut TOUJOURS terminer la ligne par un `;` !
 </body>
 </html>
 ```
+
+
+---
+
+
+## Exercice d'application
+
+- Installer XAMPP sur vos poste puis le lancer
+- Trouver l'emplacement dans le File System servi par Apache
+- Ajouter un fichier helloworld.php contenant le code la page précédente
+- Afficher helloworld.php dans un navigateur
