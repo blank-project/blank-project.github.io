@@ -10,7 +10,7 @@ function makeRequest() {
     //if request ok
     if (this.readyState == 4 && this.status == 200) {
       handleRequest(request);
-    } else {
+    } else if (this.readyState == 4) {
       //if something went wrong
       alert("something went wrong...");
       console.log("request",request,"event",this);
@@ -22,5 +22,5 @@ function makeRequest() {
 
 //handle request
 function handleRequest(request) {
-  console.log(request);
+  console.log(request.responseText);
 }
