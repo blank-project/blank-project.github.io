@@ -12,7 +12,7 @@
 
 PHP est un langage de script et de programmation
 
-Il est en général utilisé pour réaliser des sites web _dynamique_.
+Il est en général utilisé pour réaliser des sites web _dynamiques_.
 
 Il partage un certain nombre de caractéristiques avec JavaScript  
 (haut niveau, interprété, typage dynamique).

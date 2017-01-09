@@ -3,6 +3,7 @@
 ## Créer un répertoire pour nos tests
 - Executer `cd /opt/lampp/htdocs/ && sudo mkdir php`.
 - Executer `sudo chown <VOTRE_USER> php/`.
+- Créer un lien symbolique depuis votre dossier d'exercices vers le dossier créé (`ln -s /opt/lampp/htdocs/php ~/Documents/<VOTRE_DOSSIER>`).
 
 
 ## Hello World

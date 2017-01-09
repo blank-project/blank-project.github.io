@@ -124,7 +124,8 @@ echo $what . ' is cool !';
 Comme en JavaScript, on dispose de Tableaux.
 
 On les crée grâce à la fonction `array()`.
-Il s'utilisent comme en JavaScript.
+
+Ils s'utilisent comme en JavaScript.
 
  ```php
 <?php
@@ -165,9 +166,50 @@ echo $test['name'] . ' is cool ? ' . $test['cool'];
 
 ## Structures de contrôle
 
-Les conditions, les boucles et les fonctions s'écrivent comme en JavaScript.
+Les conditions et les boucles s'écrivent comme en JavaScript.
 
 On dispose des mêmes opérateurs : `<`, `>`, `<=`, `>=`, `==`, `&&`, `||`, `!`.
+
+
+
+---
+
+
+
+## Structures de contrôle
+
+Dans une condition ou une boucle, on peut fermer la balise `php` pour éviter d'avoir à utiliser tout le temps `echo`.
+
+```php
+<?php if($user != null) { ?>
+ <h1>Connexion réussie</h1>
+ <p>Bienvenue, <?php echo $user; ?> !</p>
+<?php } else { ?>
+  <h1>Connexion échouée</h1>
+<?php } ?>
+```
+
+
+
+---
+
+
+
+## Structures de contrôle
+
+La boucle `foreach` permet de parcourir facilement un tableau ou un tableau associatif.
+
+```
+<?php
+$test = array("name" => "_blank", "cool" => true);
+foreach ($test as $value) {
+  echo $value;
+}
+foreach ($test as $key => $value) {
+  echo $key . ' -> ' . $value;
+}
+?>
+```
 
 
 
@@ -211,7 +253,7 @@ Se reporter à la [CheatSheet](https://github.com/blank-project/_blank/blob/mast
 
 Grâce à PHP, on peut inclure des fragments de page, grâce aux fonctions `include` et `require`.
 
-(Plus besoin de copier-coller le menu sur toutes les pages).
+(Plus besoin de copier-coller le menu sur toutes les pages !).
 
 ```php
 <?php
