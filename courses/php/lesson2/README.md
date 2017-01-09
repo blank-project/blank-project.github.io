@@ -270,6 +270,6 @@ require("fragments/menu.php");
 ## Exercice d'application
 
 - Reprendre le projet des vacances et y extraire une partie qui se répète dans toutes les pages (le menu par exemple)
-- Mettre cette partie dans un fichier HTML à partie
-- Utiliser PHP et la fonction require pour éviter de répéter cette partie partout
+- Mettre cette partie dans un fichier HTML à part
+- Utiliser PHP et la fonction `require` pour éviter de répéter cette partie partout
 - Ne pas oublier de changer les extensions des fichiers qui utilisent PHP !
