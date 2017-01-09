@@ -1,0 +1,71 @@
+{
+    "students" : [
+        {
+            "name":"Segbtese",
+            "firstname":"Marc"
+        },{
+            "name":"Dorival",
+            "firstname":"Mike"
+        },{
+            "name":"Doucoure",
+            "firstname":"Alfousein"
+        },{
+            "name":"Outerbah",
+            "firstname":"Aline"
+        },{
+            "name":"Chappon",
+            "firstname":"Léo"
+        },{
+            "name":"Nakhli",
+            "firstname":"Badis"
+        },{
+            "name":"Guerbaoui",
+            "firstname":"Wassim"
+        },{
+            "name":"Brandao",
+            "firstname":"Jennifer"
+        },{
+            "name":"Abemango",
+            "firstname":"Laurent"
+        },{
+            "name":"Drean",
+            "firstname":"Valentin"
+        },{
+            "name":"Makhlouf",
+            "firstname":"Rezzak"
+        },{
+            "name":"Ndao",
+            "firstname":"Abdoulaye"
+        }
+    ],
+    "teachers" : [
+        {
+            "name":"Gablowski",
+            "firstname":"Yohann"
+        },{
+            "name":"Neji",
+            "firstname":"Mohamed"
+        },{
+            "name":"De Naurois",
+            "firstname":"Paulin"
+        },{
+            "name":"Osouf",
+            "firstname":"Erwan"
+        },{
+            "name":"Procureur",
+            "firstname":"Marin"
+        }
+    ],
+    "admin" : [
+        {
+            "name":"Popot",
+            "firstname":"Albin"
+        },{
+            "name":"Mendy",
+            "firstname":"Nabintou"
+        },{
+            "name":"Dupin",
+            "firstname":"Antonin"
+        }
+    ]
+}
