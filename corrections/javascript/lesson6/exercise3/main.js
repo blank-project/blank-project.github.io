@@ -22,5 +22,29 @@ function makeRequest() {
 
 //handle request
 function handleRequest(request) {
-  console.log(request.responseText);
+  var obj = JSON.parse(request.responseText);
+  for (var key in obj) {
+    var table = obj[key]; //tableau des éléments de chaque propriété
+
+    // create HTML for the first key
+    var element = document.createElement("h2");
+    element.innerText = key; //add text to element
+    document.body.appendChild(element); //append element to body
+
+    //create list for each key
+    var list = document.createElement("ul");
+    for (var i = 0; i < table.length; i++) {
+      var person = table[i]; //each student / teacher / admin
+
+      //create list item for each person
+      var listItem = document.createElement("li");
+      for (var k in person) {
+        //add text to each list item
+        listItem.innerText +=person[k] + " ";
+      }
+
+      list.appendChild(listItem);
+    }
+    document.body.appendChild(list);
+  }
 }

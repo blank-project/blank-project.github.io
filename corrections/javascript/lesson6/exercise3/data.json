@@ -2,7 +2,8 @@
     "students" : [
         {
             "name":"Segbtese",
-            "firstname":"Marc"
+            "firstname":"Marc",
+            "age":21
         },{
             "name":"Dorival",
             "firstname":"Mike"
@@ -58,6 +59,15 @@
     ],
     "admin" : [
         {
+            "name":"Popot",
+            "firstname":"Albin"
+        },{
+            "name":"Mendy",
+            "firstname":"Nabintou"
+        },{
+            "name":"Dupin",
+            "firstname":"Antonin"
+        },{
             "name":"Popot",
             "firstname":"Albin"
         },{
