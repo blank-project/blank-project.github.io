@@ -24,7 +24,7 @@ function makeRequest() {
 function handleRequest(request) {
   var obj = JSON.parse(request.responseText);
   for (var key in obj) {
-    var table = obj[key]; //tableau des éléments de chaque propriété
+    var leshumains = obj[key]; //tableau des éléments de chaque propriété
 
     // create HTML for the first key
     var element = document.createElement("h2");
@@ -33,14 +33,14 @@ function handleRequest(request) {
 
     //create list for each key
     var list = document.createElement("ul");
-    for (var i = 0; i < table.length; i++) {
-      var person = table[i]; //each student / teacher / admin
+    for (var i = 0; i < leshumains.length; i++) {
+      var monhumain = leshumains[i]; //each student / teacher / admin
 
       //create list item for each person
       var listItem = document.createElement("li");
-      for (var k in person) {
+      for (var prop in monhumain) {
         //add text to each list item
-        listItem.innerText +=person[k] + " ";
+        listItem.innerText +=monhumain[prop] + " ";
       }
 
       list.appendChild(listItem);

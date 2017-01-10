@@ -41,33 +41,30 @@
     ],
     "teachers" : [
         {
-            "name":"Gablowski",
-            "firstname":"Yohann"
+          "name":"Gablowski",
+          "firstname":"Yohann"
         },{
-            "name":"Neji",
-            "firstname":"Mohamed"
+          "name":"Neji",
+          "firstname":"Mohamed"
         },{
-            "name":"De Naurois",
-            "firstname":"Paulin"
+          "name":"De Naurois",
+          "firstname":"Paulin"
         },{
-            "name":"Osouf",
-            "firstname":"Erwan"
+          "name":"Osouf",
+          "firstname":"Erwan"
         },{
-            "name":"Procureur",
-            "firstname":"Marin"
+          "name":"Procureur",
+          "firstname":"Marin"
+        },{
+          "name":"Kaimouni",
+          "firstname":"Mossab"
+        },{
+          "name":"Aubouin",
+          "firstname":"Estelle"
         }
     ],
     "admin" : [
         {
-            "name":"Popot",
-            "firstname":"Albin"
-        },{
-            "name":"Mendy",
-            "firstname":"Nabintou"
-        },{
-            "name":"Dupin",
-            "firstname":"Antonin"
-        },{
             "name":"Popot",
             "firstname":"Albin"
         },{
