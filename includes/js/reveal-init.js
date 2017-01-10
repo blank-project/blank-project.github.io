@@ -1,6 +1,7 @@
 (function(){
 
   Reveal.initialize({
+    history : true,
     dependencies : [
 
         // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
