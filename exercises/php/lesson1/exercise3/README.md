@@ -8,6 +8,6 @@ $time = date("H");
 ```
 
 * Créez deux feuilles de style.
-  * Une avec un fonc bleu ciel (summer.css)
-  * Une avec un fond gris clair (winter.css)
+  * Une avec un fonc bleu ciel (am.css)
+  * Une avec un fond gris clair (pm.css)
 * Charger une feuille de style différente en fonction de si c'est le matin ou l'après midi.
