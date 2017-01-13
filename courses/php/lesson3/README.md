@@ -238,6 +238,7 @@ Si on affiche des paramètres envoyés par l'utilisateur dans une page, il faut 
 
 Pour cela, on utilise la fonction  `htmlspecialchars()`.
 
+
 ***
 
 
