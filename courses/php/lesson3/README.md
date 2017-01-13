@@ -209,6 +209,7 @@ C'est pourquoi on doit toujours vérifier que les données attendues
 - ont bien été envoyées
 - qu'elles sont du bons types
 - qu'elles ont des valeurs cohérentes
+- qu'elles n'engendrent pas de failles de sécurité.
 
 
 ***
@@ -222,7 +223,32 @@ On doit vérifier :
 - que le paramètre est bien un entier `is_int($_GET['age'])`.
 - que le paramètre est bien positif `$_GET['age'] > 0`.
 
+***
+
+
+L'exemple précédent est un exemple simple mais ne pas vérifier les paramètres peut conduire à des failles de sécurité !
+
 
 ***
 
-L'exemple précédent est un exemple simple mais ne pas vérifier les paramètres peut conduire à des failles de sécurité !
+
+## Les injections
+
+Si on affiche des paramètres envoyés par l'utilisateur dans une page, il faut retirer tout le code éxécutable.
+
+Pour cela, on utilise la fonction  `htmlspecialchars`.
+
+***
+
+
+### Exemple
+
+
+Prenons la page suivante :
+```
+<?php echo $_GET['user']; ?>
+```
+
+Si dans le paramètre user, on envoie :  
+`Erwan<script type="text/javascript">alert("YOLO")</script>`  
+Que va-t-il se passer ?
