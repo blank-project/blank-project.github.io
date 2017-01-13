@@ -236,7 +236,7 @@ L'exemple précédent est un exemple simple mais ne pas vérifier les paramètre
 
 Si on affiche des paramètres envoyés par l'utilisateur dans une page, il faut retirer tout le code éxécutable.
 
-Pour cela, on utilise la fonction  `htmlspecialchars`.
+Pour cela, on utilise la fonction  `htmlspecialchars()`.
 
 ***
 

@@ -190,6 +190,20 @@ Dans une condition ou une boucle, on peut fermer la balise `php` pour éviter d'
 ```
 
 
+***
+
+
+On peut écrire cela de manière plus concise :
+```
+<?php if($user != null) : ?>
+
+<?php else : ?>
+
+<?php endif ?>
+```
+On a pas besoin de mettre des blocs `{ }`.
+Il faut terminer la condition par `endif`.
+
 
 ---
 

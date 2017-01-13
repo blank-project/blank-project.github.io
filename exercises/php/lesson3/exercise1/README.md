@@ -1,8 +1,8 @@
 # PHP > Lesson 3 > Exercise 1
 
-Ecrivez un script PHP qui pour chaque paramètre envoyé indique :
-- son nom
-- sa valeur
-- le type de sa valeur (utiliser la fonction `gettype()`)
-
-Pour réaliser ceci, utiliser une boucle `foreach` et la variable (`$_GET`).
+- Ecrivez un script PHP qui affiche le paramètre `test` dans la page renvoyée.
+- En utilisant ce paramètre, essayez d'injecter dans la page :
+  - une image
+  - un script
+(Enregistrer les URL quelque part)
+- Modifier le script PHP pour que l'injection ne soit plus possible. (retirer les caractères spéciaux).
