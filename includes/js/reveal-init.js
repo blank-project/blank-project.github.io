@@ -27,10 +27,10 @@
         { src: '/includes/lib/reveal/plugin/zoom-js/zoom.js', async: true },
 
         //notes
-        { src: '/includes/lib/reveal/plugin/notes/notes.js', async: true },
+        { src: '/includes/lib/reveal/plugin/notes/notes.js', async: true }//,
 
         //pdf
-        { src: '/includes/lib/reveal/plugin/print-pdf/print-pdf.js', async: true}
+      //  { src: '/includes/lib/reveal/plugin/print-pdf/print-pdf.js', async: true}
     ]
   });
 })();
