@@ -220,7 +220,7 @@ On écrit un script PHP qui doit traiter un âge.
 L'âge est envoyé par paramètre de requête dans une variable `age`
 On doit vérifier :
 - que le paramètre est bien envoyé : `isset($_GET['age'])`.
-- que le paramètre est bien un entier `is_int($_GET['age'])`.
+- que le paramètre est bien un entier `is_numeric($_GET['age'])`.
 - que le paramètre est bien positif `$_GET['age'] > 0`.
 
 ***
