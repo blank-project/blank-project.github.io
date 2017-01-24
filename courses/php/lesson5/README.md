@@ -121,6 +121,7 @@ class Humain
 (Presque) Comme en Javascript, `$this` représente l'objet sur lequel on appelle la méthode.
 
 
+
 ---
 
 
