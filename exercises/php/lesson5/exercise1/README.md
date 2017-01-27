@@ -66,7 +66,16 @@ $Paulin->attaquer($Marin);
   - les getters pour les attributs
   - un constructeur initialisant les attributs.
 - Ajouter un attribut `$arme` à votre personnage, avec un getter et un setter.
-- Modifier la méthode `attaquer` pour que les dommages infligés soient les points d'attaque du personnage attaquant + les dégats infligés par l'arme.
+- Modifier la méthode `attaquer` de `Personnage` pour que les dommages infligés soient les points d'attaque du personnage attaquant + les dégats infligés par l'arme.
 - Dans le constructeur de `Personnage`, initialiser l'attribut `$arme` avec une Epée faisant 20 dégats.
 
 - Au début du combat, équipez un personnage avec un Bazooka faisant 100 dégats.
+
+
+
+---
+
+
+
+BONUS :
+Stocker en session les résultats des combats.

@@ -1,15 +1,41 @@
 <?php
-  require("Personnage.php");
-  $Paulin = new Personnage("Super Paulin", 100, 11);
-  $Marin = new Personnage("Weak Marin", 100, 9);
+  spl_autoload_register(function($name) {
+      return require($name . ".php");
+  });
+  session_start();
 
-  echo "Le combat légendaire entre ".$Paulin->getNom(). " vs "
-    .$Marin->getNom(). " va commencer !<br />";
+  $Paulin = new Personnage("Super Paulin", 100, 11);
+  $Marin = new Personnage("Weak Marin", 20, 2);
+
+  // Initialize scores in session.
+  if (!isset($_SESSION[$Paulin->getNom()])) {
+    $_SESSION[$Paulin->getNom()] = 0;
+  }
+  if (!isset($_SESSION[$Marin->getNom()])) {
+    $_SESSION[$Marin->getNom()] = 0;
+  }
+
+  // Display scores
+  echo $Marin->getNom()
+   . " "
+   . $_SESSION[$Marin->getNom()]
+   .  " - "
+   . $_SESSION[$Paulin->getNom()]
+   . " "
+   . $Paulin->getNom()
+   . "<br />";
+
+  $Marin->setWeapon(new Arme("Bazooka", 100));
+
+  echo "Le combat légendaire entre " .$Paulin . " vs "
+    .$Marin. " va commencer !<br />";
 
     echo "Hajime !<br />";
   $winner = combat($Marin, $Paulin);
 
-  echo "Le gagnant est " . $winner->getNom();
+  echo "Le gagnant est " . $winner;
+
+  $_SESSION[$winner->getNom()] = $_SESSION[$winner->getNom()] + 1;
 
   /**
   * Make 2 characters fight
@@ -20,7 +46,7 @@
     $personnage2 =  ($personnage1 == $p1 ? $p2 : $p1);
 
     while ($personnage1->estVivant() && $personnage2->estVivant()) {
-      echo $personnage1->getNom() . " attaque " . $personnage2->getNom();
+      echo $personnage1 . " attaque " . $personnage2;
       $personnage1->attaquer($personnage2);
       echo "<br />Il reste " . $personnage2->getPv() . "PV à " . $personnage2->getNom() . "<br/>";
       echo "<br />";
