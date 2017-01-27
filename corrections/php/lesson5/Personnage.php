@@ -25,7 +25,11 @@
     }
 
     public function causeDommage($degats) {
-      $this->pv -= $degats;
+      if ($degats >= $this->pv) {
+        $this->pv = 0;
+      } else {
+        $this->pv -= $degats;
+      }
     }
 
     public function attaquer($personnage) {
