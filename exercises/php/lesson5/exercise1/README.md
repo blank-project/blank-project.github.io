@@ -37,7 +37,10 @@ enlève des PV au personnage
 public function causeDommage($degats) {
   $this->pv -= $degats;
 }
-$Paulin.attaquer($Marin);
+```
+
+```
+$Paulin->attaquer($Marin);
 ```
 
 
@@ -46,6 +49,6 @@ $Paulin.attaquer($Marin);
 
 
 
-- Ecrire une fonction `combat(personnage1, personnage2)` qui fait se battre les deux personnages jusqu'à ce qu'un des deux meure.
+- Ecrire une fonction `combat(personnage1, personnage2)` qui fait se battre les deux personnages jusqu'à ce qu'un des deux meure. Elle retourne le vainqueur.
 - Utiliser la fonction `echo` pour voir les différentes étapes du combat : annonces, attaques respectives, fin du combat
-- Tirage au sort du premier personnage qui attaque
+- Tirage au sort du premier personnage qui attaque en utilisant un fonction `tirerAuSort(personnage1, personnage2)`
