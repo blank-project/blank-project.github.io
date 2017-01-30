@@ -6,11 +6,11 @@
 
 
 
-[La programmation orientée objet] consiste en la définition et l'interaction de briques logicielles appelées **objets**.  
-Un objet représente un concept, une idée ou toute entité du monde physique, comme une voiture, une personne ou encore une page d'un livre.  
-Il possède une structure interne et un comportement, et il sait interagir avec ses pairs.  
-Il s'agit donc de représenter ces objets et leurs relations.  
-L'interaction entre les objets via leurs relations permet de concevoir et réaliser les fonctionnalités attendues, de mieux résoudre le ou les problèmes.  
+[La programmation orientée objet] consiste en la définition et l'interaction de briques logicielles appelées **objets**.
+Un objet représente un concept, une idée ou toute entité du monde physique, comme une voiture, une personne ou encore une page d'un livre.
+Il possède une structure interne et un comportement, et il sait interagir avec ses pairs.
+Il s'agit donc de représenter ces objets et leurs relations.
+L'interaction entre les objets via leurs relations permet de concevoir et réaliser les fonctionnalités attendues, de mieux résoudre le ou les problèmes.
 
 Wikipédia
 
@@ -92,7 +92,7 @@ En général, on définit une classe par fichier, et on inclut ces fichiers dans
 
   class MaClasse
   {
-    // Attributs et Méthodes  
+    // Attributs et Méthodes
   }
 
 ?>
@@ -224,6 +224,7 @@ Cela permet notamment :
 ---
 
 
+
 ## Le constructeur
 
 Pour créer directement un objet dans un état donné, on utilise un **constructeur**.
@@ -236,5 +237,75 @@ Il se nomme toujours `__construct`.
 // Un constructeur
 public __construct($prenom) {
   $this->$prenom = $prenom;
+}
+```
+
+
+
+---
+
+
+
+## L'héritage et la composition
+
+
+***
+
+
+## Qu'est-ce que l'héritage ?
+
+"L’héritage est un concept puissant de la programmation orientée objet, permettant entre autres la réutilisabilité (décomposition du système en composants) et l'adaptabilité des objets grâce au polymorphisme. Elle se nomme ainsi car le principe est en quelque sorte le même que celui d’un arbre généalogique. Ce principe est basé sur des classes dont les « filles » héritent des caractéristiques de leur(s) « mère(s) »."
+
+Wikipedia
+
+
+***
+
+
+## Exemple d'héritage
+
+```php
+class Animal {
+    private $nom;
+}
+
+class Chien extends Animal {
+    //ici private $nom est déjà défini !
+}
+```
+
+
+***
+
+
+## Qu'est-ce que la composition ?
+
+La composition permet de créer un ensemble de fonction prédéfinies et de les importer dans une classe. Cependant à contrario de l'héritage, il peut y avoir plusieurs inclusions de composites dans une classe.
+
+Pour définir un composite, on utilise le mot clé `trait`.
+Poue inclure un composite, on utilise le mot clé `use`.
+
+
+***
+
+
+## Exemple de composition
+
+```php
+trait Talkative {
+    public function talk($in) {
+        echo $in;
+    }
+}
+
+trait Walk {
+    public function walk($dist) {
+        echo "walking $dist";
+    }
+}
+
+public class Human {
+    use Talkative;
+    use Walk;
 }
 ```
