@@ -4,7 +4,7 @@
 
 - Créez une base de donnée php_exercises
 
-- Créez une table exercise6 contenant :
+- Créez une table exercise1 contenant :
   - id : primary key not null auto increment
   - title : TINYTEXT 250 not null unique
   - content : MEDIUMTEXT not null
