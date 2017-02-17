@@ -1,6 +1,7 @@
 # Guidelines for Contributing to blank courses writing
 
 ## Reveal.js
+Before contributing, clone the repository and install packages with `npm install`.
 Slideshows are written in HTML or Markdown and displayed using [reveal.js](http://lab.hakim.se/reveal-js/#/)  
 To serve slideshows through a local file server, run `gulp serve --port <PORT>`.  
 **PORT** is the port used for the server. If omitted, defaults to `8080`.
