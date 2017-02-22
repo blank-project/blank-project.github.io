@@ -1,163 +1,193 @@
-## SQL : Groupes, Ordres et Aggrégats
-
-
-
----
-
-
-
-En plus de nous permettre de stocker des données, SQL va nous permettre de manipuler ces données de manières très puissantes.
-
-On va pouvoir les trier, les regrouper, en aggréger certaines caractéristiques.
-
-Dans ce cours, on suppose l'existence d'une table _users_ qui possède les colonnes suivantes : _nom_, _prenom_, _age_, _email_, _city_ et _postal\_code_.
-
-
-
----
-
-
-
-## Les fonctions
-
-En SQL, on peut utiliser des fonctions qui manipulent les données sans les modifier.
-
-- `CONCAT()` : concatène des chaînes de caractère.
-- `UPPER()` / `LOWER()` : mets des chaînes de caractères en majuscule / minuscule.
-- `REPLACE()` : remplace des caractères dans une chaîne.
-- ...
+## Bases de SQL
 
 
 ***
 
-Concatène le nom et le prénom
-```
-SELECT CONCAT(nom, ' ', prenom) FROM users
-```
 
-Remplace le "@" par " at ""
-```
-SELECT REPLACE(email, '@', ' at ') FROM users
-```
+## La syntaxe
 
+Tout commence par un mot clé (généralement écrit en majuscule bien que non sensible à la casse), comme `INSERT`, `CREATE`, `DELETE`, ...
+
+Ensuite ce sont les paramètes, cela diffère pour chaque requête.
+
+Certaines bases de données demandent un `;` à la fin de la requête.
 
 
----
+***
 
 
+## Vu que tout fonctionne par tables :
 
-## Les fonctions d'aggrégats
+#### Comment fait-on pour créer une table ?
 
-Les fonctions d'aggrégats permettent de réaliser des opérations mathématiques sur une colonne :
-- `COUNT()` : compte le nombre de ligne
-- `SUM()` : retourne la somme d'une colonne numérique
-- `MAX()` : retourne la valeur maximale d'une colonne numérique
-- `MIN()` : retourne la valeur minimale d'une colonne numérique
-- `AVG()` : retourne la valeur moyenne d'une colonne numérique
+On utilise le mot clé `CREATE TABLE` suivi du nom de la table, et enfin des informations concernant les colonnes.
 
 
-
----
-
+***
 
 
-## Les groupements
+## Pause exercices
 
-Les fonctions d'aggrégats sont utiles, mais elles prennent tout leur sens quand on réalise des groupements.
+Allez sur `localhost/phpmyadmin/`, et créez une base de données `test_cours`. Avec interclassement utf8_general.
 
-Pour regrouper des lignes en fonction de la valeur d'une colonne, on utilise la clause `GROUP BY`.
 
-On ne peut alors récupérer que les données regroupées ou aggrégées.
+***
 
-Les données aggrégées le sont alors par groupe.
+
+## Pause exercices (suite)
+
+Créez une table nommée : `blank`.
+
+Cette dernière aura deux colonnes :
+- id (primary key, not null, auto increment)
+- content (varchar, 250 size, not null)
+
+Utilisez l'interface graphique, une fois que c'est bon cliquez sur `Apreçu SQL`.
+
+
+***
+
+## Coooool ! On a une base de donnée avec une table.
+
+...Mais maintenant on fait quoi ?
+
+
+***
+
+## SQL time
+
+
+***
+
+
+Nous allons utiliser le langage SQL pour communiquer avec notre base de données.
+Les 4 commandes de bases sont :
+  - INSERT pour ajouter une ligne de donnée
+  - SELECT pour retrouver une ligne de donnée
+  - UPDATE pour mettre à jour une ligne de donnée
+  - DELETE pour supprimer une ligne de donnée
 
 
 
 ***
 
 
+## INSERT
 
-Exemple :
-Pour compter les utilisateurs ayant le même code postal :
+Pour ajouter une ligne de données dans la table :
+
 ```
-SELECT postal_code, count(*) FROM users GROUP BY postal_code
+INSERT INTO nom_de_la_table (colonne1, colonne2, colonne3) VALUE (1, 'nom1', 'prénom1');
 ```
-
-
-
----
-
-
-
-## Ordre de tri
-
-On peut également utiliser SQL pour trier les données.
-
-Pour cela, on utilise la clause `ORDER BY`.
-
-Pour spécifier l'ordre on utilise les mots clés `ASC` (croissant, par défaut) ou `DESC` (décroissant).
 
 
 
 ***
 
 
-Pour trier nos utilisateurs par nom puis prénom.
+## SELECT
+
+Pour sélectionner des données :
+
 ```
-SELECT * FROM users ORDER BY nom, prenom
+SELECT * FROM nom_de_la_table;
+
+SELECT (colonne1, colonne2) FROM nom_de_la_table;
 ```
 
-Pour trier nos utilisateurs par âge décroissant.
+__PS : ramenez pas la terre avec vous, ça peut boucher les tuyaux !__
+
+
+
+***
+
+
+## UPDATE
+
+Pour mettre à jour une ligne :
+
 ```
-SELECT * FROM users ORDER BY age DESC
+UPDATE nom_de_la_table SET colonne1='nouvelle_valeur';
 ```
 
 
 ***
 
 
-On peut également trier par résultat d'une fonction d'aggrégat.
+## DELETE
 
-Pour afficher les villes de nos utilisateurs par âge moyen croissant.
-```
-SELECT city FROM users GROUP BY city ORDER BY AVG(age)
-```
-
-
-
----
-
-
-
-## Les Alias
-
-En SQL, on peut donner un alias à un résulat calculé.
-
-Cela permet de créer une colonne virtuelle que l'on peut réutiliser.
-
-Pour cela, on utilise le mot clé `AS`.
+Pour supprimer une ligne de données dans la table :
 
 ```
-SELECT city, AVG(age) AS age_moyen FROM users GROUP BY city ORDER BY age_moyen
+DELETE FROM `nom_de_la_table`;
 ```
-
-
-
----
-
-
-
-## Filtrer les groupes
-
-La clause `HAVING` permet de filtrer les groupes vérifiant une condition.
-
-(En fait, comme `WHERE`, mais pour un groupe).
 
 
 ***
 
-Pour séléctionner les villes dont la moyenne d'âge est supérieure à 18 ans :
+
+## Petit conseil
+
+Pour les trois dernières requêtes, vous pouvez les écrire avec une clause `WHERE` !
+C'est comme une condition, ceci nous permet de restreindre les lignes impactées. Et éviter de ramener la terre entière.
+
+Ca évite aussi de modifier ou supprimer toute les lignes de table et seulement les lignes concernées !
+
+La clause s'écrit comme ça :
 
 ```
-SELECT city FROM users GROUP BY city HAVING AVG(age) > 18
+DELETE FROM `nom_de_la_table` WHERE (colonne1='1');
 ```
+
+
+***
+
+
+## Types que l'on peu stocker
+
+[https://mariadb.com/kb/en/mariadb/data-types/](https://mariadb.com/kb/en/mariadb/data-types/)
+
+
+***
+
+
+## Wait y'a pas les images ?! Et les vidéos, etc.
+
+Ok c'est le principal soucis des bases de données, on évite de stocker les images, vidéos, medias, etc. dans une base de données. On enregistre plutôt leur chemin d'accès (qui est du coup généralement sur un autre serveur de stockage de média au fonctionnement bien différent).
+
+
+***
+
+
+## Pause exercices
+
+Dans la table que l'on vient de créer, insérer une ligne avec le contenu : `_blank in the db`.
+Rappelez vous, l'id sera mise toute seul.
+
+Pour cela utilisez l'onglet SQL de `phpmyadmin`.
+
+
+***
+
+
+## Pause exercices (suite)
+
+Insérez une seconde ligne, avec pour contenu `ok déjà à la deuxième ligne c'est pas pratique`.
+
+Modifiez cette ligne pour que le contenu soit maintenant : `nan nan c'est génial`.
+
+
+***
+
+
+## Pause exercices (suite suite)
+
+Supprimez cette dernière ligne.
+
+Il ne doit maintenant rester qu'une seule ligne dans votre table. Pour vérifier, sélectionner toutes les lignes de la table.
+
+
+***
+
+
+## That's it !
