@@ -16,7 +16,7 @@ Une base de données est un ensemble de données organisées et structurées afi
 
 
 
-## Qu'est ce que <acronyme title="Structured Query Language">SQL</acronym> ?
+## Qu'est ce que <acronym title="Structured Query Language">SQL</acronym> ?
 
 C'est le langage de base de données le plus répandu qui permet d'interagir avec une base de donnée. Ces bases de données sont dites relationnelles. Cependant ce n'est pas les seules bases de données que l'on retrouve.
 
@@ -40,7 +40,7 @@ Ce sont des relations entre utilisateurs et utilisateurs, ainsi qu'entre utilisa
 
 
 
-## Oragnisation d'une base de données
+## Organisation d'une base de données
 
 
 ***
@@ -62,7 +62,7 @@ Exemple pour Belleville Citoyenne :
 
 ## Une table est composée de lignes et de colonnes :
 
-Chaque colonne a un titre définissant l'information qu'elle contient. Et chaque ligne correpond à une entitée.
+Chaque colonne a un titre définissant l'information qu'elle contient. Et chaque ligne correspond à une entité.
 
 |id|nom|prénom|
 |-|-|-|
@@ -228,12 +228,12 @@ INSERT INTO nom_de_la_table (colonne1, colonne2, colonne3) VALUE (1, 'nom1', 'pr
 Pour sélectionner des données :
 
 ```
-SLECT * FROM nom_de_la_table;
+SELECT * FROM nom_de_la_table;
 
 SELECT (colonne1, colonne2) FROM nom_de_la_table;
 ```
 
-__PS : rammenez pas la terre avec vous, ça peut boucher les tuyaux !__
+__PS : ramenez pas la terre avec vous, ça peut boucher les tuyaux !__
 
 
 

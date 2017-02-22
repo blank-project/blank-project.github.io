@@ -1,3 +1,3 @@
-# HTML
+# SQL
 
-Les cours de HTML de \_blank.
+Les cours de SQL et de gestion de Base de Données de \_blank.
