@@ -1,4 +1,6 @@
-# SQL > Lesson 2
+# SQL > Lesson 3 > Exercise 1
+
+Télécharger et importer la base de données `cinemas.sql`
 
 Ecrire les requêtes correspondant aux consignes suivantes :
 
