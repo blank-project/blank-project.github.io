@@ -124,6 +124,28 @@ SELECT city FROM users GROUP BY city ORDER BY AVG(age)
 ```
 
 
+***
+
+
+On peut limiter le nombre de résultats renvoyés avec `LIMIT`.
+
+On peut sauter un certain nombre de résultats avec `OFFSET`.
+
+
+***
+
+
+Pour récuperer les 10 premiers utilisateurs triés par nom puis prénom.
+```
+SELECT * FROM users ORDER BY nom, prenom LIMIT 10
+```
+
+Pour récuperer 10 utilisateurs triés par nom puis prénom, à partir du 20eme.
+```
+SELECT * FROM users ORDER BY nom, prenom LIMIT 10 OFFSET 20
+```
+
+
 
 ---
 
