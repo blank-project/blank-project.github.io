@@ -14,7 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $user = new User($username, $password, $email);
 
   if ($user->validate()) {
-    if ($user->auth($_DB)) {
+    $dao = new UserDAO();
+    if ($dao->auth($_DB, $username, $password, $email)) {
       session_start();
       $_SESSION["user"] = $user;
     }

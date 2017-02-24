@@ -19,6 +19,7 @@
       <audio data-key-code="65" src="assets/samples/kick.mp3"/>
       <audio data-key-code="90" src="assets/samples/saxo.mp3"/>
     </div>
+    <script type="text/javascript" src="assets/js/_misc.js"></script>
+    <script type="text/javascript" src="assets/js/musicbox.js"></script>
   </body>
-  <script type="text/javascript" src="assets/js/musicbox.js"></script>
 </html>

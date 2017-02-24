@@ -1,6 +1,7 @@
 <?php
 
 class User {
+
   private $username;
   private $password;
   private $email;
@@ -13,6 +14,14 @@ class User {
 
   public function getUsername() {
     return $this->username;
+  }
+
+  public function getPassword() {
+    return $this->password;
+  }
+
+  public function getEmail() {
+    return $this->email;
   }
 
   public function validate() {
@@ -37,63 +46,6 @@ class User {
     return true;
   }
 
-  //save in db
-  public function save($db) {
-
-    //prepare request
-    $request = $db->prepare("INSERT INTO User (username, password, email) VALUES (:username, :password, :email)");
-
-    //execute request
-    try {
-      $request->execute(array(
-        "username" => $this->username,
-        "password" => $this->password,
-        "email" => $this->email,
-      ));
-    } catch (PDOException $e) {
-      print("error while writing in DB new user." . $e->getMessage());
-      return false;
-    }
-
-    return true;
-  }
-
-  public function auth($db) {
-    //retrieve user from db with same username
-    $user = $this->find($db);
-
-    //check email & password matching
-    if ($user["email"] == $this->email &&
-        $user["password"] == $this->password) {
-          //login
-          return true;
-    }
-
-    //oops error
-    return false;
-  }
-
-  public function find($db) {
-
-    //prepare request
-    $request = $db->prepare("SELECT * FROM User WHERE (username = :username) LIMIT 1");
-
-    //execute request
-    try {
-      $request->execute(array(
-        "username" => $this->username,
-      ));
-      return $request->fetch();
-    } catch (PDOException $e) {
-      print("error while writing in DB new user." . $e->getMessage());
-      return false;
-    }
-  }
 }
-
-//examples
-//$toto = new User("toto","pwd","toto@tata.fr");
-//$tutu = new User("tutu","pwd","toto@tutu.fr");
-
 
  ?>

@@ -2,28 +2,24 @@
   class Score {
     private $username;
     private $score;
+    private $game;
 
-    public function __construct($user, $score) {
+    public function __construct($user, $score, $game) {
       $this->username = $user->getUsername();
       $this->score = $score;
+      $this->game = $game;
     }
 
-    public function save($db) {
-      //prepare request
-      $request = $db->prepare("INSERT INTO Score (username, score) VALUES (:username, :score)");
+    public function getUsername() {
+      return $this->username;
+    }
 
-      //execute request
-      try {
-        $request->execute(array(
-          "username" => $this->username,
-          "score" => $this->score,
-        ));
-      } catch (PDOException $e) {
-        print("error while writing in DB new user." . $e->getMessage());
-        return false;
-      }
+    public function getScore() {
+      return $this->score;
+    }
 
-      return true;
+    public function getGame() {
+      return $this->game;
     }
   }
  ?>

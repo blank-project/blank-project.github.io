@@ -1,5 +1,6 @@
 const dico = ["blank","toto","ole","xylophone","mj"];
 
+var display = document.getElementById("word");
 var isPlaying = false;
 var lives = 10;
 var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -12,48 +13,50 @@ function newGame() {
 }
 
 function play(word, alphabet) {
-  var toGuess = [],
-      lettersFound = 0;
+  var toGuess = [];
 
   for (var i = 0; i < word.length; i++) {
     toGuess.push("_");
   }
 
-  console.log(toGuess);
+  display.innerHTML = toGuess.join(" ");
 
   window.addEventListener("keyup", function(e) {
-
-      //if letter is in alphabet
-      //check for occurence in word
-      if (alphabet.indexOf(e.key) > -1) {
-        //check if found letter
-        var found = false;
-
-        for (var i = 0; i < word.length; i++) {
-          if (word[i] === e.key) {
-            toGuess[i] = e.key;
-            lettersFound++;
-            found = true;
-          }
-        }
-
-        console.log(toGuess);
-
-        //remove life if letter not found in word
-        if (!found) {
-          lives--;
-          console.log("removed a life");
-        } else {
-          alphabet.splice(alphabet.indexOf(e.key),1);
-          console.log(alphabet);
-        }
-      } else {
-        console.log(e.key, "not in alphabet");
-      }
-
-      if (lives === 0) endGame(lives, word);
-      else if (lettersFound === word.length) endGame(lives, word);
+    playLetter(e.key.toLowerCase(), word, toGuess);
   });
+}
+
+function playLetter(pLetter, pWord, pToGuess) {
+  //if letter is in alphabet
+  //check for occurence in word
+  if (alphabet.indexOf(pLetter) == -1) {
+     console.log(pLetter, "not in alphabet");
+     return;
+  }
+
+  //check if found letter
+  var found = false;
+
+  for (var i = 0; i < pWord.length; i++) {
+    if (pWord[i] === pLetter) {
+      pToGuess[i] = pLetter;
+      found = true;
+    }
+  }
+  display.innerHTML = pToGuess.join(" ");
+
+  //remove life if letter not found in word
+  if (!found) {
+    lives--;
+    console.log("removed a life");
+  } else {
+    alphabet.splice(alphabet.indexOf(pLetter),1);
+    console.log(alphabet);
+  }
+
+  if (lives === 0 || pToGuess.indexOf("_") == -1) {
+    endGame(lives, pWord);
+  }
 }
 //end game
 function endGame(lives, word) {
@@ -72,7 +75,7 @@ function endGame(lives, word) {
   //if player won
   if (lives > 0) {
     console.log(word, " bien ouej !");
-    return;
+    publishScore(lives, "hangman");
     //if player lost
   } else {
     console.log(word, "ohhhh t'es nul(le)");

@@ -57,11 +57,6 @@ function pickRandomAudioElement() {
   return audioElements[Math.floor(Math.random() * audioElements.length)];
 }
 
-function endGame() {
-  var score = soundsPlayed.length - 1;
-  location.href = "_eog.php?score=" + score;
-}
-
 window.addEventListener("keydown", function(e) {
   var audio = document.querySelector("audio[data-key-code='" + e.keyCode + "']");
 
@@ -76,7 +71,7 @@ window.addEventListener("keydown", function(e) {
 
   for (var i = 0; i < soundsPlayed.length; i++) {
     if (soundsPlayed[i] !== sequence[i]) {
-      endGame();
+      publishScore(soundsPlayed.length - 1, 'musicbox');
     }
   }
 });
