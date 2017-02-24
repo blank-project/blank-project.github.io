@@ -1,2 +1,4 @@
 # Ignore node modules
 node_modules
+# Ignore floo configuration files
+.floo*
