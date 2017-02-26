@@ -10,7 +10,7 @@ SQL nous permet de gérer des données **relationnelles**, c'est à dire des don
 
 Dans ce cours nous allons donc voir comment représenter ces relations, et les exploiter.
 
-Ce cours utilise une base de données contenant des tables (_customers_, _products_, _orders_ décrites en [annexe](schema.sql)).
+Ce cours utilise une base de données contenant des tables (_customers_, _products_, _orders_ décrites en [annexe](resources/schema.sql)).
 
 
 
