@@ -98,7 +98,7 @@ Par défaut nous sommes sur une branche nommée **master**.
 
 ### Fusion de branches
 
-Une fois un travail terminé sur une branch, il peut nous arriver de vouloir fusionner notre travail avec la branche **master** (ou avec un autre...).  
+Une fois un travail terminé sur une branche, il peut nous arriver de vouloir fusionner notre travail avec la branche **master** (ou avec un autre...).  
 Pour cela on se position dans la branche de destination, et l'on exécute la commande suivante :
 
 * `git merge toto` : Fusionne la branche **toto** dans la branche courante.
