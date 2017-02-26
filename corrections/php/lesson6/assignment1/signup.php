@@ -18,7 +18,8 @@
       $user = new User($username, $password, $email);
 
       if ($user->validate()) {
-        if(new UserDAO()->save($_DB, $user)) {
+        $dao = new UserDAO();
+        if($dao->save($_DB, $user)) {
           //login
           echo "new user created";
         } else {

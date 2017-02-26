@@ -7,7 +7,7 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
 function newGame() {
   lives = 10;
-  isPlayling = true;
+  isPlaying = true;
   alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   return dico[Math.floor(Math.random()*dico.length)];
 }
