@@ -53,13 +53,42 @@ ALTER TABLE t1 ADD CONSTRAINT fk_name FOREIGN KEY (t2_id) REFERENCES t2(id)
 
 
 
-Définir une clé etrangère nous permet d'assurer des **contraintes d'intégrités** sur notre base de données.
+Définir une clé etrangère nous permet d'assurer des **contraintes d'intégrité** sur notre base de données.
 
 Elle assure que la donnée référencée existe dans la table cible, et que faire lors de sa suppression.
 
 On ne pourra donc pas :
 - Supprimer une donnée liée à d'autres
 - Insérer une donnée qui référence une ligne qui n'existe pas.
+
+
+***
+
+
+## Cascade
+
+Lorsque l'on souhaite préserver ces **contraintes d'intégrité**, nous pouvons associer des événements pour agir en cas de suppression, modification entrainant une perte de l'intégrité des données.
+C'est ce que l'on appelle un événement cascade. Il y en a 3 types
+
+
+***
+
+
+## Les 3 types de cascades
+
+- Cascade Delete : Si une ligne portant d'autres lignes dans une autre table à l'aide d'une `foreign key` est supprimée, alors les lignes de l'autre table le seront aussi.
+- Cascade Update : Si une ligne portant d'autres lignes dans une autre table à l'aide d'une `foreign key` est modifiée, alors la référence dans l'autre table le sera aussi.
+- Set to Null : Si une ligne portant d'autres lignes dans une autre table à l'aide d'une `foreign key` est supprimée ou modifiée, alors les références dans l'autre table seront mises à `null`.
+
+
+***
+
+
+## Restrict
+
+Il existe un autre type d'événement déclanché lors de la suppression ou modification d'une référence associé à une foreign key. C'est le mode par défaut (avec `NO ACTION` qui comme son nom l'indique, ne déclanche pas d'action en cascade).
+
+Il empêche la modification d'un élément utilisé en tant que `foreign key` dans une autre table.
 
 
 
@@ -93,7 +122,7 @@ C'est le cas le plus répandu : définir une clé etrangère indique qu'un élé
 
 ### One-To-One
 
-C'est cas spécifique du cas précédent, ou la clé etrangère est unique sur la table.
+C'est le cas spécifique du cas précédent, ou la clé etrangère est unique sur la table.
 
 C'est un cas très peu utilisé.
 
@@ -167,3 +196,11 @@ Exemples :
 - [LEFT JOIN](https://sql.sh/cours/jointures/left-join)
 - [RIGHT JOIN](https://sql.sh/cours/jointures/right-join)
 - FULL JOIN
+
+
+***
+
+
+![joins](img/joins.png)
+
+__&copy; C.L. Moffatt : [https://www.codeproject.com/articles/33052/visual-representation-of-sql-joins](https://www.codeproject.com/articles/33052/visual-representation-of-sql-joins)__
