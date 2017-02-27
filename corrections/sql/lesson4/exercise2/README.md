@@ -1,0 +1,2 @@
+- `select * from orders o join customers c ON o.customer_id = c.id `
+- `select o.id AS COMMANDE_N, p.name AS PRODUCT_NAME, op.amount AS QUANTITY from orders o join orders_products op ON o.id = op.order_id JOIN products p ON op.product_id = p.id `
