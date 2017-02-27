@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Accueil</title>
+    <?php
+    require("_head.php");
+     ?>
   </head>
   <body>
     <?php

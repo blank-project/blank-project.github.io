@@ -9,6 +9,10 @@ spl_autoload_register(function($name) {
 
 session_start();
 
+if (!isLoggedIn) {
+  header("location:index.php");
+}
+
 if ($_SERVER["REQUEST_METHOD"] === "GET") {
   //check if score &
   $score = isset($_GET["score"]) ? $_GET["score"] : "";
@@ -19,6 +23,5 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
     $dao->save($_DB, $s);
     header("location:scores.php?game=" . $game);
   }
-
 }
  ?>

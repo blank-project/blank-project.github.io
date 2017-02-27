@@ -1,35 +1,63 @@
-var lives = 3;
 var isPlaying = false;
+var blockUser = false;
 var audioElements = document.querySelectorAll("audio[data-key-code]");
 var sequence = [];
 var play = document.getElementById("play");
+var restart = document.getElementById("restart");
+var score = document.getElementById("score");
 var soundsPlayed = [];
 
-play.addEventListener("click", function(e) {
+restart.style.display = "none";
 
+restart.addEventListener("click", function(e) {
+  newGame();
+});
+
+play.addEventListener("click", function(e) {
   //if user not playing, start a new Game
   if (!isPlaying) {
     newGame();
   }
+});
 
+function playTurn() {
   //empty user played sounds
   soundsPlayed = [];
 
+  //block user
+  blockUser = true;
+  isPlaying = false;
+
   sequence.push(pickRandomAudioElement());
 
-  playSequence();
-});
+  var letUserPlayIn = playSequence();
+  setTimeout(function() {
+    blockUser = false;
+    isPlaying = true;
+  }, letUserPlayIn);
+}
 
 function newGame() {
-  isPlaying = true;
-  lives = 3;
+  isPlaying = false;
   sequence = [];
+
+  //hide buttons
+  restart.style.display = "block";
+  play.style.display = "none";
+
+  score.innerHTML = 0;
+
+  playTurn();
 }
 
 function playSequence() {
   for (var i = 0; i < sequence.length; i++) {
     setTimeout(playSound.bind(null, sequence[i]), i*500);
   }
+
+  score.innerHTML = sequence.length - 1;
+
+  return i*500;
 }
 
 function playSound(sound) {
@@ -58,20 +86,32 @@ function pickRandomAudioElement() {
 }
 
 window.addEventListener("keydown", function(e) {
-  var audio = document.querySelector("audio[data-key-code='" + e.keyCode + "']");
+  if (!blockUser) {
+    var audio = document.querySelector("audio[data-key-code='" + e.keyCode + "']");
 
-  if (audio) {
-    playSound(audio);
-  } else {
-    //no sounds to play
-    return;
+    if (audio) {
+      playSound(audio);
+    } else {
+      //no sounds to play
+      return;
+    }
   }
+  if (isPlaying) {
+    soundsPlayed.push(audio);
 
-  soundsPlayed.push(audio);
+    for (var i = 0; i < sequence.length; i++) {
+      if (soundsPlayed[i] !== sequence[i]) {
+        publishScore(sequence.length - 1, 'musicbox');
+      }
+    }
 
-  for (var i = 0; i < soundsPlayed.length; i++) {
-    if (soundsPlayed[i] !== sequence[i]) {
-      publishScore(soundsPlayed.length - 1, 'musicbox');
+    //if player played all sounds
+    if (soundsPlayed.length === sequence.length) {
+      console.log("toto");
+      isPlaying = false;
+      setTimeout(function() {
+        playTurn()
+      }, 1000);
     }
   }
 });

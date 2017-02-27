@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <?php
+    require_once("_head.php");
+     ?>
   </head>
   <body>
     <?php
-    session_start();
     require_once("_nav.php");
+     ?>
+    <?php
     if (!isLoggedIn()) {
       header("location:index.php");
     }

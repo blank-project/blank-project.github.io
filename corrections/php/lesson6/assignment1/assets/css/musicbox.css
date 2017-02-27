@@ -13,3 +13,10 @@
   color:white;
   background-color:red;
 }
+
+#score {
+  background-color:white;
+  font-size:2em;
+  padding:1em;
+  display:block;
+}

@@ -3,8 +3,13 @@
       return require("class/" . $name . ".php");
   });
   require_once("_db.php");
-  require_once("_login.php");
  ?>
- <ul>
-   <li>menu</li>
- </ul>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul>
+      <a href="scores.php">Scores</a>
+      <a href="game.php">Games</a>
+    </ul>
+    <?php require_once("_login.php"); ?>
+  </div>
+</nav>

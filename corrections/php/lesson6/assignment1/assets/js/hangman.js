@@ -1,13 +1,22 @@
 const dico = ["blank","toto","ole","xylophone","mj"];
 
 var display = document.getElementById("word");
+var displayLives = document.getElementById("lives");
+var displayLettersPlayed = document.getElementById("lettersPlayed");
+var displayLettersRemaining = document.getElementById("lettersRemaining");
+var lettersPlayed = [];
+var restart = document.getElementById("restart");
 var isPlaying = false;
 var lives = 10;
 var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
+restart.style.display = "none";
+
 function newGame() {
   lives = 10;
   isPlaying = true;
+  restart.style.display = "block";
+  lettersPlayed = [];
   alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   return dico[Math.floor(Math.random()*dico.length)];
 }
@@ -20,6 +29,9 @@ function play(word, alphabet) {
   }
 
   display.innerHTML = toGuess.join(" ");
+  displayLettersRemaining.innerHTML = "Letters Remaining : " + alphabet.join(", ");
+  displayLettersPlayed.innerHTML = "Letters Played : " + lettersPlayed.join(", ");
+  displayLives.innerHTML = "Lives remaining : " + lives;
 
   window.addEventListener("keyup", function(e) {
     playLetter(e.key.toLowerCase(), word, toGuess);
@@ -30,7 +42,7 @@ function playLetter(pLetter, pWord, pToGuess) {
   //if letter is in alphabet
   //check for occurence in word
   if (alphabet.indexOf(pLetter) == -1) {
-     console.log(pLetter, "not in alphabet");
+     alert("Play a letter in the alphabet please !");
      return;
   }
 
@@ -43,6 +55,7 @@ function playLetter(pLetter, pWord, pToGuess) {
       found = true;
     }
   }
+
   display.innerHTML = pToGuess.join(" ");
 
   //remove life if letter not found in word
@@ -50,9 +63,16 @@ function playLetter(pLetter, pWord, pToGuess) {
     lives--;
     console.log("removed a life");
   } else {
-    alphabet.splice(alphabet.indexOf(pLetter),1);
+    lettersPlayed = lettersPlayed.concat(
+      alphabet.splice(alphabet.indexOf(pLetter),1));
     console.log(alphabet);
   }
+
+
+  displayLives.innerHTML = "Lives remaining : " + lives;
+  displayLettersRemaining.innerHTML = "Letters Remaining : " + alphabet.join(", ");
+  displayLettersPlayed.innerHTML = "Letters Played : " + lettersPlayed.join(", ");
+
 
   if (lives === 0 || pToGuess.indexOf("_") == -1) {
     endGame(lives, pWord);
@@ -79,7 +99,7 @@ function endGame(lives, word) {
     //if player lost
   } else {
     console.log(word, "ohhhh t'es nul(le)");
-    return;
+    publishScore(lives, "hangman");
   }
 }
 

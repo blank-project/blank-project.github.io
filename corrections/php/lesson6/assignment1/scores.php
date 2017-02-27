@@ -11,8 +11,14 @@
   <head>
     <meta charset="utf-8">
     <title>Scores</title>
+    <?php
+    require_once("_head.php");
+     ?>
   </head>
   <body>
+    <?php
+    require_once("_nav.php");
+     ?>
     <?php
     if (isset($_REQUEST['game'])) {
       $game = $_REQUEST['game'];
@@ -24,6 +30,7 @@
         echo "<tr><td>" . $score["username"] ."</td><td>" . $score["score"] ."</td></tr>";
       }
       echo "</table>";
+      echo "<a href='" . $game . ".php'>$game</a>";
     } else {
       echo "<h1>Scores pour :</h1>";
       ?>

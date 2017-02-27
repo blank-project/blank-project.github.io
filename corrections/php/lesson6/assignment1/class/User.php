@@ -26,24 +26,23 @@ class User {
 
   public function validate() {
 
+    $errorArray = array();
+
     //username check
     if (strlen($this->username) < 3) {
-      echo "wrong username";
-      return false;
+      array_push($errorArray, "wrong username");
     }
 
     if (strlen($this->password) < 5 ||
         strlen($this->password) > 25) {
-          echo "wrong pwd";
-          return false;
+          array_push($errorArray, "password must be between 6 and 24 chars");
     }
 
     if (filter_var($this->email, FILTER_VALIDATE_EMAIL) === false) {
-      echo "wrong email " . $this->email . " ";
-      return false;
+        array_push($errorArray, "wrong email " . $this->email . " ");
     }
 
-    return true;
+    return $errorArray;
   }
 
 }
