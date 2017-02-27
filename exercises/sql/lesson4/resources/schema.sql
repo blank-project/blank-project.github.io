@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 26, 2017 at 10:44 
+-- Generation Time: Feb 26, 2017 at 10:44
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -32,7 +32,8 @@ CREATE TABLE `customers` (
   `age` int(11) NOT NULL,
   `address` varchar(255) NOT NULL,
   `city` varchar(255) NOT NULL,
-  `zip_code` varchar(10) NOT NULL
+  `zip_code` varchar(10) NOT NULL,
+  PRIMARY KEY(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -45,7 +46,8 @@ CREATE TABLE `orders` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` datetime DEFAULT CURRENT_TIMESTAMP,
   `customer_id` int(11) DEFAULT NULL,
-  `price_ht` double DEFAULT NULL
+  `price_ht` double DEFAULT NULL,
+  PRIMARY KEY(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -57,7 +59,8 @@ CREATE TABLE `orders` (
 CREATE TABLE `orders_products` (
   `order_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
-  `amount` double NOT NULL
+  `amount` double NOT NULL,
+  PRIMARY KEY(order_id, product_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -70,7 +73,8 @@ CREATE TABLE `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `ref` varchar(50) DEFAULT NULL,
-  `unit_price` double NOT NULL
+  `unit_price` double NOT NULL,
+  PRIMARY KEY(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -81,14 +85,12 @@ CREATE TABLE `products` (
 -- Indexes for table `customers`
 --
 ALTER TABLE `customers`
-  ADD PRIMARY KEY (`id`),
   ADD KEY `id` (`id`);
 
 --
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`),
   ADD KEY `id` (`id`),
   ADD KEY `fk_orders_customers` (`customer_id`);
 
@@ -96,14 +98,12 @@ ALTER TABLE `orders`
 -- Indexes for table `orders_products`
 --
 ALTER TABLE `orders_products`
-  ADD PRIMARY KEY (`order_id`,`product_id`),
   ADD KEY `fk_orders_products_products` (`product_id`);
 
 --
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`),
   ADD KEY `id` (`id`);
 
 
