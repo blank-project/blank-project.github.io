@@ -4,7 +4,7 @@
 $h = "localhost";
 $db = "php_assignment";
 $username = "root";
-$password = "Azerty123!!/";
+$password = "";
 $charset = "utf8";
 
 //connexion string
