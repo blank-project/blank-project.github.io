@@ -1,17 +1,17 @@
 <?php
   class Score {
-    private $username;
+    private $userId;
     private $score;
     private $game;
 
     public function __construct($user, $score, $game) {
-      $this->username = $user->getUsername();
+      $this->userId = $user->getId();
       $this->score = $score;
       $this->game = $game;
     }
 
-    public function getUsername() {
-      return $this->username;
+    public function getUserId() {
+      return $this->userId;
     }
 
     public function getScore() {

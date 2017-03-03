@@ -32,3 +32,7 @@ V Score incohérent
 V Touche espace qui fait nimp ? Relié à séquence d'après sans jouer
 V Nettoyer la console
 V Score boite à rythme
+- Peut pas jouer 2e séquence ???
+
+BDD
+- user_id à la place de username dans la table score (influer aussi sur le code PHP et les contraintes de la BDD)

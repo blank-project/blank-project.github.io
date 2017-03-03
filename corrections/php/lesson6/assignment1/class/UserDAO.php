@@ -23,13 +23,15 @@ class UserDAO {
     return true;
   }
 
-  public function auth($db, $username, $password, $email) {
+  public function auth($db, $user) {
     //retrieve user from db with same username
-    $user = $this->find($db, $username);
+    $userToCheck = $this->find($db, $user->getUsername());
 
     //check email & password matching
-    if ($user["email"] == $email &&
-        $user["password"] == $password) {
+    if ($userToCheck["email"] == $user->getEmail() &&
+        $userToCheck["password"] == $user->getPassword()) {
+          //retrieve id from database
+          $user->setId($userToCheck["id"]);
           //login
           return true;
     }

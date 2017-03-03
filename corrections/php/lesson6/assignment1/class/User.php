@@ -3,6 +3,7 @@
 class User {
 
   private $username;
+  private $id;
   private $password;
   private $email;
 
@@ -10,6 +11,14 @@ class User {
     $this->username = $username;
     $this->password = $password;
     $this->email = $email;
+  }
+
+  public function setId($id) {
+    $this->id = $id;
+  }
+
+  public function getId() {
+    return $this->id;
   }
 
   public function getUsername() {
@@ -30,16 +39,16 @@ class User {
 
     //username check
     if (strlen($this->username) < 3) {
-      array_push($errorArray, "wrong username");
+      $errorArray["username"] = "wrong username";
     }
 
     if (strlen($this->password) < 5 ||
         strlen($this->password) > 25) {
-          array_push($errorArray, "password must be between 6 and 24 chars");
+          $errorArray["password"] = "password must be between 6 and 24 chars";
     }
 
     if (filter_var($this->email, FILTER_VALIDATE_EMAIL) === false) {
-        array_push($errorArray, "wrong email " . $this->email . " ");
+        $errorArray["email"] = "wrong email " . $this->email . " ";
     }
 
     return $errorArray;

@@ -86,9 +86,9 @@ function pickRandomAudioElement() {
 }
 
 window.addEventListener("keydown", function(e) {
+
   if (!blockUser) {
     var audio = document.querySelector("audio[data-key-code='" + e.keyCode + "']");
-
     if (audio) {
       playSound(audio);
     } else {
@@ -96,10 +96,11 @@ window.addEventListener("keydown", function(e) {
       return;
     }
   }
+
   if (isPlaying) {
     soundsPlayed.push(audio);
 
-    for (var i = 0; i < sequence.length; i++) {
+    for (var i = 0; i < soundsPlayed.length; i++) {
       if (soundsPlayed[i] !== sequence[i]) {
         publishScore(sequence.length - 1, 'musicbox');
       }
@@ -107,7 +108,6 @@ window.addEventListener("keydown", function(e) {
 
     //if player played all sounds
     if (soundsPlayed.length === sequence.length) {
-      console.log("toto");
       isPlaying = false;
       setTimeout(function() {
         playTurn()

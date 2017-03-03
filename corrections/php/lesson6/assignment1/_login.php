@@ -1,12 +1,14 @@
 <?php
+session_start();
+
 require_once("_db.php");
 require_once("_misc.php");
+
+$errors = array();
 
 spl_autoload_register(function($name) {
     return require("class/" . $name . ".php");
 });
-
-session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = isset($_POST["username"]) ? $_POST["username"] : "";
@@ -18,19 +20,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (count($errors) == 0) {
         $dao = new UserDAO();
-        if ($dao->auth($_DB, $username, $password, $email)) {
+        if ($dao->auth($_DB, $user)) {
             $_SESSION["user"] = $user;
             header("location:game.php");
         }
+    }
+
+    //if user not logged in
+    if (empty($_SESSION["user"])) {
+      header("location:index.php");
     }
 }
 
 if (!isLoggedIn()) {
 ?>
     <form class="navbar-form navbar-right" action="_login.php" method="post">
-        <input type="text" class="form-control" name="username" placeholder="username">
-        <input type="email" class="form-control" name="email" placeholder="email">
-        <input type="password" class="form-control" name="password" placeholder="password">
+        <div class="form-group">
+          <input type="text" class="form-control" name="username" placeholder="username">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="password">
+        </div>
         <div class="btn-group" role="group">
             <button type="submit" class="btn btn-success">Login</button>
             <a href="signup.php" class="btn btn-primary">Signup</a>

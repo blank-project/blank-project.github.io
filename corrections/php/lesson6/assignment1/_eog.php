@@ -9,7 +9,7 @@ spl_autoload_register(function($name) {
 
 session_start();
 
-if (!isLoggedIn) {
+if (!isLoggedIn()) {
   header("location:index.php");
 }
 

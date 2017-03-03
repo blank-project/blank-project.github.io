@@ -37,7 +37,7 @@
           //save in db
           if($dao->save($_DB, $user)) {
             //auth user
-            if ($dao->auth($_DB, $username, $password, $email)) {
+            if ($dao->auth($_DB, $user)) {
               session_start();
               $_SESSION["user"] = $user;
               header("location:game.php");

@@ -19,6 +19,7 @@
     <?php
     require_once("_nav.php");
      ?>
+
     <?php
     if (isset($_REQUEST['game'])) {
       $game = $_REQUEST['game'];

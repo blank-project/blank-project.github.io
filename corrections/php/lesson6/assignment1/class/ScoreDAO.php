@@ -3,12 +3,12 @@
 
     public function save($db, $score) {
       //prepare request
-      $request = $db->prepare("INSERT INTO Score (username, score, game) VALUES (:username, :score, :game)");
+      $request = $db->prepare("INSERT INTO Score (user_id, score, game) VALUES (:user_id, :score, :game)");
 
       //execute request
       try {
         $request->execute(array(
-          "username" => $score->getUsername(),
+          "user_id" => $score->getUserId(),
           "score" => $score->getScore(),
           "game" => $score->getGame()
         ));
@@ -22,7 +22,7 @@
 
     public function find($db, $game, $number) {
       //prepare request
-      $request = $db->prepare("SELECT username, score FROM Score WHERE game = :game ORDER BY score DESC LIMIT :number");
+      $request = $db->prepare("SELECT s.score, u.username FROM Score s JOIN User u ON s.user_id = u.id WHERE s.game = :game ORDER BY score DESC LIMIT :number");
 
       //execute request
       try {
