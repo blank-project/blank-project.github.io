@@ -30,19 +30,19 @@
 - `AS` : (alias) To temporarily rename a table or a column heading
 - `BETWEEN .. AND ..` : To select values within a range
 - `EXISTS` : Used in combination with a subquery and is considered to be met if the subquery returns at least one row
-- ` BY` : To collect data across multiple records and group the results by a column
+- `GROUP BY` : To collect data across multiple records and group the results by a column
 - `HAVING` : To filter data based on the group functions
 - `IN` : To test whether a value is in the list of values provided
 - `LIKE` : To search for a specified pattern in a column
 - `DISTINCT` : To return only distinct (different) values in a column
-- ` BY` : To sort the records in the result based on a column
-- ` NULL` : To test for a NULL value in a column
-- ` JOIN` : Returns all rows from both tables where there is a match
-- ` JOIN` : Returns all the rows from the first table even if there are no matches in the second table
-- ` JOIN` : Returns all the rows from the second table, even if there are no matches in the first table
-- ` JOIN` : Returns all rows from both tables with nulls in place where the join condition is not met
+- `ORDER BY` : To sort the records in the result based on a column
+- `IS NULL` : To test for a NULL value in a column
+- `(INNER) JOIN` : Returns all rows from both tables where there is a match
+- `LEFT JOIN` : Returns all the rows from the first table even if there are no matches in the second table
+- `RIGHT JOIN` : Returns all the rows from the second table, even if there are no matches in the first table
+- `FULL JOIN` : Returns all rows from both tables with nulls in place where the join condition is not met
 - `UNION` : Combines the result of two or more SELECT statements and selects only distinct values
-- ` ALL` : Combines the result of two or more SELECT statements and also select duplicate values
+- `UNION ALL` : Combines the result of two or more SELECT statements and also select duplicate values
 
 ## Transaction Control Language (TCL)
 
@@ -51,18 +51,16 @@
 - `SAVEPOINT` : To divide a transaction
 
 ## Data Definition Language (DDL)
-- ` TABLE` : Define a new table
-- ` TABLE` : Modifies a table definition
-- ` VIEW` : Define a new view
-- ` TABLE` : Remove a table
-- ` INDEX` : Define a new index
-- ` INDEX` : Remove an index
-- ` VIEW` : Remove a view
-- ` TABLE` : Empty a table
+- `CREATE TABLE` : Define a new table
+- `ALTER TABLE` : Modifies a table definition
+- `DROP TABLE` : Remove a table
+- `ADD INDEX` : Define a new index
+- `DROP INDEX` : Remove an index
+- `TRUNCATE TABLE` : Empty a table
 
 ## Contraintes SQL
-- ` NULL` : Enforces a column to not accept NULL values
+- `NOT NULL` : Enforces a column to not accept NULL values
 - `UNIQUE` : Ensures that each row for a column must have a unique value
-- ` KEY` : Combination of NOT NULL and UNIQUE.It uniquely identifies each record in a database table
-- ` KEY` : Ensure the referential integrity of the data in one table to match values in another table
+- `PRIMARY KEY` : Combination of NOT NULL and UNIQUE.It uniquely identifies each record in a database table
+- `FOREIGN KEY` : Ensure the referential integrity of the data in one table to match values in another table
 - `DEFAULT` : Specifies a default value for a column
