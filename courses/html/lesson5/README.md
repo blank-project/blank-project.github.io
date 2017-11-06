@@ -196,6 +196,27 @@ Disallow: /
 ***
 
 
+##Lang
+L'attribut "lang" définit la langue utilisée pour l'élément.
+C'est la langue dans laquelle les éléments non éditables sont écrits . pour les éléments éditables (exemple : `<input>`), c'est la langue dans lequel ils seront écrits .
+
+Définir la langue d'une page :
+
+```
+<html lang="fr">
+```
+Définir la langue d'un élément :
+
+```
+<p>
+ je fait du <span lang="en"> web development </span>.
+</p>
+```
+
+
+***
+
+
 ##Conclusion
 Nous ferons un cours spécifique sur le référencement en temps voulu mais ceci étant dit vous avez les bases pour commencer à mettre en place quelque chose. Vous pouvez les soumettre directement aux moteurs de recherches, ou alors faire apparaitre votre site via des liens à partir d'autres sites.
 

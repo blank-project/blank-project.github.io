@@ -39,7 +39,7 @@ Ce sont les données qui vont être transmises au serveur.
 ***
 
 
-Ils sont souvent définis grâce à la balise `<input>` et son attribut **type**.
+Ils sont souvent définis grâce à la balise `<input>` (qui permet à l'utilisateur d'interagir avec le site internet) et son attribut **type**.
 
 On peut leur donner un libellé grâce à la balise `<label>` et son attribut **for**.
 
@@ -263,3 +263,27 @@ On peut également définir la méthode d'envoi (POST ou GET), via l'attribut **
   </select><br />
   <input type="submit" value="Go !"/><input type="reset" value="Reset" />
 </form>
+
+
+***
+
+
+```
+<form action="http://example.org" method="GET">
+  <input type="hidden" name="jesuis" value="cache!" /><br />
+  <input type="text" name="nom" value="Yo !" placeholder="Ton nom" /><br />
+  <input type="checkbox" name="mic check" value="one two" /><br />
+  <select name="teacher">
+    <option value="marin">Marin</option>
+    <option value="erwan">Erwan</option>
+  </select><br />
+  <input type="submit" value="Go !"/><input type="reset" value="Reset" />
+</form>
+```
+
+
+***
+
+
+
+#The end !

@@ -109,7 +109,7 @@ L'attribut _alt_ permet de définir un texte alternatif, qui s'affiche notamment
 ***
 
 
-
+## Les listes non ordonnées (unorganized lists)
 La balise **ul** sert à définir une liste, et chaque élement de la liste est représenté par une balise **li**.
 
 
@@ -133,7 +133,7 @@ Il existe également d'autres types de listes.
 ***
 
 
-## Les listes ordonnées
+## Les listes ordonnées (organized lists)
 ```
     <ol>
       <li>Element 1</li>
@@ -151,7 +151,7 @@ Il existe également d'autres types de listes.
 ***
 
 
-## Les listes de définitions
+## Les listes de définitions <br/>(description lists)
 ```
 <dl>
   <dt>Element 1</dt>
