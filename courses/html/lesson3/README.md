@@ -85,7 +85,7 @@ Si l'image n'est pas trouvée, on peut utiliser l'attribut **alt** pour afficher
 ***
 
 
-#Attributs uniques aux images
+#Attributs principaux des images
 Pour spécifier la taille de votre image, vous pouvez utiliser les attributs HTML `width` (largeur) et `height` hauteur. La valeur que vous leur donnez sera en pixel uniquement (avant HTML5 vous pouviez aussi la spécifier en `%`)
 Note: Mais les spécifications HTML5 étant de maximiser la compatibilité cross-browsers, il a falu faire un choix !)
 
@@ -97,7 +97,7 @@ Note: Mais les spécifications HTML5 étant de maximiser la compatibilité cross
 
 ## title
 
-L'attribut **title** sert à définir une indication sur un élement, qui s'affiche au passge de la souris (_hover_).
+L'attribut **title** sert à définir une indication sur un élement, qui s'affiche au passage de la souris (_hover_).
 
 ```
 <p title="Une indication s'affiche !">
@@ -194,3 +194,11 @@ Pour définir une ancre :
 Créer un menu avec une liste à puces
 
 Pro Tip : pour faire référence aux id, utiliser le caractère `#`.
+
+
+
+---
+
+
+
+#The end !

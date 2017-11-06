@@ -155,7 +155,7 @@ Oh et il y a `<main>` aussi ! Celle-ci définit le contenu principal du document
 </main>
 <footer>
   <p>_blank</p>
-</p>
+</footer>
 ```
 
 
@@ -354,3 +354,11 @@ On doit toujours respecter le bon nombre de cellules par ligne.
 
 Il ne faut JAMAIS utiliser un tableau pour faire la mise en page d'un site.
 Un tableau est bien uniquement pour représenter des données.
+
+
+
+---
+
+
+
+#The end !
