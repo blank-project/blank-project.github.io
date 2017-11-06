@@ -22,7 +22,8 @@ gulp.task('serve', function() {
         file.serve(request, response);
     }).resume();
   });
-  server.listen(port)
+
+  server.listen(port);
   util.log('Server running on port ' + port);
 
 });
