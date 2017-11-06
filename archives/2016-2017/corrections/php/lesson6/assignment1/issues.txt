@@ -1,0 +1,33 @@
+NAVIGATION
+- MENU ??? DAFUQ ?
+- Pas de lien pour le signup ?
+- Pas d'info ? (game quand pas connecté)
+- Pas de lien vers les scores
+- Pas de menu quand déjà en jeu
+
+USER
+- Problème de sécurité (on peut taper les nom des pages sans être connecté)
+- On peut pas se déconnecter
+- Messages d'erreur perso ? Mot de passe trop court etc.
+- Message de réussite aussi
+- Signup d'entrée une erreur : "Woops no request"
+- Signup aucun message pour dire que l'utilisateur a été créé
+- Signup 2x avec le même user
+
+GAMES
+- pas de page score à la page game
+- Image de chaton ??
+
+HANGMAN
+- Suivi des vies ??
+- Problème au niveau des lettres déjà jouées
+- Restart alors qu'on a pas commencé la game
+
+MUSICBOX
+- Appuyer "play" à chaque fois c'est pas sexy
+- Séquence d'après sans jouer la séquence courante
+- Après avoir joué rien se passe ? DAFUQ ?
+- Taper n'importe quoi, page score ?
+- Score incohérent
+- Touche espace qui fait nimp ? Relié à séquence d'après sans jouer
+- Nettoyer la console

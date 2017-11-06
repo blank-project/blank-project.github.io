@@ -1,0 +1,35 @@
+header {
+  background-color : green;
+}
+
+aside {
+  background-color: yellow;
+}
+
+main {
+  background-color : blue;
+  color : white;
+}
+
+footer {
+  background-color : red;
+}
+
+nav {
+  background-color : orange;
+}
+
+header, aside, main, footer {
+    /* Prevents Margin Collapse */
+    padding : 1px;
+}
+
+header {
+ padding-top : 50px;
+ box-sizing : border-box;
+   height : 100vh;
+}
+
+.jumbotron {
+  height : 100%;
+}

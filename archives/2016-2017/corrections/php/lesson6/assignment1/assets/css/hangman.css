@@ -1,0 +1,14 @@
+.game {
+  width:100%;
+  padding:1em;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.game > #word, .game > #lives, .game > #lettersRemaining, .game > #lettersPlayed {
+  font-size:2em;
+  background-color:white;
+}
+
+.game > * {
+  display:block;
+}
