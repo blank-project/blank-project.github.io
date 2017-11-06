@@ -9,7 +9,7 @@ const COURSES = './';
 const DEFAULT_PORT = 8080;
 
 // TODO Find if and how to stop server.
-gulp.task('default', function() {
+gulp.task('serve', function() {
   var file = new static.Server(COURSES), port = parseInt(argv.port) || DEFAULT_PORT, server;
 
   gulp.on('end', function() {
