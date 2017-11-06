@@ -1,0 +1,135 @@
+body {
+    background-color:black;
+}
+
+#main-nav {
+    background-color:white;
+    width:100%;
+    position:fixed;
+    height:50px;
+    top:0;
+    right:0;
+    transition: top 0.3s;
+}
+
+#main-nav > ul {
+    background-color:grey;
+    display:flex;
+    padding:0;
+    margin:0px;
+    height:100%;
+    flex-direction:row;
+    justify-content:center;
+}
+
+#main-nav > ul > li{
+    list-style:none;
+    vertical-align:middle;
+    display:table;
+    height:100%;
+}
+
+#main-nav a {
+    display:table-cell;
+    height:100%;
+    width:100%;
+    vertical-align:middle;
+    text-decoration:none;
+    color:black;
+    padding:0 2em;
+    transition:color 0.3s, background-color 0.3s;
+}
+
+#main-nav a:hover, #nav-label span:hover {
+    background-color:rgba(0,0,0,0.3);
+    color:white;
+}
+
+#nav-checkbox {
+    display:none;
+}
+
+#nav-label {
+    z-index:2;
+    position:fixed;
+    display:table;
+    top:2%;
+    left:2%;
+    height:50px;
+    width:50px;
+    text-align:center;
+    cursor:pointer;
+    background-color:grey;
+    transition: left 0.3s, top 0.3s;
+}
+
+
+#nav-checkbox:checked ~ label {
+    top:0;
+    left:0;
+}
+
+
+#nav-checkbox ~ label span::before {
+    content:"\f0c9";
+    font-family:"FontAwesome";
+}
+
+#nav-checkbox:checked ~ label  span::before {
+    content: "\f00d";
+}
+
+#nav-label span {
+    display:table-cell;
+    vertical-align:middle;
+    transition:color 0.3s, background-color 0.3s;
+}
+
+#nav-label span {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#nav-checkbox:checked ~ #main-nav {
+    top:0;
+}
+
+#nav-checkbox:checked ~ main {
+    top:50px;
+    opacity:0.3;
+    overflow-y:hidden;
+}
+
+main {
+    height:100%;
+    overflow-y:auto;
+    position:fixed;
+    right:0px;
+    top:0px;
+    opacity:1;
+    transition:top 0.3s, opacity 0.1s;
+    font-size:1.5em;
+    line-height:1.5em;
+    background-color:white;
+    font-family:monospace;
+}
+
+main > div {
+    padding:2em 20%;
+    text-align:justify;
+}
+
+
+main > header {
+    height:50vh;
+    background-image:url('../images/landscape.png');
+    background-size:cover;
+    background-position-y:bottom;
+    color:white;
+    display:flex;
+    font-size:2em;
+    text-align:center;
+    text-transform:uppercase;
+    flex-direction:column;
+    justify-content:center;
+}

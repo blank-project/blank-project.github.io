@@ -1,0 +1,27 @@
+/* Pour les affichages avec une dimension inférieure à 400px -> Rouge */
+@media (max-width : 400px) {
+
+  p {
+    color : red;
+  }
+
+
+}
+
+/* Pour les affichages avec une dimension entre 400px et 600px -> Jaune */
+@media (min-width : 400px) and (max-width : 600px) {
+
+  p {
+    color : yellow;
+  }
+
+}
+
+/* Pour les affichages avec une dimension supérieure à 600px -> Vert */
+@media (min-width : 600px)  {
+
+  p {
+    color : green;
+  }
+
+}

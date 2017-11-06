@@ -1,0 +1,147 @@
+body {
+  margin:0;
+  background-color:black;
+  height:100%;
+  font-family:monospace;
+  font-size:1.5em;
+  line-height: 1.5em;
+}
+
+#main-nav {
+  position:fixed;
+  top:-50px;
+  left:0;
+  height:50px;
+  width:100%;
+  transition: top 0.3s;
+  background-color:grey;
+}
+
+#main-nav > ul {
+  height:100%;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+#main-nav > ul > li {
+  display:table;
+  height:100%;
+  list-style: none;
+}
+
+#main-nav > ul > li > a {
+  text-decoration:none;
+  vertical-align:middle;
+  color:black;
+  height:100%;
+  display:table-cell;
+  padding:0 2em;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+#main-nav > ul > li > a:hover, #nav-label:hover {
+  color:white;
+  background-color:darkgrey;
+}
+
+#nav-checkbox {
+  display:none;
+}
+
+#nav-checkbox + label {
+  z-index:2;
+  position:fixed;
+  top:3%;
+  left:3%;
+  transition: top 0.3s, left 0.3s;
+}
+
+#nav-checkbox + label::before {
+  content:"\f0c9";
+  font-family:"FontAwesome";
+}
+
+#nav-checkbox:checked + label {
+  top:0;
+  left:0;
+}
+
+#nav-checkbox:checked + label::before {
+  content:"\f00d";
+}
+
+#nav-checkbox:checked ~ #main-nav {
+  top:0;
+  z-index:1;
+}
+
+#nav-checkbox:checked ~ main {
+  top:50px;
+  opacity:0.3;
+  overflow-y:hidden;
+}
+
+main {
+  position:fixed;
+  top:0;
+  height:100%;
+  overflow-y:auto;
+  background-color:white;
+  transition: top 0.3s, opacity 0.3s;
+  opacity:1;
+}
+
+/* SUITE SEXY */
+
+#nav-label {
+  background-color:grey;
+  width:50px;
+  height:50px;
+}
+
+main {
+  margin:0;
+  text-align: justify;
+}
+
+#nav-label {
+  transition: color 0.3s, background-color 0.3s;
+  cursor:pointer;
+  display:table;
+}
+
+#nav-label::before {
+  display:table-cell;
+  vertical-align: middle;
+  text-align:center;
+}
+
+main > header {
+  background-image:url('../images/landscape.png');
+  background-size:cover;
+  background-position-y:bottom;
+  height:50vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align:center;
+}
+
+main > section {
+  padding:10% 20%;
+}
+
+main > section > p {
+  text-indent:20px;
+}
+
+main > header > * {
+  margin:0;
+  text-transform:uppercase;
+  font-size:3em;
+  color:white;
+}

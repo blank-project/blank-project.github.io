@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Olé, ça faisait longtemps !</h1>
+    </header>
+    <main>
+      <header>
+        <h2>Vous trouvez pas ?</h2>
+      </header>
+      <section class="style1">
+        <header>
+          <h1>Nan, on était bien en vacances !</h1>
+        </header>
+        <article>
+          <p>Tout à fait d'accord, moi aussi c'était tranquille !</p>
+        </article>
+        <footer>
+          <p><i>Mouais...</i></p>
+        </footer>
+      </section>
+      <section class="style2">
+        <header>
+          <h1>Nan, en vrai j'suis content de revenir</h1>
+        </header>
+        <article>
+          <p>J'espère que vous avez passé de bonnes vacances !</p>
+        </article>
+        <footer>
+          <p><i>Et de bonnes fêtes</i></p>
+        </footer>
+      </section>
+      <section class="style1">
+        <article>
+          <p>Et que vous avez bien mangé et bien bu !</p>
+        </article>
+      </section>
+    </main>
+    <script type="text/javascript">
+    function exercise1() {
+      console.log(document.getElementById("main-header"));
+      console.log(document.getElementsByTagName("header"));
+      console.log(document.getElementsByClassName("style1"));
+      console.log(document.querySelectorAll("section.style1"));
+      console.log(document.getElementsByTagName("script"));
+      console.log(document.querySelector("main>header"));
+    }
+
+    exercise1();
+    </script>
+  </body>
+</html>
