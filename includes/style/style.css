@@ -11,7 +11,7 @@
 }
 
 .summary-page {
-    background-color:#5BABE6;
+    background-color:#F5F5F5;
     padding:0;
     margin:0;
     font-family: 'Open Sans',sans-serif;
@@ -21,6 +21,19 @@
 .summary-page > h1 {
     text-align:center;
     font-size:2em;
+}
+
+/* v2 */
+.summary-page > div.title {
+    background-color:#5BABE6;
+    color: whitesmoke;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.summary-page > div.title > h1 {
+    padding: 16px;
+    margin: 0;
+    text-align: center;
 }
 
 .summary-page nav ul {
@@ -51,8 +64,8 @@
 }
 
 .summary-page nav a:hover {
-    background-color: rgba(0,0,0,.4);
-    color:grey;
+    background-color: rgba(91, 171, 230, .4);
+    color: greysmoke;
 }
 
 .summary-page nav a:before {
@@ -84,3 +97,6 @@
     border:1px solid grey;
     background-color:#f8f8f8;
 }
+
+
+/* v2 */
