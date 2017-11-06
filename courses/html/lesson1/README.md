@@ -114,7 +114,7 @@ Les balises HTML peuvent avoir des **attributs** :
 
 
 ## Un peu de pratique
-* Créer un fichier `.html` et mettez du texte à l'intérieur
+* Créer un fichier `.html` et medz du texte à l'intérieur
 * Créez un fichier `.xhtml` et mettez du texte à l'intérieur
 * Maintenant visualisez les à l'intérieur de votre navigateur (pour visualiser votre page vous devez cliquer droit et ouvrir avec : Navigateur Web Chromium)
 
