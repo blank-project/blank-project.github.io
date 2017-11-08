@@ -17,6 +17,42 @@ Une page HTML a la structure suivante
 ```
 
 
+***
+
+# L'indentation
+
+Il s'agit de l'ajout de tabulations ou d'un nombre d'espace prédéfini dans votre code pour le rendre lisible.
+Une bonne indentation ressemble a ceci :
+
+```
+<html>
+	<head><!-- pour chaque élément contenu dans une autre élément on ajoute une tabulation -->
+      <title>Mon titre</title><!-- lorsque que l'on a uniquement du texte on peut laisser les balises ouvrantes et fermantes sur la même ligne -->
+	</head><!--les balises ouvrantes et fermantes sont au même niveau-->
+   <body>
+      Mon texte
+   </body>
+</html>
+```
+
+
+***
+
+
+Une mauvaise identation est beaucoup moins lisibe :
+
+```
+<html>
+	<head><title>Mon titre</title>
+</head>
+<body>
+Mon texte</body> </html>
+```
+
+</br>
+Vous pouvez bien sur adapter le nombre de tabulations ou d'espaces selon vos préférences .
+
+
 
 ---
 
