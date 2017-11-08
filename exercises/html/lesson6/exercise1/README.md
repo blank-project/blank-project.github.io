@@ -7,4 +7,4 @@ Créer une page HTML contenant les balises suivantes :
 * plusieurs `section`
 * `footer`
 
-A vous d'utiliser ces dernières correctement
+A vous d'utiliser ces dernières correctement 
