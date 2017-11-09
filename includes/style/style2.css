@@ -1,8 +1,10 @@
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: red;
 }
 
 nav {
@@ -23,6 +25,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-image: url(/includes/testfond.png);
+    }
+
+.title {
+    font-family: 'Kaushan Script', cursive;
 }
 
 .title > * {
