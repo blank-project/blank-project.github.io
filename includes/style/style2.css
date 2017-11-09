@@ -47,6 +47,13 @@ main {
 
 .title {
     font-family: 'Kaushan Script', cursive;
+    font-size: 300%;
+    text-align: left;
+    font-style: italic;
+    width: 50;
+    margin-right: 30%;
+    margin-top: 5px;
+
 }
 
 .title > * {
@@ -65,9 +72,7 @@ main {
     flex-direction: row;
     padding: 64px;
     justify-content: center;
-
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
     background-image: url('/includes/bg-select.png');
 }
 
@@ -82,12 +87,9 @@ main {
     display: block;
     margin: 0px 4px;
     padding: 0px 16px;
-
     border: 4px solid #E8E9EF;
     border-radius: 16px 0px 16px 0px;
-
     box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
-
     overflow: hidden;
     transform: skew(-15deg);
     height: 100%;
@@ -113,4 +115,43 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.infos{
+  text-align: left;
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  border-style: solid;
+  border-width: 4px;
+  padding: 5%;
+  border-radius: 64px 0 64px 0;
+  box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.infos > p {
+text-align: left;
+}
+
+.infos > a {
+
+border-width: 1px;
+background-color:#f46b45;
+border-style: solid;
+border-color:#e65c00;
+padding: 7px 4% 7px 4%;
+border-radius: 5px;
+border-width: 2px;
+color: white;
+font-style: italic;
+font-weight: bolder;
+text-decoration: none;
+font-size: 20px;
+text-align: right;
+position: absolute;
+right: 0;
+margin-right: 10%;
+margin-top: -3%;
 }
