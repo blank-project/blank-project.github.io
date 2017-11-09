@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'custom';
-    src: url('/includes/fonts/SFPortMcKenzie.ttf');
+    src: url('/includes/fonts/SFProverbialGothic.ttf');
 }
 
 @font-face {
     font-family: 'custom-bold';
-    src: url('/includes/fonts/SFPortMcKenzie-Bold.ttf');
+    src: url('/includes/fonts/SFProverbialGothic-Bold.ttf');
 }
 
 html, body {
@@ -14,11 +14,14 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'custom';
+    color: #E8E9EF;
+    text-shadow: 0px 0px 3px #E8E9EF;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     font-family: 'custom-bold';
+    text-transform: uppercase;
 }
 
 nav {
@@ -40,7 +43,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     background-image: url(/includes/testfond.png);
-    }
+}
 
 .title {
     font-family: 'Kaushan Script', cursive;
@@ -71,7 +74,7 @@ main {
 .select > ul > li {
     width: initial;
     list-style: none;
-    height: 256px;
+    height: 128px;
 }
 
 .item {
@@ -80,10 +83,10 @@ main {
     margin: 0px 4px;
     padding: 0px 16px;
 
-    border: 4px solid white;
+    border: 4px solid #E8E9EF;
     border-radius: 16px 0px 16px 0px;
 
-    box-shadow: 0px 0px 5px white, inset 0px 0px 5px white;
+    box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
 
     overflow: hidden;
     transform: skew(-15deg);
