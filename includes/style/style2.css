@@ -8,7 +8,6 @@
     src: url('/includes/fonts/SFPortMcKenzie-Bold.ttf');
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -40,6 +39,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-image: url(/includes/testfond.png);
+    }
+
+.title {
+    font-family: 'Kaushan Script', cursive;
 }
 
 .title > * {
