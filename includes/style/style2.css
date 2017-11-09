@@ -42,6 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-size: cover;
     background-image: url(/includes/testfond.png);
 }
 
@@ -93,8 +94,8 @@ main {
     overflow: hidden;
     transform: skew(-15deg);
     height: 100%;
-    min-width: 64px;
-    transition: transform 0.2s;
+    width: 64px;
+    transition: transform 0.2s, width 0.2s;
 }
 
 .item:hover {
@@ -102,6 +103,7 @@ main {
 }
 
 .item + p {
+    margin-left: 20%;
     transition: transform 0.2s;
 }
 
@@ -110,48 +112,84 @@ main {
 }
 
 .item > img {
-    height: 100%;
-    width: 100%;
+    margin: 10% 10%;
+    display: block;
+
+    height: 80%;
+    width: 80%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .infos{
-  text-align: left;
-  display: block;
-  width: 50%;
-  margin-left: 25%;
-  border-style: solid;
-  border-width: 4px;
-  padding: 5%;
-  border-radius: 64px 0 64px 0;
-  box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
+    text-align: left;
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    border-style: solid;
+    border-width: 4px;
+    padding: 5%;
+    border-radius: 64px 0 64px 0;
+    box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .infos > p {
-text-align: left;
+    text-align: left;
 }
 
 .infos > a {
+    border-width: 1px;
+    background-color:#f46b45;
+    border-style: solid;
+    border-color:#e65c00;
+    padding: 7px 4% 7px 4%;
+    border-radius: 5px;
+    border-width: 2px;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    margin-top: -3%;
+}
+/* back button */
 
-border-width: 1px;
-background-color:#f46b45;
-border-style: solid;
-border-color:#e65c00;
-padding: 7px 4% 7px 4%;
-border-radius: 5px;
-border-width: 2px;
-color: white;
-font-style: italic;
-font-weight: bolder;
-text-decoration: none;
-font-size: 20px;
-text-align: right;
-position: absolute;
-right: 0;
-margin-right: 10%;
-margin-top: -3%;
+#back {
+    margin-top: 14px;
+    margin-left: 14px;
+
+    display: block;
+    height: 4px;
+    width: 32px;
+    background-color: #E8E9EF;
+    border-radius: 2px;
+}
+
+#back::before {
+    left: 0;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 16px;
+    background-color: #E8E9EF;
+    transform: rotate(-45deg);
+}
+
+#back::after {
+    left: 0;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 16px;
+    background-color: #E8E9EF;
+    transform: rotate(45deg);
 }
