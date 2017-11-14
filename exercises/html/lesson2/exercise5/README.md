@@ -1,6 +1,6 @@
 #HTML > Leçon 2 > Exercice 5
 
-Reprendre la page HTML créée avec l'[exercice 4](https://github.com/blank-project/_blank-exercises/tree/master/exercises/html/lesson2/exercise4) et y apporter les modifications suivantes :
+Reprendre la page HTML créée avec l'[exercice 4] et y apporter les modifications suivantes :
 * Remplacer la liste précédente par une liste de définitions et insérer les définitions suivantes :
   * HTML
     * C'est un langage structurant permettant l'écriture de contenu pour les sites internet
