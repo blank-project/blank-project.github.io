@@ -43,7 +43,8 @@ function populateInfos(infos, list) {
 
   for (var i in infos) {
     var li = document.createElement('li');
-    li.innerText = i + ' : ' + infos[i];
+
+    li.innerHTML = '<span class="item-header">' + i + ' : </span>' + infos[i];
 
     list.appendChild(li);
   }

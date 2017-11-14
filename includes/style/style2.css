@@ -33,11 +33,18 @@ nav {
 nav > a {
     text-decoration: none;
     color: initial;
+    position: absolute;
+    height: 48px;
+    display: block;
+    width: 64px;
+}
+
+nav > a:hover > div {
+    left: 8px;
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100%;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -48,13 +55,10 @@ main {
 
 .title {
     font-family: 'Kaushan Script', cursive;
-    font-size: 300%;
+    font-size: 200%;
     text-align: left;
     font-style: italic;
-    width: 50;
-    margin-right: 30%;
-    margin-top: 5px;
-
+    margin: 64px;
 }
 
 .title > * {
@@ -69,45 +73,52 @@ main {
 }
 
 .select > ul {
-    display: flex;
-    flex-direction: row;
-    padding: 64px;
-    justify-content: center;
+    display: block;
+    padding: 32px 16px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     background-image: url('/includes/bg-select.png');
+    max-width: 100%;
+    text-align: center;
 }
 
 .select > ul > li {
     width: initial;
     list-style: none;
     height: 128px;
+    padding: 16px;
+    display: inline-block;
 }
 
 .item {
     position: relative;
     display: block;
-    margin: 0px 4px;
     padding: 0px 16px;
     border: 4px solid #E8E9EF;
     border-radius: 16px 0px 16px 0px;
     box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
     overflow: hidden;
-    transform: skew(-15deg);
+    transform: skew(-13deg);
     height: 100%;
     width: 64px;
-    transition: transform 0.2s, width 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
 }
 
-.item:hover {
-    transform: skew(-15deg) scale(1.1);
+.select > ul > li:not(:first-child) {
+    margin-left: -32px;
+}
+
+.item:hover, .item.selected {
+    transform: skew(-13deg) scale(1.1);
+    background-color: rgba(255,255,255, 0.3);
 }
 
 .item + p {
-    margin-left: 20%;
+    margin-left: -32px;
     transition: transform 0.2s;
 }
 
-.item:hover + p {
+.item:hover + p, .item.selected + p {
     transform: scale(1.1) translateY(10px);
 }
 
@@ -122,58 +133,92 @@ main {
     left: 0;
 }
 
-.infos{
+.infos-container {
+    text-align: right;
+}
+
+.infos {
     text-align: left;
-    display: block;
+    display: inline-block;
+    max-width: 320px;
     width: 50%;
-    margin-left: 25%;
-    border-style: solid;
-    border-width: 4px;
-    padding: 5%;
-    border-radius: 64px 0 64px 0;
+    border-right: 4px solid;
+    padding: 32px 32px 16px;
+    border-radius: 16px;
     box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
+    margin: 0px 16px 16px;
+}
+
+.infos > * {
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .infos > p {
     text-align: left;
 }
 
-.infos > a {
-    border-width: 1px;
+.infos > div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infos > div > a {
     background-color:#f46b45;
     border-style: solid;
     border-color:#e65c00;
-    padding: 7px 4% 7px 4%;
+    padding: 8px 16px;
     border-radius: 5px;
     border-width: 2px;
     color: white;
     font-style: italic;
     font-weight: bolder;
     text-decoration: none;
-    font-size: 20px;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    margin-right: 10%;
-    margin-top: -3%;
+    width: 32px;
+    text-align: center;
+    display: block;
+    position: relative;
 }
+
+.infos > ul {
+    padding: 0px;
+}
+
+.infos > ul > li {
+    list-style: none;
+}
+
+.infos > ul > li > .item-header {
+}
+
 /* back button */
 
 #back {
-    margin-top: 14px;
-    margin-left: 14px;
+    position: absolute;
+    top: 24px;
+    left: 16px;
 
     display: block;
     height: 4px;
     width: 32px;
     background-color: #E8E9EF;
     border-radius: 2px;
+
+    transition: left 0.2s;
+}
+
+.back:hover > #back {
+    left: 8px;
 }
 
 #back::before {
-    left: 0;
+    margin-top: -6px;
     position: absolute;
     content: '';
     display: block;
@@ -184,7 +229,7 @@ main {
 }
 
 #back::after {
-    left: 0;
+    margin-top: 6px;
     position: absolute;
     content: '';
     display: block;
@@ -192,4 +237,22 @@ main {
     width: 16px;
     background-color: #E8E9EF;
     transform: rotate(45deg);
+}
+
+/* background animation */
+@-webkit-keyframes MOVE-BG {
+    from {
+        background-position: 0% 0%
+    }
+    to {
+        background-position: 100% 0%
+    }
+}
+
+.select > ul {
+    animation: MOVE-BG 5s linear infinite;
+    -webkit-animation-name: MOVE-BG;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
 }
