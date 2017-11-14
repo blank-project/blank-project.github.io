@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="stylesheet" href="/includes/style/style2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a class="back" href="../">
+                <div id="back">
+                </div>
+            </a>
+        </nav>
+        <main>
+            <div class="title">
+                <h1>Les cours</h1>
+            </div>
+
+            <div class="infos-container">
+                <div id="infos" class="infos">
+                    <h2 data-bind="title">title</h2>
+                    <p data-bind="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <ul data-bind="infos">
+                        <li>nbCourse: 7</li>
+                        <li>nbCourse: 7</li>
+                    </ul>
+                    <div class="link">
+                        <a data-bind="link" class="button" href="link">GO !</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="select">
+                <ul>
+                    <li>
+                        <div class="item" data-title="Généralités" data-description="Découvrons les généralités (terminal, git, concepts de programmation, etc.)" data-link="/courses/playground" data-infos='{ "Nombre de cours": 2, "Nombre de séances": 2 }'>
+                            <img src="/includes/plus.svg">
+                        </div>
+                        <p>Initiation</p>
+                    </li>
+                    <li>
+                        <div class="item" data-title="html" data-description="Le langage permettant la définition du contenu et de la structure d'une page web" data-link="/courses/html" data-infos='{ "Nombre de cours": 7, "Nombre de séances": "11"}'>
+                            <img src="/includes/html.svg">
+                        </div>
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <div class="item" data-title="css" data-description="Le langage permettant de donner du style à une page web qui pourrait s'avérer austère." data-link="/courses/css" data-infos='{ "Nombre de cours": "Non défini", "Nombre de séances": "Non défini"}'>
+                            <img src="/includes/css.svg">
+                        </div>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <div class="item" data-title="js" data-description="Le JavaScript permet de dynamiser un site internet. Il permet aussi à son utilisateur d'intéragir d'une manière plus douce. Apprenons !" data-link="/courses/javascript" data-infos='{ "Nombre de cours": "Non défini", "Nombre de séances": "Non défini"}'>
+                            <img src="/includes/js.svg">
+                        </div>
+                        <p>JS</p>
+                    </li>
+                    <li>
+                        <div class="item" data-title="NodeJS" data-description="Les application et la programmation serveur en JavaScript." data-link="/courses/nodejs" data-infos='{ "Nombre de cours": "Non défini", "Nombre de séances" : "Non défini" }'>
+                            <img src="/includes/nodejs.svg">
+                        </div>
+                        <p>NodeJS</p>
+                    </li>
+                    <li>
+                        <div class="item" data-title="Bases de données" data-description="Comment stocker les données ? Les modifier ? Les récupérer ? Les supprimer ?" data-link="/courses/sql" data-infos='{ "Nombre de cours": "Non défini", "Nombre de séances": "Non défini" }'>
+                            <img src="/includes/db.svg">
+                        </div>
+                        <p>BDD</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <script src="/includes/js/select-menu.js"></script>
+    </body>
+</html>

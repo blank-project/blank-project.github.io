@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'custom';
+    src: url('/includes/fonts/SFProverbialGothic.ttf');
+}
+
+@font-face {
+    font-family: 'custom-bold';
+    src: url('/includes/fonts/SFProverbialGothic-Bold.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'custom';
+    color: #E8E9EF;
+    text-shadow: 0px 0px 3px #E8E9EF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    font-family: 'custom-bold';
+    text-transform: uppercase;
+}
+
+nav {
+    height: 32px;
+    width: 100%;
+    position: fixed;
+}
+
+nav > a {
+    text-decoration: none;
+    color: initial;
+    position: absolute;
+    height: 48px;
+    display: block;
+    width: 64px;
+}
+
+nav > a:hover > div {
+    left: 8px;
+}
+
+main {
+    min-height: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-size: cover;
+    background-image: url(/includes/testfond.png);
+}
+
+.title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 200%;
+    text-align: left;
+    font-style: italic;
+    margin: 64px;
+}
+
+.title > * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.select > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.select > ul {
+    display: block;
+    padding: 32px 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-image: url('/includes/bg-select.png');
+    max-width: 100%;
+    text-align: center;
+}
+
+.select > ul > li {
+    width: initial;
+    list-style: none;
+    height: 128px;
+    padding: 16px;
+    display: inline-block;
+}
+
+.item {
+    position: relative;
+    display: block;
+    padding: 0px 16px;
+    border: 4px solid #E8E9EF;
+    border-radius: 16px 0px 16px 0px;
+    box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
+    overflow: hidden;
+    transform: skew(-13deg);
+    height: 100%;
+    width: 64px;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.select > ul > li:not(:first-child) {
+    margin-left: -32px;
+}
+
+.item:hover, .item.selected {
+    transform: skew(-13deg) scale(1.1);
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.item + p {
+    margin-left: -32px;
+    transition: transform 0.2s;
+}
+
+.item:hover + p, .item.selected + p {
+    transform: scale(1.1) translateY(10px);
+}
+
+.item > img {
+    margin: 10% 10%;
+    display: block;
+
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.infos-container {
+    text-align: right;
+}
+
+.infos {
+    text-align: left;
+    display: inline-block;
+    max-width: 320px;
+    width: 50%;
+    border-right: 4px solid;
+    padding: 32px 32px 16px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px #E8E9EF, inset 0px 0px 5px #E8E9EF;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 0px 16px 16px;
+}
+
+.infos > * {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.infos > p {
+    text-align: left;
+}
+
+.infos > div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infos > div > a {
+    background-color:#f46b45;
+    border-style: solid;
+    border-color:#e65c00;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-width: 2px;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: none;
+    width: 32px;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.infos > ul {
+    padding: 0px;
+}
+
+.infos > ul > li {
+    list-style: none;
+}
+
+.infos > ul > li > .item-header {
+}
+
+/* back button */
+
+#back {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+
+    display: block;
+    height: 4px;
+    width: 32px;
+    background-color: #E8E9EF;
+    border-radius: 2px;
+
+    transition: left 0.2s;
+}
+
+.back:hover > #back {
+    left: 8px;
+}
+
+#back::before {
+    margin-top: -6px;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 16px;
+    background-color: #E8E9EF;
+    transform: rotate(-45deg);
+}
+
+#back::after {
+    margin-top: 6px;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 16px;
+    background-color: #E8E9EF;
+    transform: rotate(45deg);
+}
+
+/* background animation */
+@-webkit-keyframes MOVE-BG {
+    from {
+        background-position: 0% 0%
+    }
+    to {
+        background-position: 100% 0%
+    }
+}
+
+.select > ul {
+    animation: MOVE-BG 5s linear infinite;
+    -webkit-animation-name: MOVE-BG;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
