@@ -6,5 +6,5 @@ Reprendre la page HTML créée avec l'[exercice 3] et y apporter les modificatio
   * `HTML`
   * `CSS`
   * `JavaScript`
-  * `PHP`
+  * `NodeJS`
   * `Bases de données (SQL)`
