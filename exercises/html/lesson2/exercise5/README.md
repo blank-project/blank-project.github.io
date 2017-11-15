@@ -8,7 +8,7 @@ Reprendre la page HTML créée avec l'[exercice 4] et y apporter les modificatio
     * C'est un langage permettant de rajouter du style à une page HTML
   * JavaScript
     * C'est un langage de programmation (orienté objet) communément utilisé pour dynamiser les sites internet
-  * PHP
-    * C'est un langage de programmation (scripting) qui est utilisé pour dynamiser le contenu des pages HTML
+  * NodeJS
+    * C'est un framework permettant la programmation d'applications ou de serveurs web.
   * Base de données (SQL)
     * C'est grâce à ces dernière que le contenu dynamiquement généré est stocké. Le langage généralement utilisé pour dialoguer avec la base de données
