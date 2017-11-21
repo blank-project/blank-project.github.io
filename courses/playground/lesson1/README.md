@@ -9,8 +9,11 @@
 
 ## Qu'est-ce que le terminal ?
 
-- Un terminal ou le **shell** permet d'exécuter des commandes dans les systèmes basés sur UNIX (Distributions Linux, MacOS)
-- Plusieurs type de terminal : Bash, PosiX
+- Le terminal est un programme qui permet d'exécuter des commandes dans les systèmes basés sur UNIX (Distributions Linux, MacOS)
+- Il existe pleins de terminaux différents selon la plateforme ou la préférence (Terminal, Terminator, iTerm …)
+- Le terminal communique avec le **shell** qui est un interperteur de commandes
+- Plusieurs types de shell : Bash, PosiX
+- Je vais utiliser les deux termes pour parler de l'invite de commandes, mais ce sont deux choses différentes en réalité
 
 
 
@@ -29,6 +32,16 @@
 
 ---
 
+
+
+## Utilisateur / session
+* Lorsqu'on ouvre une fenêtre d'un terminal, on ouvre une session Shell avec un utilisateur (celui ouvert sur notre poste)
+* On peut ouvrir plusieurs sessions avec un même utilisateur (limité par le système)
+* Il est donc possible de travailler avec plusieurs fenêtre de terminal simultanément
+
+
+
+---
 
 
 ## Le prompt
@@ -71,7 +84,7 @@ Les options sont précédées de **-** (options courtes) ou **--** (options long
 Les options courtes peuvent êtres groupées.  
 Exemples :
 - `pwd`  
-- `ls -Al`
+- `ls -al`
 - `git --help`   
 - `rm -R test/ `
 
@@ -154,7 +167,12 @@ man ls
 
 
 ## **echo**
-Permet d'afficher un message ou le contenu d'une variable, ou les deux
+* Permet d'afficher un message ou le contenu d'une variable, ou les deux
+* On reviendra sur les variables au prochain cours
+* Ex. pour obtenir le type du Shell :
+```
+echo $SHELL
+```
 
 
 
@@ -209,11 +227,11 @@ Affiche le dossier courant
 
 
 ### **cd**
-_change directory_  
 Change de dossier courant
 > `cd test` : On se rend dans le dossier _test_  
 > `cd ..` : On se rend dans le dossier parent  
-> `cd` ou `cd ~` : on se rend dans le dossier personnel (_HOME_).
+> `cd` ou `cd ~` : on se rend dans le dossier personnel (_HOME_)  
+> `cd -` : Revient au dernier dossier
 
 Essayez de naviguer un peu au hasard (sans oublier d'utiliser **tab** pour aller plus vite)
 Tapez régulièrement `pwd` pour voir où vous vous trouvez dans l'arborescence
@@ -227,7 +245,7 @@ Tapez régulièrement `pwd` pour voir où vous vous trouvez dans l'arborescence
 ### **ls**
 Liste les dossiers/fichiers  
 Options utiles :
-- **-A** : liste les fichiers cachés (commençant par "**.**" )
+- **-a** : liste les fichiers cachés (commençant par "**.**" )
 - **-l** : format long
 
 
@@ -240,7 +258,7 @@ Faire un `ls -la ~/`
 
 Concepts présents :
 - utilisateurs
-- permissions
+- permissions (lecture / écriture / exécution)
 
 
 
@@ -418,9 +436,10 @@ Permet de changer le propriétaire d'un fichiers
 
 
 
-## La suite lundi
-- quelques excercices pour manipuler les commandes vues aujourd'hui et quelques nouvelless
+## La suite mardi
+- quelques excercices pour manipuler les commandes vues aujourd'hui et quelques nouvelles commandes
 - on va écrire aussi des scripts shell, c-à-d qui utilisent les commandes shell
+- il existe une cheatsheet avec un résumé des commandes utiles
 
 
 
@@ -428,7 +447,7 @@ Permet de changer le propriétaire d'un fichiers
 
 
 
-## Réseau (fin de cours si temps en plus)
+## Réseau (bonus)
 - **ifconfig**
 Affiche la configuration réseau.-
 - **hostname**
