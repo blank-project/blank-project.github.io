@@ -1,8 +1,8 @@
 # CSS > Leçon 2 > Exercice 1
 
-Télecharger l'archive et l'extraire.
 
-Pour cette exercice, ne touchez pas au code html, et manipulez uniquement le code css (dans `css/style/css`)
+
+Pour cette exercice utilisez les fichiers dans le dossier "ressources", ne touchez pas au code html, et manipulez uniquement le code css (dans le dossier `css`)
 
 - Donner une couleur de fond verte (`#00FF00`)à toutes les balises `<li>` dans un `<ul>`
 - Enlever le soulignement sur les liens dans la sous-liste du menu.

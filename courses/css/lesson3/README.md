@@ -315,7 +315,7 @@ Pour appliquer cela sur toute la page :
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+* {
   box-sizing: inherit;
 }
 ```

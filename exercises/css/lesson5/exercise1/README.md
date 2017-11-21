@@ -10,8 +10,8 @@ Dans une feuille de style séparée, écrire le code CSS pour afficher ce paragr
 # Exercice 1.1
 
 Rajouter une feuille de style `print.css`
-La feuille de style existante uniquement pour les média `screen`
-La nouvelle feuille uniquement pour les média `print`
+La feuille de style existante visant uniquement les média `screen`
+La nouvelle feuille uniquement les média `print`
 
 Afficher l'aperçu avant impression
 Vous constatez que les couleurs appliquées à l'exercice d'avant ne s'affiche pas.

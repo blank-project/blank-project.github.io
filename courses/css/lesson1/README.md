@@ -106,13 +106,15 @@ Pour ajouter du CSS à une page HTML il y a plusieurs possibilités :
 
 ## Utiliser une Feuille de Style
 
-On ajoute un élement `link` dans le `head` de la page.
+Le CSS sera dans un fichier séparé nommé _style.css_ .
+
+On ajoute un élement `link` dans le `head` de la page visée pour y lier la feuille de style.
 
 ```
 <link href="style.css" rel="stylesheet" type="text/css" />
 ```
 
-Le CSS sera dans un fichier séparé nommé _style.css_.
+Ainsi les règles de style s'appliqueront a la page .
 
 C'est la méthode la plus répandue pour ajouter du CSS.
 
