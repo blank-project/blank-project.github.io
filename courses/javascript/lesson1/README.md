@@ -67,7 +67,7 @@ C'est un langage dont l'implémentation et le code et les instructions s'exécut
 ***
 
 
-## Attent langage machine ?
+## Attend langage machine ?
 Un langage machine est une suite basique d'instructions en binaire (0 ou 1) et / ou hexadécimales.
 
 C'est ce que va comprendre votre ordinateur au niveau machine. Tous les langages de programmations sont à un moment traduits en instructions machines.
