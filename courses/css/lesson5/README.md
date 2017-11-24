@@ -174,7 +174,7 @@ Décrit le ratio de pixel souhaité.
 
 ## grid
 
-Détermine sur l'appareil utilisé est basé sur un systeme de grille. Exemple : terminal, ou télépone avec seulement une police, etc.  Si le device n'est pas une grid, alors la valeur est 0.
+Détermine que l'appareil utilisé est basé sur un systeme de grille. Exemple : terminal, ou télépone avec seulement une police, etc.  Si le device n'est pas une grid, alors la valeur est 0.
 
 |Valeur|Media|Accepte min/max|
 |-|-|-|-|
@@ -409,4 +409,3 @@ On peut lier une feuille de style en ayant une condition media :
 ## Media query c'est fini
 
 ![finally](finally.jpg)
-

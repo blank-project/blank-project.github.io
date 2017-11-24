@@ -76,7 +76,7 @@ Les feuilles de style s'appliquent dans l'ordre suivant :
 ***
 
 
-Quand on définit plusieurs fois la même propriété pour un élement, il existe des règles de priorité.
+Quand on définit plusieurs fois la même propriété pour un élement (avec une valeure différente), il existe des règles de priorité.
 
 On appelle cela la spécificité.
 
@@ -92,7 +92,7 @@ On compte le nombre de sélécteurs de chaque catégorie.
 ***
 
 
-Pour 2 éléments sur lesquels on applique la même propriété :
+méthode pour vérifier quelle propriété prime :
 - On regarde la spécificité
 - Puis on regarde de quelle feuille de style vient la propriété
 - Puis on regarde dans quel ordre sont déclarées les propriétés dans la feuille de style.
