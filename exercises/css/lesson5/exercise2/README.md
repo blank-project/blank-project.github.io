@@ -1,4 +1,4 @@
-# CSS > Le positionnement (2) > Exercice 1
+# CSS > Media Queries > Exercice 2
 
 Créer un site avec une bannière, un menu, 2 barres latérales (un sommaire, une publicité), un footer.
 Le contenu principal de la page doit contenir 4 articles avec chacun une image.
