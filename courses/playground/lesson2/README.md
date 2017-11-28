@@ -1,7 +1,30 @@
 # Utiliser le terminal part. 2
+- Ecrire et exécuter des scripts
 - De nouvelles commandes très utiles
 - Combiner des commandes
-- Ecrire et exécuter des scripts
+
+
+
+***
+
+
+
+## Retour sur le cours précédent
+- À quoi sert le terminal / shell ?
+- Quelques commandes vues ensemble ?
+
+
+
+***
+
+
+
+## Les scripts shell
+- Les scripts sont des fichiers exécutables qui sont écrits avec le language d'un shell (pour nous *bash*)
+- Ils doivent avoir comme première ligne `#!/bin/bash`
+- On doit leur donner les droits d'exécution avec chmod
+- Les commandes sont exécutées ligne par ligne (pour l'instant..)
+- Ce qui se trouve derrière un `#` est un commentaire
 
 
 
@@ -9,17 +32,58 @@
 
 
 
-## Retour sur le format d'une commande
+## Écrire mon premier script
+
+- Écrire le script suivant dans un fichier "bonjour_monde.sh"
+```
+#!/bin/bash
+echo "Bonjour monde" # Pour dire bonjour
+```
+- Ajouter les droits d'exécution avec
+```
+chmod +x bonjour_monde.sh
+```
+- Exécuter le script :
+
+```
+./bonjour_monde.sh
+```
+
+
+
+***
+
+
+
+## Récupérer des arguments
+- Pour avoir des arguments dans un script on peut utiliser :
+  - `$0` : Correpond à la commande
+  - `$1` : Correpond au premier argument
+  - `$2` : Au 2e, etc...
+  - `$#` : le nombre d'arguments
+- Dans `bonjour_monde.sh`, remplacer monde par le premier argument
 
 
 
 ---
+
+
+
+## Script n°2 : rechercher dans ma vidéothèque
+- Placer le fichier `films` dans un nouveau répertoire
+- Il contient une liste de films, notre vidéothèque
+- Pour chercher des films dedans on va utiliser la commande `grep` (globally search a regular expression and print)
+- Pour connaître le nombre de films on va utiliser `wc` (word count)
+
+
+
+***
 
 
 
 ## La commande grep
 - Elle sert à chercher du contenu texte dans des fichiers : `grep "test" truc.txt`
-- Elles possèdent des options qui la rende très utile:
+- Elle possède des options qui la rende très utile:
     * -n : donne le numéro de ligne où a été trouvé le mot
     * -r : rend la recherche récusirve - à utiliser par exemple avec le fichier `.`
     * -i : ignore la casse (majuscules et minuscules)
@@ -27,21 +91,32 @@
 - Exemple :
 ```
 grep -nri "a" .
+grep -ni "star wars" ./films
 ```
 
 
 
----
+***
 
 
 
-## La commande find
-- Aide à la recherche de fichiers
+## La commande wc
+- Permet de compter le nombre de lignes, de mots, de caractères et d'octets dans un fichier
 - Exemple :
 ```
-find .
+wc -l ./films
 ```
-- On reviendra plus tard sur cette commande
+
+
+
+***
+
+
+## Script de recheche
+- Écrire un script `rechercher_film.sh`
+- Il doit permettre de :
+    1. dire combien de films sont présents dans la vidéothèque
+    2. Rechercher les films qui contiennent le premier argument passé au script
 
 
 
@@ -49,43 +124,57 @@ find .
 
 
 
-## Les commandes head et tail
-- Elles servent à voir le début et la fin d'un fichier
-- Options utiles :
-    * -n <nombre> : le nombre de ligne à afficher
-    * -F : pour tail, permet et d'attendre les changements faits au fichier et de les afficher
+## Script n°3 : ajouter un film
+Avant de pouvoir ajouter des films, on va apprendre à :
+- faire des redirections
+- combiner des commandes shell
+
+
+
+***
+
+
+
+## Les redirections
+- Une redirection permet de rediriger l'entrées ou la sortie d'une commande
+- La sortie d'une commande, c'est ce qu'elle renvoie dans le shell : output
+- L'entrée d'une commande, ce sont les paramètres qu'on lui donne : input
+- Nous allons voir des exemples où elles sont pratiques
+
+
+
+***
+
+
+
+## Les opérateurs **>** et **>>**
+- Ils permettent de rediriger la sortie vers un fichier
 - Exemple :
 ```
-head -n3 test.txt
-tail -F -n1000 test.txt
+ll > test.txt
+```
+- `>` remplace le contenu du fichier, `>>` ajoute le contenu à la suite
+
+
+
+***
+
+
+
+## L'opérateur **<**
+- Il permet de rediriger le contenu d'un fichier vers l'entrée d'une commande
+- Exemple :
+```
+grep -ni "truc" < index.html
 ```
 
 
 
----
+***
 
 
 
-## Quelques options très pratiques
-- `cd -` : permet de revenir au précédent dossier
-- `ls -lrt` : affiche les derniers fichiers modifiés
-
-
-
----
-
-
-
-## Combiner des commandes
-Pour nous permettre d'effectuer plus d'opérations, il est possible de combiner les commandes shell
-
-
-
----
-
-
-
-## Exécuter plusieurs commandes sur la même ligne
+## Exécuter plusieurs commandes en une
 - Les opérateurs `&&` et `;` permettent d'exécuter à la suite plusieurs commandes sur la même ligne
 - Exemples :
 ```
@@ -96,46 +185,7 @@ touch test ; touch test2; touch test3
 
 
 
----
-
-
-
-## Les redirections
-- Une redirection permet de rediriger l'entrées ou la sortie d'une commande
-- La sortie d'une commande, c'est ce qu'elle renvoie dans le terminal
-- L'entrée d'une commande, ce sont les paramètres qu'on lui donne
-- Attention, les redirections ne fonctionnent pas avec toutes les commandes, mais nous allons voir de nombreux exemples où elles sont très utiless
-
-
-
----
-
-
-
-## Les opérateurs **>** et **>>**
-- Il permet de rediriger la sortie vers un fichier
-- Exemple :
-```
-ll > test.txt
-```
-- `>` remplace le contenu du fichier, `>>` ajoute le contenu à la suite
-
-
-
----
-
-
-
-## L'opérateur **<**
-- Il permet de redirriger le contenu d'un fichier vers l'entrée d'une commande
-- Exemple :
-```
-grep -nri -C6 "truc" < index.html
-```
-
-
-
----
+***
 
 
 
@@ -144,49 +194,48 @@ grep -nri -C6 "truc" < index.html
 - Redirige la sortie d'une commande vers l'entrée d'une autre
 - Exemples :
 ```
-find . | grep -i "index"
-ll | grep "fichier"
+ls -a | sort -r
+ps aux | grep /bin
 man ls | grep -C4 -i "\-a"
 ```
 
 
 
+***
+
+
+
+## Retour au script
+- Écrire un script `ajouter_film.sh`
+- Il doit permettre d'ajouter le premier argument à la fin du fichier film
+- Indice : on peut utiliser echo et une redirection
+
+
+
+***
+
+
+
+## Les commandes head et tail
+- Elles servent à voir le début et la fin d'un fichier
+- Options utiles :
+    * -n <nombre> : le nombre de ligne à afficher
+    * -F : pour tail, permet et d'attendre les changements faits au fichier et de les afficher
+- Exemple :
+```
+head -n3 films
+tail -F -n10 films
+```
+- Faire un tail -f et exécuter ajouter_film.sh en parallèle
+
+
+
 ---
 
 
 
-## Les scripts shell
-- Les scripts sont des fichiers exécutables qui sont écrits avec le language du shell
-- Ils doivent avoir commen première ligne `#!/bin/bash`
-- On doit leur donner les droits d'exécution (avec chmod +x)
-- Pour avoir des arguments dans un script on peut utiliser :
-  - `$0` : Correpond à la commande
-  - `$1` : Correpond au premier argument
-  - `$2` : Au 2e, etc...
-
-
-
----
-
-
-
-## Atelier écrire un script
-Créer un script pour initialiser un répertoire projet contenant :
-- Crée un dossier ayant pour nom le premier argument passé au script
-- Un fichier `index.html`
-- Un dossier `assets`
-- Ayant initié le répertoire `git`
-- Ayant initié un `README.md` avec pour contenu : `# Nom_du_dossier`
-- Ajouter ces fichiers à l'index git
-- Faire le premier commit avec comme message : `"first commit"`
-
-
-
----
-
-
-
-## La prochaine fois : scripts complexes
-- Les variables
-- Les conditions
-- Les boucles
+## La prochaine fois : introduction à la programmation
+Avec des scripts utilisant des :
+- variables
+- conditions
+- boucles
