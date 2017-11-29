@@ -1,6 +1,6 @@
 # CSS > Lesson6 > Exercise3
 
-Créer un menu sur la gauche de notre page. Lorsque l'on clique sur un élément HTML (label de checkbox) cela doit faire apparaitre le menu par la gauche.
+Créer un menu sur la gauche de notre page. Lorsque l'on clique sur un élément HTML (lien) cela doit faire apparaitre le menu par la gauche.
 * Le menu doit faire 20% de la page
 * Le menu doit slider depuis la gauche
 * Le texte de l'élément HTML doit changer si l'on veut ouvrir ou fermer le menu
