@@ -69,10 +69,11 @@
  - `justify-content : flex-start | flex-end | center | space-between | space-around;` : alignement des éléments le long de l'axe principal (`flex-direction`).
  - `align-items : flex-start | flex-end | center | baseline | stretch;` : l'alignement des éléments par rapport à l'axe secondaire
  - `align-content : flex-start | flex-end | center | space-between | space-around | stretch` : l'alignement des lignes dans le conteneur.
+
 ### Propriétés des éléments
 - `order` : l'ordre des éléments
 - `self-align` : l'alignement des éléments
-- `flex` : la taille des éléments 
+- `flex` : la taille des éléments
 
 ## Media Queries
 <!-- TODO Marin -->

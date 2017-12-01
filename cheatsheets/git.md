@@ -1,7 +1,7 @@
 # Cheat Sheet Git
 
 ## Obtenir de l'aide
-Obtenir de l’aide sur la commande _verb_
+Obtenir de l’aide sur la commande `verb`
 
 * `git help verb`
 * `git verb --help`

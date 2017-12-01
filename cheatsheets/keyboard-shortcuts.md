@@ -1,6 +1,6 @@
 # Cheat Sheet Raccourcis clavier
 
-Les raccourcis clavier permettent d'executer des actions sans utiliser la souris.
+Les raccourcis clavier permettent d'exécuter des actions sans utiliser la souris.
 Grâce à eux, il est possible d'être plus efficace.
 Ils utilisent en général les touches suivantes :
 - `Ctrl`
