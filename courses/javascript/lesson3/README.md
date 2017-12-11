@@ -7,7 +7,7 @@
 
 
 ## Une fonction c'est quoi ?
-C'est une suite d'instructions que l'on va stocker exécuter à la demande.
+C'est une suite d'instructions que l'on va stocker et exécuter à la demande.
 
 À cette fonction, on peut passer des éléments concernant son exécution, c'est ce que l'on appelle des paramètres.
 
@@ -35,7 +35,7 @@ function myFunction() {
 
 
 ## Appeler une fonction
-Pour appeler une fonction, nous appellons la fonctions et lui demandons de s'exécuter en ajoutant les parenthèses à la fin.
+Pour appeler une fonction, nous écrivons son nom et lui demandons de s'exécuter en ajoutant les parenthèses à la fin.
 
 ```js
 function showOle() {
@@ -119,7 +119,7 @@ Le scope est le contexte d'exécution (fonction actuelle). Chaque variable a son
 ***
 
 
-## J'ai pas tout compris...
+ ,## J'ai pas tout compris...
 Prenon un exemple :
 
 ```js
@@ -139,7 +139,7 @@ console.log(plusOne(2)); /* output : 3 */
 
 ## Les variables globales et locales
 * Une variable globale est accessible partout dans le code
-* Une variable locale n'est accessible que dans le contexte d'exécution d'une fonction
+* Une variable locale n'est accessible que dans le contexte d'exécution d'une fonction (dans son scope)
 
 
 
