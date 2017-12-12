@@ -1,4 +1,4 @@
-sur le site que vous avez créé,joutez image présente uniquement sur la version mobile du site . Elle devra prendre toute la largeur de l'écran .
+sur le site que vous avez créé, ajoutez image présente uniquement sur la version mobile du site . Elle devra prendre toute la largeur de l'écran .
 
 Une fois que cela est fait on va créer une menu "burger".
 Faites en sorte que lorsque l'on passe en format mobile les liens de la navbars disparaissent
