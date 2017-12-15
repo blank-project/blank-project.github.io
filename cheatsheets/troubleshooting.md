@@ -18,3 +18,8 @@
 - La feuille de style CSS est-elle bien chargée (bon chemin d'accès ?).
 - La syntaxe du CSS est-elle correcte ?
 - L'élément est-il bien visé par mon sélecteur.
+
+## Et si rien ne marche ?
+- Faites une recherche décrivant votre problème sur votre moteur de recherche préféré.
+- Essayez plusieurs mots-clés et regardez plusieurs articles.
+- Si rien ne marche, vous pouvez nous appeler à l'aide !
