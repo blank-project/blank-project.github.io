@@ -6,21 +6,6 @@
 
 
 
-## Rappels utiles
-* node <fichier> et node debug <fichier> pour exécuter un fichier JS
-* Les instructions vues hier :
-```js
-var variable = "valeur"; // affectation de valeur à variable
-console.log(variable); // affiche la valeur de variable
-console.log(1+1); // affiche le résultat de 1+2
-```
-
-
-
----
-
-
-
 ## Structures de contrôle ?
 * “une structure de contrôle est une commande qui contrôle l'ordre dans lequel les différentes instructions d'un algorithme ou d'un programme informatique sont exécutées”
 (Wikipédia)
@@ -199,10 +184,6 @@ Le programme doit afficher sur la sortie tous les entiers successifs à partir d
 Les multiples de 5 : afficher fizz
 Les multiples de 7 : afficher buzz
 * Indice : utiliser une boucle for !
-* Pour récupérer le nombre donné en paramètre :
-```js
-var truc = process.argv[2]
-```
 
 
 

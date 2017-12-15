@@ -107,14 +107,6 @@ Chaque élément du DOM est un objet correspondant à un élément HTML. Cela si
 ***
 
 
-## Petit exercice !
-
-Allez faire l'exercice 1 [ici](https://github.com/blank-project/_blank/tree/master/exercises/javascript/lesson5/exercise1).
-
-
-***
-
-
 ## Modifier les éléments HTML
 
 * `element.innerHTML = "new html content"` Change le contenu d'une balise (peut-être du texte, ou de l'HTML).
@@ -129,14 +121,6 @@ Allez faire l'exercice 1 [ici](https://github.com/blank-project/_blank/tree/mast
 ***
 
 
-## Petit exercice !
-
-Allez faire l'exercice 2 [ici](https://github.com/blank-project/_blank/tree/master/exercises/javascript/lesson5/exercise2).
-
-
-***
-
-
 ## Adding and Deleting Elements
 
 * `document.createElement("tagname")` Créé un élément HTML (on passe le nom de la balise que l'on veut créer en paramètre).
@@ -146,14 +130,6 @@ Allez faire l'exercice 2 [ici](https://github.com/blank-project/_blank/tree/mast
 * `element.removeChild(element)` Supprime l'enfant passé en paramètre.
 
 * `element.replaceChild(element)` Remplace un élément HTML.
-
-
-***
-
-
-## Petit exercice !
-
-Allez faire l'exercice 3 [ici](https://github.com/blank-project/_blank/tree/master/exercises/javascript/lesson5/exercise3).
 
 
 
@@ -207,12 +183,6 @@ function ole() {
 
 ***
 
-
-## Pause exercice !
-Allez faire l'exercice 4 [ici](https://github.com/blank-project/_blank/tree/master/exercises/javascript/lesson5/exercise4) et 5 [ici](https://github.com/blank-project/_blank/tree/master/exercises/javascript/lesson5/exercise5)
-
-
-***
 
 
 ## Juste pour la culture !

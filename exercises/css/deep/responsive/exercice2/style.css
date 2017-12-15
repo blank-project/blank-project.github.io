@@ -1,0 +1,98 @@
+
+main{
+  display: flex;
+}
+
+img{
+  height: 70vh;
+  margin-left: 15vh;
+}
+
+p{
+  margin: 15vh 15vh 0 15vh;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+li{
+  margin: 5vh; /*pour séparer les links*/
+}
+
+a{
+  color: red;
+  text-decoration: none;
+}
+
+.burger{
+  display : none ;
+}
+
+.close{
+  display: none;
+}
+
+.mobile{
+  display: none;
+  width: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+
+  body{
+    margin: 0;/*pour eviter que les margin face depasser la scrollbarDown*/
+  }
+
+  main{
+    display: block;
+  }
+
+  img{
+    margin-top: 1vh; /*pour eviter que le haut de l'image soit crop par la navbar*/
+    width: 100vw;
+    margin: 0 0 0 0; /*pour eviter que les margin face depasser la scrollbarDown*/
+  }
+
+  P{
+    margin: 0;
+  }
+
+  footer{
+    position: fixed;
+    top: 0;
+    background-color: black;
+
+  }
+
+  ul{
+    margin-right: 11vw; /*pour compense le petit décalage du au margin des li*/
+   }
+
+  li{
+    margin: 1vh;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  #menu:target {
+
+      display:block;
+  }
+
+  .burger{display: block;
+  }
+
+  .close{
+    display: block;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+}

@@ -1,0 +1,42 @@
+*{
+  background-color: black;
+}
+
+#uno{
+
+  height: 50px;
+
+}
+
+#dozo{
+
+  height: 50%;
+
+}
+
+#trezo{
+
+    height: 50vh;
+
+}
+
+@media (max-width: 600px) {
+
+  #uno{
+
+    height: 50px;
+
+  }
+
+  #dozo{
+
+    height: 100%;
+    width: 100%;
+
+  }
+
+  #trezo{
+
+      height: 50vh;
+      width: 50vh;
+}

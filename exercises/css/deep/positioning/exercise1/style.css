@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bg-light {
+    background-color: #E0E0E0;
+}
+
+.modal {
+    margin: 50px 0;
+    position: relative;
+    height: 250px;
+    width: 500px;
+    border: 1px solid grey;
+    border-radius: 12pt;
+    padding: 25px;
+    text-align: center;
+}
+
+.modal > img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 100%;
+    padding: 5px;
+    border: 1px solid grey;
+    position: absolute;
+    top: -30.5px;
+    left: 25px;
+}

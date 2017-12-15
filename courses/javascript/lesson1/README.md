@@ -144,18 +144,6 @@ Nous allons faire du Javascript côté client, et donc cela consiste à :
 
 
 
-## Notre environement de développement
-Téléchargez `node.js` qui va nous permettre de faire du javascript sans navigateur pour le début :
-* `sudo apt-get install nodejs` : NodeJs
-* `sudo apt-get install npm` : Le gestionaire de dépendances
-* `sudo ln -s /usr/bin/nodejs /usr/bin/node` : NodeJs est aussi "node"
-* `node -v` : pour tester que l'installation a bien fonctionnée
-
-
-
----
-
-
 ## Faisons du javascript !
 Le javascript est généralement écrit dans un fichier avec l'extension `.js`.
 
@@ -227,20 +215,6 @@ Ici on affiche la valeur de la variable toto
 ***
 
 
-## Pause exercice
-* Créez un fichier JavaScript
-* Déclarez une variable
-* Affichez la dans la console
-* Exécutez votre fichier avec la commande suivante : `node yourfile.js`
-* Si vous voulez utiliser votre fichier en mode debug utilisez la commande : `node debug yourfile.js`
-
-
-Note: Pour quitter le mode debug utiliser la fonction `quit`
-
-
-***
-
-
 ## Les opérateurs
 
 Pour agir sur les variables on utilise des opérateurs. Chacun d'entre eux porte une action mathématique.
@@ -269,15 +243,3 @@ Pour agir sur les variables on utilise des opérateurs. Chacun d'entre eux porte
 Pour commenter en code en JavaScript c'est pareil qu'en CSS !
 * `/*` pour ouvrir un commentaire
 * `*/` pour fermer un commentaire !
-
-
-
----
-
-
-
-## Utiliser le debugger NodeJS
-Pour utiliser le débugger nodejs il faut utiliser le mot clé `debugger;`. Cela stoppera l'exécution de votre code lorsque vous le lancez avec `node debug`.
-
-* Pour continuer l'exécution du code tapez `c` ou `cont`
-* Pour quitter le débugger tapez `quit`

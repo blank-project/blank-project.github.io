@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         .container {
+             margin: 50px 0px;
+             width: 100%;
+             height: 30px;
+             border-radius: 5px;
+             border: 2px solid black;
+         }
+
+         .progress {
+             border-radius: 2px;
+             height: 30px;
+
+             animation: progress 2s linear infinite;
+         }
+
+         @keyframes progress {
+             0% { width: 0%; background-color: red; }
+             25% { width: 25%; background-color: orange; }
+             50% { width: 50%; background-color: yellow; }
+             75% { width: 75%; }
+             100% { width: 100%; background-color: lightgreen; }
+         }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="progress"></div>
+        </div>
+    </body>
+</html>
