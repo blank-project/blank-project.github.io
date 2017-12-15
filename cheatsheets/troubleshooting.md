@@ -18,6 +18,7 @@
 - La feuille de style CSS est-elle bien chargée (bon chemin d'accès ?).
 - La syntaxe du CSS est-elle correcte ?
 - L'élément est-il bien visé par mon sélecteur.
+- J'utilise les Outils Développeur pour comprendre quelles propriétés s'appliquent à mon élément.
 
 ## Et si rien ne marche ?
 - Faites une recherche décrivant votre problème sur votre moteur de recherche préféré.
