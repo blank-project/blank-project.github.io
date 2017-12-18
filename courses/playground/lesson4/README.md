@@ -1,9 +1,7 @@
 # Introduction à la programmation part. 2
 
 
-
 ***
-
 
 
 ## La dernière fois
@@ -46,13 +44,13 @@ print 2 + 2
 
   - `back 100`: reculer de 100 pas
 
-  - `right 90`: tourner à droite de 90° 
+  - `right 90`: tourner à droite de 90°
 
-  - `left 90`: tourner à gauche de 90° 
+  - `left 90`: tourner à gauche de 90°
 
   - `clearscreen`: efface l'écran et ramène la tortue au centre
 
-- cliquer sur "Run" ou CTRL+Enter pour éxécuter 
+- cliquer sur "Run" ou CTRL+Enter pour éxécuter
 
 
 ***
@@ -75,7 +73,9 @@ forward 100
 left 90
 ```
 
+
 ***
+
 
 ## Rappels: expressions
 
@@ -89,13 +89,14 @@ left 90
 (3 + 1) / 2
 ```
 
-- opérateurs utiles: 
+- opérateurs utiles:
   - `+`, `-`: addition, soustraction
   - `*`, `/`: multiplication, division
   - et beaucoup d'autres
 
 
 ***
+
 
 ## Des valeurs particulières: `true` et `false`
 
@@ -114,7 +115,9 @@ false
 "hello = "bonjour
 ```
 
+
 ***
+
 
 ## `true` et `false`
 
@@ -125,13 +128,14 @@ false
 
   - `>=`, `<=`: supérieur ou égal, inférieur ou égal
 
-  - `not`, `and`, `or`: négation, et, ou 
+  - `not`, `and`, `or`: négation, et, ou
     - par exemple: `and (1 > 0) (2 > 1)`
-    
+
 - un nombre différent de 0 est "vrai"
-  
+
 
 ***
+
 
 ## Rappels: tests
 
@@ -155,7 +159,9 @@ ifelse[0 > 1]
 ```
 
 
+
 ***
+
 
 
 ## User input
@@ -165,6 +171,7 @@ ifelse[0 > 1]
 ```
 print (readword "name?)
 ```
+
 
 ***
 
@@ -177,6 +184,7 @@ print (readword "name?)
 
 
 ***
+
 
 ## Tests: exercice
 
@@ -236,7 +244,7 @@ ifelse[random 2]
   - si 1, orienter la tortue vers +45° 
 - avancer de 5 pas
 
-- utiliser `setheading 45` pour orienter la tortue vers +45° 
+- utiliser `setheading 45` pour orienter la tortue vers +45°
 
 
 ***
@@ -256,11 +264,17 @@ ifelse[random 2]
 forward 5
 ```
 
-***
+
+
+---
+
+
 
 # Les boucles et les variables
 
+
 ***
+
 
 ## Les boucles
 
@@ -287,6 +301,7 @@ forward 5
 
 ***
 
+
 ## Les boucles: repeat
 
 
@@ -295,6 +310,7 @@ forward 5
 
 
 ***
+
 
 ## Les boucles: repeat
 
@@ -335,7 +351,9 @@ repeat 50[
 
 ```
 
+
 ***
+
 
 ## Les boucles: repeat
 
@@ -353,7 +371,9 @@ forward 100
 left 90
 ```
 
+
 ***
+
 
 ## Les boucles: repeat
 
@@ -384,13 +404,16 @@ left 90
   ]
   ```
 
-***
+
+
+
+
 
 ## Les variables
 
 - On peut donner un nom à un morceau de la mémoire de l'ordinateur
 - (En Logo,) il faut aussi lui donner une valeur
-- En logo, on utilise le mot-clé `make`: 
+- En logo, on utilise le mot-clé `make`:
 
   `make "nom_de_la_variable valeur`
 
@@ -399,11 +422,14 @@ make "city "Paris
 make "population 2240000
 ```
 
+
+***
+
+
 - Ça permet de retenir le résultat d'une expression, de faire communiquer les
   différentes parties d'un programme, de manipuler plus facilement les valeurs
   avec lesquelles on travaille.
- 
- 
+
 
 ***
 
@@ -445,9 +471,9 @@ print :surface
 
 ## Les variables: exercice
 
-- Créez une variable qui va contenir la longueur du côté d'un triangle 
+- Créez une variable qui va contenir la longueur du côté d'un triangle
   , dessiner un triangle en utilisant cette variable
-  
+
 ```
 make "side 150
 ```
@@ -500,7 +526,7 @@ left 360 / :n_sides
     ce_qu_il_faut_faire
   ]
   ```
-  
+
 - pour `i` allant de 0 à 15, imprimer `i`
 
   ```
@@ -517,9 +543,9 @@ left 360 / :n_sides
 - Dessiner une spirale:
 - pour `i` allant de 0 à 15,
   - avancer de `i / 10`
-  - tourner de 6° 
+  - tourner de 6°
   - imprimer `i`
-  
+
 
 ***
 
@@ -533,9 +559,9 @@ left 360 / :n_sides
 - pour `i` allant de 0 à 200,
 
   - avancer de  `i / 10`
-  - tourner de 6° 
+  - tourner de 6°
   - imprimer `i`
-  
+
     ```
     for [i 0 200][
       forward :i / 10
@@ -546,8 +572,8 @@ left 360 / :n_sides
 
 - répéter l'opération ci-dessus 20 fois avec une boucle (`for` ou `repeat`) pour
   faire un beau dessin
-  
-  
+
+
 
 ***
 
@@ -567,7 +593,7 @@ left 360 / :n_sides
     make "i (:i + 1)
   ]
   ```
-  
+
 
 ***
 
@@ -613,10 +639,15 @@ while[ not :success ][
 print "bravo!
 ```
 
-***
+
+
+---
+
+
 
 
 # Les fonctions
+
 
 
 
@@ -979,10 +1010,15 @@ print surface 5 5
 ```
 
 
-***
 
+---
+
+
+ 
 
 # Exercice plus long: dessiner des sapins
+
+
 
 
 ***
@@ -1397,14 +1433,20 @@ tailles)
 
 
 
+
 ***
+
+
 
 
 # Fin du cours
 
 
 
-***
+
+---
+
+
 
 
 
