@@ -240,8 +240,8 @@ ifelse[random 2]
 ## Tests: exercice (marche aléatoire)
 
 - choisir 0 ou 1 au hasard
-  - si 0, orienter la tortue vers -45° 
-  - si 1, orienter la tortue vers +45° 
+  - si 0, orienter la tortue vers -45°
+  - si 1, orienter la tortue vers +45°
 - avancer de 5 pas
 
 - utiliser `setheading 45` pour orienter la tortue vers +45°
@@ -252,8 +252,8 @@ ifelse[random 2]
 ## Tests: exercice (marche aléatoire)
 
 - choisir 0 ou 1 au hasard
-  - si 0, orienter la tortue vers -45° 
-  - si 1, orienter la tortue vers +45° 
+  - si 0, orienter la tortue vers -45°
+  - si 1, orienter la tortue vers +45°
 - avancer de 5 pas
 
 ```
@@ -663,7 +663,7 @@ print "bravo!
   TO say_hello
     print "hello
   END
-  
+
   TO draw_square
    repeat 4 [
       forward 100
@@ -671,7 +671,7 @@ print "bravo!
     ]
   END
   ```
-  
+
 - syntaxe en Logo:
   ```
   TO nom_de_la_fonction
@@ -697,7 +697,7 @@ print "bravo!
 - La fonction `clearscreen` fait deux choses:
   - ramener la tortue au centre (comme le fait `home`)
   - effacer l'écran (comme le fait `clean`)
-  
+
 - écrivez votre fonction `my_clearscreen` qui fait la même chose que `clearscreen`
 - appelez-la pour vérifier que ça marche!
 
@@ -806,7 +806,7 @@ print_double 7
   TO print_increment :a
     print :a + 1
   END
-  
+
   print_increment 2
   print_increment 17
   ```
@@ -821,12 +821,12 @@ print_double 7
 
 - Écrivez une fonction qui accepte deux nombres a et b et imprime le résultat de
   a + b
-  
+
   ```
   TO print_sum :a :b
     print :a + :b
   END
-  
+
   print_sum 2 3
   print_sum 5 1
   print_sum -10 12
@@ -847,7 +847,7 @@ print_double 7
     [print :a]
     [print :b]
   END
-  
+
   print_max 2 5
   print_max 7 3
   ```
@@ -859,7 +859,7 @@ print_double 7
 
 - Écrivez une fonction qui accepte un nombre `side_length` et dessine un triangle
   dont la longueur des côtés est side_length
-  
+
 - Rappel: pour dessiner un triangle de côté 100,
 
 ```
@@ -878,7 +878,7 @@ END
 
 - Écrivez une fonction qui accepte un nombre `side_length` et dessine un triangle
   dont la longueur des côtés est side_length
-  
+
 ```
 TO draw_triangle :side_length
   repeat 3[
@@ -1015,7 +1015,7 @@ print surface 5 5
 ---
 
 
- 
+
 
 # Exercice plus long: dessiner des sapins
 
@@ -1062,7 +1062,7 @@ print surface 5 5
 
 - Écrire une fonction qui dessine un triangle
 - On doit pouvoir choisir la taille du triangle
-  
+
 ```
 TO draw_triangle :side_length
 ; ...
@@ -1077,7 +1077,7 @@ END
 
 - Écrire une fonction qui dessine un triangle
 - On doit pouvoir choisir la taille du triangle
-  
+
 ```
 TO draw_triangle :side_length
   repeat 3[
@@ -1093,7 +1093,7 @@ END
 ## Sapins: `draw_tree_level`
 
 
-- Écrire une fonction qui dessine un étage du sapin 
+- Écrire une fonction qui dessine un étage du sapin
 - Commencer par orienter la tortue dans la bonne direction pour que le
   triangle pointe vers le haut
 
@@ -1211,8 +1211,8 @@ END
 - Écrivez la fonction `draw_tree` qui dessine trois triangles empilés
 - Choisissez des tailles adaptées pour les triangles: de plus en plus grands
   (par exemple 50, 75, 100)
-  
-  
+
+
 ![tree_branches_black](tree_branches_black.png)
 
 
@@ -1293,12 +1293,12 @@ END
   - vous pouvez essayer plusieurs valeurs jusqu'à trouver la bonne (à peu près)
   - vous pouvez la calculer: si le côté de votre dernier triangle est l, sa
     hauteur est
-    
+
     h = l * sin(60°)
-    
+
     On est déjà descendu de l / 2, donc il faut rajouter
-    
-    l * (sin(60°) - 0.5) = l * 0.37 
+
+    l * (sin(60°) - 0.5) = l * 0.37
 
     **si votre triangle a un côté de 100, avancez de 37 pas**
 
@@ -1358,20 +1358,20 @@ Et voilà!
   choses qu'on ne lui a pas demandées:
   - elle change la couleur du crayon
   - elle change la position et l'orientation de la tortue
-  
+
 ![tree_no_cleanup](tree_no_cleanup.png)
 ![tree_with_cleanup](tree_with_cleanup.png)
 
 
 
-  
+
 ***
 
 
 
 
 ## Cleanup
-  
+
 - à la fin de la fonction, nettoyez tout ça en rétablissant les valeurs initiales
 - il faut définir des variables au début de la fonction pour retenir les valeurs
   de départ
@@ -1403,7 +1403,7 @@ TO draw_tree
   forward 37
   pendown
   draw_tree_level 25
-  
+
   penup
   setpos :start_pos
   setheading :start_heading
