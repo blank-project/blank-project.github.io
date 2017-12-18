@@ -16,6 +16,13 @@
 
 ***
 
+
+# Rappels
+
+
+***
+
+
 ## Rappels
 
 - https://inexorabletash.github.io/jslogo/
@@ -227,7 +234,7 @@ ifelse[random 2]
 - choisir 0 ou 1 au hasard
   - si 0, orienter la tortue vers -45° 
   - si 1, orienter la tortue vers +45° 
-- avancer de 50 pas
+- avancer de 5 pas
 
 - utiliser `setheading 45` pour orienter la tortue vers +45° 
 
@@ -239,14 +246,14 @@ ifelse[random 2]
 - choisir 0 ou 1 au hasard
   - si 0, orienter la tortue vers -45° 
   - si 1, orienter la tortue vers +45° 
-- avancer de 50 pas
+- avancer de 5 pas
 
 ```
 ifelse[random 2]
   [setheading 45]
   [setheading -45]
 
-forward 50
+forward 5
 ```
 
 ***
@@ -302,8 +309,30 @@ repeat 50[
     [setheading 45]
     [setheading -45]
 
-  forward 50
+  forward 5
 ]
+```
+
+
+***
+
+## Boucles imbriquées
+
+- On peut imbriquer les boucles:
+
+```
+repeat 50[
+  repeat 50[
+    ifelse[random 2]
+      [setheading 45]
+      [setheading -45]
+    forward 5
+  ]
+  penup
+  home
+  pendown
+]
+
 ```
 
 ***
@@ -548,6 +577,7 @@ left 360 / :n_sides
 - attention: si la condition ne devient jamais fausse, que se passe-t-il?
 
 ```
+fence
 while[true][
   forward 20
   right random 360
@@ -582,5 +612,1026 @@ while[ not :success ][
 
 print "bravo!
 ```
+
+***
+
+
+# Les fonctions
+
+
+
+***
+
+
+## Les fonctions
+
+- On peut regrouper une séquence d'actions (statements) et leur donner un nom
+
+  ```
+  TO say_hello
+    print "hello
+  END
+  
+  TO draw_square
+   repeat 4 [
+      forward 100
+      left 90
+    ]
+  END
+  ```
+  
+- syntaxe en Logo:
+  ```
+  TO nom_de_la_fonction
+    ce_qu_il_faut_faire
+  END
+  ```
+
+
+***
+
+
+## Appel de fonction
+
+
+- Pour éxécuter le code d'une fonction, il faut l'"appeler"
+- On appelle une fonction en tapant son nom: `draw_square`
+- Vous avez déjà appelé beaucoup de fonctions: par exemple `clearscreen`
+
+***
+
+## Les fonctions: exercice
+
+- La fonction `clearscreen` fait deux choses:
+  - ramener la tortue au centre (comme le fait `home`)
+  - effacer l'écran (comme le fait `clean`)
+  
+- écrivez votre fonction `my_clearscreen` qui fait la même chose que `clearscreen`
+- appelez-la pour vérifier que ça marche!
+
+
+
+***
+
+## my_clearscreen
+
+
+```
+TO my_clearscreen
+  home
+  clean
+END
+
+my_clearscreen
+```
+
+***
+
+
+## Les fonctions: exercice
+
+- écrivez une fonction `draw_triangle` qui dessine un triangle
+- dessinez un triangle
+
+***
+
+
+
+## Les fonctions: exercice
+
+- écrivez une fonction `draw_triangle` qui dessine un triangle
+- dessinez un triangle
+
+```
+TO draw_triangle
+  repeat 3[
+    forward 100
+    left 120
+  ]
+END
+
+draw_triangle
+```
+
+***
+
+## Arguments
+
+- Les fonctions peuvent accepter des "arguments", ou "paramètres"
+- Ça permet de changer le comportement de la fonction au moment de l'éxécuter
+
+```
+TO print_double :number
+  print :number * 2
+END
+
+TO print_product :number_a :number_b
+  print :number_a * :number_b
+END
+
+print_double 3
+print_multiply 4 5
+```
+
+- À l'intérieur de la fonction, les arguments sont des variables qu'on peut utiliser
+
+***
+
+## Arguments: syntaxe
+
+
+```
+TO nom_de_la_fonction :nom_de_arg_1 :nom_de_arg_2 ...
+  ce_qu_il_faut_faire
+END
+```
+
+exemple:
+
+```
+TO print_double :number
+  print :number * 2
+END
+
+print_double 7
+```
+
+- Écrivez une fonction qui accepte un nombre a et imprime le résultat de a + 1
+- Écrivez une fonction qui accepte deux nombres a et b et imprime le résultat de
+  a + b
+- Écrivez une fonction max qui accepte deux nombres a et b et imprime le plus grand
+
+
+***
+
+
+## print_increment
+
+
+- Écrivez une fonction qui accepte un nombre a et imprime le résultat de a + 1
+
+  ```
+  TO print_increment :a
+    print :a + 1
+  END
+  
+  print_increment 2
+  print_increment 17
+  ```
+
+
+
+***
+
+
+## print_sum
+
+
+- Écrivez une fonction qui accepte deux nombres a et b et imprime le résultat de
+  a + b
+  
+  ```
+  TO print_sum :a :b
+    print :a + :b
+  END
+  
+  print_sum 2 3
+  print_sum 5 1
+  print_sum -10 12
+  ```
+
+
+***
+
+
+## print_max
+
+
+- Écrivez une fonction max qui accepte deux nombres a et b et imprime le plus grand
+
+  ```
+  TO print_max :a :b
+  ifelse[:a >= :b]
+    [print :a]
+    [print :b]
+  END
+  
+  print_max 2 5
+  print_max 7 3
+  ```
+
+***
+
+
+## Triangle sur mesure
+
+- Écrivez une fonction qui accepte un nombre `side_length` et dessine un triangle
+  dont la longueur des côtés est side_length
+  
+- Rappel: pour dessiner un triangle de côté 100,
+
+```
+TO draw_triangle
+  repeat 3[
+    forward 100
+    left 120
+  ]
+END
+```
+
+***
+
+
+## Triangle sur mesure
+
+- Écrivez une fonction qui accepte un nombre `side_length` et dessine un triangle
+  dont la longueur des côtés est side_length
+  
+```
+TO draw_triangle :side_length
+  repeat 3[
+    forward :side_length
+    left 120
+  ]
+END
+
+draw_triangle 100
+draw_triangle 200
+draw_triangle 300
+```
+
+***
+
+
+## Return values
+
+- Les fonctions peuvent retourner un résultat
+- Les fonctions qu'on a écrites font quelque chose mais ne retournent rien
+- exemples:
+  - `home`, `clearscreen`, `print` ne retournent rien
+  - `xcor` retourne la première coordonnée de la position de la tortue
+  - `readword` retourne ce que l'utilisateur a tapé
+
+
+***
+
+
+## Return values
+
+- Les fonctions peuvent retourner un résultat
+- Pour donner un résultat, on utilise `output`
+
+```
+TO add :a :b
+  output :a + :b
+END
+
+print add 3 5
+make "sum add 3 5
+print :sum
+```
+
+```
+TO min :a :b
+ ifelse[:a <= :b]
+   [output :a]
+   [output :b]
+END
+
+print min 3 7
+make "smallest min 3 7
+print :smallest
+forward :smallest * 50
+```
+
+
+***
+
+## Return values: exercice
+
+- Écrivez une fonction max qui accepte deux nombres a et b et retourne le plus grand
+- Écrivez une fonction rectif qui accepte un nombre a et retourne a si a > 0, 0 sinon
+- Écrivez une fonction qui accepte la largeur et la hauter d'un rectangle et
+  retourne sa surface (indice: surface = largeur * longueur)
+
+
+***
+
+
+## max
+
+
+- Écrivez une fonction max qui accepte deux nombres a et b et retourne le plus grand
+
+```
+TO max :a :b
+  ifelse[:a >= :b]
+    [output :a]
+    [output :b]
+END
+
+make "biggest max 3 9
+print :biggest
+```
+
+***
+
+## rectif
+
+
+- Écrivez une fonction rectif qui accepte un nombre a et retourne a si a > 0, 0 sinon
+- OK:
+  ```
+  TO rectif :a
+  ifelse[:a >= 0]
+    [output :a]
+    [output 0]
+  END
+  ```
+
+- mieux: réutilisez ce que vous avez déjà fait!
+
+  ```
+  TO rectif :a
+    output max :a 0
+  END
+
+  print rectif 3
+  print rectif -3
+  ```
+
+***
+
+
+## surface
+
+
+- Écrivez une fonction qui accepte la largeur et la hauter d'un rectangle et
+  retourne sa surface (indice: surface = largeur * longueur)
+
+```
+TO surface :height :width
+  output :height * :width
+END
+
+print surface 5 4
+print surface 5 5
+```
+
+
+***
+
+
+# Exercice plus long: dessiner des sapins
+
+
+***
+
+
+## Sapins
+
+
+- On va utiliser ce qu'on a vu jusqu'à maintenant pour écrire un programme plus
+  compliqué
+- En combinant les outils de bases qu'on vient de voir, on peut faire beaucoup
+  de choses!
+
+
+***
+
+
+## Sapins
+
+
+- On dessine un sapin en empilant 4 triangles
+
+![sapin](tree_empty.png)
+![sapin](tree_full.png)
+
+***
+
+## Sapins: organisation
+
+- Il nous faut:
+  - Une fonction qui dessine un triangle (on l'a déjà écrite)
+  - Une fonction qui dessine un des triangles verts et laisse la tortue en bonne
+    position pour le triangle suivant
+  - Une fonction qui dessine les trois triangles verts et ajoute le pied du sapin
+
+
+***
+
+## Sapins: `draw_triangle`
+
+- Écrire une fonction qui dessine un triangle
+- On doit pouvoir choisir la taille du triangle
+  
+```
+TO draw_triangle :side_length
+; ...
+END
+```
+
+![triangle](triangle.png)
+
+***
+
+## Sapins: `draw_triangle`
+
+- Écrire une fonction qui dessine un triangle
+- On doit pouvoir choisir la taille du triangle
+  
+```
+TO draw_triangle :side_length
+  repeat 3[
+    forward :side_length
+    left 120
+  ]
+END
+```
+
+***
+
+
+## Sapins: `draw_tree_level`
+
+
+- Écrire une fonction qui dessine un étage du sapin 
+- Commencer par orienter la tortue dans la bonne direction pour que le
+  triangle pointe vers le haut
+
+![triangle_arrows](triangle_arrows.png)
+
+
+
+***
+
+
+## Sapins: `draw_tree_level`
+
+
+![triangle_arrows](triangle_arrows.png)
+
+
+- Avec quel angle doit-on commencer? Utilisez `set_heading` pour orienter la tortue
+
+
+
+***
+
+
+## Sapins: `draw_tree_level`
+
+
+```
+TO draw_tree_level :side_length
+  setheading -150
+  draw_triangle :side_length
+  setheading 180
+  forward :side_length / 2
+END
+```
+
+![tree_level_no_penup](tree_level_no_penup.png)
+
+
+***
+
+
+## Sapins: `draw_tree_level`
+
+
+- Modifiez la fonction `draw_tree_level` pour que le trait vertical n'apparaîsse
+  pas: on ne veut que les côtés du triangle.
+- indice: utilisez `penup` pour lever le crayon et `pendown` pour le reposer
+
+
+![tree_level_penup](tree_level_penup.png)
+
+***
+
+
+## Sapins: `draw_tree_level`
+
+
+- Modifiez la fonction `draw_tree_level` pour que le trait vertical n'apparaîsse
+  pas: on ne veut que les côtés du triangle.
+
+```
+TO draw_tree_level :side_length
+  setheading -150
+  draw_triangle :side_length
+  setheading 180
+  penup
+  forward :side_length / 2
+  pendown
+END
+```
+
+
+***
+
+
+## Sapins: `draw_tree_level`
+
+- Modifiez la fonction `draw_tree_level` pour peindre le triangle (le remplir)
+- indice: une fois que la tortue est au milieu du triangle, utiliser `fill`
+
+
+![tree_level_filled](tree_level_filled.png)
+
+
+***
+
+
+
+## Sapins: `draw_tree_level`
+
+- Modifiez la fonction `draw_tree_level` pour peindre le triangle (le remplir)
+
+
+```
+TO draw_tree_level :side_length
+  setheading -150
+  draw_triangle :side_length
+  setheading 180
+  penup
+  forward :side_length / 2
+  pendown
+  fill
+END
+```
+
+
+***
+
+
+## Sapins: `draw_tree`
+
+
+- Maintenant qu'on a `draw_tree_level`, il suffit de l'appeler trois fois pour
+  dessiner les branches du sapin!
+- Écrivez la fonction `draw_tree` qui dessine trois triangles empilés
+- Choisissez des tailles adaptées pour les triangles: de plus en plus grands
+  (par exemple 50, 75, 100)
+  
+  
+![tree_branches_black](tree_branches_black.png)
+
+
+
+***
+
+
+## Sapins: `draw_tree`
+
+
+- Maintenant qu'on a `draw_tree_level`, il suffit de l'appeler trois fois pour
+  dessiner les branches du sapin!
+- Écrivez la fonction `draw_tree` qui dessine trois triangles empilés
+- Choisissez des tailles adaptées pour les triangles: de plus en plus grands
+  (par exemple 50, 75, 100)
+
+```
+TO draw_tree
+  draw_tree_level 50
+  draw_tree_level 75
+  draw_tree_level 100
+END
+```
+
+***
+
+
+
+## Sapins: `draw_tree`
+
+
+- Un sapin, c'est vert! modifiez la fonction `draw_tree` pour dessiner un sapin vert
+- vous pouvez utiliser `setpencolor` pour changer la couleur du crayon
+
+
+![tree_branches_green](tree_branches_green.png)
+
+***
+
+
+## Sapins: `draw_tree`
+
+
+- modifiez la fonction `draw_tree` pour dessiner un sapin vert
+
+```
+TO draw_tree
+  setpencolor "green
+  draw_tree_level 50
+  draw_tree_level 75
+  draw_tree_level 100
+END
+```
+
+
+***
+
+
+## Sapins: `draw_tree`
+
+
+- Il ne manque plus que le pied du sapin
+- Il faut faire descendre la tortue encore un peu, pour ne pas dessiner le pied
+  au milieu du dernier triangle vert
+- Il faut aussi changer la couleur en marron
+- Ensuite, on peut à nouveau utiliser `draw_tree_level`
+
+
+![tree_with_foot](tree_with_foot.png)
+
+
+***
+
+
+## Sapins: `draw_tree`
+
+- De combien on doit descendre?
+  - vous pouvez essayer plusieurs valeurs jusqu'à trouver la bonne (à peu près)
+  - vous pouvez la calculer: si le côté de votre dernier triangle est l, sa
+    hauteur est
+    
+    h = l * sin(60°)
+    
+    On est déjà descendu de l / 2, donc il faut rajouter
+    
+    l * (sin(60°) - 0.5) = l * 0.37 
+
+    **si votre triangle a un côté de 100, avancez de 37 pas**
+
+
+
+
+***
+
+
+
+## Sapins: `draw_tree`
+
+
+- Il ne manque plus que le pied du sapin
+
+```
+TO draw_tree
+  setpencolor "green
+  draw_tree_level 50
+  draw_tree_level 75
+  draw_tree_level 100
+  penup
+  setpencolor "brown
+  forward 37
+  pendown
+  draw_tree_level 25
+END
+```
+
+
+***
+
+## Sapins
+
+Et voilà!
+
+
+![sapin](tree_full.png)
+
+
+... est-ce qu'on a fini?
+
+
+
+
+
+
+***
+
+## Cleanup
+
+
+
+... est-ce qu'on a fini?
+
+- la fonction `draw_tree` dessine un sapin, mais elle fait aussi beaucoup de
+  choses qu'on ne lui a pas demandées:
+  - elle change la couleur du crayon
+  - elle change la position et l'orientation de la tortue
+  
+![tree_no_cleanup](tree_no_cleanup.png)
+![tree_with_cleanup](tree_with_cleanup.png)
+
+
+
+  
+***
+
+
+
+
+## Cleanup
+  
+- à la fin de la fonction, nettoyez tout ça en rétablissant les valeurs initiales
+- il faut définir des variables au début de la fonction pour retenir les valeurs
+  de départ
+- utilisez `pos` pour connaître la position, `pencolor` pour la couleur, et
+  `heading` pour l'orientation
+- utilisez `localmake` plutôt que `make` pour définir des variables locales
+
+
+***
+
+
+## Cleanup
+
+
+```
+TO draw_tree
+
+  localmake "start_pos pos
+  localmake "start_pendown pendownp
+  localmake "start_pencolor pencolor
+  localmake "start_heading heading
+
+  setpencolor "green
+  draw_tree_level 50
+  draw_tree_level 75
+  draw_tree_level 100
+  penup
+  setpencolor "brown
+  forward 37
+  pendown
+  draw_tree_level 25
+  
+  penup
+  setpos :start_pos
+  setheading :start_heading
+  setpencolor :start_pencolor
+  if [:start_pendown][pendown]
+
+END
+```
+
+
+***
+
+
+## Sapins
+
+
+Cette fois c'est bon!
+
+
+![tree_with_turtle](tree_with_turtle.png)
+
+
+essayez de dessiner quelques sapins à plusieurs endroits
+
+(**pour s'exercer**: faites de la couleur et de la taille des arguments de
+`draw_tree` pour dessiner des sapins de toutes les couleurs et toutes les
+tailles)
+
+
+
+***
+
+
+# Fin du cours
+
+
+
+***
+
+
+
+# Exercice en plus: forêt
+
+
+
+***
+
+
+## Forêt
+
+- et les boucles dans tout ça?
+- un sapin tout seul, c'est triste
+- avec une boucle, écrivez une fonction `draw_forest_line` qui dessine plusieurs
+  sapins les uns à côté des autres
+- avec une autre boucle, écrivez une fonction `draw_forest` qui dessine
+  plusieurs lignes de sapins
+
+
+***
+
+
+## Forêt
+
+
+```
+TO draw_forest_line
+  localmake "start_pendown pendownp
+  localmake "start_x xcor
+  localmake "start_y ycor
+  penup
+  while [xcor < 500][
+    setx xcor + random 50
+    sety ycor + random 50
+    pendown
+    draw_tree
+    penup
+    setx xcor + 150
+    sety :start_y
+  ]
+  setx :start_x
+  sety :start_y
+  if [:start_pendown][pendown]
+END
+
+
+TO draw_forest
+  localmake "start_pendown pendownp
+  localmake "start_x xcor
+  localmake "start_y ycor
+  penup
+  while [ycor > - 300][
+    draw_forest_line
+    sety ycor - 200
+    setx :start_x
+  ]
+  setx :start_x
+  sety :start_y
+  if [:start_pendown][pendown]
+END
+
+cs penup setxy -500 300 draw_forest
+```
+
+
+
+***
+
+
+# Exercice en plus: flocons
+
+
+
+***
+
+
+## TODO: snowflake
+
+
+https://fr.wikipedia.org/wiki/Flocon_de_Koch
+
+![snowflake](snowflake.png)
+
+
+
+***
+
+
+## TODO: snowflake
+
+
+```
+TO next_snowflake :vertices :step
+  localmake "new_vertices []
+  setpos first :vertices
+  queue "new_vertices pos
+  for [next_item 2 (count :vertices)][
+    localmake "next_vertex item :next_item :vertices
+    setheading towards :next_vertex
+    ; alternative to passing step_length (but requires knowing ||.||_2)
+    ; localmake "distance sqrt(
+    ;   ((first :next_vertex) - xcor)^2 + ((last :next_vertex) - ycor)^2)
+    ; localmake "step :distance / 3
+    forward :step
+    queue "new_vertices pos
+    right 60
+    forward :step
+    queue "new_vertices pos
+    left 120
+    forward :step
+    queue "new_vertices pos
+    right 60
+    forward :step
+    queue "new_vertices pos
+  ]
+  output :new_vertices
+END
+
+
+TO draw_snowflake :n_iter :side_length :clear :delay
+  if[:clear and n_iter > 0][penup]
+  right 90
+  localmake "vertices draw_triangle :side_length
+  localmake "step_length :side_length / 3
+  repeat :n_iter [
+    if [repcount = :n_iter][pendown]
+    localmake "vertices next_snowflake :vertices :step_length
+    localmake "step_length :step_length / 3
+    wait :delay
+  ]
+  output :vertices
+END
+```
+
+
+
+***
+
+
+
+## TODO: big snowflake
+
+- répétez le dessin du flocon 20 fois pour en faire un plus joli
+
+
+![big_snowflake](big_snowflake.png)
+
+
+
+***
+
+
+## TODO: big snowflake
+
+
+```
+TO big_snowflake
+  repeat 12 [localmake "path draw_snowflake 4 300 FALSE 0]
+END
+
+```
+
+
+***
+
+
+## TODO: tessellation
+
+- Des flocons de Koch de 2 tailles différentes peuvent fournir un pavage du plan
+
+
+![tessellation](tessellation.png)
+
+
+
+***
+
+
+
+## TODO: tessellation
+
+```
+TO koch_down :side_length :go_right
+  penup
+  setheading 90
+  ifelse[:go_right] [forward :side_length] [back :side_length]
+  right 90
+  forward :side_length * 2 / 3 * sin(60)
+  setheading 0
+  pendown
+END
+
+
+TO tessellation :side_length :start_x :start_y :n_patterns :n_iter
+  window
+  hideturtle
+  penup
+  setxy :start_x :start_y
+  repeat :n_patterns [
+    pendown
+    repeat :n_patterns [
+      koch_down :side_length TRUE
+      localmake "path draw_snowflake :n_iter :side_length TRUE 0
+    ]
+    penup
+    setxy :start_x :start_y
+    repeat repcount [koch_down :side_length FALSE]
+  ]
+  showturtle
+  wrap
+END
+
+
+TO show_tessellation
+  tessellation 200 -400 300 3 4
+END
+
+
+TO fill_tessellation
+  tessellation 210 -820 1100 10 2
+END
+
+
+```
+
+
+
 
 ***
