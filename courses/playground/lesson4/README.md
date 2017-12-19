@@ -96,8 +96,7 @@ left 90
 
 
 
-Note: in logo for some reason whitespace around parentheses is sometimes
-important
+Note: in logo for some reason whitespace around parentheses is sometimes important
 
 
 
@@ -430,6 +429,12 @@ make "population 2240000
 ```
 
 
+Note: https://goo.gl/gq6Q6a
+
+<!-- Note: http://www.pythontutor.com/visualize.html#code=var%20city%20%3D%20%22Paris%22%0Avar%20population%20%3D%202240000&cumulative=false&curInstr=2&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false -->
+
+
+
 ***
 
 
@@ -541,6 +546,12 @@ left 360 / :n_sides
     print :i
   ]
   ```
+
+Note: https://goo.gl/V9U75X
+
+<!-- Note: http://www.pythontutor.com/visualize.html#code=console.log%28%22start%22%29%3B%0A%0Afor%20%28var%20i%20%3D%200%3B%20i%20!%3D%3D%204%3B%20i%2B%2B%29%7B%0A%20%20%20%20console.log%28%22i%3A%20%25d%22,%20i%29%3B%0A%7D%0A%0Aconsole.log%28%22finished!%22%29%3B&cumulative=false&curInstr=0&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false -->
+
+
 
 ***
 
@@ -972,6 +983,13 @@ END
 make "biggest max 3 9
 print :biggest
 ```
+
+
+Note: https://goo.gl/Kajeis
+
+<!-- Note: http://www.pythontutor.com/visualize.html#code=console.log%28%22start%22%29%3B%0A%0Afunction%20max%28a,%20b%29%7B%0A%20%20if%28a%20%3E%3D%20b%29%7B%0A%20%20%20%20return%20a%3B%20%20%0A%20%20%7D%20%20%0A%20%20return%20b%3B%0A%7D%0A%0Avar%20result_1%20%3D%20max%285,%209%29%3B%0Aconsole.log%28%22result%3A%20%25d%22,%20result_1%29%3B%0A%0Avar%20result_2%20%3D%20max%2815,%209%29%3B%0Aconsole.log%28%22result%3A%20%25d%22,%20result_2%29%3B%0A%0Aconsole.log%28%22finished!%22%29%3B&cumulative=false&curInstr=0&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false -->
+
+
 
 ***
 
