@@ -429,9 +429,8 @@ make "population 2240000
 ```
 
 
-Note: https://goo.gl/gq6Q6a
-
-<!-- Note: http://www.pythontutor.com/visualize.html#code=var%20city%20%3D%20%22Paris%22%0Avar%20population%20%3D%202240000&cumulative=false&curInstr=2&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false -->
+note: https://goo.gl/gq6Q6a
+ http://www.pythontutor.com/visualize.html#code=var%20city%20%3D%20%22Paris%22%0Avar%20population%20%3D%202240000&cumulative=false&curInstr=2&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false
 
 
 
@@ -468,7 +467,9 @@ make "surface (:side * :side)
 print :surface
 ```
 
+
 ***
+
 
 ## Les variables: exercice
 
@@ -480,6 +481,7 @@ print :surface
 
 
 ***
+
 
 ## Les variables: exercice
 
@@ -505,6 +507,7 @@ repeat 3 [
   left 120
 ]
 ```
+
 
 ***
 
@@ -1733,8 +1736,3 @@ END
 show_tessellation
 
 ```
-
-
-
-
-***
