@@ -95,6 +95,12 @@ left 90
   - et beaucoup d'autres
 
 
+
+Note: in logo for some reason whitespace around parentheses is sometimes
+important
+
+
+
 ***
 
 
@@ -142,20 +148,20 @@ false
 
 ```
 ifelse [quelque_chose_qui_peut_etre_vrai_ou_faux]
-[ce_qu_on_fait_si_c_est_vrai]
-[ce_qu_on_fait_si_c_est_faux]
+  [ce_qu_on_fait_si_c_est_vrai]
+  [ce_qu_on_fait_si_c_est_faux]
 ```
 
 - Par exemple:
 
 ```
 ifelse[true]
-[print "oui]
-[print "non]
+  [print "oui]
+  [print "non]
 
 ifelse[0 > 1]
-[print "oui]
-[print "non]
+  [print "oui]
+  [print "non]
 ```
 
 
@@ -542,7 +548,7 @@ left 360 / :n_sides
 ## boucle `for`: exercice
 
 - Dessiner une spirale:
-- pour `i` allant de 0 à 15,
+- pour `i` allant de 0 à 200,
   - avancer de `i / 10`
   - tourner de 6°
   - imprimer `i`
@@ -591,7 +597,7 @@ left 360 / :n_sides
   make "i 0
   while[:i < 15][
     print :i
-    make "i (:i + 1)
+    make "i :i + 1
   ]
   ```
 
@@ -628,7 +634,6 @@ while[ not :success ][
 
   make "a random 10
   make "b random 10
-  ; for some reason whitespace around parentheses is important
   make "answer ( readword ( sentence :a "+ :b "? ) )
 
   ifelse[:answer = (:a + :b)]
@@ -714,6 +719,8 @@ TO my_clearscreen
   clean
 END
 
+forward 100
+wait 120
 my_clearscreen
 ```
 
@@ -762,7 +769,7 @@ TO print_product :number_a :number_b
 END
 
 print_double 3
-print_multiply 4 5
+print_product 4 5
 ```
 
 - À l'intérieur de la fonction, les arguments sont des variables qu'on peut utiliser
@@ -941,8 +948,8 @@ forward :smallest * 50
 
 ## Return values: exercice
 
-- Écrivez une fonction max qui accepte deux nombres a et b et retourne le plus grand
-- Écrivez une fonction rectif qui accepte un nombre a et retourne a si a > 0, 0 sinon
+- Écrivez une fonction `max` qui accepte deux nombres a et b et retourne le plus grand
+- Écrivez une fonction `rectif` qui accepte un nombre a et retourne a si a > 0, 0 sinon
 - Écrivez une fonction qui accepte la largeur et la hauter d'un rectangle et
   retourne sa surface (indice: surface = largeur * longueur)
 
@@ -1395,6 +1402,8 @@ TO draw_tree
   localmake "start_heading heading
 
   setpencolor "green
+  pendown
+
   draw_tree_level 50
   draw_tree_level 75
   draw_tree_level 100
@@ -1553,6 +1562,18 @@ https://fr.wikipedia.org/wiki/Flocon_de_Koch
 
 
 ```
+TO draw_triangle :side_length
+  localmake "vertices []
+  queue "vertices pos
+  repeat 3 [
+    forward :side_length
+    queue "vertices pos
+    left 120
+  ]
+  OUTPUT :vertices
+END
+
+
 TO next_snowflake :vertices :step
   localmake "new_vertices []
   setpos first :vertices
@@ -1593,6 +1614,13 @@ TO draw_snowflake :n_iter :side_length :clear :delay
   ]
   output :vertices
 END
+
+
+make "_ draw_snowflake 4 300 FALSE 60
+cs
+hideturtle
+make "_ draw_snowflake 5 300 TRUE 0
+showturtle
 ```
 
 
@@ -1603,7 +1631,7 @@ END
 
 ## TODO: big snowflake
 
-- répétez le dessin du flocon 20 fois pour en faire un plus joli
+- répétez le dessin du flocon 12 fois pour en faire un plus joli
 
 
 ![big_snowflake](big_snowflake.png)
@@ -1621,6 +1649,7 @@ TO big_snowflake
   repeat 12 [localmake "path draw_snowflake 4 300 FALSE 0]
 END
 
+big_snowflake
 ```
 
 
@@ -1683,6 +1712,7 @@ TO fill_tessellation
   tessellation 210 -820 1100 10 2
 END
 
+show_tessellation
 
 ```
 
