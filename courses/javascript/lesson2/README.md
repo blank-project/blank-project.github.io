@@ -178,19 +178,6 @@ for ( var i = 0 ; i < 100 ; i++ ) {
 
 
 
-## Pause exo!
-* écrire un fizz buzz :
-Le programme doit afficher sur la sortie tous les entiers successifs à partir de 1 jusqu'au nombre donné en paramètre, sauf :
-Les multiples de 5 : afficher fizz
-Les multiples de 7 : afficher buzz
-* Indice : utiliser une boucle for !
-
-
-
----
-
-
-
 ## While (tant que) 1/2
 * Permet d'exécuter du code tant qu'une condition est vraie
 * Syntaxe :
