@@ -88,11 +88,13 @@ Exemple :
 
 
 
-Node.js est une plate-forme logicielle permettant d'exécuter du JavaScript en dehors du Navigateur.
+Node.js est une plate-forme logicielle permettant d'exécuter du JavaScript en dehors du Navigateur (_Runtime Environment_).
 
 Il est basé sur le moteur JavaScript V8 utilisé dans Chrome.
 
-Concrètement, Node.js va nous permettre de créer des programmes s'exécutant sur un serveur et permettant de traiter des requêtes.
+![V8 Logo](v8logo.svg)
+
+Concrètement, Node.js va nous permettre de créer des programmes, en particulier pour traiter les requêtes d'un client.
 
 
 
@@ -101,6 +103,86 @@ Concrètement, Node.js va nous permettre de créer des programmes s'exécutant s
 
 
 
+## Installation
+
+
+
+Voir l'exercice 1.
+
+
+
+---
+
+
+
+## Hello World
+
+Le Hello World est un programme de démonstration très simple affichant "Hello World !".
+
+Il est utilisé pour donner un aperçu de la syntaxe d'un langage.
+
+Nous allons réaliser le Hello World en Node.js dans l'exercice 2.
+
+
+
+---
+
+
+
+## Un serveur basique
+
+Dans l'exercice 2, nous avons utilisé Node.js pour créer un serveur basique traitant une requête HTTP.
+
+Il renvoie toujours la même réponse.
+
+Nous allons voir comment ça marche
+
+
+***
+
+
+
+```javascript
+var http = require('http');
+```  
+Charge le module [http](https://nodejs.org/dist/latest-v8.x/docs/api/http.html#http_class_http_server) de Node.js et le stocke dans la variable _http_.
+
+
+***
+
+
+```javascript
+var server = http.createServer(function(request, response) {
+
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("Hello World!");
+
+});
+```
+
+Utilise la fonction `createServer` du module `http` de Node.js pour créer un Serveur HTTP et le stocker dans la variable _server_.
+
+La fonction passée en paramètre sera exécutée à chaque requête.
+
+
+
+***
+
+
+```javascript
+var port = 1337;
+server.listen(port);
+```
+
+Associe (_bind_) le serveur au port 1337, pour traiter les requêtes arrivant sur ce port.
+
+
+
+---
+
+
+
 # Voilà !
-La CheatSheet NodeJS est ici :
-[Cheat Sheet NodeJS](https://git.bellevillecitoyenne.fr/blank/_blank/blob/master/cheatsheets/nodejs.md)
+
+La CheatSheet Node.js est ici :
+[Cheat Sheet Node.js](https://git.bellevillecitoyenne.fr/blank/_blank/blob/master/cheatsheets/nodejs.md)
