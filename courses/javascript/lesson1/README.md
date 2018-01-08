@@ -102,7 +102,7 @@ De Netscape qui après plusieurs dérivés a donné Mozilla Firefox. En 1995, or
 
 
 ## On en est où dans les versions ?
-Le JavaScript suit les versions de ce que l'on appelle [EcmaScript](https://en.wikipedia.org/wiki/ECMAScript). On a 7 versions dont la dernière qui est EcmaScript 7 (ou EcmaScript 2016).
+Le JavaScript suit les versions de ce que l'on appelle [EcmaScript](https://en.wikipedia.org/wiki/ECMAScript). On a 8 versions dont la dernière qui est EcmaScript 8 (ou EcmaScript 2017 / ES8).
 
 
 ***
@@ -132,7 +132,7 @@ Note: IOT = Internet of thinges (wtf montres connectées, domotique, etc.
 
 
 
-## A quoi ça sert morray ?
+## A quoi ça sert ?
 Nous allons faire du Javascript côté client, et donc cela consiste à :
 * Modifier dynamiquement le HTML & CSS (affichage de données dynamique)
 * Valider l’entrée de données
@@ -154,7 +154,7 @@ Le javascript est généralement écrit dans un fichier avec l'extension `.js`.
 
 
 ## Quelques fondamentaux
-Chaque instruction que vous allez écrire doit terminer par un `;`. Cela délimite votre code.
+Chaque instruction que vous allez écrire doit terminer par un `;` (sauf à partir de l'ES6).
 
 Généralement on écrit une instruction par ligne.
 

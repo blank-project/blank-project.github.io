@@ -94,7 +94,7 @@ Afin d'utiliser VueJS, la première étape est d'inclure le framework. Vous pouv
 
 ## Créer une application Vue
 
-Une application Vue s'initialise dans un élément HTML. Cet élément contiendra TOUTE votre application web (ça peut être une div, un main, etc. même le body. Par convention, on utilisera une div avec pour id "app" :
+Une application Vue s'initialise dans un élément HTML. Cet élément contiendra TOUTE votre application web. Ça peut être une div, un main, etc. même le body. Par convention, on utilisera une div avec pour id "app" :
 `<div id="app"></div>`.
 
 
@@ -108,7 +108,9 @@ Pour initialiser l'application, créez un script et écrivez :
 var test = new Vue({
   el: '#app',
   data: function() {
-    return {}
+    return {
+      message: 'olé'
+    }
   },
 });
 ```
@@ -116,9 +118,290 @@ var test = new Vue({
 Note: Expliquer le code
 
 
+---
+
+
+`data` est l'attribut qui nous permet de spécifier les variables javascript auxquelles on aura accès dans notre instance de Vue.
+
 
 ---
 
 
 
-## Ok et maintenant ?
+## Interpolation
+
+Toute les variables qui sont déclarées dans l'instance de Vue sont accessibles en HTML via les doubles accolades. Par exemple, la variable message déclarée précédemment sera accessible via : `{{ message }}` dans notre HTML.
+
+```HTML
+<div id="app">
+  <p>{{ message }}</p>
+</div>
+```
+
+
+---
+
+
+## Créez votre première instance VueJS
+
+Créez votre première instance VueJS avec un message spécifique : "Ma première instance VueJS". Vous devez initialiser une nouvelle application et afficher le message dans un paragraphe.
+
+
+
+***
+
+
+
+## Les directives
+
+Les directives sont une partie essentielle du framework VueJS et permettent de définir un comportement HTML. Par exemple, définissons une variable dans notre instance avec la valeur 'ceci est un titre':
+
+```javascript
+new Vue({
+  el: '#app',
+  data: function() {
+    return {
+      monTitre: 'ceci est un titre'
+    }
+  }
+});
+```
+
+
+***
+
+
+Si l'on veut utiliser la variable title dans un attribut on peut utiliser la directive `v-bind:` ou juste les `:` avant le nom de l'attribut.
+Par exemple :
+
+```HTML
+<div id="app">
+  <p v-bind:title="monTitre">Un titre sera affiché à mon paragraphe</p>
+</div>
+```
+
+ou
+
+```HTML
+<div id="app">
+  <p :title="monTitre">Un titre sera affiché à mon paragraphe</p>
+</div>
+```
+
+
+***
+
+
+Une directive permet de cacher un élément : `v-show`. Pour cela on définit une propriété qui a pour valeur `true` ou `false`. Et on conditionne l'affichage de l'élément avec `v-show`. Si la propriété est à `true` alors l'élément sera affiché, sinon il sera caché avec un style inline `style="display: none;"`.
+
+```js
+new Vue({
+  el: '#app',
+  data: function() {
+    return {
+      afficher: true
+    }
+  }
+})
+```
+
+```HTML
+<div id="app">
+  <p v-show="afficher">olé</div>
+</div>
+```
+
+
+***
+
+
+On peut aussi écrire des conditions avec les directives `v-if` et `v-else`. Cela fonctionne sur le même principe que le `v-show` et un `if` `else` classique. L'élément sera inséré dans le DOM ou non en fonction de la valeur de la propriété.
+
+
+***
+
+
+```js
+new Vue({
+  el: '#app',
+  data: function() {
+    return {
+      afficher: true
+    }
+  }
+})
+```
+
+```HTML
+<div id="app">
+  <p v-if="afficher">olé</div>
+  <p v-else>oops</div>
+</div>
+```
+
+Si `afficher === true` alors l'élément `<p v-if="afficher">olé</div>` sera inséré dans le DOM, sinon ce sera `<p v-else>oops</div>`.
+
+
+***
+
+
+Comme le `if` `else`, on peut aussi représenter un `for` avec vue à l'aide de la directive `v-for`.
+Avec cette directive, on itèrera sur une propriété sous forme de tableau ou d'objet javascript.
+
+Par exemple:
+
+```js
+new Vue({
+  el: '#app',
+  data: function() {
+    return {
+      profs: ['Alex','Erwan','Marin']
+    }
+  }
+})
+```
+
+```HTML
+<div id="app">
+  <ul>
+    <li v-for="prof in profs">{{ prof }}</li>
+  </ul>
+</div>
+```
+
+
+***
+
+
+## Exercice
+
+Voici un objet javascript qui vous donne le nom des profs et les jours où ils sont censé être là :
+```{
+  Alex: ['Lundi','Mardi,'Mercredi','Vendredi'],
+  Erwan: ['Vendredi'],
+  Marin: ['Lundi','Mardi','Mercredi','Jeudi']
+}
+```
+
+Faire une liste html en utilisant VueJS, chaque élément de la list doit contenir une sous liste avec les jours où les professeurs sont présents.
+
+
+
+---
+
+
+
+## Interaction
+
+VueJS facilite l'interaction. Pour cela, on utilise la directive `v-on:` ou son abbréviation `@`. On associe ensuite l'événement à une méthode définie dans l'instance de Vue. Pour définir les méthodes de l'instance, on utilise la propriété `methods`.
+
+
+```html
+<div id="app">
+  <p @click="doThatOnClick" v-on:hover="doThatOnHover">click or hover me !</p>
+</div>
+```
+
+```js
+new Vue({
+  el: '#app',
+  methods: {
+    dothatOnClick: function() {
+      // todo on click
+    },
+    doThatOnHover: function() {
+      // do that on hover
+    }
+  }
+})
+```
+
+
+***
+
+
+## Exercice
+
+Créer un compteur avec un champ texte, et deux boutons. Le premier permettra au compteur de s'incrémenter, le second au compteur de décrémenter. Le champ texte affichera uniquement la valeure actuelle du compteur.
+
+
+
+---
+
+
+
+## v-model
+
+Une composante intéressante de VueJS est son l'association d'une variable javascript à la valeur d'un champ texte. Elle nous servira particulièrement lorsque l'on verra les formulaires. La variable est nécessairement définie dans la propriété `data`.
+
+```HTML
+<div id="app">
+  <input type="text" v-model="monTexte" />
+</div>
+```
+
+```js
+new Vue({
+  data: function() {
+    monTexte: '' //Si vous voulez lui donner une valeur initiale, indiquez le ici !
+  }
+});
+```
+
+
+***
+
+
+## Les classes
+
+On peut aussi ajouter des classes de manière dynamique. Pour cela, on utilise le `v-bind` sur la class. On peut aussi fournir un objet spécifiant la class que l'élément aura si la propriété est vraie ou fausse.
+
+
+```html
+<div id="app">
+  <div :class="{ success: success, error: !success }" :class="myClassList"></div>
+</div>
+```
+
+Note: expliquer le code
+
+
+
+---
+
+
+
+## Lifecycle
+
+[https://vuejs.org/images/lifecycle.png](https://vuejs.org/images/lifecycle.png)
+
+Chacun des événements cités ci-dessus fait référence à une méthode exécutée au moment explicité. Pour exécuter une fonction lorsque l'élément est ajouté au DOM par exemple, il faut créer une propriété `mounted` qui a pour valeur une fonction.
+
+```js
+new Vue({
+  mounted: function() {
+    //exécute ici quelque chose lorsque l'élément est inséré dans le DOM html
+  }
+});
+```
+
+
+
+---
+
+
+
+## Optimisation des événements
+
+Pour être certain d'exécuter une fonction que lorsqu'une propriété utilisée par cette dernière a changé et pas TOUT LE TEMPS, on utilise des méthodes computed.
+
+Elles se déclarent comme ceci :
+```js
+new Vue({
+  computed: {
+    maMethodComputed: function() {
+      //olé
+    }
+  }
+})
+```
