@@ -1,5 +1,3 @@
-Dernier exercice, on va maintenant utiliser "switch" !
-
 * On va déclarer une une variable "position"
 et lui donner comme valeur "Belleville".
 
