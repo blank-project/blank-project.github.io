@@ -145,7 +145,10 @@ Nous allons faire du Javascript côté client, et donc cela consiste à :
 
 
 ## Faisons du javascript !
-Le javascript est généralement écrit dans un fichier avec l'extension `.js`.
+Le javascript est généralement écrit dans un fichier avec l'extension `.js`. Il est inclu dans une page HTML à l'aide de la balise `<script></script>`, avec l'attribut `src`.
+Exemple: `<script src="monfichier.js"></script>`
+
+On utilisera la console javascript pour débuger (`F12` ou `CTRL + MAJ + J`).
 
 
 
