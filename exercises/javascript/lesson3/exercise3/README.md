@@ -7,7 +7,7 @@ Essayons de mettre une fonction dans une variable.
 idem pour "porte" (porte de gauche, porte de droite, ect ...")
 et la variable "monAppartement" aura pour valeur une fonction anonyme.
 
-* Dans cette fonction on va mettre une variable "boiteAuLettres" (égale a un nombre de votre choix),
+* Dans cette fonction on va mettre une variable "boiteAuLettres",
 et un console.log pour afficher :
 "Etage : (la var étage) , porte : (la var porte)", boite au lettre : (vous avez compris le principe) ".
 
