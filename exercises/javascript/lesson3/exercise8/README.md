@@ -8,4 +8,6 @@ Voici les consignes :
 * Il va ensuite de l'étage le plus proche du 0 à l'étage suivant à l'aide de la fonction `goTo`
 * À chaque étage parcouru la fonction `goTo` l'affiche
 * Une fois terminé, l'ascenseur retourne à l'étage 0 et affiche le nombre d'étages parcouru
+
+BONUS :
 * Laissez les mêmes nombres mais modifiez la fonction `goTo`
