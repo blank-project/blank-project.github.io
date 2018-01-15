@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function chiffrer(input, decalage) {
+        var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        var word = input.split('');
+        for (var i = 0; i < word.length; i++) {
+          if (alphabet.indexOf(word[i].toLowerCase()) > 0) {
+            var newIndex = (alphabet.indexOf(word[i].toLowerCase()) + decalage) % alphabet.length;
+            if (newIndex <= 0) newIndex = newIndex + alphabet.length;
+            word[i] = alphabet[newIndex];
+          }
+        }
+
+        return word.join('');
+      }
+
+      function dechiffrer(input, decalage) {
+        return chiffrer(input, -decalage);
+      }
+
+      console.log(dechiffrer("ojereauujqqjerawns", 5));
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
