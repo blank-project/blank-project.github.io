@@ -12,4 +12,6 @@
 * Retirer le dernier élément du tableau.
 
 * Créer une deuxième fonction qui prend en paramètre un tableau. Lors de son exécution, elle affiche de manière itérative son contenu.
-* Exécuter la fonction.
+* Appeler cette fonction dans la fonction `exercice1` en lui passant `inventaire` en paramètre.
+
+* Éxécutez `exercice1`.
