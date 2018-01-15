@@ -6,7 +6,7 @@
   * Cette fonction doit encoder le message et retourner le message encodé.
   * Pour vous aider: voici l'alphabet sous forme de tableau :
   ```js
-  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's, 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   ```
 * Créer une fonction `dechiffrer` qui prendra les deux mêmes paramètres que la fonction chiffrer.
   * Cette fonction doit déchiffrer le message passé en paramètre avec la clé, elle aussi passée en paramètre.
