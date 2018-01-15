@@ -1,9 +1,7 @@
-* Déclarez une variable "inventaire" qui sera égale a un tableau, qui devra contenir trois items de votre choix.
+* Créer une fonction qui porte le nom `exercice3`, elle contiendra le code pour les consignes suivantes :
 
-* Affichez la taille d' "inventaire" dans la console puis affichez le premier item du tableau.
+* Déclarer une variable à laquelle vous donnerez le nom de votre choix, elle sera de type objet.
 
-* Maintenant ajoutez un quatrième item au tableau en utilisant "push" et affichez la taille d' "inventaire" dans la console.
+* Donner lui une propriété `date` qui sera une fonction permettant d'afficher la date dans ce format : "nous sommes le 02 01 2018" avec un console.log.
 
-* Finalement le dernier item n'a pas sa place dans ce tableau . Retirez le en utilisant "pop" et affichez a nouveau la taille d'"item" pour vérifier qu'il a bien été enlevé.
-
-* A l'aide d'une boucle "for" écrivez une fonction qui permettra d'afficher tout les items du tableau les un après les autres dans la console.
+* Appeler la propriété (méthode) pour afficher la date dans la console.
