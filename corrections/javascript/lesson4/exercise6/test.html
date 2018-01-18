@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function testChiffrer(chiffrer) {
+        // test une lettre basique décalage positif
+        if (chiffrer("a", 1) === "b") console.log('ok');
+        else console.log('error', 'Le résultat de chiffrer("a", 1) devrait être "b"');
+
+        // test plusieurs lettres décalage positif
+        if (chiffrer("ab", 3) === "de") console.log('ok');
+        else console.log('error', 'Le résultat de chiffrer("ab", 3) devrait être "de"');
+
+        // test de plusieurs mots avec décalage positif
+        if (chiffrer("bonjour je", 6) === "hutpuax pk") console.log('ok');
+        else console.log('error', 'Le résultat de chiffrer("bonjour je", 6) devrait être "hutpuax pk"');
+
+        // test de ponctuation, symboles, majuscules avec décalage positif
+        if (chiffrer("Bonjour, je m'appelle Test. Je suis ici pour t'aider ! :@", 17) === "sfeafli, av d'rggvccv kvjk. av jlzj ztz gfli k'rzuvi ! :@") console.log('ok');
+        else console.log('error', "Le résultat de chiffrer('Bonjour, je m'appelle Test. Je suis ici pour t'aider ! :@', 17) devrait être 'sfeafli, av d'rggvccv kvjk. av jlzj ztz gfli k'rzuvi ! :@'");
+
+        // test décalage négatif
+        if (chiffrer("bonjour", -6) === "vihdiol") console.log('ok');
+        else console.log('error', 'Le résultat de chiffrer("bonjour", -6) devrait être "vihdiol"');
+
+        // test décalage positif plus grand que l'alphabet
+        if (chiffrer("bonjour", 115123) === "wjiejpm") console.log('ok');
+        else console.log('error', 'Le résultat de chiffrer("bonjour", 115123) devrait être "wjiejpm"');
+
+        // test décalage négatif plus grand que l'alphabet
+        if (chiffrer("bonjour", -45523) === "erqmrxu") console.log('ok');
+        else console.log('error', 'Le résultat de chiffrer("bonjour", -45523) devrait être "erqmrxu"');
+      }
+
+      function testDechiffrer(dechiffrer) {
+        // test une lettre basique décalage positif
+        if (dechiffrer("b", 1) === "a") console.log('ok');
+        else console.log('error', 'Le résultat de dechiffrer("b", 1) devrait être "a"');
+
+        // test plusieurs lettres décalage positif
+        if (dechiffrer("de", 3) === "ab") console.log('ok');
+        else console.log('error', 'Le résultat de dechiffrer("ab", 3) devrait être "ab"');
+
+        // test de plusieurs mots avec décalage positif
+        if (dechiffrer("hutpuax pk", 6) === "bonjour je") console.log('ok');
+        else console.log('error', 'Le résultat de dechiffrer("hutpuax pk", 6) devrait être "bonjour je"');
+
+        // test de ponctuation, symboles, majuscules avec décalage positif
+        if (dechiffrer("sfeafli, av d'rggvccv kvjk. av jlzj ztz gfli k'rzuvi ! :@", 17) === "bonjour, je m'appelle test. je suis ici pour t'aider ! :@") console.log('ok');
+        else console.log('error', "Le résultat de dechiffrer('sfeafli, av d'rggvccv kvjk. av jlzj ztz gfli k'rzuvi ! :@', 17) devrait être 'bonjour, je m'appelle test. je suis ici pour t'aider ! :@'");
+
+        // test décalage négatif
+        if (dechiffrer("vihdiol", -6) === "bonjour") console.log('ok');
+        else console.log('error', 'Le résultat de dechiffrer("vihdiol", -6) devrait être "bonjour"');
+
+        // test décalage positif plus grand que l'alphabet
+        if (dechiffrer("wjiejpm", 115123) === "bonjour") console.log('ok');
+        else console.log('error', 'Le résultat de dechiffrer("wjiejpm", 115123) devrait être "bonjour"');
+
+        // test décalage négatif plus grand que l'alphabet
+        if (dechiffrer("erqmrxu", -45523) === "bonjour") console.log('ok');
+        else console.log('error', 'Le résultat de dechiffrer("erqmrxu", -45523) devrait être "bonjour"');
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

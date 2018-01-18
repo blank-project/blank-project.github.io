@@ -17,7 +17,7 @@
       for (var i = 0; i < word.length; i++) {
 
         // on vérifie que c'est un caractère qu'on peut encoder
-        if (alphabet.indexOf(word[i].toLowerCase()) > 0) {
+        if (alphabet.indexOf(word[i].toLowerCase()) >= 0) {
 
           // Si c'est le cas alors on ajoute le décalage modulo la longueur du tableau (si l'on dépasse, on reboucle sur le début)
           word[i] = alphabet[(alphabet.indexOf(word[i].toLowerCase()) + decalage) % alphabet.length];
