@@ -10,3 +10,6 @@
   ```
 * Créer une fonction `dechiffrer` qui prendra les deux mêmes paramètres que la fonction chiffrer.
   * Cette fonction doit déchiffrer le message passé en paramètre avec la clé, elle aussi passée en paramètre.
+  * 
+  
+* Bonus : le programme doit laisser tel quel les charactères non présents dans l'alphabet.
