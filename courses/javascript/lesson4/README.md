@@ -271,10 +271,10 @@ console.log(toto); /* output: [ 'olé' ] */
 Pour accéder à un élement d'un tableau, on va utiliser les crochets `[` et `]` avec l'index de l'élément que auquel on veut accéder (sa position dans le tableau).
 
 ```js
-var toto = [ "alley", "_blank" ];
-toto[0] = "olé";
+var toto = [ "olé", "_blank" ];
 console.log(toto[0]); /* output : olé */
 console.log(toto); /* output : [ 'olé', '_blank' ] */
+
 ```
 
 
