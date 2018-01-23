@@ -6,4 +6,17 @@ Créer une fonciton qui prend en paramètre un entier.
   * Si l'utilisateur a rentré 3, on doit lui afficher 2€ + 1€.
   * Si l'utilisateur a rentré 32, on doit lui afficher 20€ + 10€ + 2€
   * Si l'utilisateur a rentré 561€, on doit lui afficher, 500€ + 50€ + 10€ + 1€
-* L'affichage se fera en fonction du retour de la fonction
+* La fonction retournera un objet de la forme suivante :
+```
+{
+  500: 1,
+  200: 0,
+  100: 0,
+  50: 1,
+  20: 0,
+  10: 1,
+  5: 0,
+  2: 0,
+  1: 1
+}
+```
