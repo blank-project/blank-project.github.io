@@ -12,7 +12,7 @@ Conseil: Créer seconde une fonction anneeBissextile qui prendant un paramètre,
 ### 1. Définir si l'année est bissextile ou non bissextile
 Le nombre de jour par mois diffère d'une année à l'autre si cette dernière est bissextile (surtout pour le mois de février).
 
-Pour savoir si une année est bissextile ou non, se réferer à l'algorithme définit sur la page wikipedia : [http://fr.wikipedia.org/wiki/Anne%CC%81e_bissextile][http://fr.wikipedia.org/wiki/Anne%CC%81e_bissextile]
+Pour savoir si une année est bissextile ou non, se réferer à l'algorithme définit sur la page wikipedia : (http://fr.wikipedia.org/wiki/Anne%CC%81e_bissextile)[http://fr.wikipedia.org/wiki/Anne%CC%81e_bissextile]
 
 ### 2. Définir le nombre de jour par mois
 ATTENTION AU MOIS DE FÉVRIER.
