@@ -94,7 +94,7 @@ Il est basé sur le moteur JavaScript V8 utilisé dans Chrome.
 
 ![V8 Logo](v8logo.svg)
 
-Concrètement, Node.js va nous permettre de créer des programmes, en particulier pour traiter les requêtes d'un client.
+Concrètement, Node.js va nous permettre de créer des programmes en JavaScript, en particulier pour traiter les requêtes d'un client.
 
 
 
