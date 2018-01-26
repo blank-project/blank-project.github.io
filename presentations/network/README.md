@@ -62,9 +62,10 @@
 ***
 
 
+
 ## Le protocole TCP/IP
 
-
+<!-- Talk about ports-->
 
 
 ***
@@ -74,11 +75,13 @@
 ## Adresse IP
 
 
+
+
 ***
 
 
 
-## Serveur DNS
+## DNS
 
 
 
@@ -88,6 +91,24 @@
 
 
 ## Le protocole HTTP
+<!-- Talk about default port-->
+
+
+
+***
+
+
+
+### Codes HTTP
+
+
+
+***
+
+
+
+### En-têtes HTTP
+
 
 
 

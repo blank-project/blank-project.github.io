@@ -10,6 +10,10 @@
     text-transform:initial;
 }
 
+.reveal .attribution {
+  font-size : 0.5em;
+}
+
 .summary-page {
     background-color:#F5F5F5;
     padding:0;
