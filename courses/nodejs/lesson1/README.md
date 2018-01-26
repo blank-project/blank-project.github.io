@@ -40,7 +40,7 @@ Le Modèle Client-Serveur est une manière de structurer les applications, en s�
 
 Ils communiquent en général à travers un réseau.
 
-Le client et le serveur peuvent être sur une même machine ou deux machine séparée.
+Le client et le serveur peuvent être sur une même machine ou deux machines séparées.
 
 
 
