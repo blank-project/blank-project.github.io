@@ -1,7 +1,6 @@
 /**
  * Randomly picks a student
  */
-
  const students = [
    "Badis",
    "Bilelle",
@@ -10,11 +9,11 @@
    "Idir",
    "Ilan",
    "Laura",
-   "Lemmy",
+   "Lemy",
    "Salem",
    "Zinedine"
  ];
 
-var idx = parseInt(Math.random() * students.length);
-
+var idx = Math.floor(Math.random() * students.length);
+console.log(idx);
 console.log(students[idx]);
