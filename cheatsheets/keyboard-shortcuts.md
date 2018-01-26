@@ -32,8 +32,10 @@ Globalement, maintenir `Maj` enfoncé permet de faire une sélection.
 
 ## Navigateur
 - `Ctrl + T` : Nouvel Onglet.
-- `Maj + Tab (↹)` : Onglet Suivant
-- `Ctrl + Maj + Tab (↹)` : Onglet Précédent
+- `Ctrl + Tab (↹)` ou `Ctrl + Page Down`: Onglet Suivant
+- `Ctrl + Maj + Tab (↹)` ou `Ctrl + Page Up` : Onglet Précédent
+- `Ctrl + Click` (sur un lien): Ouvrir le lien dans un nouvel onglet
+- `Ctrl + w` : ferme un onglet
 
 ## Environnement de Bureau
 - `Ctrl + Alt + D` : Afficher le bureau.
