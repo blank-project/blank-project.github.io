@@ -1,15 +1,14 @@
-# NodeJS
+# Node.js
 
-Les cours de NodeJS de \_blank.
+Les cours de Node.js de \_blank.
 
 Notions :
 - ES6
- - OOP	(Classes,	Instantiation,	Inheritance)
  - Lambda
- - Promises	?
 - Network	Concepts
-  - Client/Server
+ - Client/Server
  - Request/Response	Lifecycle
+ - HTTP Protocol
 - API
 - Node.js	Basics
 - NPM
@@ -18,6 +17,3 @@ Notions :
  - Express
  - Middlewares
  - Routes
-- MongoDB
- - DB	Basics
- - Node	+	MongoDB
