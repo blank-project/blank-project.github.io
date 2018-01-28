@@ -152,7 +152,7 @@ Si l'on soumet ce formulaire :
 </form>
 ```
 
-`req.query` contient :
+`req.body` contient :
 ```
 {
   user : "Erwan",
