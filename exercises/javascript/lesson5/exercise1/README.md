@@ -6,7 +6,8 @@ le "p" devra être en display none .
 * Avec "innerHTML" ajouter du lorem ipsum dans "texte".
 
 * Créez une fonction "afficher" qui, lorsqu'elle est appelé affiche le texte en changeant son display.
-Ajouter un bouton au dessus du "p" qui lorsque l'on cliquera dessus appellera la fonction "afficher".
+
+* Ajouter un bouton au dessus du "p" qui lorsque l'on cliquera dessus appellera la fonction "afficher".
 
 * Créez un second bouton qui lorsque l'on cliquera dessus masquera le texte.
 

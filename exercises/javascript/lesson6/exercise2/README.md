@@ -1,6 +1,6 @@
 Créons un Carrousel !
 
-* Créez une page html contenant une image de votre choix qui devra être intégrée grâce a ajax.
+* Créez une page html contenant une image de votre choix qui devra être intégrée grâce à ajax.
 
 * Créez une fonction qui face en sorte que toutes les dix seconde la src de l'image change.
 
