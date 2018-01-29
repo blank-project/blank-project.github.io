@@ -63,7 +63,9 @@ Elles sont disponibles dans la propriété `query` de l'objet `req`.
 
 ### Exemples
 
-Si l'on appelle la page `search?user=Erwan&password=yoloswag`  
+Si l'on ouvre la page  
+`search?user=Erwan&password=yoloswag`
+
 `req.query` contient :
 ```
 {
@@ -196,3 +198,61 @@ C'est pourquoi on doit toujours vérifier que les données attendues
 - qu'elles sont du bons types
 - qu'elles ont des valeurs cohérentes
 - qu'elles n'engendrent pas de failles de sécurité.
+
+
+***
+
+
+Pour cela, on dispose de plusieurs possibilités :
+- Utiliser la validation incluses dans les champs des formulaires
+- Utiliser une validation coté Client en JavaScript
+- Utiliser une validation coté Serveur
+
+
+***
+
+
+En général, on combine les techniques de validation coté client et coté serveur.
+
+La validation coté Client pouvant toujours être contournée, on ajoutera au minimum une validation coté serveur.
+
+
+***
+
+
+Example : validation d'un email requis
+
+On doit vérifier si :
+- l'utilisateur à bien envoyé une valeur
+- la valeur est bien un email
+- l'email n'existe pas déjà dans une base de données
+
+
+***
+
+
+```javascript
+function(req, res, next) {
+  var errors = [], email = req.body.login;
+  if (!email) {
+    errors.push("Veuillez saisir un email.");
+  } else if (email.indexOf('@') == -1) {
+    errors.push("L'email saisi n'est pas valide.");
+  } else if(countInDatabase(email) > 0) {
+    errors.push("Cet email existe déja");
+  }
+  // Do something with errors
+}
+```
+
+
+***
+
+
+### Sécurité : les Injections
+
+Si l'on utilise des données provenant de l'utilisateur sans faire attention à leur contenu, on peut créer des failles de sécurité.
+
+La plus connu est la faille XSS ([Cross-Site Scripting](https://fr.wikipedia.org/wiki/Cross-site_scripting)).
+
+Elle consiste à injecter du contenu dans une page web, en général en utilisant un champ de formulaire non protégé.
