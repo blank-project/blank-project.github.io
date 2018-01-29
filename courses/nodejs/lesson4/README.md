@@ -10,7 +10,7 @@
 
 Les cookies sont des petits fichiers stockés dans le Navigateur de l'utilisateur.
 
-Ils permettent de sauvegarder des données au niveau du client.
+Ils permettent de sauvegarder des données sous forme clé-valeur, au niveau du client.
 
 Ils sont envoyés par le navigateur via des Header HTTP.
 
