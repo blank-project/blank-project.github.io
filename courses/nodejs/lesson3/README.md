@@ -40,6 +40,7 @@ Quand on clique sur le lien [Envoyer !](http://example.org/index.php?user=Erwan&
 
 ***
 
+
 ### Avantages
 - Pas obligé de créer un formulaire pour envoyer des données.
 
