@@ -1,0 +1,35 @@
+[
+  {
+    "name": "<img src=\"test.jpg\" />",
+    "image": {
+      "source": "https://images-na.ssl-images-amazon.com/images/I/618hyAE8b3L._SL1000_.jpg",
+      "alt": "Bosch tondeuse à gazon Rotak 40"
+    },
+    "description": "La tondeuse Rotak 40 LI est la tondeuse idéale pour les jardins de moyenne et grande superficie. Équipée d’un puissant moteur de 1 700 W, elle tond sans effort l’herbe haute, dense et même mouillée. Elle effectue des coupes nettes lors de chaque passage. Très légère, elle se manœuvre facilement à travers le jardin.",
+    "price": 215.90,
+    "currency": "€",
+    "order": 1
+  },
+  {
+    "name": "Einhell Tondeuse pousée thermique GH-PM 40 P",
+    "image": {
+      "source": "https://images-na.ssl-images-amazon.com/images/I/718d0n1rBnL._SL1500_.jpg",
+      "alt": "Einhell Tondeuse pousée thermique GH-PM 40 P"
+    },
+    "description": "Tondeuse thermique GH-PM 40 P - moteur 4 temps - 118 cc - 1,6 kW - largeur de coupe 40 cm - réglage individuel de la hauteur de coupe de chaque roues : 3 positions de 32 à 62 mm - bac de ramassage 40 l - guidon ergonomique pliable - surface conseillée 800m2",
+    "price": 169.36,
+    "currency": "€",
+    "order": 2
+  },
+  {
+    "name": "Einhell Tondeuse thermique GC-PM 47 S HW",
+    "image": {
+      "source": "https://images-na.ssl-images-amazon.com/images/I/51IjDmQMtjL.jpg",
+      "alt": "Einhell Tondeuse thermique GC-PM 47 S HW"
+    },
+    "description": "La tondeuse thermique GC-PM 47 S HW est une aide moderne et fiable pour l'entretien du jardin et fait partie d'une nouvelle génération de tondeuses thermiques Einhell. Des fonctions multiples, combinées avec des composants de haut de gamme, procurent la symbiose parfaite pour satisfaire les jardiniers amateurs exigeants. Le puissant moteur OHV Einhell procure à tout moment suffisamment de puissance et le système innovant « Quick Start » assure un démarrage rapide sans effort. Pour répondre à toutes les exigences, la fonction 5 en 1, exceptionnelle, permet à tout moment de choisir entre la tonte, le mulching, l'éjection latérale, l'éjection à déflecteur et le ramassage. La GC-PM 47 S HW est conseillée pour des surfaces jusqu'à 1.400 m². Caractéristiques: - Moteur OHV 1 cylindre, 4 temps - Auto-traction débrayable aux roues arrière avec entraînement GT - Carter Einhell à technologie Vortex - Réglage centralisé de la hauteur de coupe, 6 positions - Guidon Einhell avec position de nettoyage et de stockage - Guidon repliable et réglable en hauteur à 3 positions avec revêtement tendre « Softgrip » - Grand bac de ramassage avec indicateur du niveau de remplissage et 2 poignées pour le vidage - Guidon avec câble de lancement - Fonction mulching par adaptateur - Ejection latérale et éjection arrière à déflecteur - Grandes roues arrière sur roulement à billes - Avec grattoir pour le nettoyage en position debout - Pare-chocs avant avec peigne et poignée intégrée pour le transport - Lame combinée 2 en 1 (tonte normale et mulching) - Conseillée pour des surfaces jusqu'à 1.400 m² Données techniques: - Cylindrée La GC-139 cm³ - Puissance 2 kW - Régime 3000 tr/min. - Réservoir d'essence 0.6 l - Largeur de coupe 47.5 cm - Bac de ramassage 75 l - Diamètre des roues avant 200 mm - Diamètre des roues arrière 280 mm - Huile recommandée huile 4 temps - Moteur 4 temps, refroidi par air - Réglage de la hauteur de coupe 6 positions | 25-80 mm Centralisé",
+    "price": 297.38,
+    "currency": "€",
+    "order": 3
+  }
+]
