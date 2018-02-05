@@ -131,14 +131,12 @@ Attributs :
 
 Les boutons radio permettent de sélectionner une valeur parmi un groupe.
 
-```
 <form>
 <input type="radio" name="blank" id="yolo" value="yolo" />
 <label for="yolo">YOLO</label>
 <input type="radio" name="blank" id="swag" value="swag" checked />
 <label for="swag">Swag</label>
 </form>
-```
 
 ```
 <input type="radio" name="blank" id="yolo" value="yolo" /><label for="yolo">YOLO</label>
@@ -255,7 +253,7 @@ On peut également définir la méthode d'envoi (POST ou GET), via l'attribut **
 ***
 
 
-<form action="http://example.org" method="GET">
+<form action="http://blank.bellevillecitoyenne.fr/courses/html/lesson7/form.php" method="GET">
   <input type="hidden" name="jesuis" value="cache!" /><br />
   <input type="text" name="nom" value="Yo !" placeholder="Ton nom" /><br />
   <input type="checkbox" name="mic check" value="one two" /><br />
@@ -271,7 +269,7 @@ On peut également définir la méthode d'envoi (POST ou GET), via l'attribut **
 
 
 ```
-<form action="http://example.org" method="GET">
+<form action="http://blank.bellevillecitoyenne.fr/courses/html/lesson7/form.php" method="GET">
   <input type="hidden" name="jesuis" value="cache!" /><br />
   <input type="text" name="nom" value="Yo !" placeholder="Ton nom" /><br />
   <input type="checkbox" name="mic check" value="one two" /><br />
