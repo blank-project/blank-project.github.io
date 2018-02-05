@@ -131,12 +131,14 @@ Attributs :
 
 Les boutons radio permettent de sélectionner une valeur parmi un groupe.
 
+```
 <form>
 <input type="radio" name="blank" id="yolo" value="yolo" />
 <label for="yolo">YOLO</label>
 <input type="radio" name="blank" id="swag" value="swag" checked />
 <label for="swag">Swag</label>
 </form>
+```
 
 ```
 <input type="radio" name="blank" id="yolo" value="yolo" /><label for="yolo">YOLO</label>
@@ -287,3 +289,4 @@ On peut également définir la méthode d'envoi (POST ou GET), via l'attribut **
 
 
 #The end !
+Vous pouvez maintenant tester vos fomulaires sur [http://blank.bellevillecitoyenne.fr/courses/html/lesson7/form.php](http://blank.bellevillecitoyenne.fr/courses/html/lesson7/form.php)
