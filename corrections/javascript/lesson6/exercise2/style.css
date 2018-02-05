@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+.tondeuse {
+    width: 200px;
+    border: 1px solid grey;
+    margin: 15px;
+}
+
+.tondeuse img {
+    display: block;
+    width: 100%;
+}
