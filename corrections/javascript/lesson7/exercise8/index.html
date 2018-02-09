@@ -11,6 +11,7 @@
       <section v-show="search">
         <h1> Résultats de recherche pour : {{ search }}</h1>
         <p>{{ gifs.length }}</p>
+        <img v-for="gif in gifs" :src="gif.images.original.url" />
       </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

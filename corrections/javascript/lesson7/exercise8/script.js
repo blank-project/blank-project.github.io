@@ -28,7 +28,7 @@ var app = new Vue({
 
         self.gifs = [];
         query += 'api_key=q55O1k5p1x2q5xRvOFXyBnhCum55sgMT';
-        query += '&q=test';
+        query += '&q=' + value;
         query += '&limit=25';
 
         getJSON(host + path + query, function(json) {
