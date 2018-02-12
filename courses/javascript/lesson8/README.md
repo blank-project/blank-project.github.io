@@ -1,6 +1,6 @@
 ## Les Composants
 
-Ce concept est essentiel pour assurer la maintenabilité de votre application. Il s'inspire des modules, et comme ce dernier, encapsule une logique réutilisable.
+Ce concept est essentiel pour assurer la maintenabilité de votre application. Il s'inspire des modules (code résolvant une problématique définie, indépendant qui peut etre réutilisé de nombreuse fois dans une application), et comme ce dernier, encapsule une logique réutilisable.
 
 Il prend la forme d'éléments HTML, définit en JavaScript.
 

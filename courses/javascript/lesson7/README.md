@@ -233,8 +233,8 @@ new Vue({
 
 ```HTML
 <div id="app">
-  <p v-if="afficher">olé</div>
-  <p v-else>oops</div>
+  <p v-if="afficher">olé</p>
+  <p v-else>oops</p>
 </div>
 ```
 
@@ -272,7 +272,7 @@ new Vue({
 ***
 
 
-## Exercice
+## Exercice 1
 
 Voici un objet javascript qui vous donne le nom des profs et les jours où ils sont censé être là :
 ```js
@@ -320,9 +320,17 @@ new Vue({
 ***
 
 
-## Exercice
+## Accéder à votre instance de Vue
 
-Créer un compteur avec un champ texte, et deux boutons. Le premier permettra au compteur de s'incrémenter, le second au compteur de décrémenter. Le champ texte affichera uniquement la valeure actuelle du compteur.
+Pour accéder à l'instance de Vue à l'intérieur des méthodes utilisez `this`.
+
+
+***
+
+
+## Exercice 2
+
+Créer un compteur avec un paragraphe, et deux boutons. Le premier permettra au compteur de s'incrémenter, le second au compteur de décrémenter. Le champ texte affichera uniquement la valeur actuelle du compteur.
 
 
 
@@ -369,7 +377,7 @@ Note: expliquer le code
 ***
 
 
-## Exercice 1
+## Exercice 3
 
 Créez une checkbox, lorsqu'elle est cochée, un champ texte et un bouton doivent apparaitre. Ce champ texte doit etre modifiable. Lorsque l'on clique sur le bouton, une fonction que vous avez définit dans votre instance de Vue doit se déclancher et afficher une alerte contenant le texte modifié.
 
@@ -377,7 +385,7 @@ Créez une checkbox, lorsqu'elle est cochée, un champ texte et un bouton doiven
 ***
 
 
-## Exercice 2
+## Exercice 4
 
 Créez un champ texte, un paragraphe qui affichera le contenu du champ texte ainsi qu'une checkbox. Lorsque la checkbox est cochée, le texte affiché doit etre de couleur rouge, sinon le texte sera noir. Vous devez utiliser le système de classes et le système de classes avec fonction.
 
@@ -405,7 +413,7 @@ new Vue({
 ***
 
 
-## Exercice
+## Exercice 5
 
 Affichez un `console.log` pour chacune des étapes de vie de votre instance Vue.
 
@@ -433,7 +441,8 @@ new Vue({
   },
   computed: {
     maProprieteComputed: function() {
-      return showRedColor ? 'red' : '';
+      if (this.showRedColor) return 'red';
+      else return '';
     }
   }
 });
@@ -464,7 +473,7 @@ new Vue({
 ***
 
 
-## Exercice
+## Exercice 6
 
 Reprendre l'exercice avec les classes en vous assurant que la propriété computed n'est bien appelée qu'une fois que la valeur de la checkbox change.
 
@@ -492,7 +501,7 @@ new Vue({
 ***
 
 
-## Exercice
+## Exercice 8
 
 Créez un input text avec un `v-model` ainsi qu'un watcher sur la propriété. Si la variable prend la valeur `vue` effectuez une alert affichant `vue`.
 
@@ -531,9 +540,7 @@ Chacune de ces fonctions aura au minimum 3 paramètres dans l'ordre :
 1. `el` qui correspond à l'élément HTML auquel est attribué la directive
 2. `binding` qui correspond à un objet généré par Vue.js contenant de nombreuses informations nécessaires à la directive
 3. `vnode` qui est le virtualNode, un object Vue.js permettant d'accéder à des fonctionnalités avancées.
-
-Pour la fonction update, il y a aussi un quatriment argument qui est :
-4. `oldVNode` c'est l'ancien virtualNode avant l'update
+4. `oldVNode` c'est l'ancien virtualNode avant l'update (uniquement pour update)
 
 
 ***
