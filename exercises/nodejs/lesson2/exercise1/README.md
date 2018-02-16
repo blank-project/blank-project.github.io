@@ -20,7 +20,7 @@ console.log("Server running at http://localhost:%d", port);
 
 Exécutez :
 ```bash
-node app.js
+node index.js
 ```
 
 Vous devez voir affiché dans la console :
