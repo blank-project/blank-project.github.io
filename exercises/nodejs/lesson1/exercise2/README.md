@@ -9,7 +9,7 @@ console.log('Hello World !');
 Ouvrez un terminal dans le dossier où se trouve le fichier, et exécutez :
 
 ```bash
-node app.js
+node index.js
 ```
 
 Vous devez voir affiché dans la console :
