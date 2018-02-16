@@ -1,4 +1,4 @@
-# Node.js > Lesson2 > Exercise3
+# Node.js > Lesson2 > Exercise2
 
 Modifier le code de l'exercice 2 pour créer un serveur de fichiers statiques.
 
