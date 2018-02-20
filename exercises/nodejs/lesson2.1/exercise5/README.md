@@ -15,4 +15,12 @@ Créer un dossier 'images' contenant quelque images / GIF. Lorsque l'utilisateur
 
 ## 4. Etape 4 : Donner la réponse sous forme JSON
 
-Travaillons la réponse générée à l'étape précedante. La réponse donnée doit etre sous le format JSON.
+Travaillons la réponse générée à l'étape précedante. La réponse donnée doit etre sous le format JSON. Et l'indiquer à l'utilisateur dans la requete.
+
+## 5. Etape 5 : Utiliser un package pour servir les images via express
+
+Utiliser un package pour que les images soient accessibles via une URL comme : [localhost:3000/images/test.jpg](localhost:3000/images/test.jpg)
+
+## 6. Etape 6 : Afficher l'url de chacun des fichiers disponibles
+
+Modifier la réponse pour que chacune des url de fichier affichent l'adresse où ils sont accessibles.
