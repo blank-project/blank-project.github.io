@@ -9,6 +9,6 @@ Créer une application web affichant dans une page Web les données de la requê
 Pour cela :
 - Créer une application Express
 - Créer un middleware récupérant les information voulues
-- Associer ce middleware à la route '/' en GET
-- Créer un template
+- Associer ce middleware à la route '/\*' en GET
+- Créer un template pour afficher les données.
 - Effectuer le rendu du template avec les données récupérées par le Middleware
