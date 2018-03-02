@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FCF5C7;
+    transition: all 0.3s;
+}
+
+body, html {
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todos {
+    width: 75%;
+    margin: 40px 0;
+    box-shadow: 0px 0px 20px 0px #D7C875;
+}
+
+#todos > li {
+    border-color: #C6B764;
+}
+
+#todos > li:not(:last-child):not(:first-child) {
+    border-bottom: 2px solid #C6B764;
+}
+
+#newTodo {
+    padding: 20px;
+    display: flex;
+    background-color: #FFEE93;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#newTodo > * {
+    background-color: #FFEE93;
+}
+
+#addTodo {
+    background-color: #ADF7B6;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid #8FC496;
+    color: #5d9163;
+}
+
+
+#newTodo > input {
+    flex-grow: 1;
+    margin-right: 20px;
+    border: 0px;
+    border-bottom: 2px #EEDD82 solid;
+}
+
+.todo, .todo > * {
+    background-color: #E8D986;
+}
+
+.todo.archived > p:last-child {
+    text-align: right;
+    color: grey;
+}
+
+
+.todo {
+    display: flex;
+}
+
+.todo > p {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.todo.done > p {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.todo > button {
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.btn-blue {
+    color: #578BBA;
+    background-color: #79ADDC;
+    border-color: #578BBA;
+}
+
+.btn-red {
+    border-color: #DA5B6B;
+    color: #DA5B6B;
+    background-color: #FC8D8D;
+}
+
+.btn-green {
+    background-color: #ADF7B6;
+    border-color: #8FC496;
+    color: #5d9163;
+}
+
+.btn-orange {
+    background-color: #FFC09F;
+    border-color: #BB805B;
+    color: #BB805B;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO !</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <ul id="todos">
+        <li>
+          <div id="newTodo">
+            <input type="text" v-model.trim="newTodo" @keydown.enter="addTodo">
+            <button id="addTodo" @click="addTodo">Add</button>
+          </div>
+        </li>
+        <li v-for="todo in todos">
+          <todo :todo="todo" @archive="arc" @delete="dlt"></todo>
+        </li>
+        <li v-for="aTodo in archivedTodos">
+          <a-todo :a-todo="aTodo" @archive="arc" @delete="dlt"></a-todo>
+        </li>
+      </ul>
+    </div>
+    <script src="todoModel.js"></script>
+    <script src="todoComponent.js"></script>
+    <script src="archivedTodoComponent.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
