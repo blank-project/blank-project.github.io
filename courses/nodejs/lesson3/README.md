@@ -55,7 +55,7 @@ Quand on clique sur le lien [Envoyer !](http://example.org/index.php?user=Erwan&
 
 ### Récupérer les paramètres de requêtes
 
-Express nous permet de récupérer ces données sous formes d'Objet JavaScript.  
+Express nous permet de récupérer ces données sous formes d'Objet JavaScript.
 Elles sont disponibles dans la propriété `query` de l'objet `req`.
 
 
@@ -64,7 +64,7 @@ Elles sont disponibles dans la propriété `query` de l'objet `req`.
 
 ### Exemples
 
-Si l'on ouvre la page  
+Si l'on ouvre la page
 `search?user=Erwan&password=yoloswag`
 
 `req.query` contient :
@@ -169,7 +169,7 @@ Si l'on soumet ce formulaire :
 
 
 
-## Pour résumé
+## Pour résumer
 
 Quelque soit la méthode d'envoi, les données envoyées sont disponibles sous forme d'Objets, dans des propriétés différentes de l'objet `req`.
 
@@ -177,6 +177,48 @@ Quelque soit la méthode d'envoi, les données envoyées sont disponibles sous f
 |:----:|:------:|
 |URL|req.query|
 |Formulaire|req.body|
+
+
+
+---
+
+
+## Les paramètres de route
+
+
+***
+
+
+Il existe une manière peu conventionnelle de transmettre des données. Cette dernière ne fonctionne que sous certains framework s'inspirant du pattern MVC (express, rails, etc.).
+Il prend en paramètre un élément du pathname de votre URL et le transforme en paramètre de requete.
+
+
+***
+
+
+## Définition d'un paramètre de route
+
+Avec express, lorsque l'on souhaite créer un paramètre de route on utilise la notation classique de définition d'une route avec ":" avant le paramètre concerné.
+
+Exemple :
+```js
+router.get('/user/:id', function(req, res, next) {
+   // ...
+});
+```
+*Ici dans la route, on définit que le 2e chemin d'accès définit le paramètre* __id__
+
+*On peut aussi les enchainer, avec :* `router.get('/user/:id/:action', function(req, res, next) {})`
+
+
+***
+
+
+## Récupération d'un paramètre
+
+Pour récupérer un paramètre de route, il suffit d'accéder aux paramètres de la requete avec : `req.params`.
+
+Exemple: Si l'on reprend le code d'exemple ci-dessus, pour récupérer l'id on la recherchera avec : `req.params.id`.
 
 
 
