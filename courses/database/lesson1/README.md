@@ -10,7 +10,7 @@
 
 > Une base de données est une collection de données organisées de façon à être facilement accessibles, administrées et mises à jour.
 
-> Le dispositif comporte un système de gestion de base de données (abréviation : SGBD) : un logiciel moteur qui manipule la base de données et dirige l'accès à son contenu.
+> Le dispositif comporte un système de gestion de base de données (abréviation : SGBD) : un logiciel moteur qui manipule une ou plusieurs base de données et dirige l'accès à son contenu.
 
 
 
