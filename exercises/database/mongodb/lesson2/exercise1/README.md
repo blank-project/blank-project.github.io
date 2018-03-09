@@ -13,7 +13,8 @@ Ecrivez les commandes pour :
 - Lister tous les documents.
 - Trouver tous les documents ayant pour id `1`
 - Trouver toutes les personnes dont le prénom est John.
+- Trouver toutes les personnes qui sont mortes.
 - Trouver toutes les personnes qui ne sont pas mortes.
 - Trouver toutes les personnes nées après le 01 Janvier 1941.
 - Trouver toutes les personnes qui n'ont pas eu de récompenses (attribut `awards`).
-- Trouver toutes les personnes qui ont eu une récompense de la "Free Software Fondation" (attribut `awards`).
+- Trouver toutes les personnes qui ont eu une récompense de la "Free Software Foundation" (attribut `awards`).
