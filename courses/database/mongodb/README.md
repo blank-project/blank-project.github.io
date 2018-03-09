@@ -8,4 +8,5 @@ Notions :
  - Install MongoDB
  - MongoDB Basics (Database, Collections ...)
  - CRUD with MongoDB
- - Node	+	MongoDB with Mongoose.
+ - Node	+	MongoDB
+ - Object-Document Mapping with Mongoose.
