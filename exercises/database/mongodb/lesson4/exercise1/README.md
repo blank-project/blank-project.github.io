@@ -1,0 +1,18 @@
+# Lesson 4 > Exercise 1
+
+Créer un formulaire d'inscription d'utilisateur.
+
+Le formulaire doit comprendre :
+- Un nom d'utilisateur
+- Un prénom
+- Un nom de famille
+- Un email
+- Un mot de passe
+- Une confirmation de mot de passe
+
+Les validations suivantes doivent etre effectuées :
+- Validation de l'email
+- Prénom et nom de famille entre 2 et 25 caractères
+- Nom d'utilisateur unique
+
+Le mot de passe doit etre encodé. Regardez comment faire ! [ici](https://www.npmjs.com/package/password-hash-and-salt)
