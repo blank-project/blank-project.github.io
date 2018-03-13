@@ -1,14 +1,14 @@
 # Lesson 4 > Exercise 1
 
-Créer un formulaire d'inscription d'utilisateur.
+Créer une application express comportant un d'inscription d'utilisateur.
 
-Le formulaire doit comprendre :
-- Un nom d'utilisateur
+Le formulaire doit comprendre (les champs obligatoires ont une * à coté) :
+- Un nom d'utilisateur *
 - Un prénom
 - Un nom de famille
-- Un email
-- Un mot de passe
-- Une confirmation de mot de passe
+- Un email *
+- Un mot de passe *
+- Une confirmation de mot de passe *
 
 Les validations suivantes doivent etre effectuées :
 - Validation de l'email
