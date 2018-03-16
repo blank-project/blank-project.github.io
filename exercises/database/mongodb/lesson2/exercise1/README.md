@@ -18,3 +18,7 @@ Ecrivez les commandes pour :
 - Trouver toutes les personnes nées après le 01 Janvier 1941.
 - Trouver toutes les personnes qui n'ont pas eu de récompenses (attribut `awards`).
 - Trouver toutes les personnes qui ont eu une récompense de la "Free Software Foundation" (attribut `awards`).
+- Donner une date de naissance à Martin Odersky
+- Créer une nouvelle personne appelée "Linus Torvalds", renseignez le maximum d'informations à son sujet.
+- Créer une nouvelle personne appelée "Steve Jobs"
+- Ah ouais en fait non, supprimez la
