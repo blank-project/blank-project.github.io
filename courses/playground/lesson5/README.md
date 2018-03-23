@@ -197,6 +197,19 @@ Placez vous dans la branche où vous voulez continuer votre travail, et ensuite 
 ***
 
 
+## Tags
+
+Un tag (ou étiquette) permet d'identifier un commit donné.
+
+Lister les tags : `git tag`
+
+Créer un tag : `git tag <TAG> [<COMMIT>]`
+
+
+***
+
+
+
 ## Et plein d'autres ...
 
 * `git cherry-pick` : Récupère un commit d'une autre branche et l'applique dans la branche courante.
