@@ -74,6 +74,10 @@ Une application a en général plusieurs profils (_development_, _test_, _produc
 
 Ces profils correspondent à des configurations et/où fonctionnalités differentes.
 
+
+***
+
+
 Ex :
 - En profil `development`, on utilisera une base de donnée locale.
 - En profil `production`, on utilisera un serveur de base de données dédiée.
@@ -152,6 +156,14 @@ Beaucoup d'application peuvent fonctionner en utilisant **ssh** pour accéder à
 
 
 ***
+
+
+
+---
+
+
+## Daemons et Gestion de processus
+
 
 
 
