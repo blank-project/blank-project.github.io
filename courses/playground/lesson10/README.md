@@ -139,32 +139,30 @@ Beaucoup d'application peuvent fonctionner en utilisant **ssh** pour accéder à
 
 ## Méthodologie de déploiement
 
+#### Déploiement manuel
 
-***
+On va venir installer manuellement le programme, par différents moyen :
+- copie de fichiers
+- checkout d'une version git
+- ...
 
+#### Déploiement Automatique
 
-
-### Déploiement manuel
-
-
-***
-
-
-
-### Déploiement Automatique
-
-
-
-***
+On réalise le déploiement automatiquement grâce à un script ou un logiciel.
 
 
 
 ---
 
 
+
 ## Daemons et Gestion de processus
 
+On va en général utiliser un gestionnaire de processus pour lancer notre application en arrière-plan.
 
+Si on ne le fait pas, le processus dans lequel est lancée l'application sera terminé à la deconnexion de la session ssh.
+
+On utilisera [forever](https://www.npmjs.com/package/forever).
 
 
 
