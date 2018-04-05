@@ -13,8 +13,8 @@
 
 ## Dates
 
-- 3 séances de 2 heures: 15, 22, 29 mai 2018
-- peut-être une quatrième séance: 5 juin 2018
+- prochain point: 1er mai, avoir une première version des cours
+- 4 séances de 2 heures: 15, 22, 29 mai 2018, 5 juin 2018
 
 ## Plan
 
@@ -27,7 +27,7 @@
         
 - structures de données:
     - listes
-    - dictionnaires
+    - dictionnaires (aka maps, tableaux associatifs)
 
 - exercices:
     - trouver le max et le min d'une liste, calculer la moyenne, inverser l'ordre
@@ -35,30 +35,37 @@
 
 - applications:
     - fréquences de mots dans un texte
-    - max et min d'une image
+    - max et min d'une image, histogramme
     - miroir d'une image
     - seuiller une image
 
-### Seance 2: Divide and conquer
+### Séance 2: Graphes - partie 1
 
-- concepts et algorithmes:
-    - récursion
-    - diviser pour régner
+- note: Marin absent
 
 - structures de données:
-    - probablement rien: pas le temps de parler de heaps, rb trees etc
+    - graphes: qu'est-ce que c'est, comment les représenter, exemples (routes,
+      réseau électrique, réseaux sociaux, ...)
+    - arbres: comment les représenter, exemples (DOM, arbres binaires de recherche,
+      taxonomies, arbres de décision, ...)
+      
+- algorithmes:
+    - parcours dans un arbre
     
 - exercices:
-    - trouver un élément dans une liste triée
-    - Tri par insertion et tri fusion
-   
-- applications:
+    - trouver un élément dans un arbre
+    - insérer un élément dans un arbre binaire de recherche
+    - ...
+    
+- applications: 
+    - sortir d'un labyrinthe?
+    - plus d'applications en partie 2
 
 
-### Seance 3: Dynamic programming
+### Séance 3: Graphes - partie 2
 
 - concepts: 
-    - programmation dynamique
+    - programmation dynamique, récursion
 
 - structures de données:
     - graphes et arbres
@@ -67,6 +74,10 @@
     - fibonacci ou autre
     
 - applications:
-    - plus courts chemins
+    - plus courts chemins (Dijkstra sur openstreetmaps de belleville)
 
-### Seance 4?
+### Seance 4: Traitement d'images
+
+- pas de nouveau concept algorithmique, on s'entraîne en jouant avec des images
+- filtres, convolutions
+- ouverture: segmentation avec le clustering spectral?
