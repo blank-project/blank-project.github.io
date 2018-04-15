@@ -91,7 +91,7 @@ writeInConsole("olé","_blank"); /* output : olé blank */
 
 
 ## Retourner une valeur
-Pour retourner une valeur, nous allons utiliser le mot clé `return` suivi de ce que l'on souhaite retourner. Par défaut, une fonction ne retourne rien, soit, `undefined`. On ne peut retourner qu'une seule valeur en JavaScript
+Pour retourner une valeur, nous allons utiliser le mot clé `return` suivi de ce que l'on souhaite retourner. Par défaut, une fonction ne retourne rien, soit, `undefined`. On ne peut retourner qu'une seule valeur en JavaScript.
 
 ```js
 function returnOle() {
@@ -99,6 +99,70 @@ function returnOle() {
 }
 console.log(returnOle()); /* output : olé */
 ```
+
+
+
+---
+
+
+<!-- .slide: id="exceptions" -->
+## Les Exceptions
+
+Les Exceptions sont des erreurs qui traduisent un comportement inattendu.
+
+Le mot-clé `throw` permet de **lever** une Exception.
+
+L'exécution de la fonction s'arrête alors.
+
+
+***
+
+
+```javascript
+function isPositive(number) {
+  if (typeof number !== 'number') {
+  	throw new Error('Expected a Number');
+  }
+  return number >= 0;
+}
+```
+
+Il est possible d'utiliser n'importe quel valeur comme Exception.  
+
+On utilise en général l'objet `Error` (on y reviendra plus tard).
+
+
+***
+
+
+### Traiter les Exceptions
+
+Les mot-clés `try`, `catch` et `finally` permettent de traiter les Exceptions.
+
+Si une exception est levée dans un bloc `try`, l’exécution du bloc s'arrête, et le bloc `catch` est exécuté.
+
+Le bloc `finally` est facultatif et s'exécute dans tout les cas.
+
+
+***
+
+
+```javascript
+try {
+   // Cette fonction peut lever une Exception.
+  var value = getValue();
+  console.log(value);
+} catch(e) {
+  console.log('Une erreur est survenue', e)
+} finally {
+  console.log('Fin du traitement');
+}
+```
+
+
+
+---
+
 
 
 

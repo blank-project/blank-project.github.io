@@ -82,3 +82,26 @@
 - `isNaN()` : Determines whether a value is an illegal number
 - `parseFloat()` : Parses a string and returns a floating point number
 - `parseInt()` : Parses a string and returns an integer
+
+## ES6
+[Features](http://es6-features.org/)  
+[Compatibility](http://kangax.github.io/compat-table/es6/)
+
+## OOP
+
+```
+class Rectangle {
+  constructor(hauteur, largeur) {
+    this.hauteur = hauteur;
+    this.largeur = largeur;
+  }
+
+  get area() {
+    return this.calcArea();
+  }
+
+  calcArea() {
+    return this.largeur * this.hauteur;
+  }
+}
+```
