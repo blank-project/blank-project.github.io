@@ -1,17 +1,17 @@
 <?php
 return array(
-    "Wassime" => array("GUERBAOUI"),
-    "Alfoussein" => array("DOUCOURE"),
-    "Valentin" => array("DREAN"),
-    "Jennifer" => array("BRANDAO"),
-    "Mike" => array("DORIVAL"),
-    "Badis" => array("NAKHLI"),
-    "Aline" => array("OUTERBAH"),
-    "Léo" => array("CHAPPON"),
-    "Marc" => array("SEGBETSE"),
-    "Abdoulaye" => array("NDAO"),
-    "Rezzak" => array("MAKHLOUF"),
-    "Laurent" => array("ABEMANGO"),
-    "Amin" => array("JEBALI")
+    "Wassime" => array("Wassime"),
+    "Alfoussein" => array("Alfoussein"),
+    "Valentin" => array("Valentin"),
+    "Jennifer" => array("Jennifer"),
+    "Mike" => array("Mike"),
+    "Badis" => array("Badis"),
+    "Aline" => array("Aline"),
+    "Léo" => array("Léo"),
+    "Marc" => array("Marc"),
+    "Abdoulaye" => array("Abdoulaye"),
+    "Rezzak" => array("Rezzak"),
+    "Laurent" => array("Laurent"),
+    "Amin" => array("Amin")
 );
 ?>
