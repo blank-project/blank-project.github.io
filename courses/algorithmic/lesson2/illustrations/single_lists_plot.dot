@@ -1,0 +1,49 @@
+digraph G {
+  rankdir = LR;
+  subgraph cluster_a2 {
+    {rank=same a2_address  a2_next a2_value}
+    a2_address;
+    a2_next;
+    a2_value;
+
+}
+subgraph cluster_a1 {
+  {rank=same a1_address  a1_next a1_value}
+  a1_address;
+  a1_next;
+  a1_value;
+
+}
+
+subgraph cluster_an {
+  {rank=same an_address  an_next an_value}
+  an_address;
+  an_next;
+  an_value;
+
+}
+
+
+a2_address [label="a₂", shape="circle"]
+a2_next [label="next", shape="rectangle"]
+a2_value [label="value: Hotel de ville", shape="rectangle", color="blue"]
+
+a1_address [label="a₁", shape="circle"]
+a1_next [label="next", shape="rectangle"]
+a1_value [label="value: Chatelet", shape="rectangle", color="blue"]
+
+an_address [label="aₙ", shape="circle"]
+an_next [label="next", shape="rectangle"]
+an_value [label="value: Mairie des Lilas", shape="rectangle", color="blue"]
+
+
+dots_node [label="...", color="white"]
+
+a1_next -> a2_address;
+a2_next -> dots_node;
+dots_node -> an_address;
+
+
+
+
+}

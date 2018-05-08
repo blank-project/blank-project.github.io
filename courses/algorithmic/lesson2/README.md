@@ -10,7 +10,13 @@
 ***
 
 
-## Aujourd'hui: l'importance de bien représenter ses données
+## Aujourd'hui: structures de données de base
+
+
+***
+
+
+## L'importance de bien représenter les données
 
 - (LXXXI + IX) / X ?
 
@@ -18,12 +24,12 @@
 ***
 
 
-## Aujourd'hui: l'importance de bien représenter ses données
+## L'importance de bien représenter ses données
 
 - (LXXXI + IX) / X ?
 - (81 + 9) / 10 ?
 
-On va illustrer cette idée en manipulant des séquences, des suites de valeurs.
+On va illustrer cette idée en manipulant différentes structures de données.
 
 
 
@@ -73,7 +79,7 @@ On va illustrer cette idée en manipulant des séquences, des suites de valeurs.
 
 ![sound](illustrations/figures/audio_signal.png)
 
-```[12.7   4.25  5.19 ... -0.07 -0.   -0.11]```
+```[12.7, 4.25, 5.19, ... , -0., -0.11]```
 
 <!-- a_4616551 = -0.11 -->
 ```a₁=12.7, a₂=4.25, ... ```
@@ -131,13 +137,32 @@ On va illustrer cette idée en manipulant des séquences, des suites de valeurs.
 ***
 
 
+## Tableaux: random access
+
+- comment savoir la valeur de ```a₇```?
+- début + 6 * (la taille d'une case)
+- ça prend un temps "constant": indépendant de la taille du tableau
+
+***
+
+
 ## Tableaux: parcours
+
+
+```
+a = [a₁, ... , aₙ]
+i = 1
+tant que i <= n:
+   traiter a[i]
+```
+
+- ça prend un temps proportionnel à ```n```
 
 
 ***
 
 
-## Tableaux: limitations
+## Tableaux: limites
 
 - séquence d'objets qui n'ont pas la même taille?
 - insertion au milieu d'un tableau?
@@ -153,11 +178,33 @@ On va illustrer cette idée en manipulant des séquences, des suites de valeurs.
 
 ## Listes
 
+![single_lists_plot](illustrations/figures/single_lists_plot.png)
+
+
+***
+
+
+## Listes
+
+![lists_plot](illustrations/figures/lists_plot.png)
+
 
 ***
 
 
 ## Listes: parcours
+
+```
+elem = début de la liste
+fini = faux
+
+tant que !fini:
+  traiter elem
+  si elem.next:
+    elem = elem.next
+  sinon:
+    fini = vrai
+```
 
 
 ***
@@ -166,11 +213,27 @@ On va illustrer cette idée en manipulant des séquences, des suites de valeurs.
 ## Listes: random access?
 
 
+- on ne connaît l'adesse de `a[i]` que si on a trouvé `a[i-1]`
+- pour trouver ```a[i]```, il faut donc visiter les ```i``` premiers éléments de
+  la liste: si ```i``` est grand, c'est beaucoup plus long que dans un tableau.
+  
+```
+tant que index < i:
+   elem = elem.next
+   index++
+```
+
+
 ***
 
 
 ## Listes: insertion
 
+
+- par contre, insérer un élément est beaucoup plus facile: il suffit de mettre à
+  jour l'attribut `next` de l'élément précédent.
+- ça se fait en temps constant (indépendant de `n` et `i`)
+- les listes offrent donc d'autres compromis que les tableaux
 
 
 
