@@ -13,6 +13,7 @@
 
 - prochain point: 1er mai, avoir une première version des cours
 - 4 séances de 2 heures: 15, 22, 29 mai 2018, 5 juin 2018
+- 18 h -> 20 h
 
 
 ## Plan
