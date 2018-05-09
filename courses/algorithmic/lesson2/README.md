@@ -126,6 +126,10 @@ On va illustrer cette idée en manipulant différentes structures de données.
 ![array_values](illustrations/figures/array_values.png)
 
 
+- ce sont les "typed arrays" en javascript: `Int32Array`, `Float64Array`, ...
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays
+
+
 ***
 
 
@@ -162,6 +166,18 @@ tant que i <= n:
 ***
 
 
+## Exercice
+
+- Que faut-il faire pour insérer un élément au milieu ou a début d'un tableau?
+- À peu près combien d'opérations sont nécéssaires (en fonction de la taille du
+  tableau)?
+- les `Array` proposent les méthodes `push` et `pop`. Est-ce le cas de
+  `Float64Array`? Pourquoi?
+
+
+***
+
+
 ## Tableaux: limites
 
 - séquence d'objets qui n'ont pas la même taille?
@@ -187,6 +203,12 @@ tant que i <= n:
 ## Listes
 
 ![lists_plot](illustrations/figures/lists_plot.png)
+
+
+***
+
+
+## Exercices ...
 
 
 ***
@@ -262,3 +284,37 @@ tant que index < i:
   * un signal audio?
   * les commandes en cours dans un fast-food?
   * ...
+
+
+***
+
+
+## Détail: insertion dans un `Array`
+
+
+![insert_bench_plot](illustrations/figures/insert_bench_plot.png)
+
+
+
+
+---
+
+
+
+## Tri
+
+
+***
+
+
+## Tri par insertion
+
+
+***
+
+
+## in-place: Tri à bulle
+
+
+***
+
