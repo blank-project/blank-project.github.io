@@ -309,12 +309,3 @@ tant que index < i:
 
 ## Tri par insertion
 
-
-***
-
-
-## in-place: Tri à bulle
-
-
-***
-
