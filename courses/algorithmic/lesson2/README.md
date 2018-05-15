@@ -314,3 +314,12 @@ tant que index < i:
 
 - https://fr.wikipedia.org/wiki/Tri_par_insertion
 - exercice
+
+
+***
+
+
+## Tri rapide
+
+- https://fr.wikipedia.org/wiki/Tri_rapide
+- exercice
