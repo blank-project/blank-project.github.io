@@ -37,5 +37,24 @@ function insertionSort(values){
 // https://fr.wikipedia.org/wiki/Tri_rapide
 
 function quicksort(values){
-    // ...
+    return quicksort_part(values, 0, values.length);
 }
+
+
+function quicksort_part(values, low, high){
+    // effectue la partition puis appelle récursivement le tri sur chaque partie
+}
+
+
+function partition(values, low, high){
+    // cette fonction modifie values et retourne un indice i tq low <= i <= high
+    // tel que pour tout j < i values[j] <= values[i]
+    // et pour tout j > i values[j] >= values[i]
+}
+
+// Exercices
+// - Modifier les fonctions de tri pour qu'elles retournent le nombre de
+//   comparaisons effectué
+// - Quel algorithme semble plus efficace pour de petits tableaux? pour de
+//   grands tableaux?
+//
