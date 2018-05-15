@@ -1,12 +1,17 @@
+function swap(array, i, j){
+    let tmp = array[i];
+    array[i] = array[j];
+    array[j] = tmp;
+}
+
+
 function insertion_sort(values){
     let n_comparisons = 0;
     for (let position = 0; position != values.length; position++){
         let insert_pos = position;
         while(insert_pos != 0 && values[insert_pos - 1] > values[insert_pos]){
             n_comparisons++;
-            let tmp = values[insert_pos];
-            values[insert_pos] = values[insert_pos - 1];
-            values[insert_pos - 1] = tmp;
+            swap(values, insert_pos, insert_pos -1);
             insert_pos--;
         }
         if (insert_pos != 0){
@@ -57,9 +62,7 @@ function partition(values, low, high, counter){
         if(down <= up){
             return up;
         }
-        let tmp = values[up];
-        values[up] = values[down];
-        values[down] = tmp;
+        swap(values, up, down)
         up++;
         down--;
     }
