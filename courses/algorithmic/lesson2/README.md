@@ -6,6 +6,9 @@
 
 ## Qu'est-ce qu'on va apprendre dans ce cours?
 
+- des structures de données utiles: listes, tableaux, dictionnaires ...
+- des algorithmes (suites d'opérations)
+- notions de correction et complexité d'un algorithme
 
 ***
 
@@ -309,3 +312,5 @@ tant que index < i:
 
 ## Tri par insertion
 
+- https://fr.wikipedia.org/wiki/Tri_par_insertion
+- exercice
