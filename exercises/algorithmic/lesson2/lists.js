@@ -1,3 +1,14 @@
+
+// on va commencer par implémenter une structure de liste chaînée
+// https://fr.wikipedia.org/wiki/Liste_cha%C3%AEn%C3%A9e
+//
+// le premier type de liste qu'on va implémenter est une liste simplement
+// chaînée (on ne peut la parcourir que du début vers la fin)
+
+
+// une telle liste sera constituée de plusieurs éléments (les maillons de la
+// chaîne) chacun contient une valeur et une référence à l'élément suivant:
+
 class ForwardListElement {
 
     constructor(value, next=null){
@@ -8,48 +19,52 @@ class ForwardListElement {
 }
 
 
+// vous devez maintenant implémenter la liste elle-même.
+// commencez par vous demander quelles conditions doit respecter la liste
+// pour être valide (par exemple, la valeur de l'attribut "next" de chaque
+// élément est l'élément suivant; l'attribut "length" de la liste indique
+// le nombre total d'éléments ...); chaque opération que vous ferez sur la
+// liste devra préserver ces conditions.
+
 class ForwardList {
 
     static insertAfter(listElem, value){
-        let newElem = new ForwardListElement(value, listElem.next);
-        listElem.next = newElem;
-        return newElem;
+        // listElem est un élément dans une liste. Écrivez le code
+        // qui insère juste après listElem, un nouvel élément qui contient
+        // la valeur value.
     }
 
     constructor(elems=[]){
+        // le constructeur d'une liste.
+        // vous pouvez vous aider de la fonction append, qui rajoute un élément
+        // à la fin de la liste (et que vous implémenterez plus tard)
 
         this.first = null;
         this.last = null;
         this.length = 0;
 
-        for (let nextValue of elems){
-            this.append(nextValue);
-        }
-    }
-
-    *[Symbol.iterator]() {
-        if (!this.first) {
-            return;
-        }
-        let current = this.first;
-        while (current) {
-            yield current.value;
-            current = current.next;
-        }
+        // ...
     }
 
     append(value){
-        if (this.last === null){
-            this.first = new ForwardListElement(value);
-            this.last = this.first;
-        }
-        else{
-            this.last = ForwardList.insertAfter(this.last, value);
-        }
-        this.length++;
+        // cette fonction prend une valeur et rajoute un élément à la fin de la
+        // liste qui contient cette valeur.
+        // n'oubliez pas de vous assurez que toutes les conditions qui
+        // rendent une liste valide restent vérifiées après cette opération.
+        // n'oubliez pas le cas d'une liste vide
+
+    }
+
+
+
+    *[Symbol.iterator]() {
+        // pour qu'elle soit utile, il faut pouvoir parcourir la liste.
+        // parcourez la liste et retournez une par une les valeurs qu'elle
+        // contient en utilisant yield
     }
 
     inspect(){
+        // util pour visualiser une liste
         let i = 0;
         let s = 'List (' + this.length + ' elements): [ ';
         for (let e of this){
@@ -69,15 +84,8 @@ class ForwardList {
 }
 
 
-let l1 = new ForwardList(['a', 'b', 135]);
-let l2 = new ForwardList()
-let l3 = new ForwardList('abcedfghijklmnop')
-
-for (let l of [l1, l2, l3]){
-    console.log(l);
-}
-
 ///////////////////////////////////////////////////////////////////////////////
+//
 //
 // Exercices:
 //
