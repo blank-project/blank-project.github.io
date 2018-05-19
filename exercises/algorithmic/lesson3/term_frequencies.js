@@ -82,6 +82,14 @@ function topWords(wordFreq, nWords=15){
 
 // Si nécéssaire, ajouter des stop words au fichier data/stop_words.txt
 
+// Exercice: utilisez la fonction readLines pour lire un fichier ligne par linge
+// (chaque ligne correspond au résumé d'un article de wikipédia) et compter les
+// fréquences de mots dans chaque ligne
+// Écrivez une fonction qui retourne les documents les plus pertinents pour une
+// recherche, par exemple les articles dans lesquels le mot "football" apparaît
+// le plus souvent.
+
+
 let tokenized = tokenize(readFile('data/Histoire_2000.txt'));
 let stopWords = readLines('data/stop_words.txt');
 let wordFreq = wordFrequencies(tokenized);
