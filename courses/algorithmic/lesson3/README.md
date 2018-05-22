@@ -61,7 +61,12 @@
 ## Implémentation: avec une table de hachage
 
 
-- ...
+- on a un certain nombre de "buckets" - par exemple des dossiers
+- on a une "fonction de hachage" qui calcule l'indice d'un bucket pour une
+  donnée à insérer - par exemple extraire la première lettre du nom si on a un
+  classeur par lettre de l'alphabet.
+- c'est ce qui est fait par les objets en javascript
+
 
 
 ***
@@ -69,12 +74,15 @@
 
 ## Implémentation: avec un arbre de recherche
 
+- suppose qu'il y a une relation d'ordre définie pour le type de données qu'on
+  veut ranger dedans
+- les structures d'arbre binaire de recherche comme le red-black tree permettent
+  de retrouver un élément en temps logarithmique
 
 ***
 
 
 ## Exercices
 
-- mini-exercices e.g. carnet d'adresses, index inversé etc
 - fréquences de mots
 
