@@ -20,6 +20,21 @@
 ***
 
 
+## Petites révisions: variables et objets
+
+- https://goo.gl/pgTgE3
+- https://goo.gl/JWWfYz
+- https://goo.gl/1PbSeG
+- https://goo.gl/SffCyi
+- https://goo.gl/5cCzd2
+- https://goo.gl/mzueqU
+- https://goo.gl/k8Qz66
+- https://goo.gl/utGSVY
+
+
+***
+
+
 ## Les dictionnaires
 
 
@@ -31,6 +46,7 @@
 }
 ```
 
+- https://fr.wikipedia.org/wiki/Tableau_associatif
 - vous les connaissez: ce sont les objets en javascript
 - ils associent des clés à des valeurs, comme un carnet d'adresses ou un index
   dans une base de données.
@@ -46,6 +62,12 @@
 
 
 - ...
+
+
+***
+
+
+## Implémentation: avec un arbre de recherche
 
 
 ***

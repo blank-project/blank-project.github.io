@@ -68,7 +68,7 @@ function topWords(wordFreq, nWords=15){
 }
 
 
-let tokenized = tokenize(readFile('data/Histoire_2000.txt'));
+let tokenized = tokenize(readFile('data/Sport_2000.txt'));
 let stopWords = readLines('data/stop_words.txt');
 let wordFreq = wordFrequencies(tokenized);
 removeStopWords(wordFreq, stopWords);
