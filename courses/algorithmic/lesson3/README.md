@@ -79,10 +79,87 @@
 - les structures d'arbre binaire de recherche comme le red-black tree permettent
   de retrouver un élément en temps logarithmique
 
+
 ***
 
 
-## Exercices
+## Exercices: fréquences de mots
 
-- fréquences de mots
+- on peut représenter un texte par la fréquence d'apparition des mots qu'il contient.
+- par exemple:
 
+"un tableau associatif est un type de données associant à un ensemble de clefs
+un ensemble correspondant de valeurs" -> {'associant': 1, 'associatif': 1,
+'clefs': 1, 'correspondant': 1, 'de': 3, 'données': 1, 'ensemble': 2, 'est': 1,
+'tableau': 1, 'type': 1, 'un': 4, 'valeurs': 1}
+
+
+***
+
+
+## fréquences de mots
+
+- on appelle ces représentations "bag of words": "sac de mots", l'ordre des mots
+  est ignoré
+- ces représentations sont beaucoup utilisées pour diverses applications:
+  information retrieval, classification de documents, indexation, topic
+  modelling, ...
+- aujourd'hui on va écrire une fonction qui construit cette représentation et
+  l'appliquer à des articles de wikipédia.
+
+
+
+***
+
+
+## fréquences de mots
+
+- deux étapes:
+  - découper le texte en mots ("tokenization"):
+
+  "un tableau et un dictionnaire" -> ["un", "tableau", "et", "un", "dictionnaire"]
+
+  - compter le nombre d'occurences de chaque mot:
+
+  ["un", "tableau", "et", "un", "dictionnaire"] -> {"dictionnaire": 1, "et": 1, "tableau": 1, "un": 2}
+
+
+***
+
+
+## fréquences de mots: exercices
+
+
+
+***
+
+
+## exemple d'utilisation: topic modelling
+
+- on prend tous les articles dans le dossier 'data' des exercices
+- on compte les fréquences de mots: on obtient une matrice dont chaque ligne
+  correspond à un article et chaque colonne correspond à un mot.
+- on factorise cette matrice: en la décomposant en deux facteurs de rang faible,
+  on obtient des facteurs latents ou "topics"
+
+
+***
+
+
+## exemples de topics
+
+-mots les plus fréquents pour quelques topics:
+
+- 'données', 'base', 'bases', 'table', 'sql', 'gestion', 'modèle', 'les',
+  'transaction', 'systèmes', 'information', 'protection', 'transactions',
+  'sgbd', 'langage', 'data', 'informations', 'relationnelle', 'database',
+  'permet'
+
+- 'lutte', 'kg', 'londres', 'excel', 'london', 'jeux', 'olympiques', 'épreuve',
+  '2012', 'août', 'moins', 'hommes', 'lieu', 'libre', 'gréco', 'romaine',
+  'femmes', '55', '11', '60'
+
+- 'histoire', 'musée', 'historique', 'historiques', 'institut', 'société',
+  'historiens', 'historiographie', 'siècle', 'historien', 'courant', 'idées',
+  'contemporaine', 'française', 'sociale', 'art', 'france', 'comme', 'xxe',
+  'relations'
