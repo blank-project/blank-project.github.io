@@ -60,6 +60,9 @@ function dijkstra(graph, start_node, end_node) {
         unvisited.delete(current_node);
         current_node = closest(unvisited, distances);
     }
+    if (current_node === null){
+        throw Error("cannot reach the destination node (not connected)");
+    }
     return build_path(end_node, start_node, parents);
 }
 
@@ -110,8 +113,7 @@ function writePath(path, out_file) {
 let g = require('./belleville_graph.json');
 let graph = parseGraph(g);
 let start = Object.keys(graph.nodes)[0];
-let end = Object.keys(graph.nodes)[1];
-// let end = Object.keys(graph.nodes)[10];
+let end = Object.keys(graph.nodes)[10];
 let path = dijkstra(graph, start, end);
 
 console.log('path length: ' + path.length);
