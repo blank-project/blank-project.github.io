@@ -44,13 +44,15 @@ function dijkstra(graph, start_node, end_node) {
     distances[start_node] = 0;
     let parents = {};
     let current_node = start_node;
-    while (unvisited.size && current_node !== end_node && current_node !== null) {
+    while (unvisited.size && current_node !== end_node
+           && current_node !== null) {
         let current_distance = distances[current_node];
         for (let neighbor of graph.edges[current_node]) {
             let new_distance = current_distance + distance(
                 graph.nodes[current_node], graph.nodes[neighbor]);
-            if (unvisited.has(neighbor) && (distances[neighbor] === null ||
-                    new_distance < distances[neighbor])) {
+            if (unvisited.has(neighbor)
+                && (distances[neighbor] === null
+                    || new_distance < distances[neighbor])) {
                 distances[neighbor] = new_distance;
                 parents[neighbor] = current_node;
             }
@@ -61,7 +63,6 @@ function dijkstra(graph, start_node, end_node) {
     return build_path(end_node, start_node, parents);
 }
 
-let g = require('./belleville_graph.json');
 
 function parseGraph(graph) {
     let parsed_edges = {}
@@ -100,18 +101,18 @@ function serializePath(path, graph) {
     };
 }
 
-function writePath(path) {
+function writePath(path, out_file) {
     let asString = JSON.stringify(path);
-    fs.writeFileSync('./shortest_path.json', asString, 'utf8');
+    fs.writeFileSync(out_file, asString, 'utf8');
 }
 
 
+let g = require('./belleville_graph.json');
 let graph = parseGraph(g);
 let start = Object.keys(graph.nodes)[0];
-// let end = Object.keys(graph.nodes)[100];
-let end = Object.keys(graph.nodes)[10];
-console.log(graph);
+let end = Object.keys(graph.nodes)[1];
+// let end = Object.keys(graph.nodes)[10];
 let path = dijkstra(graph, start, end);
 
-console.log(path);
-writePath(serializePath(path, graph));
+console.log('path length: ' + path.length);
+writePath(serializePath(path, graph), './shortest_path.json');
