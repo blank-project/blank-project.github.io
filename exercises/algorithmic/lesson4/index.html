@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.links line {
+}
+
+.nodes circle {
+  stroke-width: 1.5px;
+}
+
+</style>
+<svg width="600" height="600"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+
+function scaleX(x){
+return 10 + 550 * x;
+ }
+
+ function scaleY(y){
+return 10 + 550 * y;
+ }
+
+ d3.json("graph.json", draw_graph);
+ d3.json("path.json", draw_graph);
+
+ function draw_graph(error, graph) {
+  if (error) throw error;
+     console.log(graph);
+
+  var link = svg.append("g")
+      .attr("class", "links")
+    .selectAll("line")
+    .data(graph.edges)
+                .enter().append("line")
+                .attr("x1", (e) => scaleX(graph.nodes[e.source].x))
+                .attr("y1", (e) => scaleY(graph.nodes[e.source].y))
+                .attr("x2", (e) => scaleX(graph.nodes[e.target].x))
+                .attr("y2", (e) => scaleX(graph.nodes[e.target].y))
+                .attr("stroke", (e) => e.color)
+     .attr("stroke-width", (e) => e.stroke_width);
+
+
+  var node = svg.append("g")
+      .attr("class", "nodes")
+    .selectAll("circle")
+    .data(Object.keys(graph.nodes))
+    .enter().append("circle")
+                .attr("r", (n) => graph.nodes[n].point_size)
+                .attr("cx", (n) => scaleX(graph.nodes[n].x))
+                .attr("cy", (n) => scaleY(graph.nodes[n].y))
+      .attr("fill", (n) => graph.nodes[n].color);
+ }
+
+</script>
