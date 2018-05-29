@@ -49,6 +49,10 @@ class ForwardList {
         this.length++;
     }
 
+    empty(){
+        return this.length === 0;
+    }
+
     inspect(){
         let i = 0;
         let s = 'List (' + this.length + ' elements): [ ';
@@ -68,13 +72,35 @@ class ForwardList {
     }
 }
 
+function invert(list){
+    if (list.length <= 1){
+        return;
+    }
+    let current = list.first.next;
+    let prev = list.first;
+    let prevprev = null;
+    while(current !== null){
+        prev.next = prevprev;
+        prevprev = prev;
+        prev = current;
+        current = current.next;
+    }
+    prev.next = prevprev;
+    list.last = list.first;
+    list.first = prev;
+}
 
 let l1 = new ForwardList(['a', 'b', 135]);
-let l2 = new ForwardList()
-let l3 = new ForwardList('abcedfghijklmnop')
+let l2 = new ForwardList();
+let l3 = new ForwardList('abcedfghijklmnop');
+let l4 = new ForwardList([['hello']]);
+let l5 = new ForwardList([23, 45]);
 
-for (let l of [l1, l2, l3]){
+for (let l of [l1, l2, l3, l4, l5]){
     console.log(l);
+    invert(l);
+    console.log(l);
+    console.log('----------------');
 }
 
 ///////////////////////////////////////////////////////////////////////////////
