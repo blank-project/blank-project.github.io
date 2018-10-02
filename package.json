@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://www.github.com/blank-project/_blank"
+    "url": "http://www.github.com/blank-project/blank-project.github.io"
   },
   "author": "_blank Team",
   "license": "CC BY-SA 4.0",
@@ -19,5 +19,6 @@
     "gulp-util": "^3.0.7",
     "node-static": "^0.7.9",
     "yargs": "^6.0.0"
-  }
+  },
+  "dependencies": {}
 }
