@@ -18,6 +18,20 @@ header > .title > h1 {
     text-align: center;
 }
 
+/* main */
+
+main {
+    overflow: hidden;
+    padding-top: 180px;
+}
+
+/* container */
+
+.container-fluid {
+    background-color: white;
+    transform: skew(0, -12deg);
+}
+
 /* cards icons */
 
 .card-icon {
@@ -85,6 +99,7 @@ header > .title > h1 {
   grid-template-columns: 100%;
   grid-gap: 15px;
   padding: 15px;
+  transform: skew(0, 12deg);
 }
 
 @media only screen and (min-width: 992px) {
