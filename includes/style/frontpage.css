@@ -1,6 +1,5 @@
 html, body {
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
     background-clip: border-box;
     background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
     font-family: Roboto, sans-serif;
@@ -8,21 +7,29 @@ html, body {
     color: rgba(50, 50, 93, 0.7);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 /* title */
 
 header > .title > h1 {
     font-weight: bold;
     color: #f6f6f6;
-    font-size: 46pt;
+    font-size: 40pt;
     padding: 60px;
     text-align: center;
+    word-break: break-word;
 }
 
 /* main */
 
 main {
+    margin-top: -300px;
     overflow: hidden;
-    padding-top: 180px;
+    padding-top: 300px;
+    flex-grow: 1;
 }
 
 /* container */

@@ -234,6 +234,14 @@ Il existe également d'autres types de listes.
 ```
 
 
+***
+
+
+## Pourquoi le commenter ?
+
+Lorsque l'on programme que ce soit sur un projet personnel ou en groupe, on a tendance à oublier pourquoi est-ce qu'on a écrit telle ou telle partie. C'est pourquoi commenter son code est essentiel, et permet de s'y retrouver même si l'on (re)prend un projet.
+
+
 
 ---
 
