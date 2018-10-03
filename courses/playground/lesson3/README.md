@@ -6,26 +6,6 @@
 
 
 
-## Retour sur le cours précédent
-- De nouvelles commandes pour le terminal
-- Ecriture des premiers scripts
-
-
-
-***
-
-
-
-## Programme du jour : faire bouger des tortures
-- découverte de concepts fondamentaux de la programmation : commandes, expressions, conditions
-- utilisation du langage Logo
-
-
-
-***
-
-
-
 ## Logo
 - Logo est un langage de programmation inventé dans les années 60 à Cambridge pour faire découvrir la programmation
 - Il permet de faire bouger une tortue sur une surface et de la faire dessiner ou écrire du texte

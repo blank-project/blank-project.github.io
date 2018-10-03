@@ -3,19 +3,44 @@
 <head>
   <meta charset="utf-8">
   <title>Base de Données</title>
-  <link rel="stylesheet" href="/includes/style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="/includes/style/frontpage.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body class="summary-page">
-  <div class="title">
-      <h1>Les cours de _blank : Base de Données</h1>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="lesson1">Généralités</a></li>
-      <li><a href="../sql">SQL</a></li>
-      <li><a href="mongodb/">MongoDB</a></li>
-    </ul>
-    <a href="../">Retour</a>
-  </nav>
+<body>
+  <header>
+      <div class="title">
+          <h1>Bases de données</h1>
+      </div>
+  </header>
+  <main>
+      <div class="container-fluid">
+          <div class="container">
+              <div class="card-deck-custom">
+                  <div class="card" data-link="/courses/database/lesson1/">
+                      <div class="card-body">
+                          <h5 class="card-title">Généralités<i class="material-icons">arrow_right</i></h5>
+                          <p></p>
+                      </div>
+                  </div>
+                  <div class="card" data-link="/courses/sql/">
+                      <div class="card-body">
+                          <h5 class="card-title">SQL<i class="material-icons">arrow_right</i></h5>
+                          <p></p>
+                      </div>
+                  </div>
+                  <div class="card" data-link="/courses/database/mongodb/">
+                      <div class="card-body">
+                          <h5 class="card-title">MongoDB<i class="material-icons">arrow_right</i></h5>
+                          <p></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+  <script src="/includes/js/select-course.js"></script>
 </body>
 </html>
