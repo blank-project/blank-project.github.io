@@ -251,7 +251,7 @@ On va pouvoir (re)définir :
 
 Un article sur [FlexBox sur le site CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-Les propriétés FlexBox sont aussi sur la [CheatSheet CSS](https://github.com/blank-project/_blank/blob/master/cheatsheets/css.md).
+Les propriétés FlexBox sont aussi sur la [CheatSheet CSS](https://github.com/blank-project/blank-project.github.io/blob/master/cheatsheets/css.md).
 
 
 

@@ -265,4 +265,4 @@ Note: 3 familles : serif, sans-serif, monospace
 
 # Voilà !
 La CheatSheet CSS est ici :
-[Cheat Sheet CSS](https://github.com/blank-project/_blank/blob/master/cheatsheets/css.md)
+[Cheat Sheet CSS](https://github.com/blank-project/blank-project.github.io/blob/master/cheatsheets/css.md)

@@ -1,6 +1,6 @@
 # \_blank
-The Git repository for the \_blank project  
-This repository contains courses and exercises material.  
+The Git repository for the \_blank project
+This repository contains courses and exercises material.
 It is contributed to by the teachers of the \_blank project.
 
 ## Directory Structure
@@ -8,7 +8,7 @@ It is contributed to by the teachers of the \_blank project.
 ```
 ┬
 ├─ archives : Contains courses from previous years.
-├─ cheatsheets : Contains cheatsheets for different modules     
+├─ cheatsheets : Contains cheatsheets for different modules
 ├─ corrections : Contains corrections to the exercises.
 ├─ courses : Contains courses : one folder per module
 │  ├─ html :  HTML courses
@@ -23,8 +23,10 @@ It is contributed to by the teachers of the \_blank project.
 
 ## Development
 
-`npm install` to install development dependencies.  
+`npm install` to install development dependencies.
 `gulp serve` starts a local server for courses on port _8080_.
+
+Or you can run `python -m SimpleHTTPServer 8080` from the root directory of the project.
 
 See [guidelines for contribution](CONTRIBUTING.MD).
 

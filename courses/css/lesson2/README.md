@@ -121,7 +121,7 @@ Pour cela, on les écrit côte-à-côte.
 Ce sélecteur va sélectionner uniquement :
 - les **liens** (`a`)
 - ayant pour **id** _monLien_ (`#monLien`)
-- ayant pour **classe** _maClass_ (`maClass`)
+- ayant pour **classe** _maClass_ (`.maClass`)
 - avec un **attribut** `data-toggle` avec une **valeur** `switch` (`[data-toggle=switch]`)
 
 
