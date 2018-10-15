@@ -122,7 +122,7 @@ Comment je fais pour les ajouter ?
 
 ## Add
 
-Pour ajouter des fichiers à l'index on execute la commande `git add` en spécifiant le fichier (vous pouvez utiliser l'auto-complétion avec tab pour vous guider).
+Pour ajouter des fichiers à l'index on execute la commande `git add` en spécifiant le chemin d'accès du ou des fichiers que vous voulez ajouter.
 
 Options intéressantes :
 * `-A` ou `--all` : Ajoute tous les fichiers qui ne sont actuellement pas suivis. `/!\` vous pouvez du coup intégrer des fichiers uniquement utiles à vous.

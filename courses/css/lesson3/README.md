@@ -133,7 +133,7 @@ Il existe d'autres valeurs pour la propriété **display** :
 - _table_, _table-row_, _table-cell_ ... (elles sont peu utilisées)
 - _flex_ (et _inline-flex_)
 
-La proptiété Flex nous permettra de gérer de manière très simple la disposition (layout) des élements d'une page.
+La propriété Flex nous permettra de gérer de manière très simple la disposition (layout) des élements d'une page.
 
 Nous verrons plus tard comment l'utiliser
 

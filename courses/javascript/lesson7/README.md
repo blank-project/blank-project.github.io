@@ -425,7 +425,7 @@ Affichez un `console.log` pour chacune des étapes de vie de votre instance Vue.
 
 ## Optimisation des événements et des propriétés (computed)
 
-Reprenons l'exemple des classes avec l'appel de fonction. Nous pouvons voir que si l'on affiche quelque chose à l'exécution de la fonction d'exécution de la fonction qui lorsque l'on modifie le texte, la fonction qui est exécutée pour apposer la classe, l'est, à chaque modification du texte.
+Reprenons l'exemple des classes avec l'appel de fonction. Si l'on modifie le texte, la fonction computed (non impactée par ce changement) est aussi exécutée.
 
 
 

@@ -18,7 +18,7 @@ Pour cela, on utilise des **sélecteurs**.
 
 ### Les sélecteurs
 
-Les sélecteurs vont nous permettre de "viser" un ou plusieurs élements ou groupes.
+Les sélecteurs vont nous permettre de "viser" un ou plusieurs éléments, ainsi que des groupes d'élements (class).
 
 Il en existe de différentes sortes.
 
@@ -85,7 +85,7 @@ Il sert à sélectionner l'élement avec un certain _id_
 
 `#bar` : Sélectionne l’élément qui a l’ID _bar_
 
-(Normalement, si vous avez bien travaillé, il n'y en a qu'un).
+(Normalement, il n'y en a qu'un).
 
 
 ***
@@ -119,10 +119,11 @@ Pour cela, on les écrit côte-à-côte.
 ```
 
 Ce sélecteur va sélectionner uniquement :
-- les **liens** (`a`)
-- ayant pour **id** _monLien_ (`#monLien`)
-- ayant pour **classe** _maClass_ (`.maClass`)
-- avec un **attribut** `data-toggle` avec une **valeur** `switch` (`[data-toggle=switch]`)
+
+Les **liens** (`a`) **AYANT** :
+- pour **id** _monLien_ (`#monLien`) 
+- **ET** pour **classe** _maClass_ (`.maClass`) 
+- **ET** un **attribut** `data-toggle` avec une **valeur** `switch` (`[data-toggle=switch]`)
 
 
 ***
@@ -137,8 +138,8 @@ Pour cela, on les sépare par des virgules (`,`).
 ```
 
 Ce sélecteur va sélectionner :
-- les liens (`a`)
-- les div avec une **class** _test_ (`div.test`)
+
+les liens (`a`) **ET** les div avec une **class** _test_ (`div.test`)
 
 
 ***
@@ -153,8 +154,8 @@ Pour cela on sépare les sélecteurs par un espace (` `).
   a.img-link img
 ```
 Ce sélecteur va sélectionner
-- les images (`img`)
--  contenues dans les liens (`a`) avec une **class** _img-link_ (`.img-link`)
+
+les images (`img`) **CONTENUES** dans les liens (`a`) qui ont une **class** _img-link_ (`.img-link`)
 
 
 ***

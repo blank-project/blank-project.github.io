@@ -106,7 +106,7 @@ Cette balise sert à définir lorsque l'on définit un article.
 
 
 ## Aside
-Elle définit une partie qui doit être mise sur le côté (d'où son nom)
+Elle définit une partie moins importante qui peut être mise de côté (d'où son nom). Généralement celq correspond à une table des matières, des pubs, des propositions d'article, etc.
 ```html
 <aside>
  <p>olé !</p>
@@ -361,4 +361,4 @@ Un tableau est bien uniquement pour représenter des données.
 
 
 
-#The end !
+# The end !
