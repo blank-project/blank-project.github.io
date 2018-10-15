@@ -41,7 +41,7 @@ Note: Préciser le fonctionnement de la balise source.
 ***
 
 
-#### Formats audio supportés
+#### Formats audio supportés
 
 - ogg : `audio\ogg`
 - mp3 : `audio\mpeg`
@@ -51,7 +51,7 @@ Note: Préciser le fonctionnement de la balise source.
 ***
 
 
-#### Les types MIME (ou Media Type).
+#### Les types MIME (ou Media Type).
 
 Le type MIME indique dans quelle format se trouve une ressource.
 
@@ -142,4 +142,4 @@ La balise `iframe` permet d'intégrer des pages web externe dans votre site web 
 
 
 
-#The end !
+# The end !

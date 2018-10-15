@@ -8,7 +8,7 @@
 
 **Git** un outil de gestion de version. Il permet de gérer les versions de votre code et de le partager, l'ouvrir, le gérer et vous y retrouver.
 
-**Github** est un site internet [https://github.com](https://github.com) qui permet d'héberger vos documents gérés avec Git et de les mettre à disposition sur internet permettant la gestion des problèmes, l'évolution, la demande de nouveauté, etc.
+**Github** est un site internet [https://github.com](https://github.com) qui permet d'héberger vos documents gérés avec Git et de les mettre à disposition sur internet permettant la gestion des bug, l'évolution, la demande de nouveauté, etc.
 
 
 
@@ -17,9 +17,8 @@
 
 
 ## La gestion de version
-C'est bien ! Mais encore ?
 
-Plein de programmes vous permettent de gérer vos sources (code & documents), **git** est le plus connu, mais il y a aussi certains autre acteurs, comme **Mercurial** ou **Subversion** qui en sont les alternatives les plus connues.
+Plein de programmes vous permettent de gérer vos sources (code & documents), **git** est le plus connu. Il y a aussi certains autre acteurs, comme **Mercurial** ou **Subversion**.
 
 
 ***
@@ -27,7 +26,7 @@ Plein de programmes vous permettent de gérer vos sources (code & documents), **
 
 ## Pourquoi git du coup ?
 
-**Git** est le programme le plus répandu pour gérer vos sources. Il est plutôt facile d'accès mais répond très bien aux problèmes plus complexes avec des commandes plus complètes. C'est aussi le plus documenté.
+**Git** est le programme le plus répandu pour gérer vos sources. Il est difficile d'accès mais répond très bien aux problèmes des plus simples aux plus complexes.
 
 
 
@@ -36,14 +35,14 @@ Plein de programmes vous permettent de gérer vos sources (code & documents), **
 
 
 ## Et github ?
-Nous permet de visualiser tout ça et de le stocker sur internet ! Encore, il ya certains concurents, comme [Bitbucket](https://bitbucket.org/) & [GitLab](https://about.gitlab.com/).
+C'est une application web qui nous permet de visualiser tout ça ! Encore, il y a certains concurents, comme [Bitbucket](https://bitbucket.org/) & [GitLab](https://about.gitlab.com/).
 
 
 ***
 
 
-##Ça ressemble à quoi ?
-[Clique ici !](https://github.com/blank-project/_blank/)
+## Ça ressemble à quoi ?
+[Clique ici !](https://github.com/blank-project/blank-project.github.io/)
 
 
 
@@ -79,7 +78,15 @@ Prenons du temps pour réflechir aux mécanismes dont on pourrait avoir besoin p
 ***
 
 
-## Déjà configurez un peu
+## Installation
+
+Installez git à l'aide de votre gestionnaire de packages (`apt` pour Ubuntu).
+
+
+***
+
+
+## Configuration
 `git config --global user.name "Prénom Nom"`
 
 `git config --global user.email "monemail@yooho.com"`
@@ -89,11 +96,11 @@ Prenons du temps pour réflechir aux mécanismes dont on pourrait avoir besoin p
 
 
 ## Initialisation
-`git init` permet d'initialiser le dossier courant comme répertoire Git.
+`git init` permet d'initialiser le **dossier courant** comme répertoire Git.
 
 Un répertoire **git** est votre espace de travail. C'est le dossier dans lequel se trouvera vos fichiers et votre code à suivre.
 
-Vous pouvez vérifier que le répertoire a été bien initié en vérifiant qu'un dossier `.git` a été créé dans votre espace de travail.
+Vous pouvez vérifier que le répertoire a été bien initié en vérifiant qu'un dossier `.git` (dossier caché) a été créé dans votre espace de travail.
 
 
 ***

@@ -177,7 +177,7 @@ Il existe également d'autres types de listes.
       <li>Element 3</li>
     </ol>
 ```
-><ol>
+<ol>
   <li>Element 1</li>
   <li>Element 2</li>
   <li>Element 3</li>
@@ -247,6 +247,11 @@ Lorsque l'on programme que ce soit sur un projet personnel ou en groupe, on a te
 
 
 
+## Hierarchie HTML
+Chaque balise HTML peut contenir un ou plusieurs éléments. Seul la sémantique fait foi. En effet, on ne peut avoir que des balises **li** dans une liste (ordonnée ou non), un lien **a** peut avoir un paragraphe à l'intérieur, etc.
+
+
+
 #Voilà !
 
-La cheatsheet HTML est ici : [Cheat Sheet HTML](https://github.com/blank-project/_blank/blob/master/cheatsheets/html.md)
+La cheatsheet HTML est ici : [Cheat Sheet HTML](https://github.com/blank-project/blank-project.github.io/blob/master/cheatsheets/html.md)

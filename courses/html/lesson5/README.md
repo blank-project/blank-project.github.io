@@ -9,9 +9,9 @@
 Les métadonnées sont des _données_ sur des _données_ (DonnéeCeption !).
 
 On peut citer par exemple :
-- les champs **artiste**, **album**, etc ... d'un fichier mp3
+- les champs **artiste**, **album**, etc. d'un fichier mp3
 - l'auteur d'un article
-- la taille d'un fichier, son extension ...
+- la taille d'un fichier, son extension
 - la date et la position géographique d'une photo
 
 
@@ -30,9 +30,9 @@ Elle se placent dans la balise `<head>`.
 ***
 
 
-### `<title>`
+### `<title>`
 
-On l'a déja vue, la balise `<title>` sert à afficher le titre de la page.
+La balise `<title>` sert à afficher le titre de la page.
 
 Celui-ci s'affiche dans la fenêtre ou l'onglet de votre navigateur.
 
@@ -217,8 +217,27 @@ Définir la langue d'un élément :
 ***
 
 
-##Conclusion
-Nous ferons un cours spécifique sur le référencement en temps voulu mais ceci étant dit vous avez les bases pour commencer à mettre en place quelque chose. Vous pouvez les soumettre directement aux moteurs de recherches, ou alors faire apparaitre votre site via des liens à partir d'autres sites.
+## Bonnes pratiques
+Respectez la sémantique HTML. Une liste pour une liste, un titre pour un titre, les balises `<b>` pour ce qui est important, etc. Cette sémantique permet aux robots de "parser" la page et d'en extraire les informations ainsi que de les classer par importance.
 
-N'oubliez pas aussi qu'une mise à jour régulière vous aidera à être bien référencé.
-<!-- TODO cours réel sur le référencement -->
+Note : Marin => faire un point sur le fonctionnement d'un moteur de recherche.
+
+
+***
+
+
+## Backlinks
+Un backlink est un lien qui redirige vers votre page. Plus il y en a, plus votre site va être visité souvent par les moteurs de recherche. Ils peuvent être interne ou externes à votre site.
+Plus une page a de backlinks, plus elle est importante. Veillez à faire attention aux liens qui vous mettez en place sur votre site internet, son bon référencement en dépend !
+
+
+
+---
+
+
+
+## Conclusion
+Nous avons vu rapidement comment fonctionne le SEO (Search Engine Optimization). Si vous voulez aller plus loin, voici quelques ressources pouvant vous être utile : 
+- [https://moz.com/beginners-guide-to-seo](https://moz.com/beginners-guide-to-seo)
+- [https://www.entrepreneur.com/article/231235](https://www.entrepreneur.com/article/231235)
+- [https://www.hobo-web.co.uk/seo-tutorial/](https://www.hobo-web.co.uk/seo-tutorial/)
