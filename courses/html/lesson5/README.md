@@ -220,7 +220,7 @@ Définir la langue d'un élément :
 ## Bonnes pratiques
 Respectez la sémantique HTML. Une liste pour une liste, un titre pour un titre, les balises `<b>` pour ce qui est important, etc. Cette sémantique permet aux robots de "parser" la page et d'en extraire les informations ainsi que de les classer par importance.
 
-Note : Marin => faire un point sur le fonctionnement d'un moteur de recherche.
+Note: Marin => faire un point sur le fonctionnement d'un moteur de recherche.
 
 
 ***
