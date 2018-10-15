@@ -174,6 +174,15 @@ Pour définir une ancre :
 
 
 
+## Olé !
+![ole.gif](ole.gif)
+
+
+
+---
+
+
+
 # Application
 
 Créer une page HTML avec du contenu et un menu pour cibler ces éléments avec une liste à puces.
