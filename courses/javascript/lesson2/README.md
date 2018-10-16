@@ -217,7 +217,6 @@ while (i < 100) {
 do {
     //
 } while(<condition>);
-
 ```
 
 

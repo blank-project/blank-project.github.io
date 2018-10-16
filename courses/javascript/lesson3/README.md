@@ -183,7 +183,7 @@ Le scope est le contexte d'exécution (fonction actuelle). Chaque variable a son
 ***
 
 
- ,## J'ai pas tout compris...
+## J'ai pas tout compris...
 Prenon un exemple :
 
 ```js

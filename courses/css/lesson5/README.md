@@ -113,9 +113,9 @@ Voici les valeurs possibles :
 
 ## Les expressions
 
- Elles sont en fait des tests logiques et leur resultat est vrai ou faux.
+ Elles sont en fait des tests logiques et leurs resultats sont vrai ou faux.
 
- Elles sont reliées entre elles par des opérteurs logiques `and`, `,` (qui signifie `ou`), `not`, et `only`.
+ Elles sont reliées entre elles par des opérateurs logiques `and`, `,` (qui signifie `ou`), `not`, et `only`.
 
 
 ***

@@ -182,7 +182,7 @@ C'est une entité qui va nous permettre de stocker une valeur (quelle qu'elle so
 ```js
 var toto = "olé";
 ```
-Ci-dessus, j'ai créé une variable qui a pour nom `toto` et je lui ai ssocié la valeur `"olé"` à l'aide du symbole `=`.
+Ci-dessus, on crée une variable qui a pour nom `toto` et on lui associe la valeur `"olé"` à l'aide de l'opérateur d'assignation `=`.
 
 
 ***
