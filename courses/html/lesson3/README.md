@@ -183,18 +183,4 @@ Pour définir une ancre :
 
 
 
-# Application
-
-Créer une page HTML avec du contenu et un menu pour cibler ces éléments avec une liste à puces.
-
-Pro Tips : 
-- Pour faire référence aux id, utiliser le caractère `#`.
-- Pour écrire du contenu factice vous pouvez utiliser un <a href="https://www.lipsum.com/" target="_blank">lorem ipsum</a>
-
-
-
----
-
-
-
 #The end !

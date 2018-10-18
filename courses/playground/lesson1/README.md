@@ -191,12 +191,13 @@ echo $SHELL
 
 
 
-## Rappel sur les chemins :
-* Un chemin absolu commence par / et indique le chemin vers un fichier ou un dossier depuis la racine de l'arborescence
+## Les chemins d'accès :
+* Un chemin d'accès est une liste de dossiers (séparés par des `/`) indiquant un dossier de destination ou un fichier.
+* Un chemin absolu commence par / et indique le chemin vers un fichier ou un dossier depuis la racine de l'arborescence.
 ```
 /var/log/truc/system.log
 ```
-* Un chemin relatif est indiqué par rapport à la position acutelle dans le shell
+* Un chemin relatif est indiqué par rapport à la position acutelle.
 ```
 ../machin/truc/voila
 ```

@@ -1,30 +1,14 @@
-# Introduction à la programmation part. 1
-
-
-
-***
-
-
-
-## Logo
-- Logo est un langage de programmation inventé dans les années 60 à Cambridge pour faire découvrir la programmation
-- Il permet de faire bouger une tortue sur une surface et de la faire dessiner ou écrire du texte
-- C'est un language qui possède la plupart des concepts fondamentaux des autres langages modernes (comme JS, PHP, C, Java, etc.)
-
+# Git & Github
 
 
 ***
 
 
+## C'est quoi ?
 
-## Prise en main de Turtle Logo
-- Aller sur https://inexorabletash.github.io/jslogo/
-- Écrire le programme suivant dans l'éditeur, puis appuyer sur Run ou CTLR+Enter :
-```
-fd 100
-print "Bonjour\ monde
-```
-- La tortue doit avancer et "Bonjour monde" doit être écrit dans la partie texte
+**Git** un outil de gestion de version. Il permet de gérer les versions de votre code et de le partager, l'ouvrir, le gérer et vous y retrouver.
+
+**Github** est un site internet [https://github.com](https://github.com) qui permet d'héberger vos documents gérés avec Git et de les mettre à disposition sur internet permettant la gestion des bug, l'évolution, la demande de nouveauté, etc.
 
 
 
@@ -32,51 +16,17 @@ print "Bonjour\ monde
 
 
 
-## L'espace de la tortue 1/2
-![Coordonnées](ref_1.jpg)
+## La gestion de version
 
-
-
-***
-
-
-
-## L'espace de la tortue 2/2
-![Angles](ref_2.jpg)
-
+Plein de programmes vous permettent de gérer vos sources (code & documents), **git** est le plus connu. Il y a aussi certains autre acteurs, comme **Mercurial** ou **Subversion**.
 
 
 ***
 
 
+## Pourquoi git du coup ?
 
-## Commandes pour déplacer la tortue
-- Une commande correspond à l'appel d'une procedure avec ses arguments, c'est-à-dire une ligne de programme
-- Les procèdures pour déplacer la tortue utilisent un nombre comme unique argument
-- `fd expression` ou `forward expression` pour avancer la torture (points)
-- `bk expression` ou `backward expression` pour reculer la tortue (points)
-- `rt expression` ou `right expression` pour tourner la tortue à droite (degrés)
-- `lt expression` ou `left expression` pour tourner la tortue à gauche (degrés)
-
-
-
-***
-
-
-
-## Autres commandes utiles
-- `cs` ou `clearscreen` permet de réinitialiser l'écran
-- `ct` ou `cleartext`permet d'effacer la partie texte
-- `home` ramène la tortue au milieu de l'écran (position 0, 0)
-
-
-
-***
-
-
-
-## Exercice 1
-- Faire dessiner un carré par la tortue
+**Git** est le programme le plus répandu pour gérer vos sources. Il est difficile d'accès mais répond très bien aux problèmes des plus simples aux plus complexes.
 
 
 
@@ -84,19 +34,15 @@ print "Bonjour\ monde
 
 
 
-## Expressions
-- Une expression est le résultat d'une commande ou d'une opération
-- Exemples d'expressions :
-```
-2+2
-random 10
-```
-- Les expression s'utilisent comme arguments des procédures, comme par exemple dans le programme suivant :
-```
-cs
-rt random (90*4)
-fd (random 100)*2
-```
+## Et github ?
+C'est une application web qui nous permet de visualiser tout ça ! Encore, il y a certains concurents, comme [Bitbucket](https://bitbucket.org/) & [GitLab](https://about.gitlab.com/).
+
+
+***
+
+
+## Ça ressemble à quoi ?
+[Clique ici !](https://github.com/blank-project/blank-project.github.io/)
 
 
 
@@ -104,43 +50,10 @@ fd (random 100)*2
 
 
 
-## Conditions
-- Une condition permet d'exécuter des commandes en fonction du résultat d'un test
-- Une condition est soit vraie, soit fausse, et se construit avec =, <, >
-- Syntaxe en Logo :
-```
-if condition [ commandes ... ]
-ifelse condition [ commandes ... ] [ commandes ... ]
-```
-- Exemples :
-```
-if 2+2=4 [ print "Toto ]
-ifelse (random 2) = 0 [ rt 10 fd 10 ] [ bk 10]
-```
+## Les principes de bases
+#### Exercice :
 
-
-
-***
-
-
-
-## Exercice 2
-1. L'expression `last mousepos` donne la position en hauteur de la souris, afficher sa valeur avec `print` et trouver le milieu de l'écran (la valeur 0)
-2. Faites :
-    - *avancer* la tortue de 10 si elle est vers le haut de l'écran
-    - *reculer* la tortue de 10 si elle est vers le bas de l'écran
-
-
-
-***
-
-
-
-## Exercice 2 (suite)
-1. L'expression `first mousepos` donne la position en largeur de la souris, afficher sa valeur avec `print` et trouver le milieu de l'écran (la valeur 0)
-2. En plus de la première partie de l'exercie, faites :
-    - *tourner vers la droite* de 10 la tortue si la souris est à droite de l'écran
-    - *tourner vers la gauche* de 10 la tortue si la souris est à gauche de l'écran
+Prenons du temps pour réflechir aux mécanismes dont on pourrait avoir besoin pour versionner notre code en local uniquement.
 
 
 
@@ -148,6 +61,304 @@ ifelse (random 2) = 0 [ rt 10 fd 10 ] [ bk 10]
 
 
 
-## La prochaine fois
-- Toujours faire bouger la tortue
-- Découverte des variables et des boucles
+## Les principaux mécanismes de Git
+* Index
+* Commit
+* Branches
+
+
+
+---
+
+
+
+## Les commandes principales
+
+
+***
+
+
+## Installation
+
+Installez git à l'aide de votre gestionnaire de packages (`apt` pour Ubuntu).
+
+
+***
+
+
+## Configuration
+`git config --global user.name "Prénom Nom"`
+
+`git config --global user.email "monemail@yooho.com"`
+
+
+***
+
+
+## Initialisation
+`git init` permet d'initialiser le **dossier courant** comme répertoire Git.
+
+Un répertoire **git** est votre espace de travail. C'est le dossier dans lequel se trouvera vos fichiers et votre code à suivre.
+
+Vous pouvez vérifier que le répertoire a été bien initié en vérifiant qu'un dossier `.git` (dossier caché) a été créé dans votre espace de travail.
+
+
+***
+
+
+## Status
+
+Actuellement vous devez n'avoir aucun fichier dans votre index **git**. Pour vérifier cela vous pouvez executer la commande `git status`. Tout est expliqué avec le resultat de la commande.
+
+Lancez là maintenant et observez le résultat !
+
+Vous devez avoir plein de lignes rouges qui disent que vos fichiez ne sont pas suivis !
+
+Comment je fais pour les ajouter ?
+
+
+***
+
+
+## Add
+
+Pour ajouter des fichiers à l'index on execute la commande `git add` en spécifiant le chemin d'accès du ou des fichiers que vous voulez ajouter.
+
+Options intéressantes :
+* `-A` ou `--all` : Ajoute tous les fichiers qui ne sont actuellement pas suivis. `/!\` vous pouvez du coup intégrer des fichiers uniquement utiles à vous.
+* `-i` : Lance le mode interactif pour vous guider.
+
+_PS : Pour retirer de l'index un fichier `git rm`_
+
+***
+
+
+## Commit
+Ok et je valide comment les modifications des fichiers ajoutés à l'index ? Avec la commande `git commit`.
+
+Options intéressantes :
+* `-a` : Commit tous les fichiers actuellement suivis et modifiés.
+* `-m` : Spéficie le message de commit.
+* `--amend` : Modifie le message de commit que vous avez spécifié.
+
+Vous pouvez spécifier les fichiers que vous souhaitez commiter en écrivant leur chemin d'accès relatif séparé par des espaces.
+
+Note: Les fichiers sont ajouté uniquement une fois à l'index. Une fois ajouté, ils sont suivis, et il faut valider les modifications à chaque fois du coup.
+
+
+***
+
+
+## Pause exercice !
+Maintenant reprenez les commandes et sauvegardez votre espace de travail "cours" !
+
+Pour vérifier que tout s'est bien passé, votre copie de travail doit être propre lorsque vous exécutez `git status`.
+
+
+***
+
+
+## Ok et les branches alors ?
+![branch yourserlf](git.jpg)
+
+C'est la partie la plus intéressante !
+
+
+***
+
+
+## Petit rappel sur le mécanisme
+Une branche n'est qu'un label apposé sur un commit. Un commit n'appartient pas à une branche mais ne peut pas flotter dans le vide.
+
+Note:un commit est un engagement sur votre copie de travail.
+
+
+***
+
+
+## Encore une fois, sachez où vous êtes !
+Utilisez la commande `git branch` pour savoir sur quelle branche vous êtes actuellement.
+
+Options utiles :
+* `[name]` : Crée une branche ayant ce nom
+* `-d` supprime une branche et tous les commits qui y sont attaché. Et seulement à cette dernière.
+
+
+***
+
+
+## Changer de branche
+Pour changer de branche, on utilise la commande `git checkout [name]`.
+
+Options utiles :
+* `-b` : Crée la branche avant de basculer dessus
+
+
+***
+
+
+## Et la fusion ?
+Placez vous dans la branche où vous voulez continuer votre travail, et ensuite exécutez la commande `git merge [name]`. Celle-ci fusionne la branche cité dans la branche courante.
+
+
+***
+
+
+## Tags
+
+Un tag (ou étiquette) permet d'identifier un commit donné.
+
+Lister les tags : `git tag`
+
+Créer un tag : `git tag <TAG> [<COMMIT>]`
+
+
+***
+
+
+
+## Et plein d'autres ...
+
+* `git cherry-pick` : Récupère un commit d'une autre branche et l'applique dans la branche courante.
+* `git reset` : Opère au niveau des commits
+* `git stash` : Stock les fichiers en cours de modification et nettoie la copie de travail courante. Vous pouvez réappliquer les modifications ulterieurement avec `git stash apply` & `git stash pop`
+* ...
+
+
+
+---
+
+
+
+## Mais t'avais pas dit qu'on allait utiliser github ?
+![holdon](holdon.jpg)
+
+
+***
+
+
+## De quoi a-t-on besoin ?
+#### Exercice :
+
+Prenons du temps pour réflechir aux mécanismes dont on pourrait avoir besoin pour versionner notre code en local uniquement.
+
+
+***
+
+
+## Les concepts de bases :
+* Remote
+* Pull
+* Push
+
+
+***
+
+
+## Remote
+On utilise la commande `git remote` pour gérer nos remotes.
+
+Options :
+
+* `add [name] [url]` : Crée une remote avec un nom et une url de destination
+* `rm [name]` : Supprime une remote avec ce nom
+* `set-url [name]` : Modifie l'url d'une remote
+* `-v` : Liste les remotes actuellement enregistrées
+
+
+***
+
+
+## Fetch
+Eh on en a pas parlé !
+C'est pour récupérer l'état du serveur. Et vérifier qu'il n'y a pas de mise à jour que vous n'ayez pas de votre côté. Elle s'utilise comme ceci : `git fetch`
+
+
+***
+
+
+## Pull
+On utilise cette commande pour récupérer les données d'une branche du serveur. On pull une branche à la fois. Voici sa syntaxe :
+`git pull [remote_name] [branch_name]`. Vous avez souvent des raccourcis possibles mais ils mènent souvent à des erreurs.
+
+
+***
+
+
+## Push
+Poussez vos modifications locales sur le serveur ! `git push [remote_name] [branch_name]`.
+
+
+***
+
+
+## Exercice :
+Créez vous un répertoire github et poussez vos cours dessus !
+
+
+
+---
+
+
+
+![thanksgoditsover](thanksgoditsover.jpg)
+
+
+
+---
+
+
+
+![nope](nope.jpg)
+
+
+
+---
+
+
+
+## Plus de fonctionnalités Github
+Github nous offre certaines fonctionnalités supplémentaires.
+
+
+
+---
+
+
+
+## Issues
+Chaque répertoire possède un onglet que l'on appelle `Issues`. Il est utilisé pour lister, reporter, ou discuter d'un problème. Chaque `Issue` possède un statut qui peut être :
+- Open
+- Closed
+
+Note: Montrer des exemples.
+
+
+
+---
+
+
+
+## Fork
+Chaque répertoire peut être `Fork`, cela signifie que l'on créé un répertoire "mirroir" de l'original sur notre compte. C'est une technique souvent utilisé pour créer un projet à partir d'un template, ou juste pour modifier un code existant et l'adapter à nos besoins.
+
+
+
+---
+
+
+
+### Pull Request
+Une `Pull Request` est une requête pour `merge` une branche dans une autre. Cela peut concerner un seul répertoire, ou un répertoire et son `Fork`.
+
+Cela permet à la fois de vérifier le code, et discuter des problèmes le cas échéant.
+
+Au niveau des bonnes pratiques, une `Pull Request` (PR) est effectuée pour chaque `Issue` à traiter.---
+
+
+
+---
+
+
+
+![thanksgoditsover](thanksgoditsover.jpg)
