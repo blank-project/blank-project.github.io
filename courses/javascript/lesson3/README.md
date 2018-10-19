@@ -127,7 +127,7 @@ function isPositive(number) {
 }
 ```
 
-Il est possible d'utiliser n'importe quel valeur comme Exception.  
+Il est possible d'utiliser n'importe quel valeur comme Exception.
 
 On utilise en général l'objet `Error` (on y reviendra plus tard).
 
@@ -163,10 +163,6 @@ try {
 
 ---
 
-
-
-
----
 
 
 

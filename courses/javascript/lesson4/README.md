@@ -1,4 +1,4 @@
-# Les variables complexes : objets et tableaux
+# Objets et Tableaux
 
 
 
@@ -7,6 +7,7 @@
 
 
 ## Les variables complexes
+
 Certains types de variables (ou d'objets) plus complexes nous permettent de stocker des données plus spécifiques. Ces variables complexes sont généralement considérées comme des objets.
 
 
@@ -24,6 +25,7 @@ Certains types de variables (ou d'objets) plus complexes nous permettent de stoc
 
 
 ## Un objet en JavaScript
+
 Un objet en JS est différent des autres langages. En effet, avec la norme EcmaScript 5.1 (celle que nous utilisons) un objet est une variable comportant des propriétés et méthodes.
 
 
@@ -118,7 +120,7 @@ console.log(toto); /* output : { name : 'en fait' } */
 ## Supprimer une propriété
 Pour supprimer une propriété on utilise le mot clé `delete` suivi du chemin d'accès à la propriété.
 
-```
+```js
 var toto = { name : "_blank", purpose : "dev web" };
 delete toto.name;
 console.log(toto); /* output : {} */
