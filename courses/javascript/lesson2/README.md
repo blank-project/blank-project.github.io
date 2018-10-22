@@ -7,10 +7,19 @@
 
 
 ## Structures de contrôle ?
-* “une structure de contrôle est une commande qui contrôle l'ordre dans lequel les différentes instructions d'un algorithme ou d'un programme informatique sont exécutées”
+
+“une structure de contrôle est une commande qui contrôle l'ordre dans lequel les différentes instructions d'un algorithme ou d'un programme informatique sont exécutées”
 (Wikipédia)
-* Sans structure de contrôle, on ne pourrait pas faire grand chose, elles sont essentielles et on les retrouve dans quasiment tous les langages de programmation (bien que sous différentes formes)
-* Un programme Javascript est exécuté ligne par ligne. Les structures de contrôles vont nous permettre de manipuler cet ordre
+
+
+
+***
+
+
+
+Sans structure de contrôle, on ne pourrait pas faire grand chose, elles sont essentielles et on les retrouve dans quasiment tous les langages de programmation impératif (bien que sous différentes formes)
+
+Un programme Javascript est exécuté ligne par ligne. Les structures de contrôles vont nous permettre de manipuler cet ordre
 
 
 
@@ -122,7 +131,7 @@ if(aDitBonjour) {
 * Exemple :
 ```js
 var age = 20;
-if(age > 65) {
+if (age > 65) {
 	console.log("T’es trop vieux");
 } else if (age >= 18){
     console.log("Tu peux rentrer");
@@ -169,7 +178,7 @@ var retourTernaire = aDitBonjour ? 3 : 4;
 * Cette suite de valeur peut être des entiers ou venir d'un ensemble (on le verra plus tard)
 * Syntaxe générique :
 ```js
-for (<instruction de départ> ; <condition de fin> ; <instruction exécutée à chaque passaque>) {
+for (<instruction de départ> ; <condition de fin> ; <instruction exécutée à chaque passage>) {
     //
 }
 ```
