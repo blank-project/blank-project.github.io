@@ -4,8 +4,6 @@
 ***
 
 
-## La dernière fois
-
 - Logo sur https://inexorabletash.github.io/jslogo/
 - Faire bouger la tortue
 - Expressions
