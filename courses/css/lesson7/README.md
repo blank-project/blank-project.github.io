@@ -14,8 +14,7 @@ C'est un framework CSS qui nous simplifie la vie ! Il nous permet de développer
 
 
 ## Mais c'est quoi un framework ?
-C'est un code source qui nous donne une structure et nous force à utiliser certains éléments tout en nous donnant des éléments facilitant le développement.
-_ça fait deux fois élément je sais :(_
+C'est un code source qui nous donne une structure et nous force à utiliser certains éléments html tout en nous donnant des pratiques facilitant le développement.
 
 
 ***
@@ -48,7 +47,7 @@ Oui ! Et les plus connus sont : [Foundation](http://foundation.zurb.com/), [Mate
 
 ## En gros ça vous permet de :
 
-Faire ce que vous avez fait mais plus rapidement et plus facilement. Mais parfois ça a l'air quand même magique.
+Faire ce que vous avez fait mais plus rapidement et plus facilement. Mais ça peut parraitre magique, c'est pourquoi on a d'abord étudié le CSS sans framework.
 
 ![letsdoit](letsdoit.jpeg)
 

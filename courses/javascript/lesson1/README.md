@@ -116,15 +116,14 @@ Si seulement on pouvait utiliser la dernière seulement... La norme EcmaScript e
 
 |Implémentation|Applications|EcmaScript version|
 |-|-|-|
-|SpiderMonkey|Firefox, Adobe Acrobat|5.1 & 6 & 7|
-|V8|Google Chrome, Node.js, Opera|6|
-|JavaScriptCore|WebKit, Safari|6|
-|Chakra|Microsoft Edge|5.1, & 6|
+|SpiderMonkey|Firefox, Adobe Acrobat|5.1 & 6 & 7 & +|
+|V8|Google Chrome, Node.js, Opera|5.1 & 6 & 7 & +|
+|JavaScriptCore|WebKit, Safari|6 & 7 & +|
+|Chakra|Microsoft Edge|5.1 & 6 & 7 & +|
 |JerryScript|IoT Devices|5.1|
-|JScript 9.0|Internet Explorer|5.1|
 
 
-Note: IOT = Internet of thinges (wtf montres connectées, domotique, etc.
+Note: IOT = Internet of thinges (montres connectées, domotique, etc).
 
 
 

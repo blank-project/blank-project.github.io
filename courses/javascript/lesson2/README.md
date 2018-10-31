@@ -83,7 +83,7 @@ console.log((1==1)||(1!=1)); // true
 
 
 
-# Structures de contrôle principales en JS
+# Structures de contrôle principales en Javascript
 
 
 
@@ -139,6 +139,33 @@ if (age > 65) {
 	console.log("C’est mort");
 }
 ```
+
+
+
+---
+
+
+
+## Ternaires
+Il est possible de simplifier l'écriture d'une condition `if else` en utilisant une notation ternaire. Cette dernière est écrite comme ceci : `<condition> ? <si true> : <si false>;`.
+```js
+var aDitBonjour = true;
+aDitBonjour ? console.log('Tranquille') : console.log('Attention..');
+```
+
+
+***
+
+
+## Conseils sur les ternaires
+- Attention, les ternaires complexifient rapidement le code et ne facilitent pas la lisibilité. Ne les utilisez pas tout le temps !
+- Elles renvoient toujours quelque chose. Si on exécute le code suivant par exemple, combien vaudra `retourTernaire` ? 
+```js
+var aDitBonjour = true;
+var retourTernaire = aDitBonjour ? 3 : 4;
+// Retour ternaire vaudra combien ?
+```
+- On ne peut exécuter qu'une instruction par bloc.
 
 
 
