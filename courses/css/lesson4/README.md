@@ -8,11 +8,11 @@
 
 
 
-## Le positionnement des élements
+## Le positionnement des éléments
 
 
-Les élements HTML se positionnent naturellement de la façon suivante :
-- Les élements `block` se positionnent les uns sous les autres.
+Les éléments HTML se positionnent naturellement de la façon suivante :
+- Les éléments `block` se positionnent les uns sous les autres.
 - les éléments `inline` et `inline-block` se positionnent les uns à la suite des autres.
 
 Et cela dans l'ordre du document (le _flow_ en anglais).
@@ -68,7 +68,7 @@ Un élement positionnés de manière relative est positionné par rapport à sa 
 
 Il occupe toujours de l'espace dans la page.
 
-Cela permet notamment de décaler des élements.
+Cela permet notamment de décaler des éléments.
 
 
 
@@ -151,7 +151,7 @@ Cet élement sera affiché 50px sous le haut de la page et défilera avec la pag
 
 ### Z-Index
 
-Quand des élements sont positionnés, il arrive qu'ils se chevauchent.
+Quand des éléments sont positionnés, il arrive qu'ils se chevauchent.
 
 On utilise alors la propriété `z-index` pour définir quel élément se place devant ou derrière.
 
@@ -183,7 +183,7 @@ On peut utiliser `overflow-x` pour le dépassement horizontal et `overflow-y` po
 
 ## FlexBox
 
-Flex, FlexBox ou Flexible Box Layout est une manière d'agencer les élements apparue en CSS3.
+Flex, FlexBox ou Flexible Box Layout est une manière d'agencer les éléments apparue en CSS3.
 
 Elle permet de manipuler plus simplement les éléments.
 
@@ -226,7 +226,7 @@ C'est tout ce qu'il faut pour définir un conteneur Flex !
 
 
 On va pouvoir définir :
-- la direction des élements (ligne ou colonne) (`flex-direction`)
+- la direction des éléments (ligne ou colonne) (`flex-direction`)
 - l'alignement des éléments (`flex-align`)
 - l'espacement des éléments (`justify-content`)
 - l'alignement des lignes (`align-content`)
