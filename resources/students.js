@@ -2,17 +2,19 @@
  * Randomly picks a student
  */
  const students = [
-   "Badis",
-   "Bilelle",
-   "Dienaba",
-   "Guilherme",
-   "Idir",
-   "Ilan",
-   "Laura",
-   "Lemy",
-   "Salem",
-   "Zinedine"
- ];
+  "Candice",
+  "Delphine",
+  "Rebecca",
+  "Harouna",
+  "Omar",
+  "Soufiane",
+  "Benjamin",
+  "Yassine",
+  "Florian",
+  "Jérémy",
+  "Amine",
+  "Chris"
+];
 
 var idx = Math.floor(Math.random() * students.length);
 console.log(idx);
