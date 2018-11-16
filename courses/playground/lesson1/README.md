@@ -13,7 +13,6 @@
 - Il existe pleins de terminaux différents selon la plateforme ou la préférence (Terminal, Terminator, iTerm …)
 - Le terminal communique avec le **shell** qui est un interperteur de commandes
 - Plusieurs types de shell : Bash, PosiX
-- Je vais utiliser les deux termes pour parler de l'invite de commandes, mais ce sont deux choses différentes en réalité
 
 
 
@@ -437,10 +436,7 @@ Permet de changer le propriétaire d'un fichiers
 
 
 
-## La suite mardi
-- quelques excercices pour manipuler les commandes vues aujourd'hui et quelques nouvelles commandes
-- on va écrire aussi des scripts shell, c-à-d qui utilisent les commandes shell
-- il existe une cheatsheet avec un résumé des commandes utiles
+Il existe une cheatsheet avec un résumé des commandes utiles
 
 
 

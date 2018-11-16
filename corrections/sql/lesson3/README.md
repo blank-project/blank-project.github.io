@@ -1,7 +1,0 @@
-- `SELECT name FROM cinemas WHERE screens > 5`
-- `SELECT name FROM cinemas WHERE seats < 200`
-- `SELECT AVG(seats) FROM cinemas`
-- `SELECT zip_code, AVG(seats) FROM cinemas GROUP BY zip_code`
-- `SELECT zip_code, COUNT(\*) AS NUMBER_CINE FROM cinemas GROUP BY zip_code ORDER BY NUMBER_CINE DESC`
-- `SELECT c.zip_code, AVG(c.screens) AS AVG_SCREENS FROM cinemas c GROUP BY c.zip_code ORDER BY AVG_SCREENS`
-- `SELECT zip_code, SUM(seats) AS SUM_SEATS FROM cinemas GROUP BY zip_code HAVING SUM_SEATS > 3000` 

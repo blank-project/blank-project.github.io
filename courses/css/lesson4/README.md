@@ -8,11 +8,11 @@
 
 
 
-## Le positionnement des élements
+## Le positionnement des éléments
 
 
-Les élements HTML se positionnent naturellement de la façon suivante :
-- Les élements `block` se positionnent les uns sous les autres.
+Les éléments HTML se positionnent naturellement de la façon suivante :
+- Les éléments `block` se positionnent les uns sous les autres.
 - les éléments `inline` et `inline-block` se positionnent les uns à la suite des autres.
 
 Et cela dans l'ordre du document (le _flow_ en anglais).
@@ -68,7 +68,7 @@ Un élement positionnés de manière relative est positionné par rapport à sa 
 
 Il occupe toujours de l'espace dans la page.
 
-Cela permet notamment de décaler des élements.
+Cela permet notamment de décaler des éléments.
 
 
 
@@ -151,7 +151,7 @@ Cet élement sera affiché 50px sous le haut de la page et défilera avec la pag
 
 ### Z-Index
 
-Quand des élements sont positionnés, il arrive qu'ils se chevauchent.
+Quand des éléments sont positionnés, il arrive qu'ils se chevauchent.
 
 On utilise alors la propriété `z-index` pour définir quel élément se place devant ou derrière.
 
@@ -183,7 +183,7 @@ On peut utiliser `overflow-x` pour le dépassement horizontal et `overflow-y` po
 
 ## FlexBox
 
-Flex, FlexBox ou Flexible Box Layout est une manière d'agencer les élements apparue en CSS3.
+Flex, FlexBox ou Flexible Box Layout est une manière d'agencer les éléments apparue en CSS3.
 
 Elle permet de manipuler plus simplement les éléments.
 
@@ -226,7 +226,7 @@ C'est tout ce qu'il faut pour définir un conteneur Flex !
 
 
 On va pouvoir définir :
-- la direction des élements (ligne ou colonne) (`flex-direction`)
+- la direction des éléments (ligne ou colonne) (`flex-direction`)
 - l'alignement des éléments (`flex-align`)
 - l'espacement des éléments (`justify-content`)
 - l'alignement des lignes (`align-content`)
@@ -271,3 +271,196 @@ Pour annuler ce comportement on utilise
 `clear : left | right | both;`.
 
 Ne pas se servir de cela pour de la mise en page !
+
+
+
+---
+
+
+## Le système de Grid
+
+Le système de **Grid** (grille) permet de disposer les éléments de sa page sous un format de **lignes** et **colonnes** modulables sur 2 dimensions, contrairement à flexbox.
+
+Ce système récemment implémenté dans CSS3 est extrêmement **puissant** et bien plus **simple** à utiliser que les autres système de positionnement.
+
+
+***
+
+
+
+La grid est composée d'un _conteneur_ regroupant des _items_. Il se découpe également en Line, Track, Cell et Area.
+
+![Schéma Grid CSS](img/grid1.png)
+
+
+
+***
+
+
+
+Il se découpe également en **Line**.
+
+![Schéma Grid CSS](img/grid2.png)
+
+
+***
+
+
+
+Il se découpe également en **Track**.
+
+![Schéma Grid CSS](img/grid3.png)
+
+
+***
+
+
+Il se découpe également en **Cell**.
+
+![Schéma Grid CSS](img/grid4.png)
+
+
+***
+
+
+
+Il se découpe également en **Area**.
+
+![Schéma Grid CSS](img/grid5.png)
+
+
+***
+
+
+
+### Structure
+
+```html
+<div class="container">
+  <div class="item item-1">Votre contenu</div>
+  <div class="item item-2">Votre contenu</div>
+  <div class="item item-3">Votre contenu</div>
+  <div class="item item-4">Votre contenu</div>
+  <div class="item item-5">Votre contenu</div>
+  <div class="item item-6">Votre contenu</div>
+  <div class="item item-7">Votre contenu</div>
+  <div class="item item-8">Votre contenu</div>
+  <div class="item item-9">Votre contenu</div>
+</div>
+```
+
+```css
+.container {
+	display:grid;
+}
+```
+
+
+***
+
+
+
+### Le conteneur
+
+Comme vu précédemment, le conteneur se déclare en appliquant la propriété `display:grid;` à un conteneur parent direct d'items.
+
+C'est sur cet élément HTML que nous définirons la forme globale de la Grid, en utilisant principalement les propriétés **grid-template-columns** et **grid-template-rows**, pour **colonnes** et **lignes**.
+
+
+
+***
+
+
+
+### Grid-template
+
+
+```css
+.container {
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+}
+```
+![Schéma Grid CSS](img/schema-css-tricks.png)
+
+
+
+***
+
+
+
+Chaque ligne se voit attribuer automatiquement un numéro positif et négatif permettant l'identification.
+
+Il est possible d'utilisé les unités habituelles (%, px, em...) ainsi que **fr** qui représente une fraction de l'espace disponible.
+
+Ainsi : `grid-template-columns: 1fr 1fr 1fr;` créera 3 colonnes de la même dimension.
+
+
+***
+
+
+### Quelques propriétés utiles
+
+**grid-gap** : créer des gouttières entre les cellules.
+
+**justify-items** : gérer l'alignement **horizontal** des items dans leurs cellules.
+
+**align-items** : gérer l'alignement **vertical** des items dans leurs cellules.
+
+
+
+***
+
+
+
+### Les items composants la grille
+
+Une fois la grille et son contenu défini nous allons pouvoir passer à son contenu.
+
+L'enjeu ici est de positionner les items dans la grille correspondante en se référant aux **"lines"**.
+
+Nous allons utiliser les propriétés **grid-column-start**, **grid-column-end**, **grid-row-start** et **grid-row-end**.
+
+
+
+***
+
+Les lignes de votre grille sont automatiquement numérotés vous pouvez ainsi écrire :
+
+```css
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+```
+![Schéma Grid CSS](img/schema-css-tricks-2.png)
+
+
+
+***
+
+
+
+et y inclure les éléments que vous souhaitez dans les éléments enfants !
+
+
+
+***
+
+
+
+### Ça n'est pas tout !
+
+En effet nous n'avons que survolé le système de grid !
+
+Je vous conseille de vous documenter, et plus particulièrement ici :
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+(je leur ai emprunté des schémas!)
+
+ou bien ici :
+
+https://www.w3schools.com/css/css_grid.asp

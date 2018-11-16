@@ -8,7 +8,7 @@ C'est quoi ?
 
 ## Définition
 
-Lorsqu'un navigateur charge une page, celui-ci créé un DOM. Ce dernier est une arborescence d'objets qui correspondent aux éléments de la page web.
+Lorsqu'un navigateur charge une page, celui-ci crée un DOM. Ce dernier est une arborescence d'objets qui correspondent aux éléments de la page web.
 
 
 ***
