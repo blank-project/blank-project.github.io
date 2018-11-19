@@ -48,7 +48,7 @@ Ils commencent par `::`.
 
 - `::before` et `::after` : Permet d'ajouter du contenu avant ou après l'élement avec `content`.
 - `::first-letter` : la première lettre d'un élement contenant du texte.
-- `::first-line` : la première lettre d'un élement contenant du texte.
+- `::first-line` : la première ligne d'un élement contenant du texte.
 - ... (voir la CheatSheet Sélecteurs).
 
 
