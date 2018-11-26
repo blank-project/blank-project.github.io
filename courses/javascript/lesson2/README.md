@@ -265,7 +265,7 @@ do {
 * Permet de définir des parties de codes pour différentes valeur d'une variables
 * Syntaxe :
 ```js
-swich(<variable>) {
+switch(<variable>) {
     case <cas1>:
         // exécuté si variable vaut cas1
         break;
