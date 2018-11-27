@@ -2,12 +2,46 @@
 
 
 
+---
+
+
+## Algorithmique
+
+> Un algorithme est une suite finie et non ambiguë d'opérations ou d'instructions permettant de résoudre un problème ou d'obtenir un résultat.
+
+> Wikipedia
+
+
+
+---
+
+
+
+## Logigramme
+
+
 ***
+
+
+## Qu'est-ce que c'est ?
+
+C'est un moyen de schématiser sur papier votre algorithme.
+![logigramme.png](logigramme.png)
+
+
+***
+
+
+C'est un système de schéma qui vous aidera à poser vos idées à plat et à matérialiser votre algorithme.
+
+
+
+---
 
 
 
 ## Logo
-- Logo est un langage de programmation inventé dans les années 60 à Cambridge pour faire découvrir la programmation
+- Logo est un langage de programmation inventé dans les années 60 à Cambridge pour faire découvrir la programmation, il nous aidera à mettre en place les logiques algorithmiques que l'on va définir à l'aide d'un logigramme.
 - Il permet de faire bouger une tortue sur une surface et de la faire dessiner ou écrire du texte
 - C'est un language qui possède la plupart des concepts fondamentaux des autres langages modernes (comme JS, PHP, C, Java, etc.)
 
@@ -76,6 +110,7 @@ print "Bonjour\ monde
 
 
 ## Exercice 1
+- Créer un logigramme pour le dessin d'un carré.
 - Faire dessiner un carré par la tortue
 
 
@@ -129,6 +164,7 @@ ifelse (random 2) = 0 [ rt 10 fd 10 ] [ bk 10]
 2. Faites :
     - *avancer* la tortue de 10 si elle est vers le haut de l'écran
     - *reculer* la tortue de 10 si elle est vers le bas de l'écran
+3. Avant de vous lancer dans l'exercice, faites un logigramme répondant à la problématique
 
 
 
@@ -141,13 +177,4 @@ ifelse (random 2) = 0 [ rt 10 fd 10 ] [ bk 10]
 2. En plus de la première partie de l'exercie, faites :
     - *tourner vers la droite* de 10 la tortue si la souris est à droite de l'écran
     - *tourner vers la gauche* de 10 la tortue si la souris est à gauche de l'écran
-
-
-
----
-
-
-
-## La prochaine fois
-- Toujours faire bouger la tortue
-- Découverte des variables et des boucles
+3. Avant de vous lancer dans l'exercice, faites un logigramme répondant à la problématique
