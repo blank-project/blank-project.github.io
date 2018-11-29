@@ -1,0 +1,23 @@
+{
+    "students": [
+        "Amine",
+        "Benjamin",
+        "Candice",
+        "Chris",
+        "Delphine",
+        "Florian",
+        "Jérémy",
+        "Harouna",
+        "Omar",
+        "Rebecca",
+        "Soufiane",
+        "Yassine"
+    ],
+    "teachers": [
+        "Antonin",
+        "Erwan",
+        "Neil",
+        "Marin",
+        "Yohann"
+    ]
+}
