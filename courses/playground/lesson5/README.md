@@ -4,13 +4,85 @@
 ***
 
 
+- Pseudo-code
 - Logo sur https://inexorabletash.github.io/jslogo/
 - Faire bouger la tortue
 - Expressions
 - Tests
 
 
+
+---
+
+
+
+## Pseudo - Code
+
+
 ***
+
+
+## Variables
+- `LIRE varname`
+- `ECRIRE varname`
+- `varname <- valeur`
+
+
+***
+
+
+## Opérateurs de condition
+- `PLUS GRAND QUE`
+- `PLUS PETIT QUE`
+- `ÉGAL À`
+- `NON`
+- `OU`
+- `ET`
+
+
+***
+
+
+## BOUCLES
+- `POUR ... ALLANT DE ... À ... AU PAS DE ...`
+- `TANT QUE ...`
+- `RÉPÉTER ... JUSQU'À`
+
+
+***
+
+
+## Début et Fin
+- `DÉBUT`
+- `FIN`
+
+
+***
+
+
+## Création d'une fonction
+```
+Nom de la fonction : nomDeLaFonction
+Description : Décrire votre fonction ici
+En-tête : nomDeLaFonction(nombre1, nombre2)
+Variables locales :
+  somme (entier)
+Instructions :
+  somme <- nombre1 + nombre2
+  RETOURNER somme
+FIN
+```
+
+
+***
+
+
+Consigne : pour tous les exercices suivants essayez d'érire sous forme de logigramme ou pseudo code avant de coder quelque chose.
+
+
+
+---
+
 
 
 # Rappels
@@ -182,6 +254,7 @@ print (readword "name?)
 ## Tests: exercice
 
 - demander à l'utilisateur si il parle français
+  - Écrire l'algorithme sous forme de pseudo code ou logigramme
   - si la réponse est "oui", imprimer "bonjour"
   - sinon, imprimer "hello"
 
