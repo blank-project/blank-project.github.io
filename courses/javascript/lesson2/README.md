@@ -40,10 +40,10 @@ Un programme Javascript est exécuté ligne par ligne. Les structures de contrô
 
 ## Quelques opérateurs de comparaison
 * Ils retournent des booléens
-* ">" (>=) : vrai si la valeur de gauche est supérieure (ou égale) à celle de droite
-* < (<=) : vrai si la valeur de gauche est inférieure (ou égale) à celle de droite
-* == (===) : vrai si la valeur de gauche est (strictement, on y reviendra plus tard) égale à celle de droite
-* != (!==) : vrai si la valeur de gauche n'est pas (strictement, on y reviendra plus tard) égale à celle de droite
+* `>` (`>=`) : vrai si la valeur de gauche est supérieure (ou égale) à celle de droite
+* `<` (`<=`) : vrai si la valeur de gauche est inférieure (ou égale) à celle de droite
+* `==` (`===`) : vrai si la valeur de gauche est (strictement, on y reviendra plus tard) égale à celle de droite
+* `!=` (`!==`) : vrai si la valeur de gauche n'est pas (strictement, on y reviendra plus tard) égale à celle de droite
 
 
 
@@ -265,7 +265,7 @@ do {
 * Permet de définir des parties de codes pour différentes valeur d'une variables
 * Syntaxe :
 ```js
-swich(<variable>) {
+switch(<variable>) {
     case <cas1>:
         // exécuté si variable vaut cas1
         break;
