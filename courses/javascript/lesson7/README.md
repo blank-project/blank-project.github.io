@@ -276,11 +276,11 @@ new Vue({
 
 Voici un objet javascript qui vous donne le nom des profs et les jours où ils sont censé être là :
 ```js
-{
-  Alex: ['Lundi','Mardi','Mercredi','Vendredi'],
-  Erwan: ['Vendredi'],
-  Marin: ['Lundi','Mardi','Mercredi','Jeudi']
-}
+profs: {
+            Alex: ['Lundi','Mardi','Mercredi','Vendredi'],
+            Erwan: ['Vendredi'],
+            Marin: ['Lundi','Mardi','Mercredi','Jeudi']
+        }
 ```
 
 Faire une liste html en utilisant VueJS, chaque élément de la list doit contenir une sous liste avec les jours où les professeurs sont présents.
