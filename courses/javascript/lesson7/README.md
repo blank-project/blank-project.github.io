@@ -285,7 +285,8 @@ profs: {
 
 Faire une liste html en utilisant VueJS, chaque élément de la list doit contenir une sous liste avec les jours où les professeurs sont présents.
 
-Afin d'afficher la clé de l'objet, et donc le nom du professeur vous pouvez vous renseigner ici [https://vuejs.org/v2/guide/list.html#v-for-with-an-Object](ici)
+Afin d'afficher la clé de l'objet, et donc le nom du professeur vous pouvez vous renseigner [ici](https://vuejs.org/v2/guide/list.html#v-for-with-an-Object)
+
 
 
 ---
