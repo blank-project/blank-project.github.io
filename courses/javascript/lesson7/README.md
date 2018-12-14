@@ -369,7 +369,7 @@ On peut aussi ajouter des classes de manière dynamique. Pour cela, on utilise l
 
 ```html
 <div id="app">
-  <div :class="{ success: success, error: !success }" :class="appelDuneMethod()"></div>
+  <div :class="{ valid: success, error: !success }" :class="appelDuneMethod()"></div>
 </div>
 ```
 
