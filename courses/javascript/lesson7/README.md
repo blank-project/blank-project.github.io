@@ -276,14 +276,16 @@ new Vue({
 
 Voici un objet javascript qui vous donne le nom des profs et les jours où ils sont censé être là :
 ```js
-{
-  Alex: ['Lundi','Mardi','Mercredi','Vendredi'],
-  Erwan: ['Vendredi'],
-  Marin: ['Lundi','Mardi','Mercredi','Jeudi']
-}
+profs: {
+            Alex: ['Lundi','Mardi','Mercredi','Vendredi'],
+            Erwan: ['Vendredi'],
+            Marin: ['Lundi','Mardi','Mercredi','Jeudi']
+        }
 ```
 
 Faire une liste html en utilisant VueJS, chaque élément de la list doit contenir une sous liste avec les jours où les professeurs sont présents.
+
+Afin d'afficher la clé de l'objet, et donc le nom du professeur vous pouvez vous renseigner [ici](https://vuejs.org/v2/guide/list.html#v-for-with-an-Object)
 
 
 
@@ -367,7 +369,7 @@ On peut aussi ajouter des classes de manière dynamique. Pour cela, on utilise l
 
 ```html
 <div id="app">
-  <div :class="{ success: success, error: !success }" :class="appelDuneMethod()"></div>
+  <div :class="{ valid: success, error: !success }" :class="appelDuneMethod()"></div>
 </div>
 ```
 
