@@ -351,7 +351,7 @@ Une composante intéressante de VueJS est son l'association d'une variable javas
 ```js
 new Vue({
   data: function() {
-    maVariable: '' //Si vous voulez lui donner une valeur initiale, indiquez le ici !
+    monTexte: '' //Si vous voulez lui donner une valeur initiale, indiquez le ici !
   }
 });
 ```

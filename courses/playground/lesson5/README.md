@@ -42,10 +42,21 @@
 
 ***
 
+## Conditions
+- `SI ... ALORS:`
+- `SINON SI ... ALORS:`
+- `SINON ALORS:`
+- `FIN SI`
+
+
+***
+
 
 ## BOUCLES
 - `POUR ... ALLANT DE ... À ... AU PAS DE ...`
+- `FIN POUR`
 - `TANT QUE ...`
+- `FIN TANT QUE`
 - `RÉPÉTER ... JUSQU'À`
 
 
