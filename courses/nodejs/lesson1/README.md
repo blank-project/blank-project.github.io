@@ -111,8 +111,15 @@ var http = require('my-module'); // Charge un module appelé "my-module".
 ***
 
 
+### ES6, ES7 & Node.js
+
+Node.js supporte ES6 et ES7 (async/await) à partir de respectivement la version 6.10.3 et 7.6. Pour connaitre votre version, exécutez la commande : `node -v` ou `nodejs -v`.
+
+
+
+
 
 # Voilà !
 
 La CheatSheet Node.js est ici :
-[Cheat Sheet Node.js](https://git.bellevillecitoyenne.fr/blank/_blank/blob/master/cheatsheets/nodejs.md)
+[Cheat Sheet Node.js](https://github.com/blank-project/blank-project.github.io/blob/master/cheatsheets/nodejs.md)

@@ -52,7 +52,7 @@ va retourner tous les documents dont l'attribut _name_ a pour valeur _test_.
 
 ### Les opérateurs de requête
 
-[TODO](https://docs.mongodb.com/manual/reference/operator/query/)
+[Ici](https://docs.mongodb.com/manual/reference/operator/query/)
 
 
 
@@ -77,7 +77,7 @@ Pour mettre à jour plusieurs élements passer l'option *multi*, ou utiliser `up
 
 ### Les opérateurs de mises à jour
 
-[TODO](https://docs.mongodb.com/manual/reference/operator/update/)
+[Ici](https://docs.mongodb.com/manual/reference/operator/update/)
 
 
 
