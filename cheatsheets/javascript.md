@@ -4,6 +4,14 @@
 - `//` : Commentaire (une ligne)
 - `/* */` : Commentaire : (plusieurs lignes)
 - `var var1 = "test";` : définit une variable _var1_ et lui donne la valeur `"test"`
+- `var tab = [];` : déclare un tableau `tab` vide
+- `var tab = [1, 2, 3];` : déclare un tableau `tab` vide avec les élements 1, 2, 3
+- `tab[i]`: accède à la valeur du tableau `tab` à l'index `i`.
+- `tab[i] = ...;`: modifie la valeur du tableau `tab` à l'index `i`.
+- `var obj = {};` : déclare un objet `obj` vide
+- `var obj = { message : "Salut!" };` : déclare un objet `obj` avec une propriété `message` valant `Salut`
+- `obj["message"]` ou `obj.message` : accède à la valeur de la propriété `message`
+- `obj["message"] = ...;` ou `obj.message = ...;` : modifie la valeur de la propriété `message` 
 
 ## Array Methods
 - `concat()` : fusionne 2 tableaux et en retourne une copie
