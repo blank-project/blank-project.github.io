@@ -19,6 +19,7 @@ Enfin, elles peuvent être l'un des éléments de design les plus efficaces !
 
 ***
 
+
 ### La roue des couleurs
 Historiquement, l'une des premières théories sur les couleurs nous vient d'Isaac Newton, qui a défini qu'elles sont un mélange de lumières **rouges**, **vertes** et **bleues**. 
 
@@ -27,6 +28,7 @@ Il produisit, de cette théorie, la 1ère "roue des couleurs" :
 
 
 ***
+
 
 ### Evolution des systèmes de couleurs
 Comme vu précédemment, le premier système de couleur est basé sur la lumière, avec une base RGB. Il en existe d'autres, qui ont différentes utilisations : 
@@ -45,6 +47,7 @@ Même s'il y a eu de nombreuses variations avec le temps, la version la plus com
 
 ![Roue des couleurs RYB](img/color-wheel-300.gif)
 
+
 ***
 
 
@@ -59,6 +62,7 @@ Enfin, d'autres couleurs, dites tertiaires, sont obtenues par un mélange de cou
 
 
 ***
+
 
 ### Couleurs dites "chaudes" et "froides"
 La roue des couleurs peut être séparée en ces 2 catégories.
