@@ -41,7 +41,7 @@ Comme vu précédemment, le premier système de couleur est basé sur la lumièr
 
 ### La roue "classique"
 
-La roue des couleurs a pour but de fournir des couleurs qui se combinent bien ensemble. 
+La roue des couleurs a pour but de fournir des couleurs qui **se combinent bien ensemble**. 
 
 Même s'il y a eu de nombreuses variations avec le temps, la version la plus commune est une roue de 12 couleurs, basée sur le modèle **RYB**, tel que suit :
 
@@ -52,13 +52,14 @@ Même s'il y a eu de nombreuses variations avec le temps, la version la plus com
 
 
 ### Couleurs primaires, secondaires et tertiaires
-Dans le modèle RYB, les couleurs primaires sont : rouge, jaune et bleu.
+En RYB, les couleurs primaires sont : rouge, jaune et bleu.
 
-Les couleurs secondaires (vert, orange et violet) sont obtenues par un mélange de certaines couleurs primaires.
-
-Enfin, d'autres couleurs, dites tertiaires, sont obtenues par un mélange de couleur primaire et de couleur secondaire.
+Les couleurs secondaires (vert, orange et violet) sont obtenues par un **mélange de certaines couleurs primaires**.
 
 ![Couleurs primaires, secondaires et tertiaires](img/tertiary.jpg)
+
+Enfin, d'autres couleurs, dites tertiaires, sont obtenues par un **mélange de couleur primaire et de couleur secondaire**.
+
 
 
 ***
@@ -183,10 +184,6 @@ _Note : Il existe une variante qui est un carré, il utilise donc un espace éga
 (où _Hue_ signifie **teinte** et _Brightness_ signifie **luminosité**.)
 
 Ce modèle est généralement plus compréhensible pour l'humain que le RGB, car les concepts de saturation et luminosité permettent de mieux saisir la **nature** d'une couleur, plutôt que par une combinaison de valeurs RGB.
-
-___
-
-_Détaillons ce modèle!_
 
 
 ***

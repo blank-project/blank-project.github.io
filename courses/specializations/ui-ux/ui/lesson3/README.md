@@ -1,8 +1,9 @@
-# Polices
+# Typographie sur le web
 
 
 
 ---
+
 
 
 ## Propriétés des polices
@@ -99,6 +100,8 @@ Les différents types de polices sans-serif ici sont :
 Le principe des polices **Monospace** est une **largeur similaire pour tous les caractères**.
 
 ![Monospace vs proportional](img/Proportional-vs-monospace.jpg)
+
+_(Elles ne sont pas fréquemment utilisées, mais peuvent être utiles pour l'affichage de valeurs numériques changeantes)._
 
 
 ***
@@ -208,3 +211,66 @@ html {
     font-size: 14px;
 }
 ```
+
+
+
+---
+
+
+
+## Mise en valeur du texte
+Détails sur la font-weight, exemple
+
+
+***
+
+
+### Approfondissement de la font-weight
+Certaines polices possèdent jusqu'à **6 variantes d'épaisseur**. Le tableau ci-dessous donne les correspondances entre l'épaisseur et sa valeur en CSS.
+
+| Epaisseur        | Valeur  |
+| -----------------|---------|
+| Thin (fin)       | 100     |
+| Light (léger)    | 300     |
+| Regular (normal) | 400     |
+| Medium (moyen)   | 500     |
+| Bold (gras)      | 700     |
+| Black (noir)     | 900     |
+
+
+***
+
+
+### Exemple de mise en valeur du texte
+En utilisant les **recommandations précédentes**, nous disposons déjà d'éléments pour **améliorer la présentation et la lisibilité** d'un texte. Ci-dessous, un exemple :
+
+![Mise en valeur de texte exemple](img/mise-valeur-texte-exemple.jpg)
+
+
+
+---
+
+
+
+## Quelques commandements de la typographie sur le web
+1. Tu n'utiliseras **pas plus** de 3 polices (2 polices sont suffisantes) !
+
+2. Tu feras une **hiérarchie visuelle** pour améliorer la **présentation et la lisibilité** du texte !
+
+3. Tu **limiteras le nombre de caractères par ligne** (nous avions dit une 60aine au maximum) !
+
+4. Tu **liras ton texte** et tu **vérifieras le contraste** !
+
+
+
+---
+
+
+
+## Ressources
+
+- [A-Z of Web Typography](https://webdesign.tutsplus.com/series/a-z-of-web-typography--webdesign-11706)
+
+- [Typography Handbook](http://typographyhandbook.com/)
+
+- [Contrast checker](https://contrast-ratio.com/)
