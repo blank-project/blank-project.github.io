@@ -405,4 +405,48 @@ Il faudra vou servir d'un outil de détourage, des calques, de l'opacité, de l'
 
 
 
+---
 
+
+
+### Créer une image animé (gif)
+
+
+
+***
+
+
+
+Un GIF (Graphics Interchange Format) est une image animée comprenant plusieurs image. Le GIF va passer d'une image à l'autre, en boucle ou non.
+
+Ce format permet l'utilisation d'uniquement 256 couleurs, il n'est donc pas adapté aux photos. Il supporte la transparence. 
+
+Nous nous en servirons principalement pour créer des petites animations simples.
+
+
+
+***
+
+
+Pour créer un GIF il suffira simplement de mettre chaque état de notre animation dans un calque.
+
+Il est important d'optimiser nos image afin de rendre l'animation moins lourde. Pour cela rendez-vous dans filtres > animations > optimiser pour gif.
+
+
+
+***
+
+
+
+Il suffira ensuite d'exporter votre animation sous le format "GIF". Dans la boite de dialogue il faudra cocher "exporter comme une animation", choisir le délai entre chaque slide ainsi que la boucle infinie ou non.
+
+
+
+***
+
+
+
+## Exercice
+
+
+Créer un GIF de loader de A à Z. Du dessin à l'animation.
