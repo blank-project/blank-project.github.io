@@ -16,9 +16,14 @@ GNU Image Manipulation Program
 
 ## Installation
 
+Pour **Linux** :
 
 `sudo apt-get update`
 `sudo apt-get install gimp`
+
+Pour **Windows** :
+
+[gimp.org/downloads](https://gimp.org/downloads)
 
 
 
@@ -267,6 +272,69 @@ Permet de sélectionner une zone en fonction de ses bords.
 
 
 
+## Outils divers
+
+Il existe une multitude d'autres outils pour le dessin, la modification de photo ou encore pour utiliser un filtre sur l'image.
+
+
+
+***
+
+
+
+### Dessin
+
+**Crayon** : permet de tracer d'une manière "dure"
+
+**Pinceau** : permet de tracer d'une manière "douce"
+
+**Aérographe** : permet de tracer avec un variateur de pression
+
+**Gomme** : gomme une zone (faire attention au calque sélectionné)
+
+
+
+***
+
+
+Les outils de dessins se servent des "brosses". Les brosses sont des formes soit pré existantes, soit à créer vous même.
+
+N'hésitez pas essayer d'en construire une nouvelle !
+
+
+
+***
+
+
+
+### Modification de photo
+
+Afin de rendre plus réelle une photographie que vous auriez retouché, par exemple avec l'ajout une image,
+
+**Clonage** : l'outil de clonage permet de dupliquer une partie d'une image sur un autre endroit. Très utile pour compléter un fond : ciel, foret etc.
+
+**Correcteur** : permet d'aténuer des irrégularités, utile lors de l'intégration d'une image.
+
+**Outil de flou et de netteté** : permet de travailler le flou et donc de rendre une itnégration plus discrète.
+
+
+
+***
+
+
+
+### Les filtres
+
+Dans la barre de menu vous avez le menu "Filtre". Vous disposez dans ce menu de toute une série de filtre à appliquer sur votre image ou sur une zone sélectionné : flous, bruits, relief....
+
+
+
+---
+
+
+
+
+
 ## Transparence
 
 Il existe plusieurs endroit où appliquer la transparence :
@@ -329,7 +397,11 @@ Il est également possible d'utiliser le menu
 
 ## Exercice
 
-Créer des bubbleheads (grossir les têtes) sur la photo de l'équipe de formation.
+Détourer la silhouette d'une personne d'une photo et l'intégrer sur une autre.
+
+Y ajouter des éléments (chats, explosions, fleurs...) en transparence.
+
+Il faudra vou servir d'un outil de détourage, des calques, de l'opacité, de l'échelle d'un calque etc...
 
 
 
