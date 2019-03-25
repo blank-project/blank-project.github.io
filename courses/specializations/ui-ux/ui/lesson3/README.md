@@ -203,7 +203,12 @@ Cette propriété est **l'une des plus communes** à modifier pour **améliorer 
 
 
 ### Bonne pratiques de typologie en CSS
-Il est assez fréquent de spécifier certaines propriétés CSS sur le _html_ pour **appliquer uniformément une valeur de base**. On utilisera par la suite des valeurs en _em_ ou _%_ pour **dériver de la valeur de base**.
+Il est assez fréquent de spécifier certaines propriétés CSS sur le _html_ pour **appliquer uniformément une valeur de base**. 
+
+On utilisera par la suite des valeurs en **_em_** pour **dériver de la valeur de base**.
+
+- **em** est une unité relative à la taille de police de l'élément parent.
+- c'est un multiplicateur, donc 2em = 2 fois la taille de police.
 
 ```
 html {

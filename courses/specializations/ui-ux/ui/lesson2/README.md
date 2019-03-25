@@ -319,11 +319,24 @@ En partant d'une **couleur principale**, et en effectuant les actions citées à
 
 ### Palette de couleur pour le web design
 Voyons ce qu'il nous faut pour une **palette assez complète** : 
-- **Identité** : 1 couleur principale, 1 à 2 couleurs secondaires, ainsi que leurs variantes claires/foncées.
+#### 1. Identité
+ - **UNE couleur principale**, une à deux couleurs secondaires
+ - Leurs variantes claires/foncées
 
-- **Call-to-action** : 1 couleur, dont le **contraste** avec les autres doit être visible (!). Les variantes claires/foncées sont optionelles _(selon le besoin)_.
+![Brand color example](img/brands-main-colors.jpeg)
 
-- **Messages** (optionnel) : couleurs **claires** usuelles pour les errors (rouge), success (vert), infos (bleu) et warnings (jaune).
+
+***
+
+
+#### 2. Call to action (appel à l'action)
+- _Notion web-marketing_, représente le fait **d'inciter l'utilisateur** à effectuer une action voulue, notamment pour **démarrer un processus d'achat ou de fidélisation**.
+
+- **UNE couleur**, dont le **contraste** avec les autres doit être visible (!). 
+_(Les variantes claires/foncées sont optionelles)_.
+
+#### 3. Messages (optionnel)
+- Couleurs **claires** usuelles pour les errors (rouge), success (vert), infos (bleu) et warnings (jaune).
 
 
 ***
