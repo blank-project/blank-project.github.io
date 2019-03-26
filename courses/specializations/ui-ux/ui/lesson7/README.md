@@ -1,17 +1,18 @@
-# Figma
+# Exercice
 
-(https://www.figma.com/)[https://www.figma.com/]
-
+L'objectif est de créer un site internet sur un thème précis (exemple : Nature, Jeux vidéos, Foot, Musique, etc.).
+Ce site fictif sera un site e-commerce.
 
 
 ---
 
 
-
 ## Créer un moodboard
 
+_le but d'un moodboard est de créer une ambiance qui correspond à ce que vous souhaitez véhiculer sur votre site_
+
 1. Définissez le thème de votre choix
-2. Réunissez des images véhiculant l'ambiance que vous voulez avoir sur une Frame Figma
+2. Réunissez des images correspondant à l'ambiance que vous souhaitez sur une Frame Figma
 
 
 
@@ -36,9 +37,10 @@
 _Les wireframes devront être sur mobile OU tablette OU desktop_
 _Avant de définir une wireframe, soyez sûr des fonctionnalités de votre page_
 
-1. Créer une wireframe de page d'accueil présentant un magasin en ligne
-2. Créer une page où l'on voit une liste de produits
-3. Créer une page où l'on voit un produit à acheter
+Créer au choix une wireframe d'une page :
+- d'accueil présentant un magasin en ligne
+- où l'on voit une liste de produits
+- où l'on voit un produit à acheter
 
 
 
