@@ -205,3 +205,87 @@ Plus généralement, on reconnait plusieurs aspects à une **bonne** icône :
 ## Outils
 - [Fontawesome](https://fontawesome.com/)
 - [Material IO Icons](https://material.io/tools/icons/?style=baseline)
+
+
+
+---
+
+
+
+## SVG
+
+Le SVG c'est quoi ?
+
+
+***
+
+
+C'est la définition d'une image sous la forme de vecteurs graphiques.
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="391" height="391" viewBox="-70.5 -70.5 391 391" xmlns="http://www.w3.org/2000/svg">
+  <rect x="25" y="25" width="200" height="200" fill="lime" stroke-width="4" stroke="pink" />
+  <circle cx="125" cy="125" r="75" fill="orange" />
+  <polyline points="50,150 50,200 200,200 200,100" stroke="red" stroke-width="4" fill="none" />
+  <line x1="50" y1="50" x2="200" y2="200" stroke="blue" stroke-width="4" />
+</svg>
+```
+
+
+***
+
+
+## Pourquoi on l'utilise ?
+Ça permet de définir une image sous une forme différent qu'une liste de pixels. Aussi, ça améliore la compatibilité avec les différentes résolutions des appareils.
+![https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bitmap_VS_SVG.svg/450px-Bitmap_VS_SVG.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bitmap_VS_SVG.svg/450px-Bitmap_VS_SVG.svg.png)
+
+
+
+---
+
+
+
+## Créer ses icones
+
+Sur Figma, on peut créer des icones et les exporter en SVG. On peut aussi en faire des composants pour les réutiliser plus tard.
+
+
+***
+
+
+## Exemple
+
+Live graphisme !
+
+1. Définir le but de l'icone
+2. Faire des recherches sur comment représenter cette action
+3. Définir le style de l'icone
+4. Créer l'icone !
+
+
+
+---
+
+
+## Illustrations
+
+Beaucoup de sites utilisent des illustrations SVG. Savoir en faire peut vous aider à apporter une touche intéressante à votre site.
+
+![https://cdn.dribbble.com/users/692322/screenshots/4885680/b_coiff-8-6.png](https://cdn.dribbble.com/users/692322/screenshots/4885680/b_coiff-8-6.png)
+
+
+***
+
+
+## Exemple
+
+Choisissons une image sur google et faisons en une illustration !
+
+
+
+---
+
+
+
+## FIN !

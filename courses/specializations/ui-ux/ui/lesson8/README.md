@@ -24,7 +24,7 @@ _le but d'un moodboard est de créer une ambiance qui correspond à ce que vous 
 
 ## Définir les couleurs
 
-1. Trouver la couleur principale qui sortent de ce moodboard
+1. Trouver la couleur principale qui sort de ce moodboard
 2. Trouver les couleurs secondaires qui sortent de ce moodboard
 3. Les présenter sous la forme suivante : [https://www.youtube.com/watch?v=9S8LGdpNh4Q](https://www.youtube.com/watch?v=9S8LGdpNh4Q) sur une Frame Figma
 
@@ -50,18 +50,10 @@ Créer au choix une wireframe complète (mobile, tablette ET desktop) d'une page
 
 
 
-## Choisissez une wireframe
+## Extraire les composants de ces pages
 
-
-
----
-
-
-
-## Extraire les composants de cette page
-
-1. Découper votre wireframe en composants réutilisables. Les lister
-2. Les représenter sur une Frame Figma
+1. Découper votre wireframe en composants réutilisables. Les lister.
+2. Les représenter sur une Frame Figma.
 
 
 
@@ -71,4 +63,4 @@ Créer au choix une wireframe complète (mobile, tablette ET desktop) d'une page
 
 ## Créer une maquette graphique
 
-1. Créer une représentation graphique de la page que vous avez sélectionné
+1. Créer une représentation graphique de la page que vous avez sélectionné (en tablette, mobile et desktop) en utilisant les composants que vous avez listé.
