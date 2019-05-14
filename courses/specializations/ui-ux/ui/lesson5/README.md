@@ -432,6 +432,14 @@ Elles ne sont pas à suivre à la lettre mais permettent de nous aider lorsque l
 
 
 
+Ne vous forcez pas à remplir l'espace. Laissez du vide.
+
+
+
+---
+
+
+
 ## Sources : 
 
 - [https://www.justinmind.com/blog/your-guide-to-space-and-layout-in-ui-design/](https://www.justinmind.com/blog/your-guide-to-space-and-layout-in-ui-design/)
