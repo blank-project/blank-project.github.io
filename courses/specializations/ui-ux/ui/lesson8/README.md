@@ -26,7 +26,8 @@ _le but d'un moodboard est de créer une ambiance qui correspond à ce que vous 
 
 1. Trouver la couleur principale qui sort de ce moodboard
 2. Trouver les couleurs secondaires qui sortent de ce moodboard
-3. Les présenter sous la forme suivante : [https://www.youtube.com/watch?v=9S8LGdpNh4Q](https://www.youtube.com/watch?v=9S8LGdpNh4Q) sur une Frame Figma
+3. Les modifier en utilisant la théorie des couleurs vue en cours
+4. Les présenter sous la forme suivante : [https://www.youtube.com/watch?v=9S8LGdpNh4Q](https://www.youtube.com/watch?v=9S8LGdpNh4Q) sur une Frame Figma
 
 
 
