@@ -1,6 +1,6 @@
 # Exercice
 
-L'objectif est de créer un site internet sur un thème précis (exemple : Nature, Jeux vidéos, Foot, Musique, etc.).
+L'objectif est de créer la maquette graphique d'un site internet .
 Ce site fictif sera un site e-commerce.
 
 
@@ -13,7 +13,7 @@ Ce site fictif sera un site e-commerce.
 
 _le but d'un moodboard est de créer une ambiance qui correspond à ce que vous souhaitez véhiculer sur votre site_
 
-1. Définissez le thème de votre choix
+1. Définissez le thème de votre choix (exemple : Nature, Jeux vidéos, Foot, Musique, etc.)
 2. Réunissez des images correspondant à l'ambiance que vous souhaitez sur une Frame Figma
 
 
