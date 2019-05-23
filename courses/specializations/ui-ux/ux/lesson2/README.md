@@ -238,8 +238,8 @@ Challengez les besoins.
 
 Récupérer les besoins et, individuellement, classifiez les par importance.
 
-Pour chaque besoin, identifiez si c'est de la spécification fonctionnelle générale ou détaillée.
-Pour chaque besoin, identifiez le critère de Bastien et Scapin qui s'y rattache.
+- Pour chaque besoin, identifiez si c'est de la spécification fonctionnelle générale ou détaillée.
+- Pour chaque besoin, identifiez le critère de Bastien et Scapin qui s'y rattache.
 
 
 ***
